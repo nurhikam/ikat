@@ -504,7 +504,11 @@
     if (!cfg.music || !has(cfg.music.src)) return;
     audio = new Audio(cfg.music.src);
     audio.loop = true;
+    // Never fetched until the guest opens the invitation, so the music costs
+    // nothing on first paint no matter how large the file is.
     audio.preload = 'none';
+    var vol = cfg.music.volume;
+    audio.volume = typeof vol === 'number' ? Math.min(1, Math.max(0, vol)) : 0.55;
     var btn = el('<button class="u-music" id="u-music" type="button" aria-pressed="false" ' +
                  'aria-label="' + esc(cfg.music.label || 'Putar musik') + '">' +
                  '<span class="u-music__icon" aria-hidden="true"></span></button>');

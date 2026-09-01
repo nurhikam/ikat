@@ -8,15 +8,19 @@ stick, or dropped on any host with no build step and no directory layout to get
 wrong. It is also the artefact to hand over when a client wants to keep the
 invitation after the event.
 
-    --fragment   emit only <title>/<link>/<style>/markup/<script>, with no
-                 <!doctype>/<html>/<head>/<body> wrapper — for embedding in a
-                 host page that supplies its own document skeleton.
+    --fragment       emit only <title>/<link>/<style>/markup/<script>, with no
+                     <!doctype>/<html>/<head>/<body> wrapper — for embedding in
+                     a host page that supplies its own document skeleton.
+    --inline-media   embed music and photos as data: URIs, so the output has no
+                     external references left at all.
 """
 
 from __future__ import annotations
 
 import argparse
+import base64
 import json
+import mimetypes
 import os
 import re
 import sys
@@ -44,8 +48,49 @@ def guard(text: str) -> str:
     return text.replace("</", "<\\/")
 
 
-def build(data_path: str, fragment: bool = False, title: str | None = None) -> str:
+def as_data_uri(ref: str, base: str) -> str:
+    """Turn a local asset reference into a data: URI. Anything already remote
+    or already inline is returned untouched."""
+    if not ref or re.match(r"^(https?:|data:|//)", ref):
+        return ref
+    path = ref if os.path.isabs(ref) else os.path.join(base, ref)
+    if not os.path.isfile(path):
+        print(f"! aset tidak ditemukan, dilewati: {ref}", file=sys.stderr)
+        return ref
+    mime = mimetypes.guess_type(path)[0] or "application/octet-stream"
+    with open(path, "rb") as f:
+        return f"data:{mime};base64," + base64.b64encode(f.read()).decode("ascii")
+
+
+def inline_media(cfg: dict, base: str) -> dict:
+    """Embed music and photos so the output really is one file. Only touches
+    the fields that can hold a local path."""
+    music = cfg.get("music") or {}
+    if music.get("src"):
+        music["src"] = as_data_uri(music["src"], base)
+
+    for person in (cfg.get("couple") or {}).values():
+        if isinstance(person, dict) and person.get("photo"):
+            person["photo"] = as_data_uri(person["photo"], base)
+
+    for s in cfg.get("sections") or []:
+        if s.get("photo"):
+            s["photo"] = as_data_uri(s["photo"], base)
+        photos = s.get("photos")
+        if isinstance(photos, list):
+            s["photos"] = [
+                as_data_uri(p, base) if isinstance(p, str)
+                else {**p, "src": as_data_uri(p.get("src", ""), base)}
+                for p in photos
+            ]
+    return cfg
+
+
+def build(data_path: str, fragment: bool = False, title: str | None = None,
+          media: bool = False) -> str:
     cfg = json.loads(read(data_path))
+    if media:
+        cfg = inline_media(cfg, ROOT)
     theme = cfg.get("theme", "forest-lace")
 
     theme_css_path = os.path.join(ROOT, "themes", theme, "theme.css")
@@ -111,9 +156,12 @@ def main() -> int:
     p.add_argument("--fragment", action="store_true",
                    help="omit the document skeleton (for embedding hosts)")
     p.add_argument("--title", help="override the static <title> tag")
+    p.add_argument("--inline-media", action="store_true",
+                   help="embed music and photos as data: URIs (truly one file)")
     args = p.parse_args()
 
-    html = build(args.data, fragment=args.fragment, title=args.title)
+    html = build(args.data, fragment=args.fragment, title=args.title,
+                 media=args.inline_media)
 
     if args.out:
         os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)

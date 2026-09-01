@@ -38,6 +38,29 @@ klien, dibuka dari flashdisk, atau ditaruh di hosting mana pun tanpa struktur
 folder. Ini juga yang diserahkan kalau klien mau menyimpan undangannya setelah
 acara selesai.
 
+Tambahkan `--inline-media` untuk menanam musik dan foto sebagai data URI —
+benar-benar satu file tanpa referensi eksternal, tapi ukurannya melonjak ke
+~1 MB. Untuk disebar ke tamu pakai versi hosted; lihat
+[docs/DEPLOY.md](docs/DEPLOY.md).
+
+## Musik
+
+```json
+{ "music": { "src": "assets/music/forest-lace.mp3", "volume": 0.55 } }
+```
+
+Default temanya adalah piano orisinal yang di-*generate* dari kode:
+
+```bash
+./bin/make-music.py -o assets/music/forest-lace.mp3
+```
+
+Disintesis di `bin/make-music.py`, bukan diambil dari mana-mana, supaya audio
+yang ikut terjual bersama template jelas statusnya — tidak ada lisensi yang
+perlu diurus. Untuk lagu pilihan pasangan, ganti `music.src` dengan file yang
+mereka punya haknya. Jangan bundel lagu komersial ke dalam template yang dijual
+berulang: itu distribusi ulang, dan vendor undangan digital termasuk yang kena.
+
 ## Arsitektur
 
 ![Arsitektur undangan](docs/architecture.svg)
@@ -53,6 +76,7 @@ themes/<nama>/        warna, font, ornamen — CSS token saja
 data/<klien>.json     isi undangan + urutan section
 docs/THEMING.md       cara bikin tema baru
 docs/SECTIONS.md      katalog section + skema data + backend RSVP
+docs/DEPLOY.md        ke mana di-deploy, dan kenapa data klien tidak boleh publik
 ```
 
 Kontrak yang bikin ini scalable: **tema tidak boleh menyentuh JavaScript, dan
@@ -70,7 +94,7 @@ akan sama dengan template pertama — dan seluruh gunanya hilang.
 - Simpan ke Google Calendar
 - Salin nomor rekening satu ketuk
 - RSVP + dinding tamu, tiga backend: localStorage / Google Sheet / Supabase
-- Pemutar musik latar
+- Musik latar, dimuat hanya saat tamu menekan putar — nol biaya di first paint
 - Section kosong hilang sendiri; foto opsional di semua tempat
 
 ## Kenapa vanilla, kenapa SVG

@@ -31,7 +31,8 @@
   "date": "2026-09-24T08:00:00+07:00",
 
   "music": {
-    "src": "",
+    "src": "assets/music/forest-lace.mp3",
+    "volume": 0.55,
     "label": "Putar musik"
   },
 

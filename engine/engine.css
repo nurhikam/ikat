@@ -38,6 +38,9 @@
   --u-size-h3: clamp(1.15rem, 4.5vw, 1.4rem);
   --u-size-body: 0.975rem;
   --u-size-small: 0.8rem;
+  /* Never below 16px: iOS Safari zooms the whole page when a focused field's
+     text is smaller, which throws a guest out of the layout mid-RSVP. */
+  --u-size-input: 1rem;
   --u-leading: 1.75;
   --u-tracking-caps: 0.24em;
 
@@ -57,7 +60,11 @@
   --u-orn-top: none;
   --u-orn-bottom: none;
   --u-orn-size: 140px;
-  --u-texture: none;
+  --u-texture: none;   /* repeating pattern, tiles at its own size */
+  --u-ambient: none;   /* soft light, retiled once per viewport height */
+
+  /* Comfortable thumb target. 44px is the usual floor. */
+  --u-tap: 44px;
 }
 
 /* ------------------------------------------------------------------- base */
@@ -67,16 +74,22 @@
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
+/* html paints the ground outside the column, #app paints the invitation
+   itself. Splitting them this way avoids background propagation surprises and
+   removes any need for background-attachment: fixed, which iOS Safari renders
+   unreliably. */
+html { background: var(--u-bg-2); }
+
 body {
   margin: 0;
-  background: var(--u-bg);
-  background-image: var(--u-texture);
+  background: transparent;
   color: var(--u-ink-invert);
   font-family: var(--u-font-body);
   font-size: var(--u-size-body);
   line-height: var(--u-leading);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Scroll is locked behind the cover until the guest opens the invitation —
@@ -86,12 +99,18 @@ html.is-locked, html.is-locked body { overflow: hidden; height: 100%; }
 img { max-width: 100%; display: block; }
 button, input, textarea { font: inherit; color: inherit; }
 
-/* The whole invitation lives in one phone-width column, centred on desktop. */
+/* The whole invitation lives in one phone-width column, centred on desktop.
+   The ambient layer retiles every viewport height so the light keeps reading
+   as you scroll, without a fixed attachment. */
 #app {
   max-width: var(--u-max);
   margin-inline: auto;
   position: relative;
   isolation: isolate;
+  background-color: var(--u-bg);
+  background-image: var(--u-ambient), var(--u-texture);
+  background-repeat: repeat, repeat;
+  background-size: 100% 100vh, auto;
 }
 
 /* --------------------------------------------------------------- sections */
@@ -99,6 +118,9 @@ button, input, textarea { font: inherit; color: inherit; }
 .u-sec {
   position: relative;
   padding: var(--u-sec-y) var(--u-gutter);
+  /* Keep content clear of a notch when the phone is turned sideways. */
+  padding-left: max(var(--u-gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--u-gutter), env(safe-area-inset-right, 0px));
   overflow: hidden;
 }
 
@@ -248,6 +270,7 @@ button, input, textarea { font: inherit; color: inherit; }
   align-items: center;
   justify-content: center;
   gap: 0.5em;
+  min-height: var(--u-tap);
   padding: 0.7em 1.5em;
   border-radius: 999px;
   border: 1px solid transparent;
@@ -345,11 +368,16 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 .u-person__parents { margin: 0; font-size: var(--u-size-small); color: var(--u-ink-soft); }
 .u-person__ig {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--u-tap);
+  padding-inline: 0.5rem;
   font-size: var(--u-size-small);
   color: var(--u-ink-soft);
   text-decoration: none;
-  border-bottom: 1px solid var(--u-line);
+  box-shadow: inset 0 -1px 0 var(--u-line);
 }
+.u-person__ig:focus-visible { outline: 2px solid var(--u-accent); outline-offset: 2px; }
 .u-couple__amp {
   font-family: var(--u-font-display);
   font-size: 2rem;
@@ -495,11 +523,13 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 .u-input {
   width: 100%;
+  min-height: var(--u-tap);
   padding: 0.75rem 0.85rem;
   background: transparent;
   border: 1px solid var(--u-line);
   border-radius: var(--u-radius);
   color: var(--u-ink);
+  font-size: var(--u-size-input);
 }
 .u-input::placeholder { color: var(--u-ink-soft); opacity: 0.6; }
 .u-input:focus-visible { outline: 2px solid var(--u-accent); outline-offset: 1px; border-color: transparent; }
@@ -517,6 +547,7 @@ button, input, textarea { font: inherit; color: inherit; }
   align-items: center;
   justify-content: center;
   gap: 0.45em;
+  min-height: var(--u-tap);
   padding: 0.75rem 0.5rem;
   border: 1px solid var(--u-line);
   border-radius: var(--u-radius);
@@ -604,9 +635,10 @@ button, input, textarea { font: inherit; color: inherit; }
 .u-music {
   position: fixed;
   right: max(1rem, calc(50vw - var(--u-max) / 2 + 1rem));
-  bottom: 1.25rem;
+  /* Clear the home indicator on notched phones. */
+  bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
   z-index: 50;
-  width: 3rem; height: 3rem;
+  width: var(--u-tap); height: var(--u-tap);
   border-radius: 50%;
   border: 1px solid var(--u-line-invert);
   background: color-mix(in srgb, var(--u-bg) 82%, transparent);
@@ -639,14 +671,6 @@ html.is-playing .u-music__icon { animation: u-spin 3.5s linear infinite; }
 /* ------------------------------------------------------------ desktop trim */
 
 @media (min-width: 32rem) {
-  /* Keep the phone-column illusion but stop the page background from feeling
-     like an accident on wide screens. */
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: var(--u-bg-2);
-    z-index: -2;
-  }
+  /* html already carries --u-bg-2; the column just needs to lift off it. */
   #app { box-shadow: 0 0 80px rgba(0, 0, 0, 0.45); }
 }

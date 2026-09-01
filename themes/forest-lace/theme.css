@@ -49,11 +49,15 @@
   --u-radius-lg: 3px;
   --u-orn-size: 34px;
 
-  /* botanical ground: layered soft light + a faint frond hatch */
-  --u-texture:
+  /* Botanical ground in two layers: soft light that retiles each viewport
+     height, and a frond hatch that tiles at its own scale. Kept separate so
+     neither needs background-attachment: fixed. */
+  --u-ambient:
     radial-gradient(ellipse 70% 40% at 50% 0%, rgba(122, 168, 118, 0.14), transparent 70%),
-    radial-gradient(ellipse 60% 45% at 10% 60%, rgba(90, 140, 90, 0.1), transparent 70%),
-    radial-gradient(ellipse 55% 40% at 95% 85%, rgba(120, 160, 110, 0.09), transparent 70%),
+    radial-gradient(ellipse 60% 45% at 10% 55%, rgba(90, 140, 90, 0.1), transparent 70%),
+    radial-gradient(ellipse 55% 40% at 95% 90%, rgba(120, 160, 110, 0.09), transparent 70%);
+
+  --u-texture:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.045' stroke-width='1.1' stroke-linecap='round'%3E%3Cpath d='M6 84C22 66 30 44 28 8'/%3E%3Cpath d='M28 30c-8-5-14-7-21-7M28 44c-9-4-15-5-22-4M28 58c-8-2-14-2-20 1M28 16c-6-5-11-8-17-9'/%3E%3Cpath d='M84 6C68 24 60 46 62 82'/%3E%3Cpath d='M62 60c8 5 14 7 21 7M62 46c9 4 15 5 22 4M62 32c8 2 14 2 20-1M62 74c6 5 11 8 17 9'/%3E%3C/g%3E%3C/svg%3E");
 
   /* lace: a cream band with scalloped edge + eyelet holes */
@@ -68,8 +72,6 @@
  * Keep it short. If this block grows past ~80 lines, the engine is probably
  * missing a token — add the token instead of piling on overrides here.
  * ------------------------------------------------------------------------ */
-
-body { background-attachment: fixed; }
 
 .u-orn { background-repeat: repeat-x; }
 

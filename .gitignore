@@ -2,3 +2,8 @@
 node_modules/
 *.log
 dist/
+
+# Client data must never enter this public repo — see docs/DEPLOY.md.
+# Only the fictional demo is tracked.
+data/*.json
+!data/demo.json
