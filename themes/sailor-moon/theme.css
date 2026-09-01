@@ -44,3 +44,10 @@
   --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27%233a2040%27%20fill-opacity%3D%27.12%27%3E%3Cpath%20d%3D%27M20%2012l2%206%206%202-6%202-2%206-2-6-6-2%206-2z%27%2F%3E%3Cpath%20d%3D%27M58%2050l1.5%204.5L64%2056l-4.5%201.5L58%2062l-1.5-4.5L52%2056l4.5-1.5z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #c9a0c822, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #c9a0c816, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #c9a0c812, transparent 66%);
 }
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+/* Sailor Moon — crescent + stars */
+:root {
+  --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23c9a0c8' fill-opacity='.08'%3E%3Cpath d='M40 10 A18 18 0 1 0 40 46 A12 12 0 1 1 40 10Z'/%3E%3Cpath d='M15 60 l1.5 3 3 0 -2.5 2 1 3 -3 -2 -3 2 1-3 -2.5-2 3 0Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.u-cover__frame { border-radius: 999px; }

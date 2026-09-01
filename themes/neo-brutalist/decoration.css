@@ -1,0 +1,6 @@
+:root {
+  --u-texture: none;
+}
+.u-cover__frame { border-radius: 0; border-width: 4px; border-color: var(--u-accent); }
+.u-card { border-radius: 0; border-width: 2px; }
+.u-btn { border-radius: 0; }

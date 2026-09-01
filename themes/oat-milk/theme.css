@@ -9,9 +9,9 @@
 
 :root {
   /* warna */
-  --u-bg: #e8ddd0;
-  --u-bg-2: #ddd0be;
-  --u-surface: #fffaf5;
+  --u-bg: #f0e6d4;
+  --u-bg-2: #e4d4b8;
+  --u-surface: #fff8ed;
   --u-surface-2: #f5ece0;
   --u-ink: #4a3728;
   --u-ink-soft: #7a6452;
@@ -43,4 +43,9 @@
   /* latar */
   --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Ccircle%20cx%3D%2720%27%20cy%3D%2720%27%20r%3D%272%27%20fill%3D%27%234a3728%27%20fill-opacity%3D%27.10%27%2F%3E%3Ccircle%20cx%3D%2760%27%20cy%3D%2760%27%20r%3D%272%27%20fill%3D%27%234a3728%27%20fill-opacity%3D%27.10%27%2F%3E%3C%2Fsvg%3E");
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #b0805022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #b0805016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #b0805012, transparent 66%);
+}
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+:root {
+  --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg stroke='%23a08060' stroke-opacity='.05' stroke-width='.5'%3E%3Cline x1='0' y1='8' x2='40' y2='8'/%3E%3Cline x1='0' y1='16' x2='40' y2='16'/%3E%3Cline x1='0' y1='24' x2='40' y2='24'/%3E%3Cline x1='0' y1='32' x2='40' y2='32'/%3E%3C/g%3E%3C/svg%3E");
 }

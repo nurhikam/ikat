@@ -1,0 +1,6 @@
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='18' viewBox='0 0 80 18'%3E%3Cg fill='%23e8a090' fill-opacity='.22'%3E%3Cpath d='M20 12 Q22 4 24 12 Q22 16 20 12Z'/%3E%3Cpath d='M40 12 Q42 4 44 12 Q42 16 40 12Z'/%3E%3Cpath d='M60 12 Q62 4 64 12 Q62 16 60 12Z'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 18px;
+}
+.u-cover__frame { border-radius: 999px; }

@@ -40,7 +40,8 @@
         "polaroidTilt": "-2.5deg",
         "shadow": "0 18px 40px rgba(0,0,0,0.35)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "unik"
     },
     {
       "slug": "butter",
@@ -81,7 +82,8 @@
         "shadow": "0 16px 38px rgba(61,50,24,0.16)"
       },
       "tracking": "0.22em",
-      "pattern": "petals"
+      "pattern": "petals",
+      "category": "unik"
     },
     {
       "slug": "lilac-haze",
@@ -122,7 +124,8 @@
         "shadow": "0 20px 44px rgba(51,42,68,0.12)"
       },
       "tracking": "0.3em",
-      "pattern": "waves"
+      "pattern": "waves",
+      "category": "unik"
     },
     {
       "slug": "rosewater",
@@ -163,7 +166,8 @@
         "shadow": "0 18px 40px rgba(66,41,43,0.14)"
       },
       "tracking": "0.24em",
-      "pattern": "dots"
+      "pattern": "dots",
+      "category": "unik"
     },
     {
       "slug": "dusty-sage",
@@ -204,7 +208,8 @@
         "shadow": "0 14px 32px rgba(47,53,42,0.14)"
       },
       "tracking": "0.32em",
-      "pattern": "grid"
+      "pattern": "grid",
+      "category": "unik"
     },
     {
       "slug": "cloud-dancer",
@@ -245,7 +250,8 @@
         "shadow": "0 18px 40px rgba(38,51,61,0.12)"
       },
       "tracking": "0.34em",
-      "pattern": "arcs"
+      "pattern": "arcs",
+      "category": "unik"
     },
     {
       "slug": "mocha-mousse",
@@ -286,7 +292,8 @@
         "shadow": "0 20px 44px rgba(51,37,26,0.32)"
       },
       "tracking": "0.26em",
-      "pattern": "ikat"
+      "pattern": "ikat",
+      "category": "unik"
     },
     {
       "slug": "noir-editorial",
@@ -327,7 +334,8 @@
         "shadow": "0 24px 50px rgba(0,0,0,0.55)"
       },
       "tracking": "0.4em",
-      "pattern": "none"
+      "pattern": "none",
+      "category": "unik"
     },
     {
       "slug": "terracotta-sun",
@@ -368,7 +376,8 @@
         "shadow": "0 18px 40px rgba(64,32,15,0.28)"
       },
       "tracking": "0.24em",
-      "pattern": "chevron"
+      "pattern": "chevron",
+      "category": "unik"
     },
     {
       "slug": "riso-zine",
@@ -409,7 +418,8 @@
         "shadow": "8px 8px 0 #1f1f2e"
       },
       "tracking": "0.14em",
-      "pattern": "grain"
+      "pattern": "grain",
+      "category": "unik"
     },
     {
       "slug": "pearl-chrome",
@@ -450,7 +460,8 @@
         "shadow": "0 20px 44px rgba(35,40,51,0.16)"
       },
       "tracking": "0.28em",
-      "pattern": "stars"
+      "pattern": "stars",
+      "category": "unik"
     },
     {
       "slug": "ivory-grace",
@@ -491,7 +502,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 16px 36px rgba(61,53,41,0.12)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "pastel"
     },
     {
       "slug": "blush-noir",
@@ -532,7 +544,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 20px 50px rgba(0,0,0,0.5)"
       },
-      "tracking": "0.32em"
+      "tracking": "0.32em",
+      "category": "unik"
     },
     {
       "slug": "champagne-toast",
@@ -573,7 +586,8 @@
         "polaroidTilt": "-2deg",
         "shadow": "0 18px 40px rgba(74,61,30,0.14)"
       },
-      "tracking": "0.22em"
+      "tracking": "0.22em",
+      "category": "pastel"
     },
     {
       "slug": "midnight-rose",
@@ -614,7 +628,8 @@
         "polaroidTilt": "-2.5deg",
         "shadow": "0 20px 50px rgba(30,42,58,0.30)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "unik"
     },
     {
       "slug": "linen-whisper",
@@ -655,7 +670,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 14px 32px rgba(62,56,48,0.10)"
       },
-      "tracking": "0.30em"
+      "tracking": "0.30em",
+      "category": "pastel"
     },
     {
       "slug": "velvet-plum",
@@ -696,7 +712,8 @@
         "polaroidTilt": "-2deg",
         "shadow": "0 20px 50px rgba(61,32,64,0.30)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "unik"
     },
     {
       "slug": "oat-milk",
@@ -713,9 +730,9 @@
         "bodyStack": "\"Plus Jakarta Sans\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#e8ddd0",
-        "bg2": "#ddd0be",
-        "surface": "#fffaf5",
+        "bg": "#f0e6d4",
+        "bg2": "#e4d4b8",
+        "surface": "#fff8ed",
         "surface2": "#f5ece0",
         "ink": "#4a3728",
         "inkSoft": "#7a6452",
@@ -737,7 +754,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(74,55,40,0.12)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "hangat"
     },
     {
       "slug": "celestial",
@@ -754,14 +772,14 @@
         "bodyStack": "\"DM Sans\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#1a2744",
-        "bg2": "#111d33",
+        "bg": "#1e2e4a",
+        "bg2": "#162038",
         "surface": "#f0f2f8",
         "surface2": "#dde0ee",
         "ink": "#1a2744",
         "inkSoft": "#4a5a72",
         "inkInvert": "#f0f2f8",
-        "accent": "#7a9cc0",
+        "accent": "#6a9ac8",
         "accentInk": "#1a2744",
         "highlight": "#c0a060",
         "line": "rgba(26,39,68,0.14)",
@@ -778,7 +796,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 20px 50px rgba(26,39,68,0.30)"
       },
-      "tracking": "0.34em"
+      "tracking": "0.34em",
+      "category": "unik"
     },
     {
       "slug": "peach-fuzz",
@@ -819,7 +838,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 16px 36px rgba(74,48,32,0.12)"
       },
-      "tracking": "0.22em"
+      "tracking": "0.22em",
+      "category": "pastel"
     },
     {
       "slug": "ink-wash",
@@ -836,8 +856,8 @@
         "bodyStack": "\"Zen Kaku Gothic New\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#1e1e1e",
-        "bg2": "#111111",
+        "bg": "#1a1a18",
+        "bg2": "#0e0e10",
         "surface": "#f5f2ee",
         "surface2": "#e8e0d8",
         "ink": "#1e1e1e",
@@ -860,7 +880,8 @@
         "polaroidTilt": "0deg",
         "shadow": "8px 8px 0 #1e1e1e"
       },
-      "tracking": "0.36em"
+      "tracking": "0.36em",
+      "category": "unik"
     },
     {
       "slug": "batik-solo",
@@ -901,7 +922,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 18px 40px rgba(74,44,10,0.30)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "adat"
     },
     {
       "slug": "kebaya-velvet",
@@ -942,7 +964,8 @@
         "polaroidTilt": "-2deg",
         "shadow": "0 20px 50px rgba(92,26,46,0.30)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "adat"
     },
     {
       "slug": "bali-lotus",
@@ -983,7 +1006,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(74,48,32,0.14)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "adat"
     },
     {
       "slug": "jogja-senja",
@@ -1024,7 +1048,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 18px 40px rgba(74,32,8,0.28)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "adat"
     },
     {
       "slug": "minang-songket",
@@ -1041,14 +1066,14 @@
         "bodyStack": "\"Outfit\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#1a1a1a",
-        "bg2": "#0a0a0a",
+        "bg": "#1e1e1e",
+        "bg2": "#111111",
         "surface": "#fdf6ec",
         "surface2": "#f0e4cc",
         "ink": "#1a1a1a",
         "inkSoft": "#5a5040",
         "inkInvert": "#fdf6ec",
-        "accent": "#c9a84c",
+        "accent": "#d4a017",
         "accentInk": "#1a1a1a",
         "highlight": "#c04030",
         "line": "rgba(26,26,26,0.14)",
@@ -1065,7 +1090,8 @@
         "polaroidTilt": "0deg",
         "shadow": "8px 8px 0 #c9a84c"
       },
-      "tracking": "0.34em"
+      "tracking": "0.34em",
+      "category": "adat"
     },
     {
       "slug": "sasak-tenun",
@@ -1106,7 +1132,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(42,64,72,0.14)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "adat"
     },
     {
       "slug": "toraja-ukir",
@@ -1147,7 +1174,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 18px 40px rgba(42,10,10,0.30)"
       },
-      "tracking": "0.32em"
+      "tracking": "0.32em",
+      "category": "adat"
     },
     {
       "slug": "dayak-borneo",
@@ -1188,7 +1216,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 18px 40px rgba(26,58,42,0.30)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "adat"
     },
     {
       "slug": "palembang-songket",
@@ -1229,7 +1258,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 18px 40px rgba(58,10,26,0.30)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "adat"
     },
     {
       "slug": "betawi-ondel",
@@ -1246,9 +1276,9 @@
         "bodyStack": "\"Space Mono\", ui-monospace, monospace"
       },
       "colors": {
-        "bg": "#c04030",
-        "bg2": "#a03020",
-        "surface": "#fffaf0",
+        "bg": "#b03020",
+        "bg2": "#8a2018",
+        "surface": "#fdf2e8",
         "surface2": "#f5e8d0",
         "ink": "#2a1a0a",
         "inkSoft": "#6a5a40",
@@ -1270,7 +1300,8 @@
         "polaroidTilt": "-2deg",
         "shadow": "6px 6px 0 #2a1a0a"
       },
-      "tracking": "0.18em"
+      "tracking": "0.18em",
+      "category": "adat"
     },
     {
       "slug": "spiderman",
@@ -1287,14 +1318,14 @@
         "bodyStack": "\"Space Grotesk\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#c04030",
-        "bg2": "#a03020",
+        "bg": "#a82028",
+        "bg2": "#7a1820",
         "surface": "#f0f4f8",
         "surface2": "#dde4ee",
         "ink": "#1a2744",
         "inkSoft": "#4a5a72",
         "inkInvert": "#f0f4f8",
-        "accent": "#2a5aa8",
+        "accent": "#1a3a8a",
         "accentInk": "#f0f4f8",
         "highlight": "#c04030",
         "line": "rgba(26,39,68,0.14)",
@@ -1311,7 +1342,8 @@
         "polaroidTilt": "-3deg",
         "shadow": "6px 6px 0 #1a2744"
       },
-      "tracking": "0.14em"
+      "tracking": "0.14em",
+      "category": "pop"
     },
     {
       "slug": "barbie-dream",
@@ -1328,16 +1360,16 @@
         "bodyStack": "\"Karla\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#e8489a",
-        "bg2": "#d03080",
-        "surface": "#fff5fa",
+        "bg": "#fdf0f6",
+        "bg2": "#f8d8e8",
+        "surface": "#ffffff",
         "surface2": "#fde0ee",
         "ink": "#4a1028",
         "inkSoft": "#7a3a58",
         "inkInvert": "#fff5fa",
         "accent": "#e8489a",
         "accentInk": "#fff5fa",
-        "highlight": "#7a30c0",
+        "highlight": "#2ae8c0",
         "line": "rgba(74,16,40,0.14)",
         "lineInvert": "rgba(255,245,250,0.22)"
       },
@@ -1352,7 +1384,8 @@
         "polaroidTilt": "-2deg",
         "shadow": "0 20px 50px rgba(232,72,154,0.25)"
       },
-      "tracking": "0.18em"
+      "tracking": "0.18em",
+      "category": "pop"
     },
     {
       "slug": "ghibli-breeze",
@@ -1393,7 +1426,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(42,64,56,0.12)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "pop"
     },
     {
       "slug": "harry-potter",
@@ -1434,7 +1468,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 18px 40px rgba(42,26,10,0.40)"
       },
-      "tracking": "0.30em"
+      "tracking": "0.30em",
+      "category": "pop"
     },
     {
       "slug": "one-piece",
@@ -1451,9 +1486,9 @@
         "bodyStack": "\"Space Grotesk\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#c04030",
-        "bg2": "#a03020",
-        "surface": "#fdf6ec",
+        "bg": "#c44030",
+        "bg2": "#a03028",
+        "surface": "#fdf0e0",
         "surface2": "#f0e4cc",
         "ink": "#2a1a0a",
         "inkSoft": "#6a5a30",
@@ -1475,7 +1510,8 @@
         "polaroidTilt": "-2deg",
         "shadow": "6px 6px 0 #2a1a0a"
       },
-      "tracking": "0.14em"
+      "tracking": "0.14em",
+      "category": "pop"
     },
     {
       "slug": "minecraft",
@@ -1516,7 +1552,8 @@
         "polaroidTilt": "0deg",
         "shadow": "6px 6px 0 #2a3a1a"
       },
-      "tracking": "0.10em"
+      "tracking": "0.10em",
+      "category": "pop"
     },
     {
       "slug": "sailor-moon",
@@ -1557,7 +1594,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 16px 36px rgba(58,32,64,0.14)"
       },
-      "tracking": "0.20em"
+      "tracking": "0.20em",
+      "category": "pop"
     },
     {
       "slug": "star-wars",
@@ -1574,8 +1612,8 @@
         "bodyStack": "\"Space Grotesk\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#0a0a14",
-        "bg2": "#05050a",
+        "bg": "#0a0e1a",
+        "bg2": "#050810",
         "surface": "#f0f0f4",
         "surface2": "#dde0ee",
         "ink": "#0a0a14",
@@ -1598,7 +1636,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 20px 50px rgba(0,0,0,0.50)"
       },
-      "tracking": "0.36em"
+      "tracking": "0.36em",
+      "category": "pop"
     },
     {
       "slug": "pokemon",
@@ -1615,9 +1654,9 @@
         "bodyStack": "\"Space Grotesk\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#e8c040",
-        "bg2": "#d8b030",
-        "surface": "#fffaf0",
+        "bg": "#e8d040",
+        "bg2": "#d4b830",
+        "surface": "#fdf8e0",
         "surface2": "#f5e8d0",
         "ink": "#2a1a0a",
         "inkSoft": "#6a5a30",
@@ -1639,7 +1678,8 @@
         "polaroidTilt": "-2deg",
         "shadow": "4px 4px 0 #2a1a0a"
       },
-      "tracking": "0.12em"
+      "tracking": "0.12em",
+      "category": "pop"
     },
     {
       "slug": "disney-castle",
@@ -1657,7 +1697,7 @@
       },
       "colors": {
         "bg": "#1a2744",
-        "bg2": "#111d33",
+        "bg2": "#0f1a30",
         "surface": "#fdf6f4",
         "surface2": "#f0e0dc",
         "ink": "#1a2744",
@@ -1680,7 +1720,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 20px 50px rgba(26,39,68,0.30)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "pop"
     },
     {
       "slug": "cherry-blossom",
@@ -1721,7 +1762,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 16px 36px rgba(74,32,48,0.12)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "pastel"
     },
     {
       "slug": "lavender-field",
@@ -1762,7 +1804,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(58,40,80,0.12)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "pastel"
     },
     {
       "slug": "olive-grove",
@@ -1803,7 +1846,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 14px 32px rgba(42,58,32,0.10)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "hangat"
     },
     {
       "slug": "desert-bloom",
@@ -1844,7 +1888,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(74,48,32,0.12)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "hangat"
     },
     {
       "slug": "ocean-depth",
@@ -1885,7 +1930,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 20px 50px rgba(26,58,74,0.30)"
       },
-      "tracking": "0.30em"
+      "tracking": "0.30em",
+      "category": "hangat"
     },
     {
       "slug": "autumn-maple",
@@ -1926,7 +1972,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 18px 40px rgba(74,26,8,0.28)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "hangat"
     },
     {
       "slug": "moss-stone",
@@ -1967,7 +2014,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 14px 32px rgba(42,58,42,0.12)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "hangat"
     },
     {
       "slug": "sunflower",
@@ -1984,14 +2032,14 @@
         "bodyStack": "\"Plus Jakarta Sans\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#e8c040",
-        "bg2": "#d8b030",
-        "surface": "#fffef5",
+        "bg": "#e8c848",
+        "bg2": "#d4b838",
+        "surface": "#fdf6e0",
         "surface2": "#fdf0c8",
         "ink": "#4a3a10",
         "inkSoft": "#7a6a30",
         "inkInvert": "#4a3a10",
-        "accent": "#8a7020",
+        "accent": "#6a4a10",
         "accentInk": "#fffef5",
         "highlight": "#6a9a30",
         "line": "rgba(74,58,16,0.14)",
@@ -2008,7 +2056,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(74,58,16,0.14)"
       },
-      "tracking": "0.22em"
+      "tracking": "0.22em",
+      "category": "hangat"
     },
     {
       "slug": "eucalyptus",
@@ -2049,7 +2098,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 14px 32px rgba(42,58,48,0.10)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "pastel"
     },
     {
       "slug": "wheat-field",
@@ -2066,14 +2116,14 @@
         "bodyStack": "\"Inter\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#d8c8a0",
-        "bg2": "#c8b890",
-        "surface": "#fffef8",
+        "bg": "#dcc898",
+        "bg2": "#c8b480",
+        "surface": "#fdf6e8",
         "surface2": "#f5ece0",
         "ink": "#4a3a20",
         "inkSoft": "#7a6a40",
         "inkInvert": "#4a3a20",
-        "accent": "#a08040",
+        "accent": "#8a6a20",
         "accentInk": "#fffef8",
         "highlight": "#c05030",
         "line": "rgba(74,58,32,0.14)",
@@ -2090,7 +2140,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(74,58,32,0.12)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "hangat"
     },
     {
       "slug": "gold-leaf",
@@ -2107,14 +2158,14 @@
         "bodyStack": "\"Figtree\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#1a1a1a",
-        "bg2": "#0a0a0a",
+        "bg": "#0f0f0f",
+        "bg2": "#1a1a18",
         "surface": "#fdfaf0",
         "surface2": "#f5ead0",
         "ink": "#1a1a1a",
         "inkSoft": "#6a6050",
         "inkInvert": "#fdfaf0",
-        "accent": "#c9a84c",
+        "accent": "#b8960c",
         "accentInk": "#1a1a1a",
         "highlight": "#c04030",
         "line": "rgba(26,26,26,0.14)",
@@ -2131,7 +2182,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 20px 50px rgba(0,0,0,0.50)"
       },
-      "tracking": "0.36em"
+      "tracking": "0.36em",
+      "category": "unik"
     },
     {
       "slug": "pearl-diver",
@@ -2172,7 +2224,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(58,40,80,0.12)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "pastel"
     },
     {
       "slug": "crystal-ice",
@@ -2189,14 +2242,14 @@
         "bodyStack": "\"DM Sans\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#d0dce8",
-        "bg2": "#c0cce0",
-        "surface": "#fdfcfe",
+        "bg": "#dce8f0",
+        "bg2": "#c8d8e8",
+        "surface": "#f8fafe",
         "surface2": "#f0f0f8",
         "ink": "#2a3a4a",
         "inkSoft": "#5a6a7a",
         "inkInvert": "#2a3a4a",
-        "accent": "#6a8ab8",
+        "accent": "#5a7aa8",
         "accentInk": "#fdfcfe",
         "highlight": "#c07080",
         "line": "rgba(42,58,74,0.14)",
@@ -2213,7 +2266,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 16px 36px rgba(42,58,74,0.14)"
       },
-      "tracking": "0.32em"
+      "tracking": "0.32em",
+      "category": "hangat"
     },
     {
       "slug": "ruby-gala",
@@ -2254,7 +2308,8 @@
         "polaroidTilt": "-2deg",
         "shadow": "0 20px 50px rgba(74,10,24,0.30)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "unik"
     },
     {
       "slug": "emerald-cut",
@@ -2295,7 +2350,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 20px 50px rgba(10,58,42,0.40)"
       },
-      "tracking": "0.36em"
+      "tracking": "0.36em",
+      "category": "unik"
     },
     {
       "slug": "champagne-gold",
@@ -2312,14 +2368,14 @@
         "bodyStack": "\"Inter\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#1a1a1a",
-        "bg2": "#0a0a0a",
+        "bg": "#1c1c1c",
+        "bg2": "#0e0e0e",
         "surface": "#fdfaf0",
         "surface2": "#f5ead0",
         "ink": "#1a1a1a",
         "inkSoft": "#6a6050",
         "inkInvert": "#fdfaf0",
-        "accent": "#c9a84c",
+        "accent": "#d4af37",
         "accentInk": "#1a1a1a",
         "highlight": "#c9a84c",
         "line": "rgba(26,26,26,0.14)",
@@ -2336,7 +2392,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 20px 50px rgba(0,0,0,0.50)"
       },
-      "tracking": "0.34em"
+      "tracking": "0.34em",
+      "category": "unik"
     },
     {
       "slug": "velvet-midnight",
@@ -2377,7 +2434,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 20px 50px rgba(26,32,64,0.30)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "unik"
     },
     {
       "slug": "art-deco-gold",
@@ -2394,8 +2452,8 @@
         "bodyStack": "\"Crimson Text\", Georgia, serif"
       },
       "colors": {
-        "bg": "#1a1a1a",
-        "bg2": "#0a0a0a",
+        "bg": "#121212",
+        "bg2": "#1e1e1e",
         "surface": "#fdf6ec",
         "surface2": "#f0e4cc",
         "ink": "#1a1a1a",
@@ -2418,7 +2476,8 @@
         "polaroidTilt": "0deg",
         "shadow": "8px 8px 0 #c9a84c"
       },
-      "tracking": "0.38em"
+      "tracking": "0.38em",
+      "category": "unik"
     },
     {
       "slug": "rose-gold",
@@ -2459,7 +2518,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(74,48,40,0.14)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "pastel"
     },
     {
       "slug": "platinum",
@@ -2500,7 +2560,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 16px 36px rgba(42,42,48,0.12)"
       },
-      "tracking": "0.34em"
+      "tracking": "0.34em",
+      "category": "unik"
     },
     {
       "slug": "mono-ink",
@@ -2517,16 +2578,16 @@
         "bodyStack": "\"Space Mono\", ui-monospace, monospace"
       },
       "colors": {
-        "bg": "#111111",
-        "bg2": "#000000",
+        "bg": "#0a0a0a",
+        "bg2": "#1a1a1a",
         "surface": "#ffffff",
         "surface2": "#f0f0f0",
         "ink": "#111111",
         "inkSoft": "#555555",
         "inkInvert": "#ffffff",
-        "accent": "#111111",
+        "accent": "#e8e8e8",
         "accentInk": "#ffffff",
-        "highlight": "#ff3b30",
+        "highlight": "#c04030",
         "line": "rgba(17,17,17,0.14)",
         "lineInvert": "rgba(255,255,255,0.20)"
       },
@@ -2541,7 +2602,8 @@
         "polaroidTilt": "0deg",
         "shadow": "8px 8px 0 #111111"
       },
-      "tracking": "0.20em"
+      "tracking": "0.20em",
+      "category": "unik"
     },
     {
       "slug": "paper-cut",
@@ -2558,14 +2620,14 @@
         "bodyStack": "\"Plus Jakarta Sans\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#f5f0e8",
-        "bg2": "#e8ddd0",
-        "surface": "#ffffff",
+        "bg": "#f0ece0",
+        "bg2": "#e0d8c8",
+        "surface": "#fdfaf8",
         "surface2": "#f5f0e8",
         "ink": "#2a2a28",
         "inkSoft": "#5a5a58",
         "inkInvert": "#2a2a28",
-        "accent": "#c07040",
+        "accent": "#b86030",
         "accentInk": "#ffffff",
         "highlight": "#6a9a50",
         "line": "rgba(42,42,40,0.14)",
@@ -2582,7 +2644,8 @@
         "polaroidTilt": "0deg",
         "shadow": "12px 12px 0 rgba(42,42,40,0.08)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "unik"
     },
     {
       "slug": "neo-brutalist",
@@ -2623,7 +2686,8 @@
         "polaroidTilt": "0deg",
         "shadow": "8px 8px 0 #1a1a1a"
       },
-      "tracking": "0.10em"
+      "tracking": "0.10em",
+      "category": "unik"
     },
     {
       "slug": "soft-clay",
@@ -2664,7 +2728,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 16px 36px rgba(74,55,40,0.12)"
       },
-      "tracking": "0.22em"
+      "tracking": "0.22em",
+      "category": "unik"
     },
     {
       "slug": "glass-morphism",
@@ -2681,14 +2746,14 @@
         "bodyStack": "\"Space Grotesk\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#d0dce8",
-        "bg2": "#c0cce0",
-        "surface": "#fdfcfe",
+        "bg": "#c8d4e8",
+        "bg2": "#b0c0d8",
+        "surface": "#f0f4fa",
         "surface2": "#f0f0f8",
         "ink": "#2a3a4a",
         "inkSoft": "#5a6a7a",
         "inkInvert": "#2a3a4a",
-        "accent": "#6a8ab8",
+        "accent": "#4a6a9a",
         "accentInk": "#fdfcfe",
         "highlight": "#c07080",
         "line": "rgba(42,58,74,0.14)",
@@ -2705,7 +2770,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 16px 40px rgba(42,58,74,0.15)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "unik"
     },
     {
       "slug": "wabi-sabi",
@@ -2746,7 +2812,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 12px 30px rgba(58,48,40,0.10)"
       },
-      "tracking": "0.30em"
+      "tracking": "0.30em",
+      "category": "hangat"
     },
     {
       "slug": "bauhaus",
@@ -2763,8 +2830,8 @@
         "bodyStack": "\"Space Grotesk\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#f5f0e0",
-        "bg2": "#e8ddd0",
+        "bg": "#f2ece0",
+        "bg2": "#ddd8cc",
         "surface": "#ffffff",
         "surface2": "#f5f0e0",
         "ink": "#1a1a1a",
@@ -2787,7 +2854,8 @@
         "polaroidTilt": "0deg",
         "shadow": "6px 6px 0 #1a1a1a"
       },
-      "tracking": "0.32em"
+      "tracking": "0.32em",
+      "category": "unik"
     },
     {
       "slug": "memphis-milano",
@@ -2828,7 +2896,8 @@
         "polaroidTilt": "-2deg",
         "shadow": "8px 8px 0 #1a1a1a"
       },
-      "tracking": "0.10em"
+      "tracking": "0.10em",
+      "category": "unik"
     },
     {
       "slug": "scandi-hygge",
@@ -2845,14 +2914,14 @@
         "bodyStack": "\"DM Sans\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#e8ddd0",
-        "bg2": "#ddd0be",
-        "surface": "#fdfcfa",
+        "bg": "#ece8e0",
+        "bg2": "#ddd8cc",
+        "surface": "#fdfaf0",
         "surface2": "#f2ece4",
         "ink": "#3a3830",
         "inkSoft": "#6a6860",
         "inkInvert": "#3a3830",
-        "accent": "#8a9a7b",
+        "accent": "#9ab0a0",
         "accentInk": "#fdfcfa",
         "highlight": "#c07050",
         "line": "rgba(58,56,48,0.14)",
@@ -2869,7 +2938,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 14px 32px rgba(58,56,48,0.10)"
       },
-      "tracking": "0.30em"
+      "tracking": "0.30em",
+      "category": "unik"
     },
     {
       "slug": "japandi",
@@ -2910,7 +2980,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 12px 30px rgba(42,42,40,0.10)"
       },
-      "tracking": "0.32em"
+      "tracking": "0.32em",
+      "category": "unik"
     },
     {
       "slug": "spring-meadow",
@@ -2951,7 +3022,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(42,64,40,0.12)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "hangat"
     },
     {
       "slug": "summer-heat",
@@ -2992,7 +3064,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 16px 36px rgba(74,58,16,0.14)"
       },
-      "tracking": "0.20em"
+      "tracking": "0.20em",
+      "category": "hangat"
     },
     {
       "slug": "winter-frost",
@@ -3033,7 +3106,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 16px 36px rgba(42,58,74,0.14)"
       },
-      "tracking": "0.30em"
+      "tracking": "0.30em",
+      "category": "unik"
     },
     {
       "slug": "monsoon-rain",
@@ -3074,7 +3148,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 14px 32px rgba(42,58,74,0.12)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "unik"
     },
     {
       "slug": "golden-hour",
@@ -3115,7 +3190,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 18px 40px rgba(74,58,32,0.16)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "hangat"
     },
     {
       "slug": "misty-morning",
@@ -3156,7 +3232,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 14px 32px rgba(58,56,48,0.10)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "unik"
     },
     {
       "slug": "tropical-sunset",
@@ -3173,8 +3250,8 @@
         "bodyStack": "\"Karla\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#e06040",
-        "bg2": "#c84830",
+        "bg": "#d85a38",
+        "bg2": "#b84830",
         "surface": "#fdf6ec",
         "surface2": "#f0e4cc",
         "ink": "#4a1a08",
@@ -3197,7 +3274,8 @@
         "polaroidTilt": "-2deg",
         "shadow": "0 18px 40px rgba(74,26,8,0.28)"
       },
-      "tracking": "0.22em"
+      "tracking": "0.22em",
+      "category": "hangat"
     },
     {
       "slug": "midnight-garden",
@@ -3238,7 +3316,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 20px 50px rgba(26,42,26,0.30)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "unik"
     },
     {
       "slug": "cotton-candy",
@@ -3279,7 +3358,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 16px 36px rgba(74,32,48,0.12)"
       },
-      "tracking": "0.20em"
+      "tracking": "0.20em",
+      "category": "pastel"
     },
     {
       "slug": "storm-cloud",
@@ -3320,7 +3400,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 18px 40px rgba(42,48,56,0.30)"
       },
-      "tracking": "0.32em"
+      "tracking": "0.32em",
+      "category": "unik"
     },
     {
       "slug": "y2k-chrome",
@@ -3361,7 +3442,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 16px 40px rgba(42,42,58,0.15)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "unik"
     },
     {
       "slug": "terrazzo",
@@ -3378,9 +3460,9 @@
         "bodyStack": "\"Plus Jakarta Sans\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#e8ddd0",
-        "bg2": "#ddd0be",
-        "surface": "#ffffff",
+        "bg": "#e8e0d4",
+        "bg2": "#d8cfc0",
+        "surface": "#fdf6ee",
         "surface2": "#f5f0e8",
         "ink": "#3a3830",
         "inkSoft": "#6a6860",
@@ -3402,7 +3484,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(58,56,48,0.12)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "unik"
     },
     {
       "slug": "neon-night",
@@ -3419,8 +3502,8 @@
         "bodyStack": "\"Space Grotesk\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#0a0a14",
-        "bg2": "#05050a",
+        "bg": "#0e0a1e",
+        "bg2": "#1a0a2e",
         "surface": "#f0f0f4",
         "surface2": "#e0e4e8",
         "ink": "#0a0a14",
@@ -3443,7 +3526,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 0 30px rgba(232,72,154,0.30)"
       },
-      "tracking": "0.30em"
+      "tracking": "0.30em",
+      "category": "unik"
     },
     {
       "slug": "vintage-postcard",
@@ -3484,7 +3568,8 @@
         "polaroidTilt": "-2.5deg",
         "shadow": "0 18px 40px rgba(74,58,32,0.20)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "unik"
     },
     {
       "slug": "origami",
@@ -3501,14 +3586,14 @@
         "bodyStack": "\"Zen Kaku Gothic New\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#f5f0e8",
+        "bg": "#f5f0e0",
         "bg2": "#e8ddd0",
-        "surface": "#ffffff",
+        "surface": "#fdfaf8",
         "surface2": "#f5f0e8",
         "ink": "#2a2a28",
         "inkSoft": "#5a5a58",
         "inkInvert": "#2a2a28",
-        "accent": "#c04030",
+        "accent": "#a03030",
         "accentInk": "#ffffff",
         "highlight": "#2a7a5a",
         "line": "rgba(42,42,40,0.14)",
@@ -3525,7 +3610,8 @@
         "polaroidTilt": "0deg",
         "shadow": "8px 8px 0 rgba(42,42,40,0.08)"
       },
-      "tracking": "0.32em"
+      "tracking": "0.32em",
+      "category": "unik"
     },
     {
       "slug": "mid-century",
@@ -3566,7 +3652,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(42,32,16,0.14)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "unik"
     },
     {
       "slug": "kawaii-pastel",
@@ -3607,7 +3694,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 16px 36px rgba(74,32,64,0.12)"
       },
-      "tracking": "0.20em"
+      "tracking": "0.20em",
+      "category": "pastel"
     },
     {
       "slug": "industrial-loft",
@@ -3648,7 +3736,8 @@
         "polaroidTilt": "0deg",
         "shadow": "8px 8px 0 #2a2520"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "unik"
     },
     {
       "slug": "candy-pop",
@@ -3666,8 +3755,8 @@
       },
       "colors": {
         "bg": "#e8489a",
-        "bg2": "#d03080",
-        "surface": "#fffaf0",
+        "bg2": "#c03078",
+        "surface": "#fdf0f8",
         "surface2": "#fde0ee",
         "ink": "#4a1028",
         "inkSoft": "#7a3a58",
@@ -3689,7 +3778,8 @@
         "polaroidTilt": "-2deg",
         "shadow": "4px 4px 0 #4a1028"
       },
-      "tracking": "0.12em"
+      "tracking": "0.12em",
+      "category": "unik"
     },
     {
       "slug": "zen-garden",
@@ -3730,7 +3820,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 12px 30px rgba(42,42,40,0.10)"
       },
-      "tracking": "0.34em"
+      "tracking": "0.34em",
+      "category": "unik"
     },
     {
       "slug": "coral-reef",
@@ -3747,8 +3838,8 @@
         "bodyStack": "\"Plus Jakarta Sans\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#e06040",
-        "bg2": "#c84830",
+        "bg": "#e86848",
+        "bg2": "#c85038",
         "surface": "#fdf6ec",
         "surface2": "#f0e4cc",
         "ink": "#4a1a08",
@@ -3771,7 +3862,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 16px 36px rgba(74,26,8,0.16)"
       },
-      "tracking": "0.22em"
+      "tracking": "0.22em",
+      "category": "hangat"
     },
     {
       "slug": "matcha-latte",
@@ -3812,7 +3904,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(42,58,40,0.12)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "hangat"
     },
     {
       "slug": "midnight-jazz",
@@ -3853,7 +3946,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 20px 50px rgba(26,26,46,0.40)"
       },
-      "tracking": "0.32em"
+      "tracking": "0.32em",
+      "category": "unik"
     },
     {
       "slug": "strawberry-milk",
@@ -3894,7 +3988,8 @@
         "polaroidTilt": "-1.5deg",
         "shadow": "0 16px 36px rgba(74,32,48,0.12)"
       },
-      "tracking": "0.20em"
+      "tracking": "0.20em",
+      "category": "pastel"
     },
     {
       "slug": "forest-mist",
@@ -3935,7 +4030,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 14px 32px rgba(42,58,42,0.12)"
       },
-      "tracking": "0.28em"
+      "tracking": "0.28em",
+      "category": "hangat"
     },
     {
       "slug": "sunset-blvd",
@@ -3976,7 +4072,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 18px 40px rgba(74,26,16,0.20)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "hangat"
     },
     {
       "slug": "nordic-fjord",
@@ -4017,7 +4114,8 @@
         "polaroidTilt": "0deg",
         "shadow": "0 16px 36px rgba(42,58,74,0.14)"
       },
-      "tracking": "0.32em"
+      "tracking": "0.32em",
+      "category": "unik"
     },
     {
       "slug": "marrakech",
@@ -4058,7 +4156,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 18px 40px rgba(74,32,8,0.28)"
       },
-      "tracking": "0.24em"
+      "tracking": "0.24em",
+      "category": "adat"
     },
     {
       "slug": "hanbok",
@@ -4099,7 +4198,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 18px 40px rgba(42,10,26,0.20)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "adat"
     },
     {
       "slug": "sahara-dune",
@@ -4116,14 +4216,14 @@
         "bodyStack": "\"Inter\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#d8c8a0",
-        "bg2": "#c8b890",
-        "surface": "#fffef8",
+        "bg": "#d4c0a0",
+        "bg2": "#c0a888",
+        "surface": "#fdf6ee",
         "surface2": "#f5ece0",
         "ink": "#4a3a20",
         "inkSoft": "#7a6a40",
         "inkInvert": "#4a3a20",
-        "accent": "#a08040",
+        "accent": "#7a5a30",
         "accentInk": "#fffef8",
         "highlight": "#c05030",
         "line": "rgba(74,58,32,0.14)",
@@ -4140,7 +4240,8 @@
         "polaroidTilt": "-1deg",
         "shadow": "0 16px 36px rgba(74,58,32,0.12)"
       },
-      "tracking": "0.26em"
+      "tracking": "0.26em",
+      "category": "hangat"
     }
   ]
 }

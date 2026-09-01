@@ -44,3 +44,10 @@
   --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%234a1a08%27%20stroke-opacity%3D%27.09%27%20stroke-width%3D%271.1%27%3E%3Cpath%20d%3D%27M40%2014c9%2010%209%2022%200%2032-9-10-9-22%200-32z%27%2F%3E%3Cpath%20d%3D%27M14%2040c10%209%2022%209%2032%200-10-9-22-9-32%200z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #e8a04022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #e8a04016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #e8a04012, transparent 66%);
 }
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='18' viewBox='0 0 80 18'%3E%3Cg fill='%23c04020' fill-opacity='.18'%3E%3Cpath d='M20 4 L22 9 L27 9 L23 12 L24 17 L20 14 L16 17 L17 12 L13 9 L18 9Z'/%3E%3Cpath d='M40 4 L42 9 L47 9 L43 12 L44 17 L40 14 L36 17 L37 12 L33 9 L38 9Z'/%3E%3Cpath d='M60 4 L62 9 L67 9 L63 12 L64 17 L60 14 L56 17 L57 12 L53 9 L58 9Z'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 18px;
+}

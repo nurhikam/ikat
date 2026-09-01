@@ -1,0 +1,5 @@
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='18' viewBox='0 0 80 18'%3E%3Cg fill='%23e8a0a8' fill-opacity='.22'%3E%3Cpath d='M20 9 c0-3 4-3 4 0 c0 3-4 3-4 0'/%3E%3Cpath d='M40 9 c0-3 4-3 4 0 c0 3-4 3-4 0'/%3E%3Cpath d='M60 9 c0-3 4-3 4 0 c0 3-4 3-4 0'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 18px;
+}

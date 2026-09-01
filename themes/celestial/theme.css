@@ -9,14 +9,14 @@
 
 :root {
   /* warna */
-  --u-bg: #1a2744;
-  --u-bg-2: #111d33;
+  --u-bg: #1e2e4a;
+  --u-bg-2: #162038;
   --u-surface: #f0f2f8;
   --u-surface-2: #dde0ee;
   --u-ink: #1a2744;
   --u-ink-soft: #4a5a72;
   --u-ink-invert: #f0f2f8;
-  --u-accent: #7a9cc0;
+  --u-accent: #6a9ac8;
   --u-accent-ink: #1a2744;
   --u-highlight: #c0a060;
   --u-line: rgba(26,39,68,0.14);
@@ -42,5 +42,11 @@
 
   /* latar */
   --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27%231a2744%27%20fill-opacity%3D%27.12%27%3E%3Cpath%20d%3D%27M20%2012l2%206%206%202-6%202-2%206-2-6-6-2%206-2z%27%2F%3E%3Cpath%20d%3D%27M58%2050l1.5%204.5L64%2056l-4.5%201.5L58%2062l-1.5-4.5L52%2056l4.5-1.5z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #7a9cc01c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #7a9cc012, transparent 66%);
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #6a9ac81c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #6a9ac812, transparent 66%);
 }
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+:root {
+  --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='.1'%3E%3Ccircle cx='20' cy='20' r='.7'/%3E%3Ccircle cx='50' cy='15' r='1'/%3E%3Ccircle cx='80' cy='25' r='.6'/%3E%3Ccircle cx='30' cy='50' r='.8'/%3E%3Ccircle cx='70' cy='60' r='1'/%3E%3Ccircle cx='40' cy='80' r='.7'/%3E%3C/g%3E%3C/svg%3E");
+}
+.u-cover__frame { border-radius: 999px; }

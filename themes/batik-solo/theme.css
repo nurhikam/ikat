@@ -44,3 +44,13 @@
   --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%234a2c0a%27%20stroke-opacity%3D%27.10%27%20stroke-width%3D%271.2%27%3E%3Cpath%20d%3D%27M40%208%2056%2024%2040%2040%2024%2024z%27%2F%3E%3Cpath%20d%3D%27M40%2040%2056%2056%2040%2072%2024%2056z%27%2F%3E%3Cpath%20d%3D%27M32%2016h4M44%2016h4M32%2064h4M44%2064h4%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #c9a84c22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #c9a84c16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #c9a84c12, transparent 66%);
 }
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+/* Batik Solo — sogan kawung + parang */
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='22' viewBox='0 0 80 22'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='.35' stroke-width='1'%3E%3Cellipse cx='20' cy='11' rx='14' ry='8'/%3E%3Cellipse cx='40' cy='11' rx='14' ry='8'/%3E%3Cellipse cx='60' cy='11' rx='14' ry='8'/%3E%3Cpath d='M20 3v16M40 3v16M60 3v16' stroke-opacity='.18'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 22px;
+}
+.u-cover__frame { border-width: 3px; }
+.u-card { border-left: 3px solid var(--u-accent); }

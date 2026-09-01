@@ -1,0 +1,6 @@
+/* Jogja Senja — gapura arch */
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='16' viewBox='0 0 80 16'%3E%3Cg fill='none' stroke='%23e8a040' stroke-opacity='.3' stroke-width='1.2'%3E%3Cpath d='M0 16 L0 8 Q40 0 80 8 L80 16'/%3E%3Cpath d='M10 16 L10 10 Q40 4 70 10 L70 16' stroke-opacity='.15'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 16px;
+}

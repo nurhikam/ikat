@@ -103,14 +103,30 @@ FAQ = [
 ]
 
 
+CATS = [
+    ("semua", "Semua"),
+    ("adat", "Adat"),
+    ("pop", "Pop Culture"),
+    ("pastel", "Pastel"),
+    ("hangat", "Hangat"),
+    ("unik", "Unik"),
+]
+# 12 featured buat landing — 1 page tanpa scroll panjang
+FEATURED = [
+    "forest-lace", "batik-solo", "spiderman", "barbie-dream",
+    "ghibli-breeze", "cherry-blossom", "olive-grove", "sunset-blvd",
+    "noir-editorial", "bauhaus", "terrazzo", "y2k-chrome",
+]
+
 def theme_card(t: dict) -> str:
-    return f"""        <a class="theme rise" href="preview.html?theme={E(t['slug'])}" target="_blank" rel="noopener">
+    cat = E(t.get("category", t.get("mood", "unik")))
+    return f"""        <a class="theme rise" href="preview.html?theme={E(t['slug'])}" target="_blank" rel="noopener" data-cat="{cat}">
           <div class="theme__shot">
             <img src="thumbs/{E(t['slug'])}.webp" alt="Tema {E(t['name'])}" loading="lazy" decoding="async" width="440" height="749">
           </div>
           <p class="theme__name">{E(t['name'])}</p>
           <p class="theme__blurb">{E(t['blurb'])}</p>
-          <span class="theme__tag">{E(t.get('mood', 'tema'))}</span>
+          <span class="theme__tag">{cat}</span>
         </a>"""
 
 
@@ -131,7 +147,13 @@ def plan_card(p: dict) -> str:
 def build() -> str:
     themes = json.load(open(SPEC, encoding="utf-8"))["themes"]
     n = len(themes)
-    cards = "\n".join(theme_card(t) for t in themes)
+    by_slug = {t["slug"]: t for t in themes}
+    featured = [by_slug[s] for s in FEATURED if s in by_slug]
+    featured_cards = "\n".join(theme_card(t) for t in featured)
+    all_cards = "\n".join(theme_card(t) for t in themes)
+    filter_btns = "\n".join(
+        f'          <button class="chip{" chip--on" if v=="semua" else ""}" data-filter="{E(v)}">{E(label)}</button>'
+        for v, label in CATS)
     plans = "\n".join(plan_card(p) for p in PLANS)
     why = "\n".join(
         f"""        <div class="why__item rise">
@@ -210,8 +232,9 @@ def build() -> str:
         <p>Bukan gambar contoh. Tiap kartu di bawah membuka undangan sungguhan yang jalan, lengkap dengan hitung mundur dan RSVP-nya.</p>
       </div>
       <div class="themes">
-{cards}
+{featured_cards}
       </div>
+      <p style="text-align:center;margin-top:1.75rem"><a class="btn btn--ghost" href="galeri.html">Lihat semua {n} tema &rarr;</a></p>
     </div>
   </section>
 
@@ -311,13 +334,130 @@ def build() -> str:
 """
 
 
+def build_galeri() -> str:
+    themes = json.load(open(SPEC, encoding="utf-8"))["themes"]
+    n = len(themes)
+    all_cards = "\n".join(theme_card(t) for t in themes)
+    filter_btns = "\n".join(
+        f'          <button class="chip{" chip--on" if v=="semua" else ""}" data-filter="{E(v)}">{E(label)}</button>'
+        for v, label in CATS)
+    return f"""<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galeri — {n} tema Ikat</title>
+<meta name="description" content="{n} tema undangan pernikahan digital Ikat. Filter per kategori.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="nav__logo" href="index.html"><span class="nav__mark" aria-hidden="true"></span>Ikat</a>
+    <nav class="nav__links">
+      <a href="index.html#tema">Tema</a>
+      <a href="index.html#kenapa">Kenapa Ikat</a>
+      <a href="index.html#harga">Harga</a>
+    </nav>
+    <a class="btn btn--primary" href="preview.html?theme=butter" target="_blank" rel="noopener">Coba Demo</a>
+  </div>
+</header>
+<main>
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2>Galeri — {n} tema</h2>
+        <p>Saring per kategori atau cari. Tiap kartu buka undangan sungguhan.</p>
+      </div>
+      <div class="gallery__bar">
+        <div class="chips">
+{filter_btns}
+        </div>
+        <input class="gallery__search" type="search" placeholder="Cari: batik, pastel, spiderman…" aria-label="Cari tema">
+      </div>
+      <p class="gallery__count" aria-live="polite"></p>
+      <div class="themes" id="galeri-grid">
+{all_cards}
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span>Ikat — undangan pernikahan digital</span>
+    <span><a href="https://github.com/nurhikam/ikat" target="_blank" rel="noopener">Kode sumbernya terbuka</a></span>
+  </div>
+</footer>
+<script>
+(function () {{
+  var chips=[].slice.call(document.querySelectorAll('.chip'));
+  var cards=[].slice.call(document.querySelectorAll('#galeri-grid .theme'));
+  var search=document.querySelector('.gallery__search');
+  var count=document.querySelector('.gallery__count');
+  var active='semua';
+  function apply() {{
+    var q=(search.value||'').toLowerCase().trim();
+    var shown=0;
+    cards.forEach(function (c) {{
+      var cat=(c.getAttribute('data-cat')||'').toLowerCase();
+      var name=(c.querySelector('.theme__name')||{{textContent:''}}).textContent.toLowerCase();
+      var okCat=active==='semua'||cat===active;
+      var okQ=!q||name.indexOf(q)!==-1||cat.indexOf(q)!==-1;
+      var show=okCat&&okQ;
+      c.style.display=show?'':'none';
+      if(show) shown++;
+    }});
+    count.textContent=shown+' tema';
+    var params=new URLSearchParams(location.search);
+    if(active!=='semua') params.set('cat',active); else params.delete('cat');
+    if(q) params.set('q',q); else params.delete('q');
+    history.replaceState(null,'',params.toString()?'?'+params.toString():location.pathname);
+  }}
+  chips.forEach(function (b) {{
+    b.addEventListener('click',function() {{
+      chips.forEach(function(x){{x.classList.remove('chip--on')}});
+      b.classList.add('chip--on');
+      active=b.getAttribute('data-filter')||'semua';
+      apply();
+    }});
+  }});
+  if(search) search.addEventListener('input',apply);
+  // init dari URL ?cat=&q=
+  try{{
+    var p=new URLSearchParams(location.search);
+    var c=p.get('cat'); if(c){{ active=c; chips.forEach(function(b){{b.classList.toggle('chip--on',b.getAttribute('data-filter')===c)}}); }}
+    var q=p.get('q'); if(q&&search) search.value=q;
+  }}catch(e){{}}
+  apply();
+  // reveal
+  var items=[].slice.call(document.querySelectorAll('.rise'));
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){{
+    items.forEach(function(n){{n.classList.add('in')}});
+  }} else {{
+    var io=new IntersectionObserver(function(es){{es.forEach(function(e){{if(e.isIntersecting){{e.target.classList.add('in');io.unobserve(e.target)}}}})}},{{rootMargin:'0px 0px -8% 0px',threshold:0.06}});
+    items.forEach(function(n,i){{n.style.transitionDelay=(i%4)*70+'ms';io.observe(n)}});
+  }}
+}})();
+</script>
+</body>
+</html>
+"""
+
 def main() -> int:
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     h = build()
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(h)
+    g = build_galeri()
+    out2 = os.path.join(ROOT, "site", "galeri.html")
+    with open(out2, "w", encoding="utf-8") as f:
+        f.write(g)
     n = len(json.load(open(SPEC, encoding="utf-8"))["themes"])
-    print(f"site/index.html  ({len(h)/1024:.1f} KB, {n} tema di galeri)")
+    print(f"site/index.html  ({len(h)/1024:.1f} KB, 12 featured)")
+    print(f"site/galeri.html ({len(g)/1024:.1f} KB, {n} tema + filter)")
     return 0
 
 

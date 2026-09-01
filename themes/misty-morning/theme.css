@@ -44,3 +44,8 @@
   --u-texture: none;
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #8a9a8a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #8a9a8a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #8a9a8a12, transparent 66%);
 }
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+:root {
+  --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffffff' fill-opacity='.06'%3E%3Cellipse cx='20' cy='30' rx='16' ry='6'/%3E%3Cellipse cx='50' cy='40' rx='20' ry='7'/%3E%3Cellipse cx='30' cy='55' rx='14' ry='5'/%3E%3C/g%3E%3C/svg%3E");
+}

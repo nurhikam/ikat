@@ -9,14 +9,14 @@
 
 :root {
   /* warna */
-  --u-bg: #e8c040;
-  --u-bg-2: #d8b030;
-  --u-surface: #fffef5;
+  --u-bg: #e8c848;
+  --u-bg-2: #d4b838;
+  --u-surface: #fdf6e0;
   --u-surface-2: #fdf0c8;
   --u-ink: #4a3a10;
   --u-ink-soft: #7a6a30;
   --u-ink-invert: #4a3a10;
-  --u-accent: #8a7020;
+  --u-accent: #6a4a10;
   --u-accent-ink: #fffef5;
   --u-highlight: #6a9a30;
   --u-line: rgba(74,58,16,0.14);
@@ -42,5 +42,12 @@
 
   /* latar */
   --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%234a3a10%27%20stroke-opacity%3D%27.09%27%20stroke-width%3D%271.1%27%3E%3Cpath%20d%3D%27M40%2014c9%2010%209%2022%200%2032-9-10-9-22%200-32z%27%2F%3E%3Cpath%20d%3D%27M14%2040c10%209%2022%209%2032%200-10-9-22-9-32%200z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #8a702022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #8a702016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #8a702012, transparent 66%);
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6a4a1022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6a4a1016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6a4a1012, transparent 66%);
+}
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='20' viewBox='0 0 80 20'%3E%3Cg fill='%23e8c040' fill-opacity='.22'%3E%3Ccircle cx='20' cy='10' r='5'/%3E%3Ccircle cx='40' cy='10' r='5'/%3E%3Ccircle cx='60' cy='10' r='5'/%3E%3Ccircle cx='20' cy='10' r='2' fill='%23604020' fill-opacity='.3'/%3E%3Ccircle cx='40' cy='10' r='2' fill='%23604020' fill-opacity='.3'/%3E%3Ccircle cx='60' cy='10' r='2' fill='%23604020' fill-opacity='.3'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 20px;
 }

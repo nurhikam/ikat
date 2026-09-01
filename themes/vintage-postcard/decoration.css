@@ -1,0 +1,6 @@
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='16' viewBox='0 0 80 16'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='.25' stroke-width='1'%3E%3Cpath d='M0 8 L80 8' stroke-dasharray='6 6'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 16px;
+}
+.u-cover__frame { border-radius: 4px; border-style: dashed; }

@@ -1,0 +1,6 @@
+/* Marrakech — zellige arch */
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='18' viewBox='0 0 80 18'%3E%3Cg fill='none' stroke='%232a7aa8' stroke-opacity='.25' stroke-width='1'%3E%3Cpath d='M0 14 Q20 2 40 14 Q60 2 80 14'/%3E%3Cpath d='M0 18 Q20 6 40 18 Q60 6 80 18' stroke-opacity='.15'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 18px;
+}

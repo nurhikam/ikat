@@ -44,3 +44,12 @@
   --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2050%2020%2030%2040%2050%2060%2030%2080%2050%27%20fill%3D%27none%27%20stroke%3D%27%232a0a0a%27%20stroke-opacity%3D%27.08%27%20stroke-width%3D%271.4%27%2F%3E%3C%2Fsvg%3E");
   --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #c9a84c1c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #c9a84c12, transparent 66%);
 }
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+/* Toraja Ukir — pa'tedong + pa'barre allo */
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='20' viewBox='0 0 80 20'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='.35' stroke-width='1.1'%3E%3Cpath d='M0 10 Q10 2 20 10 Q30 18 40 10 Q50 2 60 10 Q70 18 80 10'/%3E%3Ccircle cx='20' cy='10' r='2' fill='%23c9a84c' fill-opacity='.2' stroke='none'/%3E%3Ccircle cx='60' cy='10' r='2' fill='%23c9a84c' fill-opacity='.2' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 20px;
+}
+.u-cover__frame { border-width: 3px; }

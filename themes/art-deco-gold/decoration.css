@@ -1,0 +1,6 @@
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='20' viewBox='0 0 80 20'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='.35' stroke-width='1.1'%3E%3Cpath d='M0 10 L20 2 L40 10 L60 2 L80 10'/%3E%3Cpath d='M0 14 L20 6 L40 14 L60 6 L80 14' stroke-opacity='.18'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 20px;
+}
+.u-cover__frame { border-radius: 0; border-width: 2px; }

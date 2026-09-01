@@ -1,0 +1,5 @@
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='18' viewBox='0 0 80 18'%3E%3Cg fill='%23c04020' fill-opacity='.18'%3E%3Cpath d='M20 4 L22 9 L27 9 L23 12 L24 17 L20 14 L16 17 L17 12 L13 9 L18 9Z'/%3E%3Cpath d='M40 4 L42 9 L47 9 L43 12 L44 17 L40 14 L36 17 L37 12 L33 9 L38 9Z'/%3E%3Cpath d='M60 4 L62 9 L67 9 L63 12 L64 17 L60 14 L56 17 L57 12 L53 9 L58 9Z'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 18px;
+}

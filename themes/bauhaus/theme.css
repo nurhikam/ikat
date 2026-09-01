@@ -9,8 +9,8 @@
 
 :root {
   /* warna */
-  --u-bg: #f5f0e0;
-  --u-bg-2: #e8ddd0;
+  --u-bg: #f2ece0;
+  --u-bg-2: #ddd8cc;
   --u-surface: #ffffff;
   --u-surface-2: #f5f0e0;
   --u-ink: #1a1a1a;
@@ -44,3 +44,11 @@
   --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2040h80M40%200v80%27%20stroke%3D%27%231a1a1a%27%20stroke-opacity%3D%27.07%27%20stroke-width%3D%271%27%2F%3E%3C%2Fsvg%3E");
   --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #c040301c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #c0403012, transparent 66%);
 }
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='16' viewBox='0 0 80 16'%3E%3Cg fill-opacity='.22'%3E%3Ccircle cx='20' cy='8' r='6' fill='%23c04030'/%3E%3Crect x='34' y='2' width='12' height='12' fill='%232a5aa8'/%3E%3Cpath d='M60 2 L68 14 L52 14Z' fill='%23e8c040'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 16px;
+}
+.u-cover__frame { border-radius: 0; }

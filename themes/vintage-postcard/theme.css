@@ -44,3 +44,11 @@
   --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2738%27%20height%3D%2738%27%20viewBox%3D%270%200%2038%2038%27%3E%3Cg%20fill%3D%27%234a3a20%27%20fill-opacity%3D%27.22%27%3E%3Ccircle%20cx%3D%273%27%20cy%3D%275%27%20r%3D%270.9%27%2F%3E%3Ccircle%20cx%3D%2711%27%20cy%3D%2714%27%20r%3D%270.6%27%2F%3E%3Ccircle%20cx%3D%2719%27%20cy%3D%274%27%20r%3D%270.8%27%2F%3E%3Ccircle%20cx%3D%2727%27%20cy%3D%2717%27%20r%3D%270.7%27%2F%3E%3Ccircle%20cx%3D%277%27%20cy%3D%2724%27%20r%3D%270.75%27%2F%3E%3Ccircle%20cx%3D%2723%27%20cy%3D%2729%27%20r%3D%270.6%27%2F%3E%3Ccircle%20cx%3D%2715%27%20cy%3D%2733%27%20r%3D%270.85%27%2F%3E%3Ccircle%20cx%3D%2731%27%20cy%3D%278%27%20r%3D%270.65%27%2F%3E%3Ccircle%20cx%3D%2735%27%20cy%3D%2726%27%20r%3D%270.7%27%2F%3E%3Ccircle%20cx%3D%271%27%20cy%3D%2734%27%20r%3D%270.6%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #8b451322, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #8b451316, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #8b451312, transparent 66%);
 }
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+:root {
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='16' viewBox='0 0 80 16'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='.25' stroke-width='1'%3E%3Cpath d='M0 8 L80 8' stroke-dasharray='6 6'/%3E%3C/g%3E%3C/svg%3E");
+  --u-orn-bottom: var(--u-orn-top);
+  --u-orn-size: 16px;
+}
+.u-cover__frame { border-radius: 4px; border-style: dashed; }
