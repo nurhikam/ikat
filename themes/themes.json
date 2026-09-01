@@ -4,7 +4,7 @@
     {
       "slug": "forest-lace",
       "name": "Forest Lace",
-      "blurb": "Hijau botani gelap, renda krem, emas antik. Tema pertama Ikat — paling formal dari semuanya.",
+      "blurb": "Hijau botani gelap, renda krem, emas antik. Tema pertama Ikat, dan paling formal dari semuanya.",
       "mood": "unik",
       "pattern": "none",
       "fonts": {
@@ -45,7 +45,7 @@
     {
       "slug": "butter",
       "name": "Butter",
-      "blurb": "Butter yellow dan krim. Warna yang paling disebut buat 2026 — hangat tanpa jadi manis.",
+      "blurb": "Butter yellow dan krim. Warna yang paling disebut buat 2026: hangat tanpa jadi manis.",
       "mood": "pastel",
       "fonts": {
         "display": "Gloock",
@@ -86,7 +86,7 @@
     {
       "slug": "lilac-haze",
       "name": "Lilac Haze",
-      "blurb": "Lilac lembut di atas putih susu. Paling ringan dari semua tema — buat yang nggak mau undangannya teriak.",
+      "blurb": "Lilac lembut di atas putih susu. Paling ringan dari semua tema, buat yang nggak mau undangannya teriak.",
       "mood": "pastel",
       "fonts": {
         "display": "Italiana",
@@ -127,7 +127,7 @@
     {
       "slug": "rosewater",
       "name": "Rosewater",
-      "blurb": "Blush pink dan gading. Klasik romantis, tapi pucat — bukan pink yang bikin silau.",
+      "blurb": "Blush pink dan gading. Klasik romantis, tapi pucat, bukan pink yang bikin silau.",
       "mood": "pastel",
       "fonts": {
         "display": "Sacramento",
@@ -168,7 +168,7 @@
     {
       "slug": "dusty-sage",
       "name": "Dusty Sage",
-      "blurb": "Sage kering dan tulang. Netral yang paling gampang dipakai — cocok buat foto apa pun.",
+      "blurb": "Sage kering dan tulang. Netral yang paling gampang dipakai, cocok buat foto apa pun.",
       "mood": "pastel",
       "fonts": {
         "display": "Marcellus",
@@ -250,7 +250,7 @@
     {
       "slug": "mocha-mousse",
       "name": "Mocha Mousse",
-      "blurb": "Mocha dan karamel. Pantone 2025 yang pindah ke palet nikahan 2026 — hangat, mahal, nggak pastel.",
+      "blurb": "Mocha dan karamel. Pantone 2025 yang pindah ke palet nikahan 2026: hangat, mahal, nggak pastel.",
       "mood": "hangat",
       "fonts": {
         "display": "Bodoni Moda:ital,opsz,wght@0,6..96,400;1,6..96,400",
@@ -373,7 +373,7 @@
     {
       "slug": "riso-zine",
       "name": "Riso Zine",
-      "blurb": "Cetak risograph dua warna, kasar dan berbintik. Paling Gen Z dari semuanya — undangan yang kelihatan kayak poster gig.",
+      "blurb": "Cetak risograph dua warna, kasar dan berbintik. Paling Gen Z dari semuanya: undangan yang kelihatan kayak poster gig.",
       "mood": "unik",
       "fonts": {
         "display": "Bricolage Grotesque:opsz,wght@12..96,600",
@@ -414,7 +414,7 @@
     {
       "slug": "pearl-chrome",
       "name": "Pearl Chrome",
-      "blurb": "Mutiara, krom, dan kilau iridescent. Y2K yang ditahan — futuristik tapi masih pantas buat akad.",
+      "blurb": "Mutiara, krom, dan kilau iridescent. Y2K yang ditahan, futuristik tapi masih pantas buat akad.",
       "mood": "unik",
       "fonts": {
         "display": "Syne:wght@600;700",

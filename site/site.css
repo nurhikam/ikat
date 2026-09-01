@@ -1,0 +1,307 @@
+/*! Ikat — landing page.
+ *
+ * Sengaja terpisah total dari engine undangan. Ini produk yang beda: undangan
+ * itu artefak yang dikirim ke tamu, ini halaman jualan. Nggak ada token yang
+ * dibagi, jadi ganti tema undangan nggak pernah bisa merusak halaman ini.
+ */
+
+:root {
+  color-scheme: light;
+  --paper: #faf9f7;
+  --paper-2: #f1efeb;
+  --card: #ffffff;
+  --ink: #17171a;
+  --ink-2: #55555f;
+  --ink-3: #86868f;
+  --line: #e3e0da;
+  --accent: #ff5c39;
+  --accent-ink: #ffffff;
+  --accent-soft: #fff0ec;
+  --ok: #2f7d5d;
+
+  --wrap: 68rem;
+  --r: 14px;
+  --r-lg: 24px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #0f0f11;
+    --paper-2: #17171a;
+    --card: #1b1b1f;
+    --ink: #f2f1ee;
+    --ink-2: #a9a8b0;
+    --ink-3: #78777f;
+    --line: #2b2b31;
+    --accent: #ff6f4f;
+    --accent-ink: #17171a;
+    --accent-soft: #2a1a16;
+    --ok: #5cc79a;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #0f0f11; --paper-2: #17171a; --card: #1b1b1f;
+  --ink: #f2f1ee; --ink-2: #a9a8b0; --ink-3: #78777f; --line: #2b2b31;
+  --accent: #ff6f4f; --accent-ink: #17171a; --accent-soft: #2a1a16; --ok: #5cc79a;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* height:auto wajib berpasangan dengan lebar dari CSS. Tanpa itu, atribut
+   height="..." di HTML dipakai apa adanya dan gambarnya kerenggang: lebar ikut
+   CSS, tinggi tetap ukuran asli. */
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+
+.wrap { width: min(100% - 2.5rem, var(--wrap)); margin-inline: auto; }
+
+/* ------------------------------------------------------------------- nav */
+
+.nav {
+  position: sticky; top: 0; z-index: 20;
+  height: 68px;
+  display: flex; align-items: center;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.nav__in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.nav__logo {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-weight: 700; font-size: 1.35rem; letter-spacing: -0.02em;
+  text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;
+}
+.nav__mark {
+  width: 22px; height: 22px; flex: none;
+  border: 2px solid var(--accent); border-radius: 4px;
+  transform: rotate(45deg);
+}
+.nav__links { display: none; gap: 1.75rem; font-size: 0.9rem; }
+.nav__links a { text-decoration: none; color: var(--ink-2); }
+.nav__links a:hover { color: var(--ink); }
+@media (min-width: 56rem) { .nav__links { display: flex; } }
+
+/* ---------------------------------------------------------------- button */
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  min-height: 46px; padding: 0 1.4rem;
+  border-radius: 999px; border: 1px solid transparent;
+  font-size: 0.925rem; font-weight: 500; white-space: nowrap;
+  text-decoration: none; cursor: pointer;
+  transition: transform 180ms var(--ease), background-color 180ms, border-color 180ms;
+}
+.btn:active { transform: translateY(1px); }
+.btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.btn--primary { background: var(--accent); color: var(--accent-ink); }
+.btn--primary:hover { background: color-mix(in srgb, var(--accent) 86%, #000); }
+.btn--ghost { border-color: var(--line); color: var(--ink); background: var(--card); }
+.btn--ghost:hover { border-color: var(--ink-3); }
+
+/* ----------------------------------------------------------------- hero */
+
+.hero {
+  padding: clamp(3rem, 9vw, 6rem) 0 clamp(2.5rem, 6vw, 4rem);
+  /* Kartu tumpukan itu diputar dan diposisikan absolut, jadi sudutnya nyembul
+     lewat tepi layar di HP dan bagian bawahnya tembus ke section berikutnya.
+     `clip` (bukan `hidden`) motong tanpa bikin konteks scroll baru, jadi nav
+     sticky di atas tetap jalan. */
+  overflow: clip;
+}
+.hero__in { display: grid; gap: clamp(2rem, 5vw, 3.5rem); align-items: center; }
+@media (min-width: 62rem) { .hero__in { grid-template-columns: 1.05fr 0.95fr; } }
+
+.hero__eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--accent); font-weight: 600;
+}
+.hero h1 {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-size: clamp(2.4rem, 6.4vw, 4rem);
+  line-height: 1.02; letter-spacing: -0.035em; font-weight: 700;
+  margin: 0 0 1.15rem; text-wrap: balance;
+}
+.hero h1 em { font-style: italic; color: var(--accent); }
+.hero__sub { margin: 0 0 2rem; font-size: 1.06rem; color: var(--ink-2); max-width: 34ch; }
+.hero__cta { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* Tumpukan kartu tema yang miring — kesan "koleksi", bukan satu contoh. */
+.stack { position: relative; aspect-ratio: 4 / 3.6; }
+.stack img {
+  position: absolute; width: 46%; border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.16);
+}
+.stack img:nth-child(1) { left: 2%;  top: 8%;  transform: rotate(-7deg); z-index: 1; }
+.stack img:nth-child(2) { left: 27%; top: 0;   transform: rotate(1deg);  z-index: 3; }
+.stack img:nth-child(3) { left: 52%; top: 10%; transform: rotate(8deg);  z-index: 2; }
+
+/* Di layar sempit tumpukannya dirapatkan supaya nggak mepet tepi. */
+@media (max-width: 46rem) {
+  .stack { aspect-ratio: 4 / 3.6; }
+  .stack img { width: 40%; }
+  .stack img:nth-child(1) { left: 5%; }
+  .stack img:nth-child(2) { left: 30%; }
+  .stack img:nth-child(3) { left: 55%; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .stack img { transition: transform 500ms var(--ease); }
+  .stack:hover img:nth-child(1) { transform: rotate(-11deg) translateY(-6px); }
+  .stack:hover img:nth-child(3) { transform: rotate(12deg) translateY(-6px); }
+}
+
+/* --------------------------------------------------------------- section */
+
+.sec { padding: clamp(3rem, 8vw, 5.5rem) 0; }
+.sec--alt { background: var(--paper-2); }
+.sec__head { max-width: 42ch; margin-bottom: clamp(2rem, 4vw, 3rem); }
+.sec h2 {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.1; letter-spacing: -0.028em; font-weight: 600;
+  margin: 0 0 0.75rem; text-wrap: balance;
+}
+.sec__head p { margin: 0; color: var(--ink-2); }
+
+/* --------------------------------------------------------------- galeri */
+
+.themes { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(0.75rem, 2vw, 1.5rem); }
+@media (min-width: 40rem) { .themes { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 62rem) { .themes { grid-template-columns: repeat(4, 1fr); } }
+
+.theme { display: block; text-decoration: none; }
+.theme__shot {
+  border-radius: var(--r); overflow: hidden; border: 1px solid var(--line);
+  background: var(--card); aspect-ratio: 390 / 664;
+}
+.theme__shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.theme__name { margin: 0.7rem 0 0.1rem; font-weight: 600; font-size: 0.95rem; }
+.theme__blurb { margin: 0; font-size: 0.8rem; color: var(--ink-3); line-height: 1.5; }
+.theme__tag {
+  display: inline-block; margin-top: 0.4rem;
+  font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink-3); border: 1px solid var(--line); border-radius: 999px;
+  padding: 0.15em 0.6em;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .theme__shot { transition: transform 320ms var(--ease), box-shadow 320ms var(--ease); }
+  .theme:hover .theme__shot { transform: translateY(-5px); box-shadow: 0 18px 34px rgba(0,0,0,0.14); }
+}
+
+/* --------------------------------------------------------------- alasan */
+
+.why { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; }
+@media (min-width: 46rem) { .why { grid-template-columns: 1fr 1fr; } }
+.why__item { background: var(--paper); padding: clamp(1.5rem, 3.5vw, 2.25rem); }
+.why__item:first-child { grid-column: 1 / -1; }
+.why__n {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-size: 2.2rem; font-weight: 700; color: var(--accent); line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.why__item h3 { margin: 0.6rem 0 0.4rem; font-size: 1.1rem; font-weight: 600; }
+.why__item p { margin: 0; color: var(--ink-2); font-size: 0.94rem; max-width: 52ch; }
+
+/* --------------------------------------------------------------- pricing */
+
+.plans { display: grid; gap: 1rem; }
+@media (min-width: 52rem) { .plans { grid-template-columns: repeat(3, 1fr); } }
+
+.plan {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--r-lg);
+  padding: clamp(1.5rem, 3vw, 2rem); display: flex; flex-direction: column;
+}
+.plan--hero { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.plan__badge {
+  align-self: flex-start; margin-bottom: 0.75rem;
+  font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600;
+  background: var(--accent); color: var(--accent-ink);
+  border-radius: 999px; padding: 0.25em 0.7em;
+}
+.plan__name { margin: 0 0 0.15rem; font-size: 1.05rem; font-weight: 600; }
+.plan__for { margin: 0 0 1rem; font-size: 0.82rem; color: var(--ink-3); }
+.plan__price {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-size: 2rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.plan__unit { font-size: 0.82rem; color: var(--ink-3); font-weight: 400; }
+.plan__list { list-style: none; margin: 1.4rem 0 1.75rem; padding: 0; display: grid; gap: 0.6rem; }
+.plan__list li { position: relative; padding-left: 1.5rem; font-size: 0.9rem; color: var(--ink-2); }
+.plan__list li::before {
+  content: ""; position: absolute; left: 0; top: 0.55em;
+  width: 8px; height: 8px; border-radius: 2px;
+  background: var(--accent);
+}
+.plan .btn { margin-top: auto; width: 100%; }
+
+/* Kartu vendor: lebar penuh, karena ini jalur yang beneran ngasilin */
+.vendor {
+  margin-top: 1rem;
+  background: var(--ink); color: var(--paper);
+  border-radius: var(--r-lg); padding: clamp(1.75rem, 4vw, 2.75rem);
+  display: grid; gap: 1.75rem;
+}
+@media (min-width: 52rem) { .vendor { grid-template-columns: 1.15fr 0.85fr; align-items: center; } }
+.vendor h3 { margin: 0 0 0.5rem; font-size: 1.4rem; font-weight: 600; font-family: "Bricolage Grotesque", system-ui, sans-serif; }
+.vendor p { margin: 0 0 1.25rem; color: color-mix(in srgb, var(--paper) 76%, transparent); font-size: 0.95rem; max-width: 48ch; }
+.vendor .btn--primary { background: var(--accent); color: var(--accent-ink); }
+
+.math {
+  background: color-mix(in srgb, var(--paper) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--paper) 18%, transparent);
+  border-radius: var(--r); padding: 1.25rem;
+  font-size: 0.88rem;
+}
+.math__row { display: flex; justify-content: space-between; gap: 1rem; padding: 0.35rem 0; }
+.math__row + .math__row { border-top: 1px solid color-mix(in srgb, var(--paper) 14%, transparent); }
+.math__row span:last-child { font-variant-numeric: tabular-nums; }
+.math__row--total { font-weight: 600; color: var(--ok); }
+.math__note { margin: 0.85rem 0 0; font-size: 0.74rem; color: color-mix(in srgb, var(--paper) 58%, transparent); }
+
+/* ------------------------------------------------------------------- faq */
+
+.faq { display: grid; gap: 0.5rem; max-width: 46rem; }
+.faq details {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--r);
+  padding: 0 1.25rem;
+}
+.faq summary {
+  cursor: pointer; list-style: none; padding: 1.05rem 0;
+  font-weight: 500; display: flex; justify-content: space-between; gap: 1rem;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--accent); font-size: 1.2rem; line-height: 1; }
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p { margin: 0 0 1.15rem; color: var(--ink-2); font-size: 0.93rem; max-width: 60ch; }
+
+/* ---------------------------------------------------------------- footer */
+
+.foot { border-top: 1px solid var(--line); padding: 2.5rem 0 3.5rem; font-size: 0.86rem; color: var(--ink-3); }
+.foot__in { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; }
+.foot a { color: var(--ink-2); }
+
+/* ---------------------------------------------------------------- reveal */
+
+@media (prefers-reduced-motion: no-preference) {
+  .rise { opacity: 0; transform: translateY(16px); transition: opacity 600ms var(--ease), transform 600ms var(--ease); }
+  .rise.in { opacity: 1; transform: none; }
+}

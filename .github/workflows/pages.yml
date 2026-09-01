@@ -40,7 +40,12 @@ jobs:
       - name: Stage the site
         run: |
           mkdir -p _site
-          cp -r index.html engine themes data assets _site/ 2>/dev/null || true
+          # Landing page jadi akar situs; demo undangan dan harness preview
+          # ikut supaya tiap kartu tema di galeri membuka undangan sungguhan.
+          cp site/index.html site/site.css _site/
+          cp -r site/thumbs _site/
+          cp demo.html preview.html _site/
+          cp -r engine themes data assets _site/
           touch _site/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3
