@@ -36,7 +36,7 @@
   /* Sized against viewport HEIGHT as well as width. A phone with the address
      bar showing gives about 550px, and the cover has to fit its whole stack —
      names, portrait, guest, and the open button — inside that. */
-  --u-size-display: clamp(2.2rem, min(14vw, 8svh), 5.5rem);
+  --u-size-display: clamp(2.2rem, min(14vw, calc(var(--u-vh, 100svh) * 0.08)), 5.5rem);
   --u-size-h2: clamp(1.5rem, 6vw, 2.1rem);
   --u-size-h3: clamp(1.15rem, 4.5vw, 1.4rem);
   --u-size-body: 0.975rem;
@@ -95,20 +95,25 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Scroll is locked behind the cover until the guest opens the invitation —
-   the single most load-bearing interaction in this format.
-   The cover is sized to fit without scrolling (see .u-cover). These rules are
-   the safety net: while locked, everything after the cover is out of the
-   layout and the cover itself scrolls, so the open button is reachable even if
-   a long name or a very short screen pushes the stack past the fold. Without
-   this the invitation simply cannot be opened, which is the worst failure this
-   format has. */
-html.is-locked, html.is-locked body { overflow: hidden; height: 100%; }
-html.is-locked #app { max-height: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+/* The guest is held on the cover until they press the open button.
+ *
+ * The gate is achieved by taking every later section OUT OF THE LAYOUT, not by
+ * freezing scroll. That distinction matters: `overflow:hidden` on html plus a
+ * viewport-height cover means that the moment the reported viewport disagrees
+ * with what is actually visible — inside an iframe, or on a mobile browser
+ * mid-chrome-transition — the open button sits below an unscrollable fold and
+ * the invitation cannot be opened at all. With the later sections gone there
+ * is nothing to scroll to anyway, so the lock buys nothing and costs that.
+ *
+ * The cover keeps a ceiling so the portrait yields rather than pushing the
+ * button down, and scrolls inside itself if the stack still will not fit. */
 html.is-locked .u-sec:not(.u-cover) { display: none; }
-/* A hard ceiling while locked is what forces the portrait to yield instead of
-   pushing the button past the fold. Lifted on open so the cover can breathe. */
-html.is-locked .u-cover { max-height: 100svh; }
+html.is-locked .u-music { display: none; }
+html.is-locked .u-cover {
+  max-height: var(--u-vh, 100svh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
 
 img { max-width: 100%; display: block; }
 button, input, textarea { font: inherit; color: inherit; }
@@ -265,17 +270,17 @@ button, input, textarea { font: inherit; color: inherit; }
 
 /* ----------------------------------------------------------------- cover */
 
-/* svh, not dvh: size for the *smallest* viewport state (address bar showing)
-   so nothing is ever cut off, rather than for the state you only get after
-   scrolling — which the guest cannot do here. */
+/* --u-vh is measured by the engine; 100svh is the fallback before it lands and
+   for anyone with JavaScript off. svh (smallest viewport) rather than dvh so
+   the cover is sized for the address-bar-visible state and never overflows it. */
 .u-cover {
-  min-height: 100svh;
+  min-height: var(--u-vh, 100svh);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-block: clamp(1rem, 4svh, 3.5rem);
+  padding-block: clamp(1rem, calc(var(--u-vh, 100svh) * 0.04), 3.5rem);
   /* Never clip the entry point. */
   overflow: visible;
 }
@@ -286,7 +291,7 @@ button, input, textarea { font: inherit; color: inherit; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: clamp(0.5rem, 1.6svh, var(--u-stack));
+  gap: clamp(0.5rem, calc(var(--u-vh, 100svh) * 0.016), var(--u-stack));
   width: 100%;
   flex: 1 1 auto;
   min-height: 0;
@@ -330,7 +335,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .u-cover__frame {
   flex: 0 1 auto;
   min-height: 0;
-  height: min(34svh, 20rem, calc(60vw * 4 / 3));
+  height: min(calc(var(--u-vh, 100svh) * 0.34), 20rem, calc(60vw * 4 / 3));
   width: auto;
   aspect-ratio: 3 / 4;
   overflow: hidden;

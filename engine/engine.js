@@ -485,6 +485,49 @@
     document.documentElement.classList.add('has-guest');
   }
 
+  /* Publishes the real visible height as --u-vh.
+   *
+   * svh is the right idea but it is not always the truth: inside an iframe it
+   * resolves to the frame's box, not to what the reader can see, and mobile
+   * browsers have a long history of disagreeing about it. Measuring is the only
+   * thing that holds everywhere, so the cover trusts this over the unit. */
+  /* Widest a cover should ever be allowed to grow when the page cannot trust
+   * its own measurements. Taller than this is never a design decision. */
+  var FRAMED_MAX_VH = 860;
+
+  function trackViewport() {
+    var root = document.documentElement;
+
+    // Cross-origin access throws; being unable to see the parent means there
+    // is one, so either outcome answers the question.
+    var framed;
+    try { framed = window.parent !== window; } catch (e) { framed = true; }
+
+    function set() {
+      var vv = window.visualViewport;
+      var h = Math.min(
+        vv ? vv.height : Infinity,
+        window.innerHeight || Infinity,
+        root.clientHeight || Infinity,
+        (window.screen && window.screen.height) || Infinity
+      );
+
+      // Inside a frame every one of those reports the FRAME's box, and an
+      // embedding host is free to size that to the whole document. Measured
+      // 2200px once, which produced a 2200px cover with the open button 1400px
+      // down it. We cannot see the visible area from in here, so rather than
+      // trust a number we know may be fiction, we refuse to grow past a height
+      // that is defensible on any screen.
+      if (framed) h = Math.min(h, FRAMED_MAX_VH);
+
+      if (isFinite(h) && h > 0) root.style.setProperty('--u-vh', Math.round(h) + 'px');
+    }
+    set();
+    window.addEventListener('resize', set);
+    window.addEventListener('orientationchange', set);
+    if (window.visualViewport) window.visualViewport.addEventListener('resize', set);
+  }
+
   function initCover(cfg) {
     var btn = qs('#u-open');
     var root = document.documentElement;
@@ -764,6 +807,7 @@
     normalise(cfg);
     applyMeta(cfg);
     render(cfg, mount);
+    trackViewport();
     initGuest(cfg);
     initCover(cfg);
     initMusic(cfg);
