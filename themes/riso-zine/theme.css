@@ -1,0 +1,46 @@
+/*! Ikat theme: Riso Zine — Cetak risograph dua warna, kasar dan berbintik. Paling Gen Z dari semuanya — undangan yang kelihatan kayak poster gig.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/riso-zine/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600&family=Bricolage+Grotesque:opsz,wght@12..96,500&family=Space+Mono:wght@400;700&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #f0e9dd;
+  --u-bg-2: #e2d9c9;
+  --u-surface: #fffdf7;
+  --u-surface-2: #efe6d6;
+  --u-ink: #1f1f2e;
+  --u-ink-soft: #54546b;
+  --u-ink-invert: #1f1f2e;
+  --u-accent: #ff5c39;
+  --u-accent-ink: #fffdf7;
+  --u-highlight: #2f4dd0;
+  --u-line: rgba(31,31,46,0.2);
+  --u-line-invert: rgba(31,31,46,0.24);
+
+  /* tipografi */
+  --u-font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --u-font-heading: "Bricolage Grotesque", system-ui, sans-serif;
+  --u-font-body: "Space Mono", ui-monospace, monospace;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.14em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 3px solid #1f1f2e;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: -4deg;
+  --u-shadow: 8px 8px 0 #1f1f2e;
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2738%27%20height%3D%2738%27%20viewBox%3D%270%200%2038%2038%27%3E%3Cg%20fill%3D%27%231f1f2e%27%20fill-opacity%3D%27.22%27%3E%3Ccircle%20cx%3D%273%27%20cy%3D%275%27%20r%3D%270.9%27%2F%3E%3Ccircle%20cx%3D%2711%27%20cy%3D%2714%27%20r%3D%270.6%27%2F%3E%3Ccircle%20cx%3D%2719%27%20cy%3D%274%27%20r%3D%270.8%27%2F%3E%3Ccircle%20cx%3D%2727%27%20cy%3D%2717%27%20r%3D%270.7%27%2F%3E%3Ccircle%20cx%3D%277%27%20cy%3D%2724%27%20r%3D%270.75%27%2F%3E%3Ccircle%20cx%3D%2723%27%20cy%3D%2729%27%20r%3D%270.6%27%2F%3E%3Ccircle%20cx%3D%2715%27%20cy%3D%2733%27%20r%3D%270.85%27%2F%3E%3Ccircle%20cx%3D%2731%27%20cy%3D%278%27%20r%3D%270.65%27%2F%3E%3Ccircle%20cx%3D%2735%27%20cy%3D%2726%27%20r%3D%270.7%27%2F%3E%3Ccircle%20cx%3D%271%27%20cy%3D%2734%27%20r%3D%270.6%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #ff5c391c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #ff5c3912, transparent 66%);
+}

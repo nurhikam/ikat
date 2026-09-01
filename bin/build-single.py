@@ -127,7 +127,7 @@ def build(data_path: str, fragment: bool = False, title: str | None = None,
 {engine_js}
 </script>
 <script>
-Undangan.init({{ data: {data_json} }});
+Ikat.init({{ data: {data_json} }});
 </script>"""
 
     if fragment:

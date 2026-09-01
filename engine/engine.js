@@ -1,5 +1,5 @@
 /*!
- * undangan-engine v1
+ * ikat-engine v1
  * A data-driven renderer for single-page digital wedding invitations.
  *
  * Contract: this file NEVER contains theme decisions (colour, font, ornament).
@@ -505,11 +505,15 @@
 
     function set() {
       var vv = window.visualViewport;
+      // screen.height sengaja TIDAK dipakai. Dulu dia dipasang sebagai penjaga
+      // iframe, tapi dia bisa lebih KECIL dari viewport (emulasi perangkat,
+      // zoom, layar kedua) — hasilnya cover kependekan dan ada pita background
+      // di bawah. Kasus iframe sudah ditangani `framed` di bawah, yang memang
+      // sinyalnya akurat.
       var h = Math.min(
         vv ? vv.height : Infinity,
         window.innerHeight || Infinity,
-        root.clientHeight || Infinity,
-        (window.screen && window.screen.height) || Infinity
+        root.clientHeight || Infinity
       );
 
       // Inside a frame every one of those reports the FRAME's box, and an
@@ -786,7 +790,7 @@
     var html = (cfg.sections || []).map(function (s) {
       var fn = Sections[s.type];
       if (!fn) {
-        console.warn('[undangan] unknown section type "' + s.type + '". Known:', known.join(', '));
+        console.warn('[ikat] unknown section type "' + s.type + '". Known:', known.join(', '));
         return '';
       }
       return fn(s, cfg);
@@ -819,7 +823,7 @@
     document.documentElement.classList.add('is-ready');
   }
 
-  var Undangan = {
+  var Ikat = {
     sections: Sections,
     adapters: Adapters,
 
@@ -830,7 +834,7 @@
     init: function (opts) {
       opts = opts || {};
       var mount = typeof opts.mount === 'string' ? qs(opts.mount) : (opts.mount || qs('#app'));
-      if (!mount) throw new Error('[undangan] mount element not found');
+      if (!mount) throw new Error('[ikat] mount element not found');
 
       var get = opts.data
         ? Promise.resolve(opts.data)
@@ -845,7 +849,7 @@
           return cfg;
         });
       }).catch(function (err) {
-        console.error('[undangan]', err);
+        console.error('[ikat]', err);
         mount.innerHTML = '<div class="u-error"><p>Undangan gagal dimuat.</p><code>' +
                           esc(err.message) + '</code></div>';
         throw err;
@@ -853,5 +857,5 @@
     }
   };
 
-  window.Undangan = Undangan;
+  window.Ikat = Ikat;
 })();

@@ -71,7 +71,7 @@ rina-doni.html
 Deploy:
 
 ```bash
-npx wrangler pages deploy . --project-name undangan
+npx wrangler pages deploy . --project-name ikat
 ```
 
 Klien baru = dua file + satu deploy. Tidak ada infrastruktur baru per klien.

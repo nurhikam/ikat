@@ -1,0 +1,46 @@
+/*! Ikat theme: Pearl Chrome — Mutiara, krom, dan kilau iridescent. Y2K yang ditahan — futuristik tapi masih pantas buat akad.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/pearl-chrome/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Syne:wght@500&family=Space+Grotesk:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #dfe3ea;
+  --u-bg-2: #c8cfda;
+  --u-surface: #fbfcfd;
+  --u-surface-2: #e9edf3;
+  --u-ink: #232833;
+  --u-ink-soft: #5a6273;
+  --u-ink-invert: #232833;
+  --u-accent: #8f9bb3;
+  --u-accent-ink: #fbfcfd;
+  --u-highlight: #b98cc8;
+  --u-line: rgba(35,40,51,0.14);
+  --u-line-invert: rgba(35,40,51,0.18);
+
+  /* tipografi */
+  --u-font-display: "Syne", system-ui, sans-serif;
+  --u-font-heading: "Syne", system-ui, sans-serif;
+  --u-font-body: "Space Grotesk", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.28em;
+
+  /* bentuk */
+  --u-radius: 999px;
+  --u-radius-lg: 28px;
+  --u-frame-radius: 999px;
+  --u-frame-border: 6px solid #fbfcfd;
+  --u-avatar-radius: 999px;
+  --u-photo-radius: 20px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 20px 44px rgba(35,40,51,0.16);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27%23232833%27%20fill-opacity%3D%27.12%27%3E%3Cpath%20d%3D%27M20%2012l2%206%206%202-6%202-2%206-2-6-6-2%206-2z%27%2F%3E%3Cpath%20d%3D%27M58%2050l1.5%204.5L64%2056l-4.5%201.5L58%2062l-1.5-4.5L52%2056l4.5-1.5z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #8f9bb31c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #8f9bb312, transparent 66%);
+}

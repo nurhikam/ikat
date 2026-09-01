@@ -1,0 +1,46 @@
+/*! Ikat theme: Noir Editorial — Hitam pekat dan gading, tipografi yang jadi bintangnya. Buat pasangan yang nggak mau bunga sama sekali.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/noir-editorial/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Playfair+Display:ital,wght@1,400&family=Space+Grotesk:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #131313;
+  --u-bg-2: #080808;
+  --u-surface: #f2efe9;
+  --u-surface-2: #ded9cf;
+  --u-ink: #131313;
+  --u-ink-soft: #5c574e;
+  --u-ink-invert: #f2efe9;
+  --u-accent: #c8b78a;
+  --u-accent-ink: #131313;
+  --u-highlight: #b8452f;
+  --u-line: rgba(19,19,19,0.16);
+  --u-line-invert: rgba(242,239,233,0.22);
+
+  /* tipografi */
+  --u-font-display: "Playfair Display", Georgia, serif;
+  --u-font-heading: "Playfair Display", Georgia, serif;
+  --u-font-body: "Space Grotesk", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.4em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 1px solid #c8b78a;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 24px 50px rgba(0,0,0,0.55);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #c8b78a1c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #c8b78a12, transparent 66%);
+}

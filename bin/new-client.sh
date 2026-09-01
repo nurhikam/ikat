@@ -60,7 +60,7 @@ cat > "$PAGE" <<HTML
 
 <script src="engine/engine.js"></script>
 <script>
-  Undangan.init({ src: 'data/$SLUG.json' });
+  Ikat.init({ src: 'data/$SLUG.json' });
 </script>
 
 </body>

@@ -124,13 +124,13 @@ Kalau satu klien butuh sesuatu yang tidak ada di katalog — denah kursi, live
 streaming, protokol kesehatan — daftarkan sebelum `init()`:
 
 ```js
-Undangan.register('livestream', function (s, cfg) {
+Ikat.register('livestream', function (s, cfg) {
   return '<section class="u-sec u-live" data-sec="livestream">' +
            '<h2 class="u-h2">' + s.heading + '</h2>' +
            '<a class="u-btn u-btn--primary" href="' + s.url + '">Tonton</a>' +
          '</section>';
 });
-Undangan.init({ src: 'data/klien.json' });
+Ikat.init({ src: 'data/klien.json' });
 ```
 
 Pakai kelas `u-*` yang sudah ada supaya section custom ikut tertema otomatis
@@ -169,7 +169,7 @@ ditolak. Anon key ada di sisi klien, jadi tabel harus aman meski key terbaca.
 Adapter baru cukup mengekspos dua method:
 
 ```js
-Undangan.adapters.myBackend = function (cfg) {
+Ikat.adapters.myBackend = function (cfg) {
   return {
     list: function () { return Promise.resolve([]); },   // → array entri
     submit: function (entry) { return Promise.resolve(entry); }

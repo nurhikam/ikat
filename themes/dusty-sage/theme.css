@@ -1,0 +1,46 @@
+/*! Ikat theme: Dusty Sage — Sage kering dan tulang. Netral yang paling gampang dipakai — cocok buat foto apa pun.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/dusty-sage/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #cfd6c4;
+  --u-bg-2: #bcc4ae;
+  --u-surface: #fbfaf4;
+  --u-surface-2: #eeeee0;
+  --u-ink: #2f352a;
+  --u-ink-soft: #59604f;
+  --u-ink-invert: #2f352a;
+  --u-accent: #6e7a5c;
+  --u-accent-ink: #fbfaf4;
+  --u-highlight: #b06a48;
+  --u-line: rgba(47,53,42,0.14);
+  --u-line-invert: rgba(47,53,42,0.18);
+
+  /* tipografi */
+  --u-font-display: "Marcellus", Georgia, serif;
+  --u-font-heading: "Marcellus", Georgia, serif;
+  --u-font-body: "Outfit", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.32em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 999px 999px 0 0;
+  --u-frame-border: 1px solid #6e7a5c;
+  --u-avatar-radius: 999px 999px 0 0;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 14px 32px rgba(47,53,42,0.14);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2040h80M40%200v80%27%20stroke%3D%27%232f352a%27%20stroke-opacity%3D%27.07%27%20stroke-width%3D%271%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6e7a5c22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6e7a5c16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6e7a5c12, transparent 66%);
+}

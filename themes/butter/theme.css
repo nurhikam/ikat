@@ -1,0 +1,46 @@
+/*! Ikat theme: Butter — Butter yellow dan krim. Warna yang paling disebut buat 2026 — hangat tanpa jadi manis.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/butter/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Newsreader:ital,wght@0,300;1,300&family=Plus+Jakarta+Sans:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #f3e0a8;
+  --u-bg-2: #e6cf90;
+  --u-surface: #fffaf0;
+  --u-surface-2: #f7ecd2;
+  --u-ink: #3d3218;
+  --u-ink-soft: #6d5c2e;
+  --u-ink-invert: #3d3218;
+  --u-accent: #a8792a;
+  --u-accent-ink: #fffaf0;
+  --u-highlight: #d96f4a;
+  --u-line: rgba(61,50,24,0.16);
+  --u-line-invert: rgba(61,50,24,0.20);
+
+  /* tipografi */
+  --u-font-display: "Gloock", Georgia, serif;
+  --u-font-heading: "Newsreader", Georgia, serif;
+  --u-font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.22em;
+
+  /* bentuk */
+  --u-radius: 3px;
+  --u-radius-lg: 20px;
+  --u-frame-radius: 999px 999px 12px 12px;
+  --u-frame-border: 6px solid #fffaf0;
+  --u-avatar-radius: 999px 999px 14px 14px;
+  --u-photo-radius: 14px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1.5deg;
+  --u-shadow: 0 16px 38px rgba(61,50,24,0.16);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%233d3218%27%20stroke-opacity%3D%27.09%27%20stroke-width%3D%271.1%27%3E%3Cpath%20d%3D%27M40%2014c9%2010%209%2022%200%2032-9-10-9-22%200-32z%27%2F%3E%3Cpath%20d%3D%27M14%2040c10%209%2022%209%2032%200-10-9-22-9-32%200z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #a8792a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #a8792a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #a8792a12, transparent 66%);
+}

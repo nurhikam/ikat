@@ -3,17 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Undangan Pernikahan</title>
-<meta name="theme-color" content="#16301f">
+<title>Ikat — Preview Tema</title>
 <meta name="robots" content="noindex">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link rel="stylesheet" href="engine/engine.css">
-<!-- Theme is linked here (not injected by JS) so there is no flash of
-     unstyled invitation. data-theme tells the engine it is already loaded. -->
-<link rel="stylesheet" href="themes/forest-lace/theme.css" data-theme="forest-lace">
 </head>
 <body>
 
@@ -21,7 +16,11 @@
 
 <script src="engine/engine.js"></script>
 <script>
-  Ikat.init({ src: 'data/demo.json' });
+  // Harness preview: temanya dari ?theme=<slug>, jadi satu file bisa nampilin
+  // semua tema tanpa bikin 11 halaman kembar. Undangan klien asli tetap nge-link
+  // temanya langsung di <head> biar nggak ada kedipan sebelum CSS turun.
+  var slug = new URLSearchParams(location.search).get('theme') || 'forest-lace';
+  Ikat.init({ src: 'data/demo.json', theme: slug });
 </script>
 
 </body>

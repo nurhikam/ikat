@@ -1,0 +1,456 @@
+{
+  "$comment": "Spec tema Ikat. Satu entri = satu tema. `bin/make-theme.py` yang render ke themes/<slug>/theme.css. Palet 2026 disandarkan ke forecast warna pernikahan (butter yellow, Cloud Dancer, mocha mousse, lilac haze, rosewater, dusty sage), bukan selera.",
+  "themes": [
+    {
+      "slug": "forest-lace",
+      "name": "Forest Lace",
+      "blurb": "Hijau botani gelap, renda krem, emas antik. Tema pertama Ikat — paling formal dari semuanya.",
+      "mood": "unik",
+      "pattern": "none",
+      "fonts": {
+        "display": "Parisienne",
+        "heading": "Cormorant Garamond:ital,wght@0,300;0,400;1,300",
+        "body": "Jost:wght@300;400;500",
+        "displayStack": "\"Parisienne\", \"Segoe Script\", cursive",
+        "headingStack": "\"Cormorant Garamond\", Georgia, serif",
+        "bodyStack": "\"Jost\", system-ui, sans-serif"
+      },
+      "colors": {
+        "bg": "#16301f",
+        "bg2": "#0d1c13",
+        "surface": "#f7f0e1",
+        "surface2": "#ebdcc2",
+        "ink": "#33301f",
+        "inkSoft": "#6f684f",
+        "inkInvert": "#f4ecdc",
+        "accent": "#c2a05c",
+        "accentInk": "#16301f",
+        "highlight": "#c2405f",
+        "line": "rgba(51,48,31,0.16)",
+        "lineInvert": "rgba(244,236,220,0.2)"
+      },
+      "shape": {
+        "radius": "2px",
+        "radiusLg": "2px",
+        "frameRadius": "50% / 42%",
+        "frameBorder": "0",
+        "avatarRadius": "50%",
+        "photoRadius": "2px",
+        "pillRadius": "999px",
+        "polaroidTilt": "-2.5deg",
+        "shadow": "0 18px 40px rgba(0,0,0,0.35)"
+      },
+      "tracking": "0.28em"
+    },
+    {
+      "slug": "butter",
+      "name": "Butter",
+      "blurb": "Butter yellow dan krim. Warna yang paling disebut buat 2026 — hangat tanpa jadi manis.",
+      "mood": "pastel",
+      "fonts": {
+        "display": "Gloock",
+        "heading": "Newsreader:ital,wght@0,300;1,300",
+        "body": "Plus Jakarta Sans:wght@300;400;500",
+        "displayStack": "\"Gloock\", Georgia, serif",
+        "headingStack": "\"Newsreader\", Georgia, serif",
+        "bodyStack": "\"Plus Jakarta Sans\", system-ui, sans-serif"
+      },
+      "colors": {
+        "bg": "#f3e0a8",
+        "bg2": "#e6cf90",
+        "surface": "#fffaf0",
+        "surface2": "#f7ecd2",
+        "ink": "#3d3218",
+        "inkSoft": "#6d5c2e",
+        "inkInvert": "#3d3218",
+        "accent": "#a8792a",
+        "accentInk": "#fffaf0",
+        "highlight": "#d96f4a",
+        "line": "rgba(61,50,24,0.16)",
+        "lineInvert": "rgba(61,50,24,0.20)"
+      },
+      "shape": {
+        "radius": "3px",
+        "radiusLg": "20px",
+        "frameRadius": "999px 999px 12px 12px",
+        "frameBorder": "6px solid #fffaf0",
+        "avatarRadius": "999px 999px 14px 14px",
+        "photoRadius": "14px",
+        "pillRadius": "999px",
+        "polaroidTilt": "-1.5deg",
+        "shadow": "0 16px 38px rgba(61,50,24,0.16)"
+      },
+      "tracking": "0.22em",
+      "pattern": "petals"
+    },
+    {
+      "slug": "lilac-haze",
+      "name": "Lilac Haze",
+      "blurb": "Lilac lembut di atas putih susu. Paling ringan dari semua tema — buat yang nggak mau undangannya teriak.",
+      "mood": "pastel",
+      "fonts": {
+        "display": "Italiana",
+        "heading": "Cormorant:ital,wght@0,300;1,300",
+        "body": "Manrope:wght@300;400;500",
+        "displayStack": "\"Italiana\", Georgia, serif",
+        "headingStack": "\"Cormorant\", Georgia, serif",
+        "bodyStack": "\"Manrope\", system-ui, sans-serif"
+      },
+      "colors": {
+        "bg": "#ded5ef",
+        "bg2": "#cdc1e5",
+        "surface": "#fdfbff",
+        "surface2": "#f0eaf8",
+        "ink": "#332a44",
+        "inkSoft": "#5f5375",
+        "inkInvert": "#332a44",
+        "accent": "#7c5fa8",
+        "accentInk": "#fdfbff",
+        "highlight": "#c56b96",
+        "line": "rgba(51,42,68,0.14)",
+        "lineInvert": "rgba(51,42,68,0.18)"
+      },
+      "shape": {
+        "radius": "2px",
+        "radiusLg": "2px",
+        "frameRadius": "999px",
+        "frameBorder": "1px solid #7c5fa8",
+        "avatarRadius": "999px",
+        "photoRadius": "999px 999px 4px 4px",
+        "pillRadius": "999px",
+        "polaroidTilt": "0deg",
+        "shadow": "0 20px 44px rgba(51,42,68,0.12)"
+      },
+      "tracking": "0.3em",
+      "pattern": "waves"
+    },
+    {
+      "slug": "rosewater",
+      "name": "Rosewater",
+      "blurb": "Blush pink dan gading. Klasik romantis, tapi pucat — bukan pink yang bikin silau.",
+      "mood": "pastel",
+      "fonts": {
+        "display": "Sacramento",
+        "heading": "Lora:ital,wght@0,400;1,400",
+        "body": "Karla:wght@300;400;500",
+        "displayStack": "\"Sacramento\", cursive",
+        "headingStack": "\"Lora\", Georgia, serif",
+        "bodyStack": "\"Karla\", system-ui, sans-serif"
+      },
+      "colors": {
+        "bg": "#f6dfdc",
+        "bg2": "#eccdc8",
+        "surface": "#fffaf8",
+        "surface2": "#f8e9e5",
+        "ink": "#42292b",
+        "inkSoft": "#75544f",
+        "inkInvert": "#42292b",
+        "accent": "#b0705f",
+        "accentInk": "#fffaf8",
+        "highlight": "#a8496b",
+        "line": "rgba(66,41,43,0.14)",
+        "lineInvert": "rgba(66,41,43,0.18)"
+      },
+      "shape": {
+        "radius": "4px",
+        "radiusLg": "999px 999px 24px 24px",
+        "frameRadius": "50% / 42%",
+        "frameBorder": "4px solid #fffaf8",
+        "avatarRadius": "50%",
+        "photoRadius": "8px",
+        "pillRadius": "999px",
+        "polaroidTilt": "-3deg",
+        "shadow": "0 18px 40px rgba(66,41,43,0.14)"
+      },
+      "tracking": "0.24em",
+      "pattern": "dots"
+    },
+    {
+      "slug": "dusty-sage",
+      "name": "Dusty Sage",
+      "blurb": "Sage kering dan tulang. Netral yang paling gampang dipakai — cocok buat foto apa pun.",
+      "mood": "pastel",
+      "fonts": {
+        "display": "Marcellus",
+        "heading": "Marcellus",
+        "body": "Outfit:wght@300;400;500",
+        "displayStack": "\"Marcellus\", Georgia, serif",
+        "headingStack": "\"Marcellus\", Georgia, serif",
+        "bodyStack": "\"Outfit\", system-ui, sans-serif"
+      },
+      "colors": {
+        "bg": "#cfd6c4",
+        "bg2": "#bcc4ae",
+        "surface": "#fbfaf4",
+        "surface2": "#eeeee0",
+        "ink": "#2f352a",
+        "inkSoft": "#59604f",
+        "inkInvert": "#2f352a",
+        "accent": "#6e7a5c",
+        "accentInk": "#fbfaf4",
+        "highlight": "#b06a48",
+        "line": "rgba(47,53,42,0.14)",
+        "lineInvert": "rgba(47,53,42,0.18)"
+      },
+      "shape": {
+        "radius": "0px",
+        "radiusLg": "0px",
+        "frameRadius": "999px 999px 0 0",
+        "frameBorder": "1px solid #6e7a5c",
+        "avatarRadius": "999px 999px 0 0",
+        "photoRadius": "0px",
+        "pillRadius": "0px",
+        "polaroidTilt": "0deg",
+        "shadow": "0 14px 32px rgba(47,53,42,0.14)"
+      },
+      "tracking": "0.32em",
+      "pattern": "grid"
+    },
+    {
+      "slug": "cloud-dancer",
+      "name": "Cloud Dancer",
+      "blurb": "Dusty blue di atas Cloud Dancer, warna Pantone 2026. Paling adem, paling nggak gender-spesifik.",
+      "mood": "pastel",
+      "fonts": {
+        "display": "Tenor Sans",
+        "heading": "Tenor Sans",
+        "body": "DM Sans:wght@300;400;500",
+        "displayStack": "\"Tenor Sans\", Georgia, serif",
+        "headingStack": "\"Tenor Sans\", Georgia, serif",
+        "bodyStack": "\"DM Sans\", system-ui, sans-serif"
+      },
+      "colors": {
+        "bg": "#c9d8e4",
+        "bg2": "#b3c6d6",
+        "surface": "#f7f8f8",
+        "surface2": "#e6ecf0",
+        "ink": "#26333d",
+        "inkSoft": "#4f6070",
+        "inkInvert": "#26333d",
+        "accent": "#4a6f8c",
+        "accentInk": "#f7f8f8",
+        "highlight": "#c07a5c",
+        "line": "rgba(38,51,61,0.14)",
+        "lineInvert": "rgba(38,51,61,0.18)"
+      },
+      "shape": {
+        "radius": "2px",
+        "radiusLg": "4px",
+        "frameRadius": "4px",
+        "frameBorder": "1px solid #4a6f8c",
+        "avatarRadius": "4px",
+        "photoRadius": "2px",
+        "pillRadius": "4px",
+        "polaroidTilt": "0deg",
+        "shadow": "0 18px 40px rgba(38,51,61,0.12)"
+      },
+      "tracking": "0.34em",
+      "pattern": "arcs"
+    },
+    {
+      "slug": "mocha-mousse",
+      "name": "Mocha Mousse",
+      "blurb": "Mocha dan karamel. Pantone 2025 yang pindah ke palet nikahan 2026 — hangat, mahal, nggak pastel.",
+      "mood": "hangat",
+      "fonts": {
+        "display": "Bodoni Moda:ital,opsz,wght@0,6..96,400;1,6..96,400",
+        "heading": "Bodoni Moda:opsz@6..96",
+        "body": "Figtree:wght@300;400;500",
+        "displayStack": "\"Bodoni Moda\", Georgia, serif",
+        "headingStack": "\"Bodoni Moda\", Georgia, serif",
+        "bodyStack": "\"Figtree\", system-ui, sans-serif"
+      },
+      "colors": {
+        "bg": "#a3866c",
+        "bg2": "#8a7058",
+        "surface": "#f5ece2",
+        "surface2": "#e6d6c5",
+        "ink": "#33251a",
+        "inkSoft": "#6b5442",
+        "inkInvert": "#f5ece2",
+        "accent": "#c9a37a",
+        "accentInk": "#33251a",
+        "highlight": "#8c4a3c",
+        "line": "rgba(51,37,26,0.16)",
+        "lineInvert": "rgba(245,236,226,0.24)"
+      },
+      "shape": {
+        "radius": "2px",
+        "radiusLg": "2px",
+        "frameRadius": "999px 999px 2px 2px",
+        "frameBorder": "2px solid #c9a37a",
+        "avatarRadius": "999px",
+        "photoRadius": "2px",
+        "pillRadius": "999px",
+        "polaroidTilt": "-2deg",
+        "shadow": "0 20px 44px rgba(51,37,26,0.32)"
+      },
+      "tracking": "0.26em",
+      "pattern": "ikat"
+    },
+    {
+      "slug": "noir-editorial",
+      "name": "Noir Editorial",
+      "blurb": "Hitam pekat dan gading, tipografi yang jadi bintangnya. Buat pasangan yang nggak mau bunga sama sekali.",
+      "mood": "unik",
+      "fonts": {
+        "display": "Playfair Display:ital,wght@0,500;1,500",
+        "heading": "Playfair Display:ital,wght@1,400",
+        "body": "Space Grotesk:wght@300;400;500",
+        "displayStack": "\"Playfair Display\", Georgia, serif",
+        "headingStack": "\"Playfair Display\", Georgia, serif",
+        "bodyStack": "\"Space Grotesk\", system-ui, sans-serif"
+      },
+      "colors": {
+        "bg": "#131313",
+        "bg2": "#080808",
+        "surface": "#f2efe9",
+        "surface2": "#ded9cf",
+        "ink": "#131313",
+        "inkSoft": "#5c574e",
+        "inkInvert": "#f2efe9",
+        "accent": "#c8b78a",
+        "accentInk": "#131313",
+        "highlight": "#b8452f",
+        "line": "rgba(19,19,19,0.16)",
+        "lineInvert": "rgba(242,239,233,0.22)"
+      },
+      "shape": {
+        "radius": "0px",
+        "radiusLg": "0px",
+        "frameRadius": "0px",
+        "frameBorder": "1px solid #c8b78a",
+        "avatarRadius": "0px",
+        "photoRadius": "0px",
+        "pillRadius": "0px",
+        "polaroidTilt": "0deg",
+        "shadow": "0 24px 50px rgba(0,0,0,0.55)"
+      },
+      "tracking": "0.4em",
+      "pattern": "none"
+    },
+    {
+      "slug": "terracotta-sun",
+      "name": "Terracotta Sun",
+      "blurb": "Tanah liat, gerabah, matahari sore. Lengkung gapura yang bikin nuansanya Mediterania.",
+      "mood": "hangat",
+      "fonts": {
+        "display": "Yeseva One",
+        "heading": "Cormorant:ital,wght@0,400;1,400",
+        "body": "Sora:wght@300;400;500",
+        "displayStack": "\"Yeseva One\", Georgia, serif",
+        "headingStack": "\"Cormorant\", Georgia, serif",
+        "bodyStack": "\"Sora\", system-ui, sans-serif"
+      },
+      "colors": {
+        "bg": "#c86f4a",
+        "bg2": "#a85736",
+        "surface": "#fbf1e6",
+        "surface2": "#f0dcc7",
+        "ink": "#40200f",
+        "inkSoft": "#7a4a2c",
+        "inkInvert": "#fbf1e6",
+        "accent": "#e8a866",
+        "accentInk": "#40200f",
+        "highlight": "#6b7c4a",
+        "line": "rgba(64,32,15,0.16)",
+        "lineInvert": "rgba(251,241,230,0.26)"
+      },
+      "shape": {
+        "radius": "0px",
+        "radiusLg": "999px 999px 6px 6px",
+        "frameRadius": "999px 999px 0 0",
+        "frameBorder": "8px solid #fbf1e6",
+        "avatarRadius": "999px 999px 0 0",
+        "photoRadius": "999px 999px 0 0",
+        "pillRadius": "999px",
+        "polaroidTilt": "0deg",
+        "shadow": "0 18px 40px rgba(64,32,15,0.28)"
+      },
+      "tracking": "0.24em",
+      "pattern": "chevron"
+    },
+    {
+      "slug": "riso-zine",
+      "name": "Riso Zine",
+      "blurb": "Cetak risograph dua warna, kasar dan berbintik. Paling Gen Z dari semuanya — undangan yang kelihatan kayak poster gig.",
+      "mood": "unik",
+      "fonts": {
+        "display": "Bricolage Grotesque:opsz,wght@12..96,600",
+        "heading": "Bricolage Grotesque:opsz,wght@12..96,500",
+        "body": "Space Mono:wght@400;700",
+        "displayStack": "\"Bricolage Grotesque\", system-ui, sans-serif",
+        "headingStack": "\"Bricolage Grotesque\", system-ui, sans-serif",
+        "bodyStack": "\"Space Mono\", ui-monospace, monospace"
+      },
+      "colors": {
+        "bg": "#f0e9dd",
+        "bg2": "#e2d9c9",
+        "surface": "#fffdf7",
+        "surface2": "#efe6d6",
+        "ink": "#1f1f2e",
+        "inkSoft": "#54546b",
+        "inkInvert": "#1f1f2e",
+        "accent": "#ff5c39",
+        "accentInk": "#fffdf7",
+        "highlight": "#2f4dd0",
+        "line": "rgba(31,31,46,0.2)",
+        "lineInvert": "rgba(31,31,46,0.24)"
+      },
+      "shape": {
+        "radius": "0px",
+        "radiusLg": "0px",
+        "frameRadius": "0px",
+        "frameBorder": "3px solid #1f1f2e",
+        "avatarRadius": "0px",
+        "photoRadius": "0px",
+        "pillRadius": "0px",
+        "polaroidTilt": "-4deg",
+        "shadow": "8px 8px 0 #1f1f2e"
+      },
+      "tracking": "0.14em",
+      "pattern": "grain"
+    },
+    {
+      "slug": "pearl-chrome",
+      "name": "Pearl Chrome",
+      "blurb": "Mutiara, krom, dan kilau iridescent. Y2K yang ditahan — futuristik tapi masih pantas buat akad.",
+      "mood": "unik",
+      "fonts": {
+        "display": "Syne:wght@600;700",
+        "heading": "Syne:wght@500",
+        "body": "Space Grotesk:wght@300;400;500",
+        "displayStack": "\"Syne\", system-ui, sans-serif",
+        "headingStack": "\"Syne\", system-ui, sans-serif",
+        "bodyStack": "\"Space Grotesk\", system-ui, sans-serif"
+      },
+      "colors": {
+        "bg": "#dfe3ea",
+        "bg2": "#c8cfda",
+        "surface": "#fbfcfd",
+        "surface2": "#e9edf3",
+        "ink": "#232833",
+        "inkSoft": "#5a6273",
+        "inkInvert": "#232833",
+        "accent": "#8f9bb3",
+        "accentInk": "#fbfcfd",
+        "highlight": "#b98cc8",
+        "line": "rgba(35,40,51,0.14)",
+        "lineInvert": "rgba(35,40,51,0.18)"
+      },
+      "shape": {
+        "radius": "999px",
+        "radiusLg": "28px",
+        "frameRadius": "999px",
+        "frameBorder": "6px solid #fbfcfd",
+        "avatarRadius": "999px",
+        "photoRadius": "20px",
+        "pillRadius": "999px",
+        "polaroidTilt": "0deg",
+        "shadow": "0 20px 44px rgba(35,40,51,0.16)"
+      },
+      "tracking": "0.28em",
+      "pattern": "stars"
+    }
+  ]
+}

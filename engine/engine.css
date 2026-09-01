@@ -47,9 +47,19 @@
   --u-leading: 1.75;
   --u-tracking-caps: 0.24em;
 
-  /* shape + rhythm */
+  /* shape + rhythm
+     Silhouette is half of what separates one theme from another; colour alone
+     makes ten themes look like one theme in ten moods. These let a theme change
+     the shapes without touching the engine. */
   --u-radius: 4px;
   --u-radius-lg: 14px;
+  --u-frame-radius: 50% / 42%;      /* cover portrait: oval, arch, circle, square */
+  --u-frame-border: 3px solid var(--u-accent);
+  --u-avatar-radius: 50%;           /* couple portraits */
+  --u-photo-radius: var(--u-radius);/* gallery */
+  --u-pill-radius: 999px;           /* active date, badges */
+  --u-polaroid-tilt: -2.5deg;       /* closing photo; 0deg to sit straight */
+  --u-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
   --u-gutter: 1.5rem;
   --u-sec-y: clamp(4rem, 14vw, 7rem);
   --u-stack: 1.15rem;
@@ -121,16 +131,37 @@ button, input, textarea { font: inherit; color: inherit; }
 /* The whole invitation lives in one phone-width column, centred on desktop.
    The ambient layer retiles every viewport height so the light keeps reading
    as you scroll, without a fixed attachment. */
+/* Tekstur dan cahaya ambient sengaja dipisah ke dua kotak.
+ *
+ * Waktu keduanya numpuk di satu `background-image`, `background-size` cuma
+ * bisa dicocokin per posisi — dan `--u-ambient` mengembang jadi 2 atau 3
+ * gradient tergantung tema. Tema dengan 2 gradient bikin tekstur jatuh ke slot
+ * ukuran yang salah: tile 38px direntang setinggi viewport, bintik risograph
+ * berubah jadi lingkaran raksasa. Dipisah, jumlah layer nggak lagi jadi
+ * kopling tersembunyi antara tema dan engine. */
 #app {
   max-width: var(--u-max);
   margin-inline: auto;
   position: relative;
   isolation: isolate;
+  /* Lantai: kalaupun tinggi hasil ukur meleset kependekan, dasarnya tetap
+     nutup layar — nggak ada pita background nyempil di bawah cover. */
+  min-height: 100svh;
   background-color: var(--u-bg);
-  background-image: var(--u-ambient), var(--u-texture);
-  background-repeat: repeat, repeat;
-  background-size: 100% 100vh, auto;
+  background-image: var(--u-texture);
+  background-repeat: repeat;
 }
+#app::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: var(--u-ambient);
+  background-repeat: repeat;
+  background-size: 100% 100vh;
+}
+#app > * { position: relative; z-index: 1; }
 
 /* --------------------------------------------------------------- sections */
 
@@ -339,9 +370,9 @@ button, input, textarea { font: inherit; color: inherit; }
   width: auto;
   aspect-ratio: 3 / 4;
   overflow: hidden;
-  border-radius: 50% / 42%;
-  border: 3px solid var(--u-accent);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  border-radius: var(--u-frame-radius);
+  border: var(--u-frame-border);
+  box-shadow: var(--u-shadow);
 }
 .u-cover__guest { margin-top: 0.5rem; }
 .u-cover__guestlabel {
@@ -446,7 +477,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .u-person__photo {
   width: 9rem;
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: var(--u-avatar-radius);
   overflow: hidden;
   border: 2px solid var(--u-accent);
   margin-bottom: 0.6rem;
@@ -499,7 +530,7 @@ button, input, textarea { font: inherit; color: inherit; }
   align-items: center;
   gap: 0.3rem;
   padding: 0.5rem 0.1rem;
-  border-radius: 999px;
+  border-radius: var(--u-pill-radius);
   font-size: 0.7rem;
 }
 .u-week__dow { opacity: 0.65; text-transform: capitalize; }
@@ -539,7 +570,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .u-gallery__item:first-child { grid-column: span 2; }
 .u-gallery__photo {
   aspect-ratio: 3 / 4;
-  border-radius: var(--u-radius);
+  border-radius: var(--u-photo-radius);
   overflow: hidden;
 }
 .u-gallery__item:first-child .u-gallery__photo { aspect-ratio: 4 / 3; }
@@ -703,8 +734,8 @@ button, input, textarea { font: inherit; color: inherit; }
   overflow: hidden;
   padding: 0.6rem 0.6rem 2.6rem;
   background: var(--u-surface);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.32);
-  transform: rotate(-2.5deg);
+  box-shadow: var(--u-shadow);
+  transform: rotate(var(--u-polaroid-tilt));
 }
 .u-closing__photo { height: 100%; }
 .u-closing__heading {

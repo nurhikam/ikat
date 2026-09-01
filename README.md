@@ -1,6 +1,6 @@
-# undangan
+# Ikat
 
-**Demo: https://nurhikam.github.io/undangan/?to=Nama%20Tamu**
+**Demo: https://nurhikam.github.io/ikat/?to=Nama%20Tamu**
 
 Engine undangan pernikahan digital yang digerakkan data. Satu file JSON per
 klien, satu folder CSS per tema, tanpa build step.
