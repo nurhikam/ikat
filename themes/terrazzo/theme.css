@@ -1,0 +1,46 @@
+/*! Ikat theme: Terrazzo — Lantai terrazzo Italia — bintik warna yang random tapi harmonis.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/terrazzo/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300&family=Fraunces:opsz,wght@9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #e8ddd0;
+  --u-bg-2: #ddd0be;
+  --u-surface: #ffffff;
+  --u-surface-2: #f5f0e8;
+  --u-ink: #3a3830;
+  --u-ink-soft: #6a6860;
+  --u-ink-invert: #3a3830;
+  --u-accent: #c07050;
+  --u-accent-ink: #ffffff;
+  --u-highlight: #6a9a7a;
+  --u-line: rgba(58,56,48,0.14);
+  --u-line-invert: rgba(58,56,48,0.18);
+
+  /* tipografi */
+  --u-font-display: "Fraunces", Georgia, serif;
+  --u-font-heading: "Fraunces", Georgia, serif;
+  --u-font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.24em;
+
+  /* bentuk */
+  --u-radius: 8px;
+  --u-radius-lg: 16px;
+  --u-frame-radius: 16px;
+  --u-frame-border: 2px solid #c07050;
+  --u-avatar-radius: 16px;
+  --u-photo-radius: 8px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 16px 36px rgba(58,56,48,0.12);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2738%27%20height%3D%2738%27%20viewBox%3D%270%200%2038%2038%27%3E%3Cg%20fill%3D%27%233a3830%27%20fill-opacity%3D%27.22%27%3E%3Ccircle%20cx%3D%273%27%20cy%3D%275%27%20r%3D%270.9%27%2F%3E%3Ccircle%20cx%3D%2711%27%20cy%3D%2714%27%20r%3D%270.6%27%2F%3E%3Ccircle%20cx%3D%2719%27%20cy%3D%274%27%20r%3D%270.8%27%2F%3E%3Ccircle%20cx%3D%2727%27%20cy%3D%2717%27%20r%3D%270.7%27%2F%3E%3Ccircle%20cx%3D%277%27%20cy%3D%2724%27%20r%3D%270.75%27%2F%3E%3Ccircle%20cx%3D%2723%27%20cy%3D%2729%27%20r%3D%270.6%27%2F%3E%3Ccircle%20cx%3D%2715%27%20cy%3D%2733%27%20r%3D%270.85%27%2F%3E%3Ccircle%20cx%3D%2731%27%20cy%3D%278%27%20r%3D%270.65%27%2F%3E%3Ccircle%20cx%3D%2735%27%20cy%3D%2726%27%20r%3D%270.7%27%2F%3E%3Ccircle%20cx%3D%271%27%20cy%3D%2734%27%20r%3D%270.6%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #c0705022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #c0705016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #c0705012, transparent 66%);
+}

@@ -1,0 +1,46 @@
+/*! Ikat theme: Midnight Garden — Taman di tengah malam, diterangi bulan. Bunga yang mekar dalam gelap.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/midnight-garden/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300&family=Cormorant:wght@300&family=Manrope:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #1a2a1a;
+  --u-bg-2: #0f1a0f;
+  --u-surface: #f5f0e8;
+  --u-surface-2: #e8ddd0;
+  --u-ink: #1a2a1a;
+  --u-ink-soft: #5a6a5a;
+  --u-ink-invert: #f5f0e8;
+  --u-accent: #8ab88a;
+  --u-accent-ink: #1a2a1a;
+  --u-highlight: #c07080;
+  --u-line: rgba(26,42,26,0.14);
+  --u-line-invert: rgba(245,240,232,0.20);
+
+  /* tipografi */
+  --u-font-display: "Cormorant", Georgia, serif;
+  --u-font-heading: "Cormorant", Georgia, serif;
+  --u-font-body: "Manrope", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.28em;
+
+  /* bentuk */
+  --u-radius: 2px;
+  --u-radius-lg: 8px;
+  --u-frame-radius: 50% / 42%;
+  --u-frame-border: 1px solid #8ab88a;
+  --u-avatar-radius: 50%;
+  --u-photo-radius: 4px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 20px 50px rgba(26,42,26,0.30);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%231a2a1a%27%20stroke-opacity%3D%27.09%27%20stroke-width%3D%271.1%27%3E%3Cpath%20d%3D%27M40%2014c9%2010%209%2022%200%2032-9-10-9-22%200-32z%27%2F%3E%3Cpath%20d%3D%27M14%2040c10%209%2022%209%2032%200-10-9-22-9-32%200z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #8ab88a1c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #8ab88a12, transparent 66%);
+}

@@ -1,0 +1,46 @@
+/*! Ikat theme: Hogwarts Letter — Surat dari Hogwarts — perkamen, lilin segel, dan sihir yang jadi nyata.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/harry-potter/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cinzel:wght@400&family=Crimson+Text:ital,wght@0,400;1,400&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #2a1a0a;
+  --u-bg-2: #1a0f06;
+  --u-surface: #f5e6c8;
+  --u-surface-2: #e8d8b0;
+  --u-ink: #2a1a0a;
+  --u-ink-soft: #6a5a30;
+  --u-ink-invert: #f5e6c8;
+  --u-accent: #8b0000;
+  --u-accent-ink: #f5e6c8;
+  --u-highlight: #c9a84c;
+  --u-line: rgba(42,26,10,0.14);
+  --u-line-invert: rgba(245,230,200,0.20);
+
+  /* tipografi */
+  --u-font-display: "Cinzel", Georgia, serif;
+  --u-font-heading: "Cinzel", Georgia, serif;
+  --u-font-body: "Crimson Text", Georgia, serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.30em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 4px;
+  --u-frame-radius: 4px;
+  --u-frame-border: 2px solid #8b0000;
+  --u-avatar-radius: 4px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 4px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 18px 40px rgba(42,26,10,0.40);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #8b00001c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #8b000012, transparent 66%);
+}

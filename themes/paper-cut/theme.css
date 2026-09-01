@@ -1,0 +1,46 @@
+/*! Ikat theme: Paper Cut — Kertas yang dipotong tangan. Bayangan yang jadi hiasan.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/paper-cut/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300&family=Fraunces:opsz,wght@9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #f5f0e8;
+  --u-bg-2: #e8ddd0;
+  --u-surface: #ffffff;
+  --u-surface-2: #f5f0e8;
+  --u-ink: #2a2a28;
+  --u-ink-soft: #5a5a58;
+  --u-ink-invert: #2a2a28;
+  --u-accent: #c07040;
+  --u-accent-ink: #ffffff;
+  --u-highlight: #6a9a50;
+  --u-line: rgba(42,42,40,0.14);
+  --u-line-invert: rgba(42,42,40,0.18);
+
+  /* tipografi */
+  --u-font-display: "Fraunces", Georgia, serif;
+  --u-font-heading: "Fraunces", Georgia, serif;
+  --u-font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.28em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 1px solid #c07040;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 12px 12px 0 rgba(42,42,40,0.08);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #c0704022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #c0704016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #c0704012, transparent 66%);
+}

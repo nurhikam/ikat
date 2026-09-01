@@ -1,0 +1,46 @@
+/*! Ikat theme: Winter Frost — Embun beku pagi hari. Putih, perak, dan biru yang bikin merinding.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/winter-frost/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&family=DM+Sans:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #d8e4f0;
+  --u-bg-2: #c8d4e8;
+  --u-surface: #ffffff;
+  --u-surface-2: #f0f4f8;
+  --u-ink: #2a3a4a;
+  --u-ink-soft: #5a6a7a;
+  --u-ink-invert: #2a3a4a;
+  --u-accent: #6a8ab8;
+  --u-accent-ink: #ffffff;
+  --u-highlight: #c07080;
+  --u-line: rgba(42,58,74,0.14);
+  --u-line-invert: rgba(42,58,74,0.18);
+
+  /* tipografi */
+  --u-font-display: "Tenor Sans", Georgia, serif;
+  --u-font-heading: "Tenor Sans", Georgia, serif;
+  --u-font-body: "DM Sans", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.30em;
+
+  /* bentuk */
+  --u-radius: 2px;
+  --u-radius-lg: 8px;
+  --u-frame-radius: 8px;
+  --u-frame-border: 1px solid #6a8ab8;
+  --u-avatar-radius: 8px;
+  --u-photo-radius: 4px;
+  --u-pill-radius: 8px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 16px 36px rgba(42,58,74,0.14);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27%232a3a4a%27%20fill-opacity%3D%27.12%27%3E%3Cpath%20d%3D%27M20%2012l2%206%206%202-6%202-2%206-2-6-6-2%206-2z%27%2F%3E%3Cpath%20d%3D%27M58%2050l1.5%204.5L64%2056l-4.5%201.5L58%2062l-1.5-4.5L52%2056l4.5-1.5z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6a8ab822, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6a8ab816, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6a8ab812, transparent 66%);
+}

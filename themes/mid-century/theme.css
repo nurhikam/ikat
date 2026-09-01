@@ -1,0 +1,46 @@
+/*! Ikat theme: Mid Century — Eames, Noguchi, dan mustard. Modern yang udah teruji 70 tahun.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/mid-century/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=Fraunces:opsz,wght@9..144,300&family=Plus+Jakarta+Sans:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #c8a84c;
+  --u-bg-2: #b8983c;
+  --u-surface: #fdfaf0;
+  --u-surface-2: #f5ead0;
+  --u-ink: #2a2010;
+  --u-ink-soft: #5a4a30;
+  --u-ink-invert: #2a2010;
+  --u-accent: #4a6a3a;
+  --u-accent-ink: #fdfaf0;
+  --u-highlight: #c04030;
+  --u-line: rgba(42,32,16,0.14);
+  --u-line-invert: rgba(42,32,16,0.18);
+
+  /* tipografi */
+  --u-font-display: "Fraunces", Georgia, serif;
+  --u-font-heading: "Fraunces", Georgia, serif;
+  --u-font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.26em;
+
+  /* bentuk */
+  --u-radius: 4px;
+  --u-radius-lg: 12px;
+  --u-frame-radius: 12px;
+  --u-frame-border: 2px solid #4a6a3a;
+  --u-avatar-radius: 12px;
+  --u-photo-radius: 8px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 16px 36px rgba(42,32,16,0.14);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2080a40%2040%200%200%201%2080%200%27%20fill%3D%27none%27%20stroke%3D%27%232a2010%27%20stroke-opacity%3D%27.09%27%20stroke-width%3D%271.2%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #4a6a3a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #4a6a3a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #4a6a3a12, transparent 66%);
+}

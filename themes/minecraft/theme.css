@@ -1,0 +1,46 @@
+/*! Ikat theme: Minecraft — Kotak-kotak dan piksel. Crafting cinta, block by block.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/minecraft/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Space+Mono:wght@400&family=Space+Mono:wght@400;700&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #5a8a3a;
+  --u-bg-2: #4a7a2a;
+  --u-surface: #f5f0e0;
+  --u-surface-2: #e8ddd0;
+  --u-ink: #2a3a1a;
+  --u-ink-soft: #5a6e4a;
+  --u-ink-invert: #f5f0e0;
+  --u-accent: #8b4513;
+  --u-accent-ink: #f5f0e0;
+  --u-highlight: #c04030;
+  --u-line: rgba(42,58,26,0.14);
+  --u-line-invert: rgba(245,240,224,0.20);
+
+  /* tipografi */
+  --u-font-display: "Space Mono", ui-monospace, monospace;
+  --u-font-heading: "Space Mono", ui-monospace, monospace;
+  --u-font-body: "Space Mono", ui-monospace, monospace;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.10em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 4px solid #2a3a1a;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 6px 6px 0 #2a3a1a;
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2040h80M40%200v80%27%20stroke%3D%27%232a3a1a%27%20stroke-opacity%3D%27.07%27%20stroke-width%3D%271%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #8b45131c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #8b451312, transparent 66%);
+}

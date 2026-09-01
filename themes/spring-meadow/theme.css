@@ -1,0 +1,46 @@
+/*! Ikat theme: Spring Meadow — Padang bunga musim semi. Hijau muda dan kuning yang baru mekar.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/spring-meadow/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300&family=Cormorant:wght@300&family=Manrope:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #c8e8c0;
+  --u-bg-2: #b8d8b0;
+  --u-surface: #fdfef8;
+  --u-surface-2: #f0f4e8;
+  --u-ink: #2a4028;
+  --u-ink-soft: #5a7058;
+  --u-ink-invert: #2a4028;
+  --u-accent: #6ab080;
+  --u-accent-ink: #fdfef8;
+  --u-highlight: #d4845a;
+  --u-line: rgba(42,64,40,0.14);
+  --u-line-invert: rgba(42,64,40,0.18);
+
+  /* tipografi */
+  --u-font-display: "Cormorant", Georgia, serif;
+  --u-font-heading: "Cormorant", Georgia, serif;
+  --u-font-body: "Manrope", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.24em;
+
+  /* bentuk */
+  --u-radius: 12px;
+  --u-radius-lg: 20px;
+  --u-frame-radius: 20px;
+  --u-frame-border: 2px solid #6ab080;
+  --u-avatar-radius: 20px;
+  --u-photo-radius: 12px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 16px 36px rgba(42,64,40,0.12);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%232a4028%27%20stroke-opacity%3D%27.09%27%20stroke-width%3D%271.1%27%3E%3Cpath%20d%3D%27M40%2014c9%2010%209%2022%200%2032-9-10-9-22%200-32z%27%2F%3E%3Cpath%20d%3D%27M14%2040c10%209%2022%209%2032%200-10-9-22-9-32%200z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6ab08022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6ab08016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6ab08012, transparent 66%);
+}

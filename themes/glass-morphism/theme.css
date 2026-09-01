@@ -1,0 +1,46 @@
+/*! Ikat theme: Glass Morphism — Kaca buram dan cahaya yang dibiaskan. Masa depan yang lembut.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/glass-morphism/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Syne:wght@500&family=Space+Grotesk:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #d0dce8;
+  --u-bg-2: #c0cce0;
+  --u-surface: #fdfcfe;
+  --u-surface-2: #f0f0f8;
+  --u-ink: #2a3a4a;
+  --u-ink-soft: #5a6a7a;
+  --u-ink-invert: #2a3a4a;
+  --u-accent: #6a8ab8;
+  --u-accent-ink: #fdfcfe;
+  --u-highlight: #c07080;
+  --u-line: rgba(42,58,74,0.14);
+  --u-line-invert: rgba(42,58,74,0.18);
+
+  /* tipografi */
+  --u-font-display: "Syne", system-ui, sans-serif;
+  --u-font-heading: "Syne", system-ui, sans-serif;
+  --u-font-body: "Space Grotesk", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.26em;
+
+  /* bentuk */
+  --u-radius: 16px;
+  --u-radius-lg: 24px;
+  --u-frame-radius: 24px;
+  --u-frame-border: 1px solid rgba(106,138,184,0.3);
+  --u-avatar-radius: 24px;
+  --u-photo-radius: 16px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 16px 40px rgba(42,58,74,0.15);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #6a8ab81c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #6a8ab812, transparent 66%);
+}

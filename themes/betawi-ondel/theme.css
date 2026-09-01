@@ -1,0 +1,46 @@
+/*! Ikat theme: Betawi Ondel — Ondel-ondel — merah, kuning, dan ceria Jakarta yang nggak pernah tidur.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/betawi-ondel/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600&family=Bricolage+Grotesque:opsz,wght@12..96,500&family=Space+Mono:wght@400;700&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #c04030;
+  --u-bg-2: #a03020;
+  --u-surface: #fffaf0;
+  --u-surface-2: #f5e8d0;
+  --u-ink: #2a1a0a;
+  --u-ink-soft: #6a5a40;
+  --u-ink-invert: #fffaf0;
+  --u-accent: #e8c040;
+  --u-accent-ink: #2a1a0a;
+  --u-highlight: #2a7a5a;
+  --u-line: rgba(42,26,10,0.14);
+  --u-line-invert: rgba(255,250,240,0.20);
+
+  /* tipografi */
+  --u-font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --u-font-heading: "Bricolage Grotesque", system-ui, sans-serif;
+  --u-font-body: "Space Mono", ui-monospace, monospace;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.18em;
+
+  /* bentuk */
+  --u-radius: 8px;
+  --u-radius-lg: 16px;
+  --u-frame-radius: 16px;
+  --u-frame-border: 3px solid #e8c040;
+  --u-avatar-radius: 16px;
+  --u-photo-radius: 8px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -2deg;
+  --u-shadow: 6px 6px 0 #2a1a0a;
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Ccircle%20cx%3D%2720%27%20cy%3D%2720%27%20r%3D%272%27%20fill%3D%27%232a1a0a%27%20fill-opacity%3D%27.10%27%2F%3E%3Ccircle%20cx%3D%2760%27%20cy%3D%2760%27%20r%3D%272%27%20fill%3D%27%232a1a0a%27%20fill-opacity%3D%27.10%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #e8c0401c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #e8c04012, transparent 66%);
+}

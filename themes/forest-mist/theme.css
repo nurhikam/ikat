@@ -1,0 +1,46 @@
+/*! Ikat theme: Forest Mist — Kabut di hutan pinus. Hijau yang samar, bukan yang teriak.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/forest-mist/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300&family=Cormorant:wght@300&family=Manrope:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #8a9a8a;
+  --u-bg-2: #7a8a7a;
+  --u-surface: #fdfcfa;
+  --u-surface-2: #f2ece4;
+  --u-ink: #2a3a2a;
+  --u-ink-soft: #5a6a5a;
+  --u-ink-invert: #fdfcfa;
+  --u-accent: #6a8a6a;
+  --u-accent-ink: #fdfcfa;
+  --u-highlight: #c07040;
+  --u-line: rgba(42,58,42,0.14);
+  --u-line-invert: rgba(42,58,42,0.18);
+
+  /* tipografi */
+  --u-font-display: "Cormorant", Georgia, serif;
+  --u-font-heading: "Cormorant", Georgia, serif;
+  --u-font-body: "Manrope", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.28em;
+
+  /* bentuk */
+  --u-radius: 2px;
+  --u-radius-lg: 8px;
+  --u-frame-radius: 8px;
+  --u-frame-border: 1px solid #6a8a6a;
+  --u-avatar-radius: 8px;
+  --u-photo-radius: 4px;
+  --u-pill-radius: 8px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 14px 32px rgba(42,58,42,0.12);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6a8a6a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6a8a6a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6a8a6a12, transparent 66%);
+}

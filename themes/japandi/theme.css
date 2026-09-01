@@ -1,0 +1,46 @@
+/*! Ikat theme: Japandi — Jepang + Skandinavia. Kayu terang, garis bersih, dan ruang yang bernapas.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/japandi/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Shippori+Mincho:wght@400&family=Outfit:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #ddd8d0;
+  --u-bg-2: #ccc8c0;
+  --u-surface: #fdfcfa;
+  --u-surface-2: #f2ece4;
+  --u-ink: #2a2a28;
+  --u-ink-soft: #5a5a58;
+  --u-ink-invert: #2a2a28;
+  --u-accent: #6a7a6a;
+  --u-accent-ink: #fdfcfa;
+  --u-highlight: #c07040;
+  --u-line: rgba(42,42,40,0.14);
+  --u-line-invert: rgba(42,42,40,0.18);
+
+  /* tipografi */
+  --u-font-display: "Shippori Mincho", Georgia, serif;
+  --u-font-heading: "Shippori Mincho", Georgia, serif;
+  --u-font-body: "Outfit", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.32em;
+
+  /* bentuk */
+  --u-radius: 2px;
+  --u-radius-lg: 4px;
+  --u-frame-radius: 4px;
+  --u-frame-border: 1px solid #6a7a6a;
+  --u-avatar-radius: 4px;
+  --u-photo-radius: 2px;
+  --u-pill-radius: 4px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 12px 30px rgba(42,42,40,0.10);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2040h80M40%200v80%27%20stroke%3D%27%232a2a28%27%20stroke-opacity%3D%27.07%27%20stroke-width%3D%271%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6a7a6a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6a7a6a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6a7a6a12, transparent 66%);
+}

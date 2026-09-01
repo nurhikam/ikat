@@ -1,0 +1,46 @@
+/*! Ikat theme: Ruby Gala — Merah ruby dan beludru. Karpet merah untuk dua orang.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/ruby-gala/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Playfair+Display:wght@400&family=DM+Sans:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #6b1020;
+  --u-bg-2: #4a0a18;
+  --u-surface: #fdf2ee;
+  --u-surface-2: #f0ddd8;
+  --u-ink: #4a0a18;
+  --u-ink-soft: #7a3a40;
+  --u-ink-invert: #fdf2ee;
+  --u-accent: #d4a060;
+  --u-accent-ink: #4a0a18;
+  --u-highlight: #d4a060;
+  --u-line: rgba(74,10,24,0.14);
+  --u-line-invert: rgba(253,242,238,0.20);
+
+  /* tipografi */
+  --u-font-display: "Playfair Display", Georgia, serif;
+  --u-font-heading: "Playfair Display", Georgia, serif;
+  --u-font-body: "DM Sans", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.28em;
+
+  /* bentuk */
+  --u-radius: 2px;
+  --u-radius-lg: 2px;
+  --u-frame-radius: 50% / 42%;
+  --u-frame-border: 3px solid #d4a060;
+  --u-avatar-radius: 50%;
+  --u-photo-radius: 2px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -2deg;
+  --u-shadow: 0 20px 50px rgba(74,10,24,0.30);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #d4a0601c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #d4a06012, transparent 66%);
+}

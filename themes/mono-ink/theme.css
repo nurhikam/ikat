@@ -1,0 +1,46 @@
+/*! Ikat theme: Mono Ink — Hitam, putih, dan satu garis. Nggak ada yang disembunyiin.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/mono-ink/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Space+Mono:wght@400&family=Space+Mono:wght@400;700&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #111111;
+  --u-bg-2: #000000;
+  --u-surface: #ffffff;
+  --u-surface-2: #f0f0f0;
+  --u-ink: #111111;
+  --u-ink-soft: #555555;
+  --u-ink-invert: #ffffff;
+  --u-accent: #111111;
+  --u-accent-ink: #ffffff;
+  --u-highlight: #ff3b30;
+  --u-line: rgba(17,17,17,0.14);
+  --u-line-invert: rgba(255,255,255,0.20);
+
+  /* tipografi */
+  --u-font-display: "Space Mono", ui-monospace, monospace;
+  --u-font-heading: "Space Mono", ui-monospace, monospace;
+  --u-font-body: "Space Mono", ui-monospace, monospace;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.20em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 2px solid #111111;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 8px 8px 0 #111111;
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #1111111c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #11111112, transparent 66%);
+}

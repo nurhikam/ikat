@@ -1,0 +1,46 @@
+/*! Ikat theme: Star Wars — Di galaksi yang jauh. May the love be with you.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/star-wars/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Orbitron:wght@400&family=Space+Grotesk:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #0a0a14;
+  --u-bg-2: #05050a;
+  --u-surface: #f0f0f4;
+  --u-surface-2: #dde0ee;
+  --u-ink: #0a0a14;
+  --u-ink-soft: #4a4a5a;
+  --u-ink-invert: #f0f0f4;
+  --u-accent: #e8c040;
+  --u-accent-ink: #0a0a14;
+  --u-highlight: #c04030;
+  --u-line: rgba(10,10,20,0.14);
+  --u-line-invert: rgba(240,240,244,0.20);
+
+  /* tipografi */
+  --u-font-display: "Orbitron", system-ui, sans-serif;
+  --u-font-heading: "Orbitron", system-ui, sans-serif;
+  --u-font-body: "Space Grotesk", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.36em;
+
+  /* bentuk */
+  --u-radius: 2px;
+  --u-radius-lg: 4px;
+  --u-frame-radius: 4px;
+  --u-frame-border: 1px solid #e8c040;
+  --u-avatar-radius: 4px;
+  --u-photo-radius: 2px;
+  --u-pill-radius: 4px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 20px 50px rgba(0,0,0,0.50);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27%230a0a14%27%20fill-opacity%3D%27.12%27%3E%3Cpath%20d%3D%27M20%2012l2%206%206%202-6%202-2%206-2-6-6-2%206-2z%27%2F%3E%3Cpath%20d%3D%27M58%2050l1.5%204.5L64%2056l-4.5%201.5L58%2062l-1.5-4.5L52%2056l4.5-1.5z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #e8c0401c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #e8c04012, transparent 66%);
+}

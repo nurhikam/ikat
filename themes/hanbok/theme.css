@@ -1,0 +1,46 @@
+/*! Ikat theme: Hanbok — Hanbok Korea — warna yang berani tapi harmonis. Tradisi yang playful.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/hanbok/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Shippori+Mincho:wght@400&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #c04060;
+  --u-bg-2: #a03050;
+  --u-surface: #fdf6ec;
+  --u-surface-2: #f0e4cc;
+  --u-ink: #2a0a1a;
+  --u-ink-soft: #6a3a4a;
+  --u-ink-invert: #fdf6ec;
+  --u-accent: #2a7aa8;
+  --u-accent-ink: #fdf6ec;
+  --u-highlight: #e8c040;
+  --u-line: rgba(42,10,26,0.14);
+  --u-line-invert: rgba(253,246,236,0.22);
+
+  /* tipografi */
+  --u-font-display: "Shippori Mincho", Georgia, serif;
+  --u-font-heading: "Shippori Mincho", Georgia, serif;
+  --u-font-body: "Zen Kaku Gothic New", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.26em;
+
+  /* bentuk */
+  --u-radius: 2px;
+  --u-radius-lg: 8px;
+  --u-frame-radius: 8px;
+  --u-frame-border: 2px solid #2a7aa8;
+  --u-avatar-radius: 8px;
+  --u-photo-radius: 4px;
+  --u-pill-radius: 8px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 18px 40px rgba(42,10,26,0.20);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #2a7aa81c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #2a7aa812, transparent 66%);
+}

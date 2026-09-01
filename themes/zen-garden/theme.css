@@ -1,0 +1,46 @@
+/*! Ikat theme: Zen Garden — Taman zen Kyoto — batu, pasir, dan satu pohon pinus. Diam yang indah.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/zen-garden/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Shippori+Mincho:wght@400&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #c8c8b8;
+  --u-bg-2: #b8b8a8;
+  --u-surface: #fdfcfa;
+  --u-surface-2: #f2ece4;
+  --u-ink: #2a2a28;
+  --u-ink-soft: #5a5a58;
+  --u-ink-invert: #2a2a28;
+  --u-accent: #6a7a6a;
+  --u-accent-ink: #fdfcfa;
+  --u-highlight: #c07040;
+  --u-line: rgba(42,42,40,0.14);
+  --u-line-invert: rgba(42,42,40,0.18);
+
+  /* tipografi */
+  --u-font-display: "Shippori Mincho", Georgia, serif;
+  --u-font-heading: "Shippori Mincho", Georgia, serif;
+  --u-font-body: "Zen Kaku Gothic New", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.34em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 2px;
+  --u-frame-radius: 2px;
+  --u-frame-border: 1px solid #6a7a6a;
+  --u-avatar-radius: 2px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 2px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 12px 30px rgba(42,42,40,0.10);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6a7a6a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6a7a6a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6a7a6a12, transparent 66%);
+}

@@ -1,0 +1,46 @@
+/*! Ikat theme: Ink Wash — Tinta sumi-e dan kertas washi. Minimal Jepang yang nggak dingin.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/ink-wash/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Shippori+Mincho:wght@400&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #1e1e1e;
+  --u-bg-2: #111111;
+  --u-surface: #f5f2ee;
+  --u-surface-2: #e8e0d8;
+  --u-ink: #1e1e1e;
+  --u-ink-soft: #5a5550;
+  --u-ink-invert: #f5f2ee;
+  --u-accent: #c04030;
+  --u-accent-ink: #f5f2ee;
+  --u-highlight: #c04030;
+  --u-line: rgba(30,30,30,0.14);
+  --u-line-invert: rgba(245,242,238,0.20);
+
+  /* tipografi */
+  --u-font-display: "Shippori Mincho", Georgia, serif;
+  --u-font-heading: "Shippori Mincho", Georgia, serif;
+  --u-font-body: "Zen Kaku Gothic New", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.36em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 2px solid #1e1e1e;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 8px 8px 0 #1e1e1e;
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #c040301c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #c0403012, transparent 66%);
+}

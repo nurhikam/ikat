@@ -1,0 +1,46 @@
+/*! Ikat theme: Linen Whisper — Linen mentah dan sage pucat. Tenang kayak pagi yang belum ada rencana.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/linen-whisper/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #e8ddd0;
+  --u-bg-2: #ddd0be;
+  --u-surface: #fdfcfa;
+  --u-surface-2: #f2ece4;
+  --u-ink: #3e3830;
+  --u-ink-soft: #6e6558;
+  --u-ink-invert: #3e3830;
+  --u-accent: #8a9a7b;
+  --u-accent-ink: #fdfcfa;
+  --u-highlight: #b07050;
+  --u-line: rgba(62,56,48,0.14);
+  --u-line-invert: rgba(62,56,48,0.18);
+
+  /* tipografi */
+  --u-font-display: "Marcellus", Georgia, serif;
+  --u-font-heading: "Marcellus", Georgia, serif;
+  --u-font-body: "Outfit", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.30em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 1px solid #8a9a7b;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 14px 32px rgba(62,56,48,0.10);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2040h80M40%200v80%27%20stroke%3D%27%233e3830%27%20stroke-opacity%3D%27.07%27%20stroke-width%3D%271%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #8a9a7b22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #8a9a7b16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #8a9a7b12, transparent 66%);
+}

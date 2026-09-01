@@ -1,0 +1,46 @@
+/*! Ikat theme: Sasak Tenun — Tenun Lombok — biru laut, pasir, dan benang yang dipintal tangan.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/sasak-tenun/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&family=DM+Sans:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #7ab8c0;
+  --u-bg-2: #5a9aa8;
+  --u-surface: #fdfaf5;
+  --u-surface-2: #f0e8d8;
+  --u-ink: #2a4048;
+  --u-ink-soft: #5a6e72;
+  --u-ink-invert: #2a4048;
+  --u-accent: #c07040;
+  --u-accent-ink: #fdfaf5;
+  --u-highlight: #2a7a5a;
+  --u-line: rgba(42,64,72,0.14);
+  --u-line-invert: rgba(42,64,72,0.18);
+
+  /* tipografi */
+  --u-font-display: "Tenor Sans", Georgia, serif;
+  --u-font-heading: "Tenor Sans", Georgia, serif;
+  --u-font-body: "DM Sans", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.28em;
+
+  /* bentuk */
+  --u-radius: 2px;
+  --u-radius-lg: 8px;
+  --u-frame-radius: 8px;
+  --u-frame-border: 2px solid #c07040;
+  --u-avatar-radius: 8px;
+  --u-photo-radius: 4px;
+  --u-pill-radius: 8px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 16px 36px rgba(42,64,72,0.14);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%232a4048%27%20stroke-opacity%3D%27.10%27%20stroke-width%3D%271.2%27%3E%3Cpath%20d%3D%27M40%208%2056%2024%2040%2040%2024%2024z%27%2F%3E%3Cpath%20d%3D%27M40%2040%2056%2056%2040%2072%2024%2056z%27%2F%3E%3Cpath%20d%3D%27M32%2016h4M44%2016h4M32%2064h4M44%2064h4%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #c0704022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #c0704016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #c0704012, transparent 66%);
+}

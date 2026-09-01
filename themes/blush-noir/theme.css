@@ -1,0 +1,46 @@
+/*! Ikat theme: Blush Noir — Hitam dan blush, kontras yang berani. Editorial tapi tetap romantis.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/blush-noir/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Playfair+Display:wght@400&family=DM+Sans:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #1a1a1e;
+  --u-bg-2: #0f0f12;
+  --u-surface: #fdf2f0;
+  --u-surface-2: #f0ddd8;
+  --u-ink: #1a1a1e;
+  --u-ink-soft: #6b5a58;
+  --u-ink-invert: #fdf2f0;
+  --u-accent: #d4a0a0;
+  --u-accent-ink: #1a1a1e;
+  --u-highlight: #e06060;
+  --u-line: rgba(26,26,30,0.14);
+  --u-line-invert: rgba(253,242,240,0.20);
+
+  /* tipografi */
+  --u-font-display: "Playfair Display", Georgia, serif;
+  --u-font-heading: "Playfair Display", Georgia, serif;
+  --u-font-body: "DM Sans", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.32em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 1px solid #d4a0a0;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 20px 50px rgba(0,0,0,0.5);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #d4a0a01c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #d4a0a012, transparent 66%);
+}

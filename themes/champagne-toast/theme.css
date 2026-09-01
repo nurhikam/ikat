@@ -1,0 +1,46 @@
+/*! Ikat theme: Champagne Toast — Emas sampanye dan krim. Seperti gelembung yang naik pelan di gelas.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/champagne-toast/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;1,400&family=Karla:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #f7e8c0;
+  --u-bg-2: #ecd8a0;
+  --u-surface: #fffbf0;
+  --u-surface-2: #f5ead0;
+  --u-ink: #4a3d1e;
+  --u-ink-soft: #7a6a3e;
+  --u-ink-invert: #4a3d1e;
+  --u-accent: #c9a84c;
+  --u-accent-ink: #fffbf0;
+  --u-highlight: #c47040;
+  --u-line: rgba(74,61,30,0.14);
+  --u-line-invert: rgba(74,61,30,0.18);
+
+  /* tipografi */
+  --u-font-display: "Great Vibes", cursive;
+  --u-font-heading: "Lora", Georgia, serif;
+  --u-font-body: "Karla", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.22em;
+
+  /* bentuk */
+  --u-radius: 4px;
+  --u-radius-lg: 24px;
+  --u-frame-radius: 999px 999px 16px 16px;
+  --u-frame-border: 4px solid #fffbf0;
+  --u-avatar-radius: 999px 999px 16px 16px;
+  --u-photo-radius: 16px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -2deg;
+  --u-shadow: 0 18px 40px rgba(74,61,30,0.14);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2080a40%2040%200%200%201%2080%200%27%20fill%3D%27none%27%20stroke%3D%27%234a3d1e%27%20stroke-opacity%3D%27.09%27%20stroke-width%3D%271.2%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #c9a84c22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #c9a84c16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #c9a84c12, transparent 66%);
+}

@@ -1,0 +1,46 @@
+/*! Ikat theme: Moss Stone — Lumut di batu candi. Hijau yang udah ada ratusan tahun.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/moss-stone/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #6a7a6a;
+  --u-bg-2: #5a6a5a;
+  --u-surface: #fdfcfa;
+  --u-surface-2: #f2ece4;
+  --u-ink: #2a3a2a;
+  --u-ink-soft: #5a6a5a;
+  --u-ink-invert: #fdfcfa;
+  --u-accent: #8a9a6a;
+  --u-accent-ink: #2a3a2a;
+  --u-highlight: #c07040;
+  --u-line: rgba(42,58,42,0.14);
+  --u-line-invert: rgba(42,58,42,0.18);
+
+  /* tipografi */
+  --u-font-display: "Marcellus", Georgia, serif;
+  --u-font-heading: "Marcellus", Georgia, serif;
+  --u-font-body: "Outfit", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.28em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 4px;
+  --u-frame-radius: 4px;
+  --u-frame-border: 1px solid #8a9a6a;
+  --u-avatar-radius: 4px;
+  --u-photo-radius: 2px;
+  --u-pill-radius: 4px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 14px 32px rgba(42,58,42,0.12);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2738%27%20height%3D%2738%27%20viewBox%3D%270%200%2038%2038%27%3E%3Cg%20fill%3D%27%232a3a2a%27%20fill-opacity%3D%27.22%27%3E%3Ccircle%20cx%3D%273%27%20cy%3D%275%27%20r%3D%270.9%27%2F%3E%3Ccircle%20cx%3D%2711%27%20cy%3D%2714%27%20r%3D%270.6%27%2F%3E%3Ccircle%20cx%3D%2719%27%20cy%3D%274%27%20r%3D%270.8%27%2F%3E%3Ccircle%20cx%3D%2727%27%20cy%3D%2717%27%20r%3D%270.7%27%2F%3E%3Ccircle%20cx%3D%277%27%20cy%3D%2724%27%20r%3D%270.75%27%2F%3E%3Ccircle%20cx%3D%2723%27%20cy%3D%2729%27%20r%3D%270.6%27%2F%3E%3Ccircle%20cx%3D%2715%27%20cy%3D%2733%27%20r%3D%270.85%27%2F%3E%3Ccircle%20cx%3D%2731%27%20cy%3D%278%27%20r%3D%270.65%27%2F%3E%3Ccircle%20cx%3D%2735%27%20cy%3D%2726%27%20r%3D%270.7%27%2F%3E%3Ccircle%20cx%3D%271%27%20cy%3D%2734%27%20r%3D%270.6%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #8a9a6a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #8a9a6a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #8a9a6a12, transparent 66%);
+}

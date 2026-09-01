@@ -1,0 +1,46 @@
+/*! Ikat theme: Y2K Chrome — Chrome, hologram, dan nostalgia 2000-an. Future yang udah lewat.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/y2k-chrome/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Syne:wght@500&family=Space+Grotesk:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #c8d0e0;
+  --u-bg-2: #b8c0d8;
+  --u-surface: #fdfcfe;
+  --u-surface-2: #f0f0f8;
+  --u-ink: #2a2a3a;
+  --u-ink-soft: #5a5a6a;
+  --u-ink-invert: #2a2a3a;
+  --u-accent: #8a6ab8;
+  --u-accent-ink: #fdfcfe;
+  --u-highlight: #e8489a;
+  --u-line: rgba(42,42,58,0.14);
+  --u-line-invert: rgba(42,42,58,0.18);
+
+  /* tipografi */
+  --u-font-display: "Syne", system-ui, sans-serif;
+  --u-font-heading: "Syne", system-ui, sans-serif;
+  --u-font-body: "Space Grotesk", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.26em;
+
+  /* bentuk */
+  --u-radius: 16px;
+  --u-radius-lg: 28px;
+  --u-frame-radius: 28px;
+  --u-frame-border: 2px solid #8a6ab8;
+  --u-avatar-radius: 28px;
+  --u-photo-radius: 16px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 16px 40px rgba(42,42,58,0.15);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27%232a2a3a%27%20fill-opacity%3D%27.12%27%3E%3Cpath%20d%3D%27M20%2012l2%206%206%202-6%202-2%206-2-6-6-2%206-2z%27%2F%3E%3Cpath%20d%3D%27M58%2050l1.5%204.5L64%2056l-4.5%201.5L58%2062l-1.5-4.5L52%2056l4.5-1.5z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #8a6ab81c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #8a6ab812, transparent 66%);
+}

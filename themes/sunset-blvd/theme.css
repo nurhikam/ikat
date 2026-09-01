@@ -1,0 +1,46 @@
+/*! Ikat theme: Sunset Blvd — Sunset Boulevard — pink, oranye, dan palm tree yang siluet.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/sunset-blvd/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Bodoni+Moda:opsz@6..96&family=Figtree:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #e06060;
+  --u-bg-2: #c84848;
+  --u-surface: #fdf6ec;
+  --u-surface-2: #f0e4cc;
+  --u-ink: #4a1a10;
+  --u-ink-soft: #7a4a30;
+  --u-ink-invert: #fdf6ec;
+  --u-accent: #e8a040;
+  --u-accent-ink: #4a1a10;
+  --u-highlight: #6a9ac0;
+  --u-line: rgba(74,26,16,0.14);
+  --u-line-invert: rgba(253,246,236,0.22);
+
+  /* tipografi */
+  --u-font-display: "Bodoni Moda", Georgia, serif;
+  --u-font-heading: "Bodoni Moda", Georgia, serif;
+  --u-font-body: "Figtree", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.24em;
+
+  /* bentuk */
+  --u-radius: 4px;
+  --u-radius-lg: 16px;
+  --u-frame-radius: 16px;
+  --u-frame-border: 2px solid #e8a040;
+  --u-avatar-radius: 16px;
+  --u-photo-radius: 8px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 18px 40px rgba(74,26,16,0.20);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2080a40%2040%200%200%201%2080%200%27%20fill%3D%27none%27%20stroke%3D%27%234a1a10%27%20stroke-opacity%3D%27.09%27%20stroke-width%3D%271.2%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #e8a04022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #e8a04016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #e8a04012, transparent 66%);
+}

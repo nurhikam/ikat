@@ -1,0 +1,46 @@
+/*! Ikat theme: Olive Grove — Kebun zaitun Tuscany. Hijau yang matang, bukan yang mentah.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/olive-grove/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Cormorant+Garamond:wght@300&family=Inter:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #a8b898;
+  --u-bg-2: #98a888;
+  --u-surface: #fdfcfa;
+  --u-surface-2: #f2ece4;
+  --u-ink: #2a3a20;
+  --u-ink-soft: #5a6a50;
+  --u-ink-invert: #2a3a20;
+  --u-accent: #6a8a50;
+  --u-accent-ink: #fdfcfa;
+  --u-highlight: #c07040;
+  --u-line: rgba(42,58,32,0.14);
+  --u-line-invert: rgba(42,58,32,0.18);
+
+  /* tipografi */
+  --u-font-display: "Cormorant Garamond", Georgia, serif;
+  --u-font-heading: "Cormorant Garamond", Georgia, serif;
+  --u-font-body: "Inter", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.28em;
+
+  /* bentuk */
+  --u-radius: 2px;
+  --u-radius-lg: 8px;
+  --u-frame-radius: 8px;
+  --u-frame-border: 1px solid #6a8a50;
+  --u-avatar-radius: 8px;
+  --u-photo-radius: 4px;
+  --u-pill-radius: 8px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 14px 32px rgba(42,58,32,0.10);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2040h80M40%200v80%27%20stroke%3D%27%232a3a20%27%20stroke-opacity%3D%27.07%27%20stroke-width%3D%271%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6a8a5022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6a8a5016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6a8a5012, transparent 66%);
+}

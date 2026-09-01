@@ -1,0 +1,46 @@
+/*! Ikat theme: Marrakech — Marrakech — terakota, biru Majorelle, dan mozaik yang nggak ada habisnya.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/marrakech/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&family=Cormorant:ital,wght@0,400;1,400&family=Sora:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #c07030;
+  --u-bg-2: #a86020;
+  --u-surface: #fdf6ec;
+  --u-surface-2: #f0e4cc;
+  --u-ink: #4a2008;
+  --u-ink-soft: #7a4a28;
+  --u-ink-invert: #fdf6ec;
+  --u-accent: #2a7aa8;
+  --u-accent-ink: #fdf6ec;
+  --u-highlight: #c9a84c;
+  --u-line: rgba(74,32,8,0.14);
+  --u-line-invert: rgba(253,246,236,0.22);
+
+  /* tipografi */
+  --u-font-display: "Yeseva One", Georgia, serif;
+  --u-font-heading: "Cormorant", Georgia, serif;
+  --u-font-body: "Sora", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.24em;
+
+  /* bentuk */
+  --u-radius: 4px;
+  --u-radius-lg: 12px;
+  --u-frame-radius: 12px;
+  --u-frame-border: 2px solid #2a7aa8;
+  --u-avatar-radius: 12px;
+  --u-photo-radius: 8px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 18px 40px rgba(74,32,8,0.28);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%234a2008%27%20stroke-opacity%3D%27.10%27%20stroke-width%3D%271.2%27%3E%3Cpath%20d%3D%27M40%208%2056%2024%2040%2040%2024%2024z%27%2F%3E%3Cpath%20d%3D%27M40%2040%2056%2056%2040%2072%2024%2056z%27%2F%3E%3Cpath%20d%3D%27M32%2016h4M44%2016h4M32%2064h4M44%2064h4%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #2a7aa822, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #2a7aa816, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #2a7aa812, transparent 66%);
+}

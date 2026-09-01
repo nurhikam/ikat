@@ -1,0 +1,46 @@
+/*! Ikat theme: Lavender Field — Ladang lavender Provence. Ungu yang bikin napas jadi pelan.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/lavender-field/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300&family=Cormorant:wght@300&family=Manrope:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #c8b8e0;
+  --u-bg-2: #b8a0d0;
+  --u-surface: #fdfcfe;
+  --u-surface-2: #f0e8f8;
+  --u-ink: #3a2850;
+  --u-ink-soft: #6a5a7a;
+  --u-ink-invert: #3a2850;
+  --u-accent: #8a6ab8;
+  --u-accent-ink: #fdfcfe;
+  --u-highlight: #d4845a;
+  --u-line: rgba(58,40,80,0.14);
+  --u-line-invert: rgba(58,40,80,0.18);
+
+  /* tipografi */
+  --u-font-display: "Cormorant", Georgia, serif;
+  --u-font-heading: "Cormorant", Georgia, serif;
+  --u-font-body: "Manrope", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.26em;
+
+  /* bentuk */
+  --u-radius: 4px;
+  --u-radius-lg: 16px;
+  --u-frame-radius: 50% / 42%;
+  --u-frame-border: 2px solid #8a6ab8;
+  --u-avatar-radius: 50%;
+  --u-photo-radius: 8px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 16px 36px rgba(58,40,80,0.12);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2040q20-16%2040%200t40%200%27%20fill%3D%27none%27%20stroke%3D%27%233a2850%27%20stroke-opacity%3D%27.09%27%20stroke-width%3D%271.2%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #8a6ab822, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #8a6ab816, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #8a6ab812, transparent 66%);
+}

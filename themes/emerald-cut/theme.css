@@ -1,0 +1,46 @@
+/*! Ikat theme: Emerald Cut — Potongan emerald dan platinum. Berlian yang nggak perlu kotak.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/emerald-cut/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Bodoni+Moda:opsz@6..96&family=Figtree:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #0a3a2a;
+  --u-bg-2: #062a1a;
+  --u-surface: #f5f0e0;
+  --u-surface-2: #e8ddd0;
+  --u-ink: #0a3a2a;
+  --u-ink-soft: #4a6a5a;
+  --u-ink-invert: #f5f0e0;
+  --u-accent: #c9a84c;
+  --u-accent-ink: #0a3a2a;
+  --u-highlight: #c04030;
+  --u-line: rgba(10,58,42,0.14);
+  --u-line-invert: rgba(245,240,224,0.20);
+
+  /* tipografi */
+  --u-font-display: "Bodoni Moda", Georgia, serif;
+  --u-font-heading: "Bodoni Moda", Georgia, serif;
+  --u-font-body: "Figtree", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.36em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 2px solid #c9a84c;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 20px 50px rgba(10,58,42,0.40);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2040h80M40%200v80%27%20stroke%3D%27%230a3a2a%27%20stroke-opacity%3D%27.07%27%20stroke-width%3D%271%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #c9a84c1c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #c9a84c12, transparent 66%);
+}

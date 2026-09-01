@@ -1,0 +1,46 @@
+/*! Ikat theme: Memphis Milano — Memphis Milano 1981 — warna yang tabrakan dengan sengaja. Joyful chaos.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/memphis-milano/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Bricolage+Grotesque:opsz,wght@12..96,500&family=Space+Mono:wght@400;700&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #f0e040;
+  --u-bg-2: #e0d030;
+  --u-surface: #ffffff;
+  --u-surface-2: #f5f0e0;
+  --u-ink: #1a1a1a;
+  --u-ink-soft: #555555;
+  --u-ink-invert: #1a1a1a;
+  --u-accent: #e8489a;
+  --u-accent-ink: #ffffff;
+  --u-highlight: #2a9ac0;
+  --u-line: rgba(26,26,26,0.14);
+  --u-line-invert: rgba(26,26,26,0.18);
+
+  /* tipografi */
+  --u-font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --u-font-heading: "Bricolage Grotesque", system-ui, sans-serif;
+  --u-font-body: "Space Mono", ui-monospace, monospace;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.10em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 3px solid #1a1a1a;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: -2deg;
+  --u-shadow: 8px 8px 0 #1a1a1a;
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Ccircle%20cx%3D%2720%27%20cy%3D%2720%27%20r%3D%272%27%20fill%3D%27%231a1a1a%27%20fill-opacity%3D%27.10%27%2F%3E%3Ccircle%20cx%3D%2760%27%20cy%3D%2760%27%20r%3D%272%27%20fill%3D%27%231a1a1a%27%20fill-opacity%3D%27.10%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #e8489a1c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #e8489a12, transparent 66%);
+}

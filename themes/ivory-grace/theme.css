@@ -1,0 +1,46 @@
+/*! Ikat theme: Ivory Grace — Gading dan champagne, anggun tanpa usaha. Untuk yang mau klasik yang nggak ngebosenin.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/ivory-grace/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Cormorant+Garamond:wght@300&family=Inter:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #f5f0e6;
+  --u-bg-2: #e8ddd0;
+  --u-surface: #fffefb;
+  --u-surface-2: #f5ece0;
+  --u-ink: #3d3529;
+  --u-ink-soft: #6e6252;
+  --u-ink-invert: #3d3529;
+  --u-accent: #b89a6a;
+  --u-accent-ink: #fffefb;
+  --u-highlight: #c4706a;
+  --u-line: rgba(61,53,41,0.14);
+  --u-line-invert: rgba(61,53,41,0.18);
+
+  /* tipografi */
+  --u-font-display: "Cormorant Garamond", Georgia, serif;
+  --u-font-heading: "Cormorant Garamond", Georgia, serif;
+  --u-font-body: "Inter", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.26em;
+
+  /* bentuk */
+  --u-radius: 2px;
+  --u-radius-lg: 16px;
+  --u-frame-radius: 50% / 42%;
+  --u-frame-border: 2px solid #b89a6a;
+  --u-avatar-radius: 50%;
+  --u-photo-radius: 12px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1.5deg;
+  --u-shadow: 0 16px 36px rgba(61,53,41,0.12);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Ccircle%20cx%3D%2720%27%20cy%3D%2720%27%20r%3D%272%27%20fill%3D%27%233d3529%27%20fill-opacity%3D%27.10%27%2F%3E%3Ccircle%20cx%3D%2760%27%20cy%3D%2760%27%20r%3D%272%27%20fill%3D%27%233d3529%27%20fill-opacity%3D%27.10%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #b89a6a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #b89a6a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #b89a6a12, transparent 66%);
+}

@@ -1,0 +1,46 @@
+/*! Ikat theme: Matcha Latte — Matcha dan susu oat. Hijau yang creamy, bukan yang pahit.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/matcha-latte/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Shippori+Mincho:wght@400&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #a8c8a0;
+  --u-bg-2: #98b890;
+  --u-surface: #fdfcf8;
+  --u-surface-2: #f0ece4;
+  --u-ink: #2a3a28;
+  --u-ink-soft: #5a6a58;
+  --u-ink-invert: #2a3a28;
+  --u-accent: #6a9a60;
+  --u-accent-ink: #fdfcf8;
+  --u-highlight: #c07040;
+  --u-line: rgba(42,58,40,0.14);
+  --u-line-invert: rgba(42,58,40,0.18);
+
+  /* tipografi */
+  --u-font-display: "Shippori Mincho", Georgia, serif;
+  --u-font-heading: "Shippori Mincho", Georgia, serif;
+  --u-font-body: "Zen Kaku Gothic New", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.24em;
+
+  /* bentuk */
+  --u-radius: 12px;
+  --u-radius-lg: 20px;
+  --u-frame-radius: 20px;
+  --u-frame-border: 2px solid #6a9a60;
+  --u-avatar-radius: 20px;
+  --u-photo-radius: 12px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 16px 36px rgba(42,58,40,0.12);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Ccircle%20cx%3D%2720%27%20cy%3D%2720%27%20r%3D%272%27%20fill%3D%27%232a3a28%27%20fill-opacity%3D%27.10%27%2F%3E%3Ccircle%20cx%3D%2760%27%20cy%3D%2760%27%20r%3D%272%27%20fill%3D%27%232a3a28%27%20fill-opacity%3D%27.10%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6a9a6022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6a9a6016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6a9a6012, transparent 66%);
+}

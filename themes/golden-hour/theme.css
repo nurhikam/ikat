@@ -1,0 +1,46 @@
+/*! Ikat theme: Golden Hour — Jam emas sebelum matahari tenggelam. Cahaya yang bikin semua orang cantik.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/golden-hour/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Cormorant+Garamond:wght@300&family=Inter:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #e8c88a;
+  --u-bg-2: #d8b87a;
+  --u-surface: #fffaf0;
+  --u-surface-2: #f5ead0;
+  --u-ink: #4a3a20;
+  --u-ink-soft: #7a6a40;
+  --u-ink-invert: #4a3a20;
+  --u-accent: #c08030;
+  --u-accent-ink: #fffaf0;
+  --u-highlight: #6a9a50;
+  --u-line: rgba(74,58,32,0.14);
+  --u-line-invert: rgba(74,58,32,0.18);
+
+  /* tipografi */
+  --u-font-display: "Cormorant Garamond", Georgia, serif;
+  --u-font-heading: "Cormorant Garamond", Georgia, serif;
+  --u-font-body: "Inter", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.24em;
+
+  /* bentuk */
+  --u-radius: 4px;
+  --u-radius-lg: 16px;
+  --u-frame-radius: 50% / 42%;
+  --u-frame-border: 3px solid #c08030;
+  --u-avatar-radius: 50%;
+  --u-photo-radius: 8px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1.5deg;
+  --u-shadow: 0 18px 40px rgba(74,58,32,0.16);
+
+  /* latar */
+  --u-texture: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cpath%20d%3D%27M0%2080a40%2040%200%200%201%2080%200%27%20fill%3D%27none%27%20stroke%3D%27%234a3a20%27%20stroke-opacity%3D%27.09%27%20stroke-width%3D%271.2%27%2F%3E%3C%2Fsvg%3E");
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #c0803022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #c0803016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #c0803012, transparent 66%);
+}
