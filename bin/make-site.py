@@ -185,6 +185,12 @@ def build() -> str:
 <meta property="og:title" content="Ikat - Undangan pernikahan digital yang kebuka cepat">
 <meta property="og:description" content="{n} tema, halaman pertama 22 KB, link personal per tamu.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://nurhikam.github.io/ikat/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://nurhikam.github.io/ikat/og.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -348,6 +354,14 @@ def build_galeri() -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Galeri — {n} tema Ikat</title>
 <meta name="description" content="{n} tema undangan pernikahan digital Ikat. Filter per kategori.">
+<meta property="og:title" content="Galeri — {n} tema Ikat">
+<meta property="og:description" content="{n} tema, filter per kategori. Tiap kartu buka undangan sungguhan.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://nurhikam.github.io/ikat/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://nurhikam.github.io/ikat/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
