@@ -23,7 +23,9 @@
   --u-surface: #f7f0e1;
   --u-surface-2: #ebdcc2;
   --u-ink: #33301f;
-  --u-ink-soft: #7a7358;
+  /* Darkened from #7a7358, which measured 4.19:1 on --u-surface and failed
+     WCAG AA on the RSVP form labels. Now 4.9:1. */
+  --u-ink-soft: #6f684f;
   --u-ink-invert: #f4ecdc;
   --u-accent: #c2a05c;
   --u-accent-ink: #16301f;
@@ -44,9 +46,11 @@
   --u-tracking-caps: 0.28em;
   --u-leading: 1.8;
 
-  /* shape */
+  /* Shape system, stated so it can be followed: surfaces are near-square,
+     interactive controls are full pills. 2px vs 3px was a distinction nobody
+     could perceive, so there is now one surface radius. */
   --u-radius: 2px;
-  --u-radius-lg: 3px;
+  --u-radius-lg: 2px;
   --u-orn-size: 34px;
 
   /* Botanical ground in two layers: soft light that retiles each viewport

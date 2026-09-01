@@ -4,7 +4,7 @@
   "theme": "forest-lace",
   "meta": {
     "title": "Dinda & Rafi",
-    "description": "Undangan pernikahan Dinda & Rafi — Kamis, 24 September 2026",
+    "description": "Undangan pernikahan Dinda & Rafi, Kamis, 24 September 2026",
     "locale": "id-ID",
     "timezone": "Asia/Jakarta",
     "timezoneLabel": "WIB"
@@ -120,7 +120,7 @@
         {
           "when": "2022",
           "title": "Menjalin Hubungan",
-          "text": "Jarak Solo–Jakarta ternyata cuma soal siapa yang mau lebih dulu bilang kangen."
+          "text": "Jarak Solo-Jakarta ternyata cuma soal siapa yang mau lebih dulu bilang kangen."
         },
         {
           "when": "2026",
@@ -149,7 +149,7 @@
         {
           "kind": "address",
           "label": "Alamat Pengiriman Hadiah",
-          "holder": "Dinda — 0812xxxxxxx",
+          "holder": "Dinda, 0812xxxxxxx",
           "address": "Jl. Melati No. 14, Banjarsari, Surakarta"
         }
       ]

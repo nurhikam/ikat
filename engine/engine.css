@@ -622,7 +622,9 @@ button, input, textarea { font: inherit; color: inherit; }
   color: var(--u-ink);
   font-size: var(--u-size-input);
 }
-.u-input::placeholder { color: var(--u-ink-soft); opacity: 0.6; }
+/* opacity would drag the placeholder back under the contrast floor; the token
+   is already the muted colour, so it is used at full strength. */
+.u-input::placeholder { color: var(--u-ink-soft); opacity: 1; }
 .u-input:focus-visible { outline: 2px solid var(--u-accent); outline-offset: 1px; border-color: transparent; }
 .u-textarea { resize: vertical; min-height: 5.5rem; line-height: 1.6; }
 

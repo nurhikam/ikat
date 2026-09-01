@@ -204,7 +204,7 @@
       var start = parseDate(s.start);
       var end = parseDate(s.end);
       var strip = start ? weekStrip(start) : '';
-      var time = start ? (fmtTime(start) + (end ? ' – ' + fmtTime(end) : '') + ' ' + TZ_LABEL) : '';
+      var time = start ? (fmtTime(start) + (end ? ' - ' + fmtTime(end) : '') + ' ' + TZ_LABEL) : '';
       return '' +
       '<section class="u-sec u-event" data-sec="event">' + orn() +
         '<div class="u-event__inner u-reveal">' +
@@ -292,7 +292,7 @@
                   when(a.holder, function (v) { return '<p class="u-gift__holder">' + esc(v) + '</p>'; }) +
                   when(a.address, function (v) { return '<p class="u-gift__addr">' + esc(v) + '</p>'; }) +
                   '<button class="u-btn u-btn--ghost u-copy" type="button" data-copy="' +
-                    escAttr((a.holder ? a.holder + ' — ' : '') + (a.address || '')) + '">Salin Alamat</button>' +
+                    escAttr((a.holder ? a.holder + ', ' : '') + (a.address || '')) + '">Salin Alamat</button>' +
                 '</div>';
               }
               return '<div class="u-gift__acct">' +
