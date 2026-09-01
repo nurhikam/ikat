@@ -43,6 +43,8 @@ jobs:
           # Landing page jadi akar situs; demo undangan dan harness preview
           # ikut supaya tiap kartu tema di galeri membuka undangan sungguhan.
           cp site/index.html site/site.css _site/
+          cp site/og.png _site/ 2>/dev/null || true
+          cp site/galeri.html _site/ 2>/dev/null || true
           cp -r site/thumbs _site/
           cp demo.html preview.html _site/
           cp -r engine themes data assets _site/
