@@ -1,131 +1,125 @@
 # Ikat
 
-**Demo: https://nurhikam.github.io/ikat/?to=Nama%20Tamu**
+**Live: https://nurhikam.github.io/ikat/**
 
-Engine undangan pernikahan digital yang digerakkan data. Satu file JSON per
-klien, satu folder CSS per tema, tanpa build step.
+Undangan pernikahan digital. Sebelas tema, satu JSON per klien, tanpa build step.
 
-First paint 20,2 KB gzip — diukur di deployment di atas, bukan di localhost.
-Musik (768 KB) baru diambil saat tamu menekan tombol putar.
+*Ikat* artinya mengikat, dan juga teknik tenun bermotif. Dua-duanya pas untuk
+sesuatu yang menjual motif.
 
-Dibuat karena bagian mahal dari bisnis undangan digital bukan mendesain halaman
-cantik sekali — tapi mengirim halaman cantik ke-200 tanpa mengulang pekerjaan.
+Halaman pertama undangan **22 KB terkompresi**, diukur dari deployment di atas
+dan bukan dari localhost. Musik (751 KB) dan foto (190 KB) baru diambil setelah
+tamu menekan tombol.
 
-## Jalankan
+## Coba
+
+| | |
+|---|---|
+| Landing page | https://nurhikam.github.io/ikat/ |
+| Undangan demo | https://nurhikam.github.io/ikat/demo.html?to=Nama%20Tamu |
+| Ganti tema | https://nurhikam.github.io/ikat/preview.html?theme=butter |
+
+## Jalankan lokal
 
 ```bash
 python3 -m http.server 8000
-# buka http://localhost:8000/?to=Keluarga%20Besar%20Wijaya
 ```
 
-Tanpa dependency, tanpa `npm install`, tanpa bundler. Yang di-deploy persis
-yang ada di repo — bisa ditaruh di GitHub Pages, Netlify, Cloudflare Pages,
-atau shared hosting mana pun.
-
-## Bikin undangan untuk klien baru
-
-```bash
-./bin/new-client.sh andi-sari forest-lace
-$EDITOR data/andi-sari.json      # isi nama, tanggal, venue, rekening
-```
-
-Menghasilkan `andi-sari.html` + `data/andi-sari.json`. Bagikan sebagai
-`https://…/andi-sari.html?to=Nama%20Tamu`.
-
-## Kirim sebagai satu file
-
-```bash
-./bin/build-single.py data/andi-sari.json -o dist/andi-sari.html
-```
-
-Satu file ~64 KB berisi engine, tema, dan data sekaligus. Bisa di-email ke
-klien, dibuka dari flashdisk, atau ditaruh di hosting mana pun tanpa struktur
-folder. Ini juga yang diserahkan kalau klien mau menyimpan undangannya setelah
-acara selesai.
-
-Tambahkan `--inline-media` untuk menanam musik dan foto sebagai data URI —
-benar-benar satu file tanpa referensi eksternal, tapi ukurannya melonjak ke
-~1 MB. Untuk disebar ke tamu pakai versi hosted; lihat
-[docs/DEPLOY.md](docs/DEPLOY.md).
-
-## Musik
-
-```json
-{ "music": { "src": "assets/music/forest-lace.mp3", "volume": 0.55 } }
-```
-
-Default temanya adalah piano orisinal yang di-*generate* dari kode:
-
-```bash
-./bin/make-music.py -o assets/music/forest-lace.mp3
-```
-
-Disintesis di `bin/make-music.py`, bukan diambil dari mana-mana, supaya audio
-yang ikut terjual bersama template jelas statusnya — tidak ada lisensi yang
-perlu diurus. Untuk lagu pilihan pasangan, ganti `music.src` dengan file yang
-mereka punya haknya. Jangan bundel lagu komersial ke dalam template yang dijual
-berulang: itu distribusi ulang, dan vendor undangan digital termasuk yang kena.
-
-## Arsitektur
-
-![Arsitektur undangan](docs/architecture.svg)
-
-<sub>Sumber: [`docs/architecture.mmd`](docs/architecture.mmd) — Mermaid, dirender dengan [line9](https://line9.ai): `line9 render docs/architecture.mmd --out docs/architecture.svg --theme linen`</sub>
+Tanpa dependency, tanpa `npm install`, tanpa bundler. Yang di-deploy persis yang
+ada di repo.
 
 ## Struktur
 
 ```
-engine/engine.js      renderer + perilaku — universal, tak pernah disentuh per klien
-engine/engine.css     tata letak, spacing, state, motion, aksesibilitas
-themes/<nama>/        warna, font, ornamen — CSS token saja
-data/<klien>.json     isi undangan + urutan section
-docs/THEMING.md       cara bikin tema baru
-docs/SECTIONS.md      katalog section + skema data + backend RSVP
-docs/DEPLOY.md        ke mana di-deploy, dan kenapa data klien tidak boleh publik
+themes/themes.json      SATU sumber kebenaran untuk semua tema
+bin/make-theme.py       themes.json  -> themes/<slug>/theme.css
+bin/make-site.py        themes.json  -> site/index.html  (galeri + harga)
+bin/new-client.sh       bikin undangan buat satu klien
+bin/build-single.py     bundel jadi satu file HTML
+bin/make-music.py       render piano bawaan tema dari kode
+bin/fetch-sample-photos.py   ambil foto contoh CC0
+
+engine/engine.js        renderer + perilaku, universal, tak pernah disentuh per klien
+engine/engine.css       tata letak, state, motion, aksesibilitas
+themes/<slug>/          theme.css (digenerate) + decoration.css (ditulis tangan)
+data/<klien>.json       isi undangan + urutan section
+site/                   landing page: index.html (digenerate), site.css, thumbs/
 ```
 
-Kontrak yang bikin ini scalable: **tema tidak boleh menyentuh JavaScript, dan
-data tidak boleh menyentuh CSS.** Tema baru = satu file CSS token. Klien baru =
-satu file JSON. Kalau salah satu aturan itu dilanggar, biaya template ke-50
-akan sama dengan template pertama — dan seluruh gunanya hilang.
+Kontrak yang bikin ini bisa dijual berulang:
 
-## Yang sudah jalan
+> **Tema tidak boleh menyentuh JavaScript. Data tidak boleh menyentuh CSS.**
 
-- Cover pengunci scroll, terbuka lewat tombol
-- Nama tamu personal dari `?to=` — di-render aman lewat `textContent`, dengan
-  fallback sopan untuk link generik
-- Hitung mundur, sadar zona waktu acara (bukan zona waktu tamu)
-- Strip hari-dalam-seminggu dengan tanggal acara ditandai
-- Simpan ke Google Calendar
-- Salin nomor rekening satu ketuk
-- RSVP + dinding tamu, tiga backend: localStorage / Google Sheet / Supabase
-- Musik latar, dimuat hanya saat tamu menekan putar — nol biaya di first paint
-- Section kosong hilang sendiri; foto opsional di semua tempat
+Kesebelas tema dibangun tanpa mengubah `engine.js` satu baris pun. Kalau tema
+berikutnya ternyata butuh, itu tandanya ada token yang kurang: tambahkan
+tokennya, jangan fork enginenya.
 
-## Kenapa vanilla, kenapa SVG
-
-Tamu membuka undangan ini di parkiran gedung dengan sinyal satu bar. Itu satu-
-satunya kondisi pemakaian yang benar-benar penting, dan itu yang menentukan
-hampir semua keputusan teknis di sini:
-
-- **Tanpa framework.** Engine + tema ≈ 22 KB gzip, satu request CSS, satu JS.
-- **Ornamen CSS/SVG, bukan PNG.** `forest-lace` tidak mengirim satu pun raster.
-- **Tanpa build step.** Tak ada langkah yang bisa gagal antara repo dan produksi.
-
-Banyak undangan digital di pasar mengirim 5–8 MB dan gagal di kondisi itu.
-Kecepatan di sini bukan efek samping, itu argumen jualan yang bisa didemokan.
-
-## Tema
+## Sebelas tema
 
 | Tema | Karakter |
 |---|---|
-| `forest-lace` | hijau botani gelap, renda krem, emas antik, aksen magenta |
+| `butter` | Butter yellow dan krim, warna yang paling disebut untuk 2026 |
+| `cloud-dancer` | Dusty blue di atas Cloud Dancer, Pantone 2026 |
+| `mocha-mousse` | Mocha dan karamel, Pantone 2025 yang pindah ke palet nikahan |
+| `lilac-haze` | Lilac lembut, paling ringan |
+| `rosewater` | Blush pink dan gading |
+| `dusty-sage` | Sage kering dan tulang, netral |
+| `forest-lace` | Hijau botani gelap, renda, emas antik |
+| `noir-editorial` | Hitam pekat, tipografi jadi bintangnya |
+| `terracotta-sun` | Tanah liat dan lengkung gapura |
+| `riso-zine` | Cetak risograph dua warna |
+| `pearl-chrome` | Mutiara, krom, kilau iridescent |
 
-Bikin tema berikutnya: [docs/THEMING.md](docs/THEMING.md).
+Palet disandarkan ke forecast warna pernikahan 2026, bukan selera. Tema baru:
+[docs/THEMING.md](docs/THEMING.md).
 
-## Lisensi & aset
+## Bikin undangan buat klien
 
-Kode engine bebas dipakai ulang. Setiap tema harus memakai aset yang kamu
-punya haknya — jangan menyalin ornamen, foto, atau komposisi milik penjual
-lain. Selain soal hukum, template yang identik dengan tetangga mengembalikanmu
-ke perang harga, yang justru ingin dihindari repo ini.
+```bash
+./bin/new-client.sh andi-sari butter
+$EDITOR data/andi-sari.json
+```
+
+Bagikan sebagai `https://…/andi-sari.html?to=Nama%20Tamu`.
+
+Atau jadikan satu file yang bisa dikirim lewat WhatsApp:
+
+```bash
+./bin/build-single.py data/andi-sari.json --inline-media -o dist/andi-sari.html
+```
+
+`--inline-media` menanam musik dan foto, jadi benar-benar satu file, tapi
+ukurannya melonjak ke ~1 MB. Untuk disebar ke tamu pakai versi hosted.
+
+## Yang sudah jalan
+
+- Sampul pengunci, terbuka lewat tombol
+- Nama tamu personal dari `?to=`, dirender lewat `textContent` bukan `innerHTML`
+- Hitung mundur, sadar zona waktu acara (bukan zona waktu tamu)
+- Strip hari dengan tanggal acara ditandai, tombol simpan ke kalender
+- Salin nomor rekening satu ketuk
+- RSVP + dinding tamu, tiga backend: localStorage / Google Sheet / Supabase
+- Musik latar, diambil hanya saat ditekan
+- Tanpa foto pun tetap jadi: sampulnya berubah jadi monogram terukir
+
+## Dokumentasi
+
+| | |
+|---|---|
+| [docs/THEMING.md](docs/THEMING.md) | bikin tema baru |
+| [docs/SECTIONS.md](docs/SECTIONS.md) | katalog section, skema data, backend RSVP |
+| [docs/DEPLOY.md](docs/DEPLOY.md) | ke mana di-deploy, dan kenapa data klien tidak boleh publik |
+
+## Aset dan lisensi
+
+Kode engine bebas dipakai ulang. Musik bawaan digenerate dari
+`bin/make-music.py`, jadi jelas statusnya waktu template dijual. Foto contoh
+CC0/public domain dari Openverse, tercatat di `assets/photos/CREDITS.md`.
+
+Untuk lagu pilihan pasangan, ganti `music.src` dengan file yang mereka punya
+haknya. Jangan bundel lagu komersial ke dalam template yang dijual berulang:
+tiap pengiriman ke klien itu distribusi ulang.
+
+**Data klien tidak pernah masuk repo ini.** `data/<klien>.json` berisi nomor
+rekening dan alamat; `.gitignore` menolaknya dan workflow Pages gagal build
+kalau ada yang nyelip. Lihat [docs/DEPLOY.md](docs/DEPLOY.md).

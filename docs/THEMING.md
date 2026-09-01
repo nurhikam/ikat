@@ -24,31 +24,60 @@ Aturan yang membuat ini tetap murah dirawat:
 
 Kalau ketiganya dijaga, mengganti tema = mengganti satu `<link>`.
 
-## Bikin tema baru dalam 5 langkah
+## Bikin tema baru
+
+Tema **tidak lagi ditulis tangan sebagai CSS**. Semuanya dirender dari satu
+spec, `themes/themes.json`, oleh `bin/make-theme.py`.
+
+Alasannya: blok token tiap tema itu ~80% struktur yang sama (nama variabel,
+urutan, komentar). Menulis tangan sebelas kali berarti sebelas kesempatan untuk
+melenceng, dan tema ke-12 jadi mahal. Yang benar-benar membedakan tema cuma blok
+dekorasinya, dan itu tetap ditulis tangan.
+
+### 1. Tambah satu entri di `themes/themes.json`
+
+```json
+{
+  "slug": "nama-tema", "name": "Nama Tema",
+  "blurb": "Satu kalimat buat galeri di landing page.",
+  "mood": "pastel",            // pastel | hangat | unik  (jadi label di galeri)
+  "pattern": "dots",           // none|dots|grid|arcs|waves|chevron|petals|stars|grain|ikat
+  "fonts": { "display": "...", "heading": "...", "body": "...",
+             "displayStack": "...", "headingStack": "...", "bodyStack": "..." },
+  "colors": { ... 12 nilai ... },
+  "shape":  { ... 9 nilai ... },
+  "tracking": "0.24em"
+}
+```
+
+`display`/`heading`/`body` itu nama keluarga font buat query Google Fonts;
+`*Stack` itu nilai CSS lengkap dengan fallback-nya.
+
+### 2. Render
 
 ```bash
-cp -r themes/forest-lace themes/nama-tema-baru
+./bin/make-theme.py nama-tema      # satu tema
+./bin/make-theme.py                # semua
 ```
 
-1. **Ganti palet.** Sembilan token warna di `:root`. Itu saja sudah mengubah
-   seluruh undangan.
-2. **Ganti tiga font.** `--u-font-display` (nama mempelai), `--u-font-heading`
-   (judul section), `--u-font-body`. Plus `--u-font-arabic` kalau ada ayat.
-3. **Ganti ornamen.** `--u-orn-top` / `--u-orn-bottom` menerima `url()` SVG
-   data-URI. Set `none` kalau tema tidak butuh ornamen antar-section.
-4. **Ganti tekstur latar.** `--u-texture` — gradient, SVG pattern, atau `none`.
-5. **Rapikan blok decoration.** Bagian paling bawah file. Kalau blok ini lewat
-   ~80 baris, kemungkinan besar kamu sedang melawan engine.
+### 3. Kalau butuh bentuk yang token tidak bisa ungkapkan
 
-Lalu daftarkan di `index.html`:
+Buat `themes/nama-tema/decoration.css`. Isinya digabungkan apa adanya di bawah
+blok token waktu render. Di sinilah cincin emas `forest-lace` dan rendanya
+tinggal. Kalau file ini lewat ~80 baris, kemungkinan besar kamu sedang melawan
+engine: tambah tokennya, jangan lawan.
 
-```html
-<link rel="stylesheet" href="themes/nama-tema-baru/theme.css" data-theme="nama-tema-baru">
+### 4. Lihat hasilnya
+
+```
+preview.html?theme=nama-tema
 ```
 
-Atau serahkan ke data — `"theme": "nama-tema-baru"` di JSON — kalau kamu memang
-mau tema dipilih saat runtime (dipakai template switcher; sedikit lebih lambat
-karena CSS baru diminta setelah JSON turun).
+Tema baru otomatis muncul di galeri landing page setelah `./bin/make-site.py` —
+tidak ada daftar manual yang perlu diingat.
+
+**Jangan pernah mengedit `themes/<slug>/theme.css` langsung.** File itu
+digenerate dan akan tertimpa. Edit spec-nya, atau `decoration.css`.
 
 ## Token
 
@@ -80,7 +109,20 @@ tidak tipografi berhenti responsif.
 
 ### Bentuk & ritme
 
-`--u-radius`, `--u-radius-lg`, `--u-gutter`, `--u-sec-y`, `--u-stack`, `--u-max`.
+Siluet itu separuh dari yang membedakan satu tema dengan tema lain. Warna saja
+membuat sepuluh tema terlihat seperti satu tema dalam sepuluh suasana hati.
+
+| Token | Untuk | Contoh nilai |
+|---|---|---|
+| `--u-frame-radius` | potret sampul | `50% / 42%` oval, `999px 999px 0 0` gapura, `0` kotak |
+| `--u-frame-border` | cincin sampul | `6px solid #fff`, `1px solid var(--u-accent)`, `0` |
+| `--u-avatar-radius` | potret mempelai | `50%`, `999px 999px 14px 14px` |
+| `--u-photo-radius` | foto galeri | `0px`, `14px`, `999px 999px 0 0` |
+| `--u-pill-radius` | tanggal aktif, badge | `999px` atau `0px` |
+| `--u-polaroid-tilt` | foto penutup | `-2.5deg`, atau `0deg` biar tegak |
+| `--u-shadow` | bayangan bersama | `0 18px 40px rgba(0,0,0,.35)`, atau `8px 8px 0 #000` untuk kesan cetak |
+
+Plus `--u-radius`, `--u-radius-lg`, `--u-gutter`, `--u-sec-y`, `--u-stack`, `--u-max`.
 
 `--u-max` (default `30rem`) menahan undangan tetap selebar ponsel di desktop.
 Naikkan hanya kalau tema memang dirancang lebar.
