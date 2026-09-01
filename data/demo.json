@@ -1,0 +1,127 @@
+{
+  "$schema": "../schema.json",
+  "version": 1,
+  "theme": "forest-lace",
+
+  "meta": {
+    "title": "Dinda & Rafi",
+    "description": "Undangan pernikahan Dinda & Rafi — Kamis, 24 September 2026",
+    "locale": "id-ID",
+    "timezone": "Asia/Jakarta",
+    "timezoneLabel": "WIB"
+  },
+
+  "couple": {
+    "bride": {
+      "name": "Dinda",
+      "full": "Dinda Ayu Hanggraeni",
+      "parents": "Putri dari Bapak Hendro Pranoto & Ibu Heni",
+      "instagram": "dinda.ayu",
+      "photo": ""
+    },
+    "groom": {
+      "name": "Rafi",
+      "full": "Rafi Adi Prayoga",
+      "parents": "Putra dari Bapak Sujatwoto & Ibu Sri Lestari",
+      "instagram": "rafi.prayoga",
+      "photo": ""
+    }
+  },
+
+  "date": "2026-09-24T08:00:00+07:00",
+
+  "music": {
+    "src": "",
+    "label": "Putar musik"
+  },
+
+  "rsvp": {
+    "adapter": "demo",
+    "endpoint": "",
+    "guestbook": true
+  },
+
+  "sections": [
+    {
+      "type": "cover",
+      "eyebrow": "The Wedding Of",
+      "photo": "",
+      "monogram": "D & R",
+      "openLabel": "Buka Undangan",
+      "guestLabel": "Kepada Yth."
+    },
+    {
+      "type": "quote",
+      "arabic": "وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ",
+      "text": "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.",
+      "cite": "Q.S. Ar-Rum : 21"
+    },
+    {
+      "type": "countdown",
+      "heading": "Save the Date"
+    },
+    {
+      "type": "couple",
+      "greeting": "اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ",
+      "intro": "Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di hari bahagia kami."
+    },
+    {
+      "type": "event",
+      "heading": "Akad Nikah",
+      "start": "2026-09-24T08:00:00+07:00",
+      "end": "2026-09-24T10:00:00+07:00",
+      "venue": "Masjid Raya Sheikh Zayed",
+      "address": "Jl. A. Yani No.121, Gilingan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57134",
+      "maps": "https://maps.google.com/?q=Masjid+Raya+Sheikh+Zayed+Solo",
+      "mapsLabel": "Petunjuk Lokasi"
+    },
+    {
+      "type": "event",
+      "heading": "Resepsi",
+      "start": "2026-09-24T11:00:00+07:00",
+      "end": "2026-09-24T13:00:00+07:00",
+      "venue": "Masjid Raya Sheikh Zayed",
+      "address": "Jl. A. Yani No.121, Gilingan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57134",
+      "maps": "https://maps.google.com/?q=Masjid+Raya+Sheikh+Zayed+Solo",
+      "mapsLabel": "Petunjuk Lokasi"
+    },
+    {
+      "type": "gallery",
+      "heading": "Our Moments",
+      "caption": "Setiap langkah kecil membawa kami sampai di sini.",
+      "photos": []
+    },
+    {
+      "type": "story",
+      "heading": "Our Story",
+      "items": [
+        { "when": "2019", "title": "Pertama Bertemu", "text": "Satu kelas, satu kelompok tugas, dan obrolan yang nggak selesai-selesai sampai kantin tutup." },
+        { "when": "2022", "title": "Menjalin Hubungan", "text": "Jarak Solo–Jakarta ternyata cuma soal siapa yang mau lebih dulu bilang kangen." },
+        { "when": "2026", "title": "Melamar", "text": "Di teras rumah, disaksikan dua keluarga, dengan tangan yang gemetar." }
+      ]
+    },
+    {
+      "type": "gift",
+      "heading": "Wedding Gift",
+      "text": "Kehadiran dan doa Anda merupakan hadiah terindah bagi kami. Namun apabila Anda ingin memberikan tanda kasih, kami akan menerimanya dengan tulus dan penuh rasa syukur.",
+      "accounts": [
+        { "kind": "bank", "bank": "BCA", "number": "1234567890", "holder": "Dinda Ayu Hanggraeni" },
+        { "kind": "bank", "bank": "Mandiri", "number": "0987654321", "holder": "Rafi Adi Prayoga" },
+        { "kind": "address", "label": "Alamat Pengiriman Hadiah", "holder": "Dinda — 0812xxxxxxx", "address": "Jl. Melati No. 14, Banjarsari, Surakarta" }
+      ]
+    },
+    {
+      "type": "rsvp",
+      "heading": "Konfirmasi Kehadiran",
+      "text": "Mohon konfirmasi kehadiran Anda agar kami dapat menyambut dengan sebaik-baiknya.",
+      "guestbookHeading": "Dinding Tamu"
+    },
+    {
+      "type": "closing",
+      "heading": "We are Getting Married!",
+      "text": "Suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa dan restu kepada kedua mempelai.",
+      "signoff": "Atas kehadiran serta doa restunya, kami ucapkan terima kasih.",
+      "photo": ""
+    }
+  ]
+}

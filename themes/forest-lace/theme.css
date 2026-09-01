@@ -1,0 +1,158 @@
+/*!
+ * Theme: forest-lace
+ * Deep botanical green, cream lace, antique gold, magenta accent.
+ *
+ * Rule for every theme in this repo: override TOKENS first. Only reach for a
+ * component selector when the decoration genuinely cannot be expressed as a
+ * token — and keep those overrides in the "decoration" block at the bottom so
+ * the next theme author can see exactly how far a theme is allowed to go.
+ *
+ * All ornament is CSS/SVG. No raster assets ship with this theme: the whole
+ * thing is ~7 KB gzipped, which is the point — guests open these on bad
+ * connections at a venue.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Parisienne&family=Jost:wght@300;400;500&family=Amiri&display=swap");
+
+/* ------------------------------------------------------------------ tokens */
+
+:root {
+  /* colour */
+  --u-bg: #16301f;
+  --u-bg-2: #0d1c13;
+  --u-surface: #f7f0e1;
+  --u-surface-2: #ebdcc2;
+  --u-ink: #33301f;
+  --u-ink-soft: #7a7358;
+  --u-ink-invert: #f4ecdc;
+  --u-accent: #c2a05c;
+  --u-accent-ink: #16301f;
+  --u-highlight: #c2405f;
+  --u-line: rgba(51, 48, 31, 0.16);
+  --u-line-invert: rgba(244, 236, 220, 0.2);
+
+  /* deep maroon, used by the gift card */
+  --t-maroon: #5c1723;
+
+  /* type */
+  --u-font-display: "Parisienne", "Segoe Script", cursive;
+  --u-font-heading: "Cormorant Garamond", Georgia, serif;
+  --u-font-body: "Jost", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+
+  --u-size-display: clamp(3.4rem, 17vw, 6rem);
+  --u-tracking-caps: 0.28em;
+  --u-leading: 1.8;
+
+  /* shape */
+  --u-radius: 2px;
+  --u-radius-lg: 3px;
+  --u-orn-size: 34px;
+
+  /* botanical ground: layered soft light + a faint frond hatch */
+  --u-texture:
+    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(122, 168, 118, 0.14), transparent 70%),
+    radial-gradient(ellipse 60% 45% at 10% 60%, rgba(90, 140, 90, 0.1), transparent 70%),
+    radial-gradient(ellipse 55% 40% at 95% 85%, rgba(120, 160, 110, 0.09), transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.045' stroke-width='1.1' stroke-linecap='round'%3E%3Cpath d='M6 84C22 66 30 44 28 8'/%3E%3Cpath d='M28 30c-8-5-14-7-21-7M28 44c-9-4-15-5-22-4M28 58c-8-2-14-2-20 1M28 16c-6-5-11-8-17-9'/%3E%3Cpath d='M84 6C68 24 60 46 62 82'/%3E%3Cpath d='M62 60c8 5 14 7 21 7M62 46c9 4 15 5 22 4M62 32c8 2 14 2 20-1M62 74c6 5 11 8 17 9'/%3E%3C/g%3E%3C/svg%3E");
+
+  /* lace: a cream band with scalloped edge + eyelet holes */
+  --u-orn-top:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='34' viewBox='0 0 60 34'%3E%3Cpath d='M0 0h60v14a15 15 0 0 1-30 0 15 15 0 0 1-30 0z' fill='%23f7f0e1'/%3E%3Ccircle cx='15' cy='7' r='3' fill='%2316301f'/%3E%3Ccircle cx='45' cy='7' r='3' fill='%2316301f'/%3E%3C/svg%3E");
+  --u-orn-bottom:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='34' viewBox='0 0 60 34'%3E%3Cpath d='M0 34h60V20a15 15 0 0 0-30 0 15 15 0 0 0-30 0z' fill='%23f7f0e1'/%3E%3Ccircle cx='15' cy='27' r='3' fill='%2316301f'/%3E%3Ccircle cx='45' cy='27' r='3' fill='%2316301f'/%3E%3C/svg%3E");
+}
+
+/* --------------------------------------------------------------- decoration
+ * Everything below is theme-specific styling that tokens cannot express.
+ * Keep it short. If this block grows past ~80 lines, the engine is probably
+ * missing a token — add the token instead of piling on overrides here.
+ * ------------------------------------------------------------------------ */
+
+body { background-attachment: fixed; }
+
+.u-orn { background-repeat: repeat-x; }
+
+/* Lace belongs between sections, not stacked on the cover or the closing —
+   those two carry their own full-bleed composition. */
+.u-cover .u-orn,
+.u-closing .u-orn--bottom { display: none; }
+
+/* Antique gold ring around the cover portrait, drawn with a conic gradient so
+   it catches "light" the way a metal frame does. */
+.u-cover__frame {
+  border: 0;
+  padding: 9px;
+  background: conic-gradient(
+    from 200deg,
+    #8a6a2f, #e8cf92, #b98f45, #f2e2b0, #a87e38, #e8cf92, #8a6a2f
+  );
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.35),
+    0 20px 45px rgba(0, 0, 0, 0.45);
+}
+.u-cover__frame .u-photo { border-radius: inherit; }
+
+/* The two names overlap slightly, the way hand-lettering does. */
+.u-cover__names { letter-spacing: 0.01em; }
+.u-cover__amp { font-family: var(--u-font-heading); font-style: italic; }
+
+.u-cover__eyebrow,
+.u-cover__date { font-family: var(--u-font-body); font-weight: 300; }
+
+/* Section headings sit in small caps with a hairline rule beneath. */
+.u-h2 {
+  font-style: italic;
+  letter-spacing: 0.03em;
+}
+.u-countdown__heading,
+.u-gallery__heading,
+.u-story__heading {
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  letter-spacing: var(--u-tracking-caps);
+}
+.u-countdown__heading::after,
+.u-gallery__heading::after,
+.u-story__heading::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 1px;
+  background: var(--u-accent);
+  margin: 0.9rem auto 0;
+}
+
+.u-card { box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28); }
+
+/* Gift card inverts to deep maroon — the one place the palette goes warm. */
+.u-gift__card {
+  background: var(--t-maroon);
+  color: var(--u-ink-invert);
+  --u-ink: var(--u-ink-invert);
+  --u-ink-soft: rgba(244, 236, 220, 0.66);
+  --u-line: rgba(244, 236, 220, 0.24);
+}
+
+/* Wax seal, drawn rather than photographed. */
+.u-closing__seal {
+  background:
+    radial-gradient(circle at 34% 30%, rgba(255, 255, 255, 0.24), transparent 46%),
+    radial-gradient(circle at 50% 50%, #8e2233, #5c1723 72%);
+  border-radius: 46% 54% 52% 48% / 50% 46% 54% 50%;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4), inset 0 -3px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.u-closing__seal::after {
+  content: "";
+  position: absolute;
+  inset: 22%;
+  border: 1px solid rgba(244, 236, 220, 0.4);
+  border-radius: 50%;
+}
+
+.u-closing__frame { border-radius: 1px; }
+
+/* Guestbook entries read as handwritten notes pinned to the page. */
+.u-guestbook__msg { font-family: var(--u-font-heading); font-size: 1.02rem; font-style: italic; }
