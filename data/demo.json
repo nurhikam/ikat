@@ -2,7 +2,6 @@
   "$schema": "../schema.json",
   "version": 1,
   "theme": "forest-lace",
-
   "meta": {
     "title": "Dinda & Rafi",
     "description": "Undangan pernikahan Dinda & Rafi — Kamis, 24 September 2026",
@@ -10,7 +9,6 @@
     "timezone": "Asia/Jakarta",
     "timezoneLabel": "WIB"
   },
-
   "couple": {
     "bride": {
       "name": "Dinda",
@@ -27,26 +25,22 @@
       "photo": ""
     }
   },
-
   "date": "2026-09-24T08:00:00+07:00",
-
   "music": {
     "src": "assets/music/forest-lace.mp3",
     "volume": 0.55,
     "label": "Putar musik"
   },
-
   "rsvp": {
     "adapter": "demo",
     "endpoint": "",
     "guestbook": true
   },
-
   "sections": [
     {
       "type": "cover",
       "eyebrow": "The Wedding Of",
-      "photo": "",
+      "photo": "assets/photos/cover.webp",
       "monogram": "D & R",
       "openLabel": "Buka Undangan",
       "guestLabel": "Kepada Yth.",
@@ -91,15 +85,48 @@
       "type": "gallery",
       "heading": "Our Moments",
       "caption": "Setiap langkah kecil membawa kami sampai di sini.",
-      "photos": []
+      "photos": [
+        {
+          "src": "assets/photos/gallery-3.webp",
+          "caption": "Hari itu"
+        },
+        {
+          "src": "assets/photos/gallery-2.webp",
+          "caption": "Senja"
+        },
+        {
+          "src": "assets/photos/bride.webp",
+          "caption": "Janji"
+        },
+        {
+          "src": "assets/photos/groom.webp",
+          "caption": "Cincin"
+        },
+        {
+          "src": "assets/photos/gallery-1.webp",
+          "caption": "Langkah pertama"
+        }
+      ]
     },
     {
       "type": "story",
       "heading": "Our Story",
       "items": [
-        { "when": "2019", "title": "Pertama Bertemu", "text": "Satu kelas, satu kelompok tugas, dan obrolan yang nggak selesai-selesai sampai kantin tutup." },
-        { "when": "2022", "title": "Menjalin Hubungan", "text": "Jarak Solo–Jakarta ternyata cuma soal siapa yang mau lebih dulu bilang kangen." },
-        { "when": "2026", "title": "Melamar", "text": "Di teras rumah, disaksikan dua keluarga, dengan tangan yang gemetar." }
+        {
+          "when": "2019",
+          "title": "Pertama Bertemu",
+          "text": "Satu kelas, satu kelompok tugas, dan obrolan yang nggak selesai-selesai sampai kantin tutup."
+        },
+        {
+          "when": "2022",
+          "title": "Menjalin Hubungan",
+          "text": "Jarak Solo–Jakarta ternyata cuma soal siapa yang mau lebih dulu bilang kangen."
+        },
+        {
+          "when": "2026",
+          "title": "Melamar",
+          "text": "Di teras rumah, disaksikan dua keluarga, dengan tangan yang gemetar."
+        }
       ]
     },
     {
@@ -107,9 +134,24 @@
       "heading": "Wedding Gift",
       "text": "Kehadiran dan doa Anda merupakan hadiah terindah bagi kami. Namun apabila Anda ingin memberikan tanda kasih, kami akan menerimanya dengan tulus dan penuh rasa syukur.",
       "accounts": [
-        { "kind": "bank", "bank": "BCA", "number": "1234567890", "holder": "Dinda Ayu Hanggraeni" },
-        { "kind": "bank", "bank": "Mandiri", "number": "0987654321", "holder": "Rafi Adi Prayoga" },
-        { "kind": "address", "label": "Alamat Pengiriman Hadiah", "holder": "Dinda — 0812xxxxxxx", "address": "Jl. Melati No. 14, Banjarsari, Surakarta" }
+        {
+          "kind": "bank",
+          "bank": "BCA",
+          "number": "1234567890",
+          "holder": "Dinda Ayu Hanggraeni"
+        },
+        {
+          "kind": "bank",
+          "bank": "Mandiri",
+          "number": "0987654321",
+          "holder": "Rafi Adi Prayoga"
+        },
+        {
+          "kind": "address",
+          "label": "Alamat Pengiriman Hadiah",
+          "holder": "Dinda — 0812xxxxxxx",
+          "address": "Jl. Melati No. 14, Banjarsari, Surakarta"
+        }
       ]
     },
     {
@@ -123,7 +165,7 @@
       "heading": "We are Getting Married!",
       "text": "Suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa dan restu kepada kedua mempelai.",
       "signoff": "Atas kehadiran serta doa restunya, kami ucapkan terima kasih.",
-      "photo": ""
+      "photo": "assets/photos/closing.webp"
     }
   ]
 }

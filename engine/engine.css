@@ -33,7 +33,10 @@
   --u-font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
   --u-font-arabic: "Traditional Arabic", "Amiri", serif;
 
-  --u-size-display: clamp(3rem, 15vw, 5.5rem);
+  /* Sized against viewport HEIGHT as well as width. A phone with the address
+     bar showing gives about 550px, and the cover has to fit its whole stack —
+     names, portrait, guest, and the open button — inside that. */
+  --u-size-display: clamp(2.2rem, min(14vw, 8svh), 5.5rem);
   --u-size-h2: clamp(1.5rem, 6vw, 2.1rem);
   --u-size-h3: clamp(1.15rem, 4.5vw, 1.4rem);
   --u-size-body: 0.975rem;
@@ -93,8 +96,19 @@ body {
 }
 
 /* Scroll is locked behind the cover until the guest opens the invitation —
-   the single most load-bearing interaction in this format. */
+   the single most load-bearing interaction in this format.
+   The cover is sized to fit without scrolling (see .u-cover). These rules are
+   the safety net: while locked, everything after the cover is out of the
+   layout and the cover itself scrolls, so the open button is reachable even if
+   a long name or a very short screen pushes the stack past the fold. Without
+   this the invitation simply cannot be opened, which is the worst failure this
+   format has. */
 html.is-locked, html.is-locked body { overflow: hidden; height: 100%; }
+html.is-locked #app { max-height: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+html.is-locked .u-sec:not(.u-cover) { display: none; }
+/* A hard ceiling while locked is what forces the portrait to yield instead of
+   pushing the button past the fold. Lifted on open so the cover can breathe. */
+html.is-locked .u-cover { max-height: 100svh; }
 
 img { max-width: 100%; display: block; }
 button, input, textarea { font: inherit; color: inherit; }
@@ -167,13 +181,69 @@ button, input, textarea { font: inherit; color: inherit; }
   transition: opacity var(--u-dur) var(--u-ease), transform var(--u-dur) var(--u-ease);
 }
 .u-reveal.is-in { opacity: 1; transform: none; }
+
+/* Photographs settle rather than appear: a small scale-down as the block
+   arrives, which reads as the image coming to rest. */
+.u-reveal .u-photo {
+  transform: scale(1.05);
+  transition: transform 1200ms var(--u-ease);
+}
+.u-reveal.is-in .u-photo { transform: none; }
+
+/* Lists arrive one item at a time. The stagger encodes reading order, which is
+   real information in a timeline. */
+.u-story__item { transition-delay: calc(var(--u-i, 0) * 110ms); }
+.u-gallery__item { transition-delay: calc(var(--u-i, 0) * 90ms); }
+
 @media (prefers-reduced-motion: reduce) {
   .u-reveal { opacity: 1; transform: none; transition: none; }
+  .u-reveal .u-photo { transform: none; transition: none; }
+  .u-story__item, .u-gallery__item { transition-delay: 0s; }
+}
+
+/* ----------------------------------------------------- cover entrance */
+
+/* The one orchestrated moment in the page. Everything else is a quiet
+   settle on scroll; the cover gets a proper sequence because it is the first
+   thing a guest sees and the only screen they are held on. */
+@keyframes u-rise {
+  from { opacity: 0; transform: translateY(16px); }
+}
+@keyframes u-frame-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.94); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html.is-ready .u-cover__inner > * {
+    animation: u-rise 900ms var(--u-ease) backwards;
+  }
+  html.is-ready .u-cover__inner > *:nth-child(1) { animation-delay: 80ms; }
+  html.is-ready .u-cover__inner > *:nth-child(2) { animation-delay: 200ms; }
+  html.is-ready .u-cover__inner > *:nth-child(3) { animation-delay: 320ms; }
+  html.is-ready .u-cover__frame {
+    animation-name: u-frame-in;
+    animation-duration: 1200ms;
+    animation-delay: 420ms;
+  }
+  html.is-ready .u-cover__inner > *:nth-child(5) { animation-delay: 700ms; }
+  html.is-ready .u-cover__inner > *:nth-child(6) { animation-delay: 840ms; }
+}
+
+/* One tick of weight on the seconds, so the countdown reads as live rather
+   than as a static number that happens to change. */
+@keyframes u-tick { 50% { transform: translateY(-2px); opacity: 0.75; } }
+@media (prefers-reduced-motion: no-preference) {
+  .u-countdown__num.is-tick { animation: u-tick 420ms var(--u-ease); }
 }
 
 /* ---------------------------------------------------------------- photos */
 
-.u-photo { width: 100%; height: 100%; object-fit: cover; }
+/* height:auto by default. Filling the container is opt-in, for the two places
+   whose frame defines the box; anywhere else "height:100%" makes the image
+   swallow a stretched grid row and push its own caption out from under it. */
+.u-photo { width: 100%; height: auto; object-fit: cover; display: block; }
+.u-cover__frame .u-photo,
+.u-closing__frame .u-photo { height: 100%; }
 
 /* Shown when no photo is supplied. A monogram, not a broken frame. */
 .u-photo--empty {
@@ -195,13 +265,19 @@ button, input, textarea { font: inherit; color: inherit; }
 
 /* ----------------------------------------------------------------- cover */
 
+/* svh, not dvh: size for the *smallest* viewport state (address bar showing)
+   so nothing is ever cut off, rather than for the state you only get after
+   scrolling — which the guest cannot do here. */
 .u-cover {
   min-height: 100svh;
-  min-height: 100dvh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-block: clamp(2rem, 8vh, 4rem);
+  padding-block: clamp(1rem, 4svh, 3.5rem);
+  /* Never clip the entry point. */
+  overflow: visible;
 }
 .u-cover__inner {
   position: relative;
@@ -209,9 +285,14 @@ button, input, textarea { font: inherit; color: inherit; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--u-stack);
+  justify-content: center;
+  gap: clamp(0.5rem, 1.6svh, var(--u-stack));
   width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
 }
+/* Only the portrait gives up space; type keeps its size. */
+.u-cover__inner > *:not(.u-cover__frame) { flex: 0 0 auto; }
 .u-cover__eyebrow {
   margin: 0;
   font-size: var(--u-size-small);
@@ -242,8 +323,15 @@ button, input, textarea { font: inherit; color: inherit; }
   font-size: var(--u-size-small);
   letter-spacing: 0.18em;
 }
+/* The portrait is the biggest consumer of vertical space, so it is the one
+   element allowed to shrink. Driving it by HEIGHT (with width derived from the
+   aspect ratio) is what lets flex reclaim space on a short screen — sizing it
+   by width instead leaves the height fixed and the button gets pushed off. */
 .u-cover__frame {
-  width: min(62%, 15rem);
+  flex: 0 1 auto;
+  min-height: 0;
+  height: min(34svh, 20rem, calc(60vw * 4 / 3));
+  width: auto;
   aspect-ratio: 3 / 4;
   overflow: hidden;
   border-radius: 50% / 42%;
@@ -438,6 +526,9 @@ button, input, textarea { font: inherit; color: inherit; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.6rem;
+  /* Figures size to their own content; stretching them detaches the caption
+     from the picture it belongs to. */
+  align-items: start;
 }
 .u-gallery__item { margin: 0; position: relative; }
 .u-gallery__item:first-child { grid-column: span 2; }

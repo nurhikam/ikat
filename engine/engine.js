@@ -248,7 +248,7 @@
             photos.map(function (p, i) {
               var src = typeof p === 'string' ? p : p.src;
               var cap = typeof p === 'string' ? '' : (p.caption || '');
-              return '<figure class="u-gallery__item" data-i="' + i + '">' +
+              return '<figure class="u-gallery__item u-reveal" data-i="' + i + '">' +
                        photo(src, 'u-gallery__photo', cap || ('Foto ' + (i + 1)), '') +
                        when(cap, function (c) { return '<figcaption class="u-gallery__cap">' + esc(c) + '</figcaption>'; }) +
                      '</figure>';
@@ -550,16 +550,36 @@
         return;
       }
       var s = Math.floor(diff / 1000);
-      nums.days.textContent = pad(Math.floor(s / 86400));
-      nums.hours.textContent = pad(Math.floor(s % 86400 / 3600));
-      nums.minutes.textContent = pad(Math.floor(s % 3600 / 60));
-      nums.seconds.textContent = pad(s % 60);
+      set(nums.days, pad(Math.floor(s / 86400)));
+      set(nums.hours, pad(Math.floor(s % 86400 / 3600)));
+      set(nums.minutes, pad(Math.floor(s % 3600 / 60)));
+      set(nums.seconds, pad(s % 60));
+    }
+
+    /* Only touch the DOM when a digit actually changes, and let CSS mark the
+       change — restarting the animation needs the class off for one frame. */
+    function set(node, value) {
+      if (node.textContent === value) return;
+      node.textContent = value;
+      node.classList.remove('is-tick');
+      void node.offsetWidth;
+      node.classList.add('is-tick');
     }
     tick();
     var timer = setInterval(tick, 1000);
   }
 
   function initReveal() {
+    // Index siblings so CSS can stagger them without hard-coding nth-child
+    // rules per section type.
+    ['.u-story__list', '.u-gallery__grid'].forEach(function (sel) {
+      qsa(sel).forEach(function (list) {
+        Array.prototype.forEach.call(list.children, function (child, i) {
+          child.style.setProperty('--u-i', i);
+        });
+      });
+    });
+
     var items = qsa('.u-reveal');
     if (!('IntersectionObserver' in window) ||
         window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
