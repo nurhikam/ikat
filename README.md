@@ -1,7 +1,12 @@
 # undangan
 
+**Demo: https://nurhikam.github.io/undangan/?to=Nama%20Tamu**
+
 Engine undangan pernikahan digital yang digerakkan data. Satu file JSON per
 klien, satu folder CSS per tema, tanpa build step.
+
+First paint 20,2 KB gzip — diukur di deployment di atas, bukan di localhost.
+Musik (768 KB) baru diambil saat tamu menekan tombol putar.
 
 Dibuat karena bagian mahal dari bisnis undangan digital bukan mendesain halaman
 cantik sekali — tapi mengirim halaman cantik ke-200 tanpa mengulang pekerjaan.
