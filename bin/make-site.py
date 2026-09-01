@@ -30,7 +30,7 @@ PLANS = [
         "name": "Basic", "for": "Buat yang butuh cepat dan beres",
         "price": "Rp 99.000", "unit": "sekali bayar",
         "features": [
-            "Pilih 1 dari 11 tema",
+            "Pilih 1 dari 101 tema",
             "Link personal per tamu",
             "RSVP dan dinding tamu",
             "Hitung mundur dan tombol lokasi",
@@ -42,7 +42,7 @@ PLANS = [
         "name": "Plus", "for": "Paling banyak dipakai",
         "price": "Rp 199.000", "unit": "sekali bayar",
         "features": [
-            "Semua 11 tema, boleh gonta-ganti",
+            "Semua 101 tema, boleh gonta-ganti",
             "Warna disesuaikan foto kalian",
             "Galeri foto dan musik pilihan sendiri",
             "Amplop digital dan salin rekening",
@@ -75,7 +75,7 @@ WHY = [
      "mereka ngetik ulang."),
     ("02", "Ganti tema tanpa ulang dari awal",
      "Data kalian kepisah dari tampilan. Ganti tema itu satu setelan, bukan bikin ulang. "
-     "Sebelas tema, semuanya bisa dicoba sebelum mutusin."),
+     "101 tema, semuanya bisa dicoba sebelum mutusin."),
     ("03", "Nggak punya foto prewed? Tetap jadi",
      "Tanpa foto, sampulnya berubah jadi monogram terukir yang memang dirancang, bukan kotak "
      "kosong. Banyak pasangan nggak sempat atau nggak mau prewed, dan itu bukan versi cacat."),
