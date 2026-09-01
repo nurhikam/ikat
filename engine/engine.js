@@ -464,9 +464,19 @@
 
   /* ------------------------------------------------------------ behaviours */
 
-  function initGuest(cfg) {
+  function guestName(cfg) {
     var params = new URLSearchParams(location.search);
     var name = params.get('to') || params.get('u') || params.get('kepada');
+    if (has(name)) return name;
+    // Falls back to cover.guestFallback so one generic link (broadcast to a
+    // group, or a preview) still reads as an invitation rather than showing
+    // an empty slot where a name belongs.
+    var cover = (cfg.sections || []).filter(function (s) { return s.type === 'cover'; })[0];
+    return cover && has(cover.guestFallback) ? cover.guestFallback : '';
+  }
+
+  function initGuest(cfg) {
+    var name = guestName(cfg);
     if (!has(name)) return;
     var box = qs('#u-guest'), out = qs('#u-guest-name');
     if (!box || !out) return;
@@ -613,8 +623,7 @@
     var more = qs('#u-guestbook-more');
     var PAGE = 5, shown = PAGE, entries = [];
 
-    var params = new URLSearchParams(location.search);
-    var guest = params.get('to') || params.get('u') || params.get('kepada');
+    var guest = guestName(cfg);
     if (has(guest)) qs('#u-rsvp-name').value = guest;
 
     function render() {

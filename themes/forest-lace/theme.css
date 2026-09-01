@@ -93,6 +93,27 @@ body { background-attachment: fixed; }
 }
 .u-cover__frame .u-photo { border-radius: inherit; }
 
+/* Without a photo the cover falls back to a monogram. Give it a hairline rule
+   and real scale so it reads as an engraved plate — the no-prewedding-photo
+   case has to look chosen, not empty. */
+.u-cover__frame .u-photo--empty {
+  position: relative;
+  background: radial-gradient(ellipse at 50% 34%, #fbf6ea, var(--u-surface-2));
+}
+.u-cover__frame .u-photo--empty::after {
+  content: "";
+  position: absolute;
+  inset: 7%;
+  border: 1px solid color-mix(in srgb, var(--u-accent) 55%, transparent);
+  border-radius: inherit;
+}
+.u-cover__frame .u-photo__mono {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(2.4rem, 12vw, 3.6rem);
+  color: color-mix(in srgb, var(--u-ink) 72%, var(--u-accent));
+}
+
 /* The two names overlap slightly, the way hand-lettering does. */
 .u-cover__names { letter-spacing: 0.01em; }
 .u-cover__amp { font-family: var(--u-font-heading); font-style: italic; }

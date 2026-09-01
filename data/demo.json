@@ -48,7 +48,8 @@
       "photo": "",
       "monogram": "D & R",
       "openLabel": "Buka Undangan",
-      "guestLabel": "Kepada Yth."
+      "guestLabel": "Kepada Yth.",
+      "guestFallback": "Bapak/Ibu/Saudara/i"
     },
     {
       "type": "quote",

@@ -27,6 +27,23 @@ $EDITOR data/andi-sari.json      # isi nama, tanggal, venue, rekening
 Menghasilkan `andi-sari.html` + `data/andi-sari.json`. Bagikan sebagai
 `https://…/andi-sari.html?to=Nama%20Tamu`.
 
+## Kirim sebagai satu file
+
+```bash
+./bin/build-single.py data/andi-sari.json -o dist/andi-sari.html
+```
+
+Satu file ~64 KB berisi engine, tema, dan data sekaligus. Bisa di-email ke
+klien, dibuka dari flashdisk, atau ditaruh di hosting mana pun tanpa struktur
+folder. Ini juga yang diserahkan kalau klien mau menyimpan undangannya setelah
+acara selesai.
+
+## Arsitektur
+
+![Arsitektur undangan](docs/architecture.svg)
+
+<sub>Sumber: [`docs/architecture.mmd`](docs/architecture.mmd) — Mermaid, dirender dengan [line9](https://line9.ai): `line9 render docs/architecture.mmd --out docs/architecture.svg --theme linen`</sub>
+
 ## Struktur
 
 ```
@@ -46,7 +63,8 @@ akan sama dengan template pertama — dan seluruh gunanya hilang.
 ## Yang sudah jalan
 
 - Cover pengunci scroll, terbuka lewat tombol
-- Nama tamu personal dari `?to=` — di-render aman lewat `textContent`
+- Nama tamu personal dari `?to=` — di-render aman lewat `textContent`, dengan
+  fallback sopan untuk link generik
 - Hitung mundur, sadar zona waktu acara (bukan zona waktu tamu)
 - Strip hari-dalam-seminggu dengan tanggal acara ditandai
 - Simpan ke Google Calendar

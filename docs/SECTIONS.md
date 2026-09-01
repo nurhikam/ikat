@@ -15,11 +15,15 @@ Layar penuh, mengunci scroll sampai tamu menekan tombol buka.
 
 ```json
 { "type": "cover", "eyebrow": "The Wedding Of", "photo": "", "monogram": "D & R",
-  "openLabel": "Buka Undangan", "guestLabel": "Kepada Yth." }
+  "openLabel": "Buka Undangan", "guestLabel": "Kepada Yth.",
+  "guestFallback": "Bapak/Ibu/Saudara/i" }
 ```
 
-Nama, tanggal, dan nama tamu tidak ditulis di sini — diambil dari `couple`,
-`date`, dan query string.
+Nama dan tanggal tidak ditulis di sini — diambil dari `couple` dan `date`.
+
+Nama tamu berasal dari query string. `guestFallback` dipakai kalau query string
+kosong, supaya satu link generik (disebar ke grup WhatsApp, atau dipakai buat
+preview) tetap terbaca sebagai undangan dan bukan slot kosong.
 
 ### `quote`
 
@@ -142,6 +146,8 @@ undangan.html?to=Keluarga%20Besar%20Wijaya
 mengisi otomatis field nama di form RSVP. Nilainya di-render lewat
 `textContent`, bukan `innerHTML` — jadi link yang dibagikan ke ratusan tamu
 tidak bisa dipakai untuk menyuntik markup.
+
+Tanpa parameter, engine memakai `guestFallback` dari section `cover`.
 
 ## Backend RSVP
 

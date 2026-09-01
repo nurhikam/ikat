@@ -1,0 +1,25 @@
+flowchart LR
+  KLIEN["Klien baru<br/>= 1 file JSON"] --> DATA
+  TEMA["Tema baru<br/>= 1 file CSS"] --> THEME
+
+  subgraph VAR["Yang berubah per pekerjaan"]
+    DATA["data/klien.json<br/>nama · tanggal · venue<br/>rekening · urutan section"]
+    THEME["themes/nama/theme.css<br/>warna · font · ornamen<br/>token saja, tanpa JS"]
+  end
+
+  subgraph FIX["Engine — tidak pernah disentuh per klien"]
+    JS["engine.js<br/>renderer section<br/>countdown · RSVP · musik"]
+    CSS["engine.css<br/>tata letak · state<br/>motion · aksesibilitas"]
+  end
+
+  DATA --> JS
+  JS --> PAGE
+  CSS --> PAGE
+  THEME --> PAGE
+
+  PAGE["klien.html?to=Nama Tamu"] --> TAMU["Tamu<br/>~22 KB gzip<br/>1 request CSS, 1 JS"]
+
+  PAGE --> RSVP{"RSVP<br/>adapter"}
+  RSVP -->|demo| LS["localStorage<br/>preview tanpa hosting"]
+  RSVP -->|script| GS["Google Sheet"]
+  RSVP -->|supabase| SB["Supabase<br/>banyak klien"]
