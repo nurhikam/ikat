@@ -1,0 +1,62 @@
+/*! Ikat theme: Atelier Sage — Oval arch sage di atas field hijau — botanical wreath dan lace heart yang lembut.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/atelier-sage-arch/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Cormorant+Garamond:wght@300&family=DM+Sans:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #d4d8c8;
+  --u-bg-2: #c2c8b4;
+  --u-surface: #fdfcfa;
+  --u-surface-2: #f0eee6;
+  --u-ink: #2e3528;
+  --u-ink-soft: #5e6a58;
+  --u-ink-invert: #2e3528;
+  --u-accent: #7a8a6a;
+  --u-accent-ink: #fdfcfa;
+  --u-highlight: #b08a5a;
+  --u-line: rgba(46,53,40,0.14);
+  --u-line-invert: rgba(46,53,40,0.18);
+
+  /* tipografi */
+  --u-font-display: "Cormorant Garamond", Georgia, serif;
+  --u-font-heading: "Cormorant Garamond", Georgia, serif;
+  --u-font-body: "DM Sans", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.30em;
+
+  /* bentuk */
+  --u-radius: 2px;
+  --u-radius-lg: 24px 24px 2px 2px;
+  --u-frame-radius: 999px 999px 0 0;
+  --u-frame-border: 1px solid #7a8a6a;
+  --u-avatar-radius: 999px 999px 0 0;
+  --u-photo-radius: 2px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 20px 44px rgba(46,53,40,0.12);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #7a8a6a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #7a8a6a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #7a8a6a12, transparent 66%);
+}
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+/* Atelier Sage — oval arch dengan botanical wreath, lace heart di atas field hijau. */
+:root {
+  --u-paper:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%237a8a6a' stroke-opacity='0.04' stroke-width='0.6'%3E%3Cpath d='M20 50 Q30 30 50 20 Q70 30 80 50 Q70 70 50 80 Q30 70 20 50'/%3E%3C/g%3E%3C/svg%3E");
+  --u-ambient:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(122,138,106,0.10), transparent 65%),
+    radial-gradient(ellipse 60% 40% at 15% 60%, rgba(122,138,106,0.06), transparent 60%);
+  --u-texture:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg fill='none' stroke='%237a8a6a' stroke-opacity='0.05' stroke-width='0.7' stroke-linecap='round'%3E%3Cpath d='M15 75 Q30 50 45 20'/%3E%3Cpath d='M45 20 Q50 28 55 22 M45 35 Q38 30 32 36 M45 50 Q52 44 58 50'/%3E%3Cpath d='M75 15 Q60 30 55 55'/%3E%3Cpath d='M55 55 Q62 50 68 56 M55 40 Q48 38 42 44'/%3E%3C/g%3E%3C/svg%3E");
+  --u-divider:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='14' viewBox='0 0 200 14'%3E%3Cpath d='M0 7 Q30 1 60 7 T120 7 T180 7 T200 7' fill='none' stroke='%237a8a6a' stroke-width='0.9' stroke-linecap='round' opacity='0.45'/%3E%3Ccircle cx='100' cy='7' r='2.5' fill='%237a8a6a' opacity='0.35'/%3E%3C/svg%3E");
+}
+.u-cover__frame { border-radius: 999px 999px 0 0; }
+.u-orn--top { height: 42px; }

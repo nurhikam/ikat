@@ -1,0 +1,60 @@
+/*! Ikat theme: Atelier Mauve — Dusty mauve dan greige dengan watercolor floral tipis — romantis yang ditahan.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/atelier-mauve/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Cormorant:ital,wght@0,300;1,300&family=DM+Sans:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #d8c8c8;
+  --u-bg-2: #c8b8b8;
+  --u-surface: #fdf8f8;
+  --u-surface-2: #f0e4e4;
+  --u-ink: #3a2a2e;
+  --u-ink-soft: #6a5a5e;
+  --u-ink-invert: #3a2a2e;
+  --u-accent: #8a6a6e;
+  --u-accent-ink: #fdf8f8;
+  --u-highlight: #7a9a8a;
+  --u-line: rgba(58,42,46,0.14);
+  --u-line-invert: rgba(58,42,46,0.18);
+
+  /* tipografi */
+  --u-font-display: "Tenor Sans", Georgia, serif;
+  --u-font-heading: "Cormorant", Georgia, serif;
+  --u-font-body: "DM Sans", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.28em;
+
+  /* bentuk */
+  --u-radius: 4px;
+  --u-radius-lg: 20px;
+  --u-frame-radius: 20px;
+  --u-frame-border: 1px solid #8a6a6e;
+  --u-avatar-radius: 20px;
+  --u-photo-radius: 12px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 18px 40px rgba(58,42,46,0.10);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #8a6a6e22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #8a6a6e16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #8a6a6e12, transparent 66%);
+}
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+/* Atelier Mauve — dusty mauve + greige, watercolor floral tipis, romantis ditahan. */
+:root {
+  --u-paper:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23d8c8c8' opacity='0.06'%3E%3Ccircle cx='30' cy='30' r='12'/%3E%3Ccircle cx='70' cy='70' r='10'/%3E%3C/g%3E%3C/svg%3E");
+  --u-ambient:
+    radial-gradient(ellipse 65% 45% at 50% 10%, rgba(138,106,110,0.08), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 80% 85%, rgba(122,154,138,0.06), transparent 60%);
+  --u-texture:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%238a6a6e' stroke-opacity='0.04' stroke-width='0.6'%3E%3Ccircle cx='25' cy='25' r='8'/%3E%3Ccircle cx='55' cy='55' r='6'/%3E%3Cpath d='M25 33 Q30 40 35 33'/%3E%3C/g%3E%3C/svg%3E");
+  --u-divider:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='12' viewBox='0 0 200 12'%3E%3Cpath d='M0 6 Q40 1 80 6 T160 6 T200 6' fill='none' stroke='%238a6a6e' stroke-width='0.7' opacity='0.4'/%3E%3Ccircle cx='100' cy='6' r='2' fill='%238a6a6e' opacity='0.3'/%3E%3C/svg%3E");
+}

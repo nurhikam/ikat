@@ -1,0 +1,63 @@
+/*! Ikat theme: Atelier Noir — Black velvet dan gold foil dengan pearl tipis — malam yang paling mahal.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/atelier-noir/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Bodoni+Moda:opsz@6..96&family=Space+Grotesk:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #0f0f0f;
+  --u-bg-2: #000000;
+  --u-surface: #f5f0e6;
+  --u-surface-2: #e8ddd0;
+  --u-ink: #0f0f0f;
+  --u-ink-soft: #5a5a5a;
+  --u-ink-invert: #f5f0e6;
+  --u-accent: #c9a84c;
+  --u-accent-ink: #0f0f0f;
+  --u-highlight: #c04030;
+  --u-line: rgba(15,15,15,0.14);
+  --u-line-invert: rgba(245,240,230,0.18);
+
+  /* tipografi */
+  --u-font-display: "Bodoni Moda", Georgia, serif;
+  --u-font-heading: "Bodoni Moda", Georgia, serif;
+  --u-font-body: "Space Grotesk", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.36em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 1px solid #c9a84c;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 24px 50px rgba(0,0,0,0.50);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #c9a84c22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #c9a84c16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #c9a84c12, transparent 66%);
+}
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+/* Atelier Noir — black velvet + gold foil + pearl tipis. Malam paling mahal. */
+:root {
+  --u-paper:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='%23c9a84c' opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/svg%3E");
+  --u-ambient:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,0.10), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 50% 100%, rgba(0,0,0,0.30), transparent 60%);
+  --u-texture:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='0.05' stroke-width='0.5'%3E%3Ccircle cx='40' cy='40' r='24'/%3E%3Ccircle cx='40' cy='40' r='16'/%3E%3C/g%3E%3C/svg%3E");
+  --u-divider:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='14' viewBox='0 0 200 14'%3E%3Cpath d='M0 7 Q50 2 100 7 T200 7' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.5'/%3E%3Ccircle cx='100' cy='7' r='2.5' fill='%23c9a84c' opacity='0.5'/%3E%3C/svg%3E");
+}
+.u-cover__frame { border: 1px solid #c9a84c; }
+.u-card { border: 1px solid rgba(201,168,76,0.14); }
+.u-h2 { letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.9rem; }

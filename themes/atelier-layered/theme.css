@@ -1,0 +1,62 @@
+/*! Ikat theme: Atelier Layered — Ghosted backdrop dengan foto tajam di depan dan white circle badge — dreamy berlapis.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/atelier-layered/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300&family=Cormorant:wght@300&family=Inter:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #e8ddd0;
+  --u-bg-2: #d8ccb8;
+  --u-surface: #fdfcfa;
+  --u-surface-2: #f5f0e8;
+  --u-ink: #2c2a24;
+  --u-ink-soft: #6a6460;
+  --u-ink-invert: #2c2a24;
+  --u-accent: #6a8a7a;
+  --u-accent-ink: #fdfcfa;
+  --u-highlight: #c9a84c;
+  --u-line: rgba(44,42,36,0.14);
+  --u-line-invert: rgba(44,42,36,0.18);
+
+  /* tipografi */
+  --u-font-display: "Cormorant", Georgia, serif;
+  --u-font-heading: "Cormorant", Georgia, serif;
+  --u-font-body: "Inter", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.26em;
+
+  /* bentuk */
+  --u-radius: 12px;
+  --u-radius-lg: 20px;
+  --u-frame-radius: 20px;
+  --u-frame-border: 1px solid rgba(44,42,36,0.10);
+  --u-avatar-radius: 20px;
+  --u-photo-radius: 12px;
+  --u-pill-radius: 999px;
+  --u-polaroid-tilt: -1deg;
+  --u-shadow: 0 18px 40px rgba(44,42,36,0.10);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6a8a7a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6a8a7a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6a8a7a12, transparent 66%);
+}
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+/* Atelier Layered — ghosted backdrop + foto tajam + white circle badge, dreamy berlapis. */
+:root {
+  --u-paper:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%236a8a7a' stroke-opacity='0.03' stroke-width='0.5'%3E%3Ccircle cx='40' cy='40' r='30'/%3E%3Ccircle cx='40' cy='40' r='20'/%3E%3C/g%3E%3C/svg%3E");
+  --u-ambient:
+    radial-gradient(ellipse 70% 50% at 50% 20%, rgba(106,138,122,0.08), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 80% 80%, rgba(201,168,76,0.05), transparent 60%);
+  --u-texture:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='18' fill='none' stroke='%236a8a7a' stroke-opacity='0.04' stroke-width='0.6'/%3E%3C/svg%3E");
+  --u-divider:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='12' viewBox='0 0 200 12'%3E%3Cpath d='M0 6 Q50 1 100 6 T200 6' fill='none' stroke='%236a8a7a' stroke-width='0.7' opacity='0.35'/%3E%3C/svg%3E");
+}
+.u-card { backdrop-filter: blur(2px); border: 1px solid rgba(44,42,36,0.06); }
+.u-cover__frame { border: 4px solid #fdfcfa; box-shadow: 0 8px 32px rgba(44,42,36,0.10); }

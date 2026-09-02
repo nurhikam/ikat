@@ -1,0 +1,61 @@
+/*! Ikat theme: Atelier Editorial — Full-bleed foto dengan coral script yang bleeding — foto jadi dekorasi, bukan ornamen.
+ *
+ * DIGENERATE oleh bin/make-theme.py dari themes/themes.json.
+ * Jangan edit file ini langsung — edit spec-nya, atau
+ * themes/atelier-editorial/decoration.css buat bagian yang butuh tangan.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&family=Playfair+Display:ital,wght@0,400;1,400&family=Space+Grotesk:wght@300;400;500&family=Amiri&display=swap");
+
+:root {
+  /* warna */
+  --u-bg: #1a1a1a;
+  --u-bg-2: #0a0a0a;
+  --u-surface: #fdfcfa;
+  --u-surface-2: #f0ece4;
+  --u-ink: #1a1a1a;
+  --u-ink-soft: #5a5a5a;
+  --u-ink-invert: #fdfcfa;
+  --u-accent: #e8a090;
+  --u-accent-ink: #1a1a1a;
+  --u-highlight: #c04030;
+  --u-line: rgba(26,26,26,0.14);
+  --u-line-invert: rgba(253,252,250,0.18);
+
+  /* tipografi */
+  --u-font-display: "Sacramento", cursive;
+  --u-font-heading: "Playfair Display", Georgia, serif;
+  --u-font-body: "Space Grotesk", system-ui, sans-serif;
+  --u-font-arabic: "Amiri", "Traditional Arabic", serif;
+  --u-tracking-caps: 0.34em;
+
+  /* bentuk */
+  --u-radius: 0px;
+  --u-radius-lg: 0px;
+  --u-frame-radius: 0px;
+  --u-frame-border: 0;
+  --u-avatar-radius: 0px;
+  --u-photo-radius: 0px;
+  --u-pill-radius: 0px;
+  --u-polaroid-tilt: 0deg;
+  --u-shadow: 0 24px 50px rgba(0,0,0,0.45);
+
+  /* latar */
+  --u-texture: none;
+  --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #e8a09022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #e8a09016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #e8a09012, transparent 66%);
+}
+
+/* --------------------------------------------- dekorasi (ditulis tangan) */
+/* Atelier Editorial — full-bleed foto, coral script bleeding, foto jadi dekorasi. */
+:root {
+  --u-paper: none;
+  --u-ambient:
+    radial-gradient(ellipse 80% 50% at 50% 50%, rgba(232,160,144,0.06), transparent 60%);
+  --u-texture: none;
+  --u-divider:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='2' viewBox='0 0 200 2'%3E%3Crect width='200' height='1' fill='%23e8a090' opacity='0.3'/%3E%3C/svg%3E");
+}
+.u-cover__names { font-size: clamp(2.8rem, 16vw, 6rem); letter-spacing: -0.02em; }
+.u-cover__amp { font-size: 0.22em; }
+.u-card { border: 1px solid rgba(26,26,26,0.08); }
+.u-h2 { letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.85rem; }

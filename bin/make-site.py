@@ -105,17 +105,18 @@ FAQ = [
 
 CATS = [
     ("semua", "Semua"),
+    ("atelier", "Atelier"),
     ("adat", "Adat"),
     ("pop", "Pop Culture"),
     ("pastel", "Pastel"),
     ("hangat", "Hangat"),
     ("unik", "Unik"),
 ]
-# 12 featured buat landing — 1 page tanpa scroll panjang
+# 12 featured — Atelier dulu (quiet luxury), baru best dari kategori lain
 FEATURED = [
-    "forest-lace", "batik-solo", "spiderman", "barbie-dream",
-    "ghibli-breeze", "cherry-blossom", "olive-grove", "sunset-blvd",
-    "noir-editorial", "bauhaus", "terrazzo", "y2k-chrome",
+    "atelier-emboss", "atelier-sage-arch", "atelier-pearl", "atelier-burgundy",
+    "atelier-torn", "atelier-cream", "atelier-mauve", "atelier-royal",
+    "forest-lace", "batik-solo", "noir-editorial", "terrazzo",
 ]
 
 def theme_card(t: dict) -> str:

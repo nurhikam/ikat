@@ -75,6 +75,10 @@
   --u-orn-size: 140px;
   --u-texture: none;   /* repeating pattern, tiles at its own size */
   --u-ambient: none;   /* soft light, retiled once per viewport height */
+  --u-paper: none;     /* handmade paper grain — subtle, tiles 200px */
+  --u-divider: none;   /* wavy hand-drawn divider between sections */
+  --u-foil: none;      /* gold foil accent — conic/linear gradient */
+  --u-deckle: none;    /* torn / deckled edge mask */
 
   /* Comfortable thumb target. 44px is the usual floor. */
   --u-tap: 44px;
@@ -184,6 +188,32 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 .u-orn--top    { top: 0;    background-image: var(--u-orn-top);    background-position: top center; }
 .u-orn--bottom { bottom: 0; background-image: var(--u-orn-bottom); background-position: bottom center; }
+
+/* Wavy hand-drawn divider — used between sections in Atelier themes */
+.u-divider {
+  height: 28px;
+  background-image: var(--u-divider);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  margin: 0;
+  opacity: 0.9;
+}
+.u-divider:where([style*="--u-divider: none"], :not([style])) { display: none; }
+:root:where([style*="--u-divider: none"]) .u-divider { display: none; }
+
+/* Paper grain overlay — subtle handmade texture */
+#app::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: var(--u-paper);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.06;
+}
 
 .u-card {
   position: relative;
