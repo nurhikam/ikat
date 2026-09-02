@@ -3,3 +3,17 @@
   --u-orn-bottom: var(--u-orn-top);
   --u-orn-size: 16px;
 }
+
+/* ===== layout family (auto) ===== */ oval 
+
+.u-cover { justify-content: center; }
+.u-cover__inner { justify-content: center; }
+.u-cover__frame {
+  height: min(calc(var(--u-vh,100svh) * 0.42), 20rem) !important;
+  width: auto; aspect-ratio: 4/4.4 !important;
+  border-radius: 50% / 44%;
+  border: 4px solid var(--u-surface);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.16);
+}
+.u-cover__frame .u-photo { border-radius: inherit; }
+.u-person__photo { border-radius: 50% / 46%; }

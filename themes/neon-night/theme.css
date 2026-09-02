@@ -49,3 +49,46 @@
 :root {
   --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23ff40a0' stroke-opacity='.06' stroke-width='1'%3E%3Ccircle cx='40' cy='40' r='20'/%3E%3Ccircle cx='40' cy='40' r='28' stroke-opacity='.03'/%3E%3C/g%3E%3C/svg%3E");
 }
+
+/* ===== layout family (auto) ===== */ editorial 
+#app { display: flex; flex-direction: column; }
+
+.u-cover { overflow: hidden; }
+.u-cover__frame {
+  position: absolute; inset: 0; z-index: 0;
+  width: 100%; height: 100% !important;
+  aspect-ratio: auto !important; border: 0; border-radius: 0;
+  box-shadow: none; padding: 0; background: none;
+}
+.u-cover__frame .u-photo {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 38%;
+  border-radius: 0; transform: none !important;
+}
+.u-cover::after {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(0,0,0,0.16) 0%, rgba(0,0,0,0.06) 34%, rgba(0,0,0,0.52) 100%);
+}
+.u-cover__inner { position: relative; z-index: 1; justify-content: flex-end; text-align: center; }
+.u-cover__inner > *:not(.u-cover__frame) { position: relative; z-index: 1; }
+
+.u-cover__eyebrow, .u-cover__date,
+.u-cover__guestlabel { color: rgba(255,255,255,0.92); opacity: 1; text-shadow: 0 1px 12px rgba(0,0,0,0.35); }
+.u-cover__names, .u-cover__guestname { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,0.4); }
+.u-cover__amp { opacity: 0.85; }
+.u-cover__open {
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.55);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+
+.u-cover__inner { justify-content: flex-end; align-items: flex-start; text-align: left; padding: 0 var(--u-gutter) clamp(2.2rem, 9vh, 4rem); }
+.u-cover__names { align-items: flex-start; font-size: clamp(2.4rem, 13vw, 4.2rem); line-height: 0.98; }
+.u-cover__name { display: block; text-align: left; }
+.u-cover__name:nth-child(3) { margin-left: 0; }
+.u-cover__amp { font-style: italic; }
+.u-cover__open { align-self: flex-start; }
+.u-event__inner { text-align: left; border-top: 2px solid var(--u-accent); padding: 1.4rem 0 0.4rem; }
+.u-event__heading, .u-event__month { text-align: left; }

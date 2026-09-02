@@ -49,3 +49,17 @@
 :root {
   --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg stroke='%23e8a040' stroke-opacity='.06' stroke-width='1' fill='none'%3E%3Ccircle cx='40' cy='40' r='12'/%3E%3Cpath d='M40 12 L40 20 M40 60 L40 68 M12 40 L20 40 M60 40 L68 40 M20 20 L26 26 M54 54 L60 60 M60 20 L54 26 M26 54 L20 60'/%3E%3C/g%3E%3C/svg%3E");
 }
+
+/* ===== layout family (auto) ===== */ bloom 
+
+.u-cover { justify-content: center; }
+.u-cover__inner { justify-content: center; }
+.u-cover__frame {
+  height: min(calc(var(--u-vh,100svh) * 0.44), 21rem) !important;
+  width: auto; aspect-ratio: 4/4.5 !important;
+  border-radius: 44% 56% 58% 42% / 52% 46% 54% 48%;
+  border: 3px solid var(--u-surface);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.18);
+}
+.u-cover__frame .u-photo { border-radius: inherit; object-position: center 32%; }
+.u-person__photo { border-radius: 46% 54% 52% 48% / 50% 46% 54% 50%; }

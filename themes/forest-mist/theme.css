@@ -51,3 +51,26 @@
   --u-orn-bottom: var(--u-orn-top);
   --u-orn-size: 20px;
 }
+
+/* ===== layout family (auto) ===== */ journal 
+#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="couple"] { order: 1; }
+.u-sec[data-sec="quote"] { order: 2; }
+.u-sec[data-sec="countdown"] { order: 3; }
+.u-sec[data-sec="event"] { order: 4; }
+.u-sec[data-sec="story"] { order: 5; }
+.u-sec[data-sec="gallery"] { order: 6; }
+.u-sec[data-sec="gift"] { order: 7; }
+.u-sec[data-sec="rsvp"] { order: 8; }
+.u-sec[data-sec="closing"] { order: 9; }
+
+.u-cover { justify-content: center; }
+.u-cover__frame {
+  height: min(calc(var(--u-vh,100svh) * 0.38), 18rem) !important;
+  width: auto; aspect-ratio: 4/4.6 !important;
+  border-radius: 50% / 42%;
+  border: 2px solid var(--u-accent);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.14);
+}
+.u-cover__frame .u-photo { border-radius: inherit; }
+.u-person__photo { width: 8rem; }

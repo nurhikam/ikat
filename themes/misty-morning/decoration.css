@@ -1,3 +1,18 @@
 :root {
   --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffffff' fill-opacity='.06'%3E%3Cellipse cx='20' cy='30' rx='16' ry='6'/%3E%3Cellipse cx='50' cy='40' rx='20' ry='7'/%3E%3Cellipse cx='30' cy='55' rx='14' ry='5'/%3E%3C/g%3E%3C/svg%3E");
 }
+
+/* ===== layout family (auto) ===== */ paper 
+
+.u-cover { justify-content: center; }
+.u-cover__inner { justify-content: center; }
+.u-cover__frame {
+  height: min(calc(var(--u-vh,100svh) * 0.4), 19rem) !important;
+  width: min(78%, 18rem); aspect-ratio: 3/4 !important;
+  border: 10px solid var(--u-surface);
+  box-shadow: 0 0 0 1px var(--u-line), 0 22px 50px rgba(0,0,0,0.18);
+  transform: rotate(-1.5deg);
+}
+.u-cover__frame .u-photo { border-radius: 2px; }
+.u-gallery__item:nth-child(2) { transform: rotate(1.2deg); }
+.u-gallery__item:nth-child(4) { transform: rotate(-1.2deg); }
