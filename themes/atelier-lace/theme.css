@@ -114,3 +114,6 @@
 .u-story__dot { display: none; }
 /* rsvp card lace */
 .u-rsvp__card { border: 1px solid rgba(122,138,106,0.35); border-radius: 30px 8px 30px 8px; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: sepia(.34) saturate(1.18) contrast(1.02); }

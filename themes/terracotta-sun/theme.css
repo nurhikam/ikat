@@ -114,3 +114,18 @@
 }
 .u-cover__frame .u-photo { border-radius: inherit; object-position: center 32%; }
 .u-person__photo { border-radius: 46% 54% 52% 48% / 50% 46% 54% 50%; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: sepia(.34) saturate(1.18) contrast(1.02); }
+
+.u-cover__inner { align-items: flex-start; text-align: start; }
+.u-cover__names { align-items: flex-start; }
+.u-cover__name:nth-child(3) { margin-left: 0; }
+.u-cover__frame {
+  align-self: flex-end;
+  height: min(34svh, 15rem) !important;
+  width: auto !important; aspect-ratio: 3 / 4 !important;
+  margin-top: -2.5rem !important; margin-right: -0.5rem !important;
+  transform: rotate(2deg) !important;
+}
+.u-cover__guest, .u-cover__open { align-self: flex-start; }

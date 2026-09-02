@@ -103,3 +103,17 @@
 }
 .u-cover__frame .u-photo { border-radius: inherit; }
 .u-gallery__photo { border-radius: 999px 999px 8px 8px; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+
+.u-cover__inner { align-items: flex-start; text-align: start; }
+.u-cover__names { align-items: flex-start; }
+.u-cover__name:nth-child(3) { margin-left: 0; }
+.u-cover__frame {
+  align-self: flex-end;
+  height: min(34svh, 15rem) !important;
+  width: auto !important; aspect-ratio: 3 / 4 !important;
+  margin-top: -2.5rem !important; margin-right: -0.5rem !important;
+  transform: rotate(2deg) !important;
+}
+.u-cover__guest, .u-cover__open { align-self: flex-start; }

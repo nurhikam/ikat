@@ -114,3 +114,6 @@
 .u-couple__greeting, .u-couple__intro { grid-column: 1 / -1; text-align: center; }
 .u-couple__greeting { grid-row: 1; margin: 0 0 2rem; }
 .u-couple__intro { grid-row: 1; margin: 14rem 0 0; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: grayscale(1) sepia(1) hue-rotate(-5deg) saturate(1.9) contrast(1.05); }

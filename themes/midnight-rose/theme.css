@@ -124,3 +124,17 @@
 }
 
 .u-cover__frame .u-photo { filter: saturate(0.92) brightness(0.94); }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: contrast(.84) saturate(.72) brightness(1.09); }
+
+.u-cover__frame {
+  width: calc(100% + var(--u-gutter) * 2) !important;
+  max-width: none !important;
+  margin-inline: calc(var(--u-gutter) * -1) !important;
+  height: min(30svh, 13rem) !important;
+  aspect-ratio: auto !important;
+  border-radius: 0 !important; border-left: 0 !important; border-right: 0 !important;
+  transform: none !important;
+}
+.u-cover__frame .u-photo { width: 100%; height: 100%; object-fit: cover; border-radius: 0 !important; }

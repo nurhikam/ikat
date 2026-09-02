@@ -52,6 +52,11 @@ GALLERY = {
 .u-gallery__item:first-child { grid-column: auto; }
 .u-gallery__item { flex: 0 0 68%; scroll-snap-align: center; }
 .u-gallery__photo { aspect-ratio: 3 / 4; }
+/* Item di luar gulir samping tidak pernah berpotongan dengan viewport, jadi
+   reveal per-item membuat slot ketiga dan seterusnya kosong selamanya. Yang
+   muncul strip-nya, bukan tiap itemnya. */
+.u-gallery__item.u-reveal { opacity: 1; transform: none; transition: none; }
+.u-gallery__item.u-reveal .u-photo { clip-path: none; transform: none; }
 """,
 
     "stack": """
@@ -218,6 +223,136 @@ FLOW = {
     # foto dinaikkan, buat tema yang jualannya visual
     "gallery-early": _order(["cover", "couple", "gallery", "quote", "countdown",
                              "event", "story", "gift", "rsvp", "closing"]),
+}
+
+
+
+# ================================================================= KOMPOSISI COVER
+#
+# Diukur di rosewater / lilac-haze / dusty-sage: komposisi sampulnya identik —
+# eyebrow, nama, tanggal, foto, tombol, semuanya rata tengah. "8 layout family"
+# yang ada sebelumnya cuma mengganti BENTUK bingkai (oval, arch, blob); susunannya
+# tidak pernah bergerak. Warna dan bentuk bingkai tidak cukup: yang bikin dua
+# sampul terasa beda itu ke mana matanya jatuh duluan.
+#
+# Blok ini di-emit SETELAH decoration.css, jadi menang atas family lama, dan
+# memakai !important di properti yang family lama juga kunci dengan !important.
+# Tema atelier (12) dapat "keep" karena sampulnya memang sudah digarap tangan.
+
+_BLEED = """
+.u-cover { position: relative; padding: 0 !important; }
+.u-cover__frame {
+  position: absolute !important; inset: 0 !important;
+  width: auto !important; height: auto !important;
+  max-width: none !important; aspect-ratio: auto !important;
+  margin: 0 !important; border: 0 !important; border-radius: 0 !important;
+  box-shadow: none !important; transform: none !important; z-index: 0;
+}
+.u-cover__frame .u-photo { width: 100%; height: 100%; object-fit: cover; border-radius: 0 !important; }
+.u-cover__inner { position: static; }
+.u-cover__inner > *:not(.u-cover__frame) { position: relative; z-index: 2; }
+"""
+
+COVER = {
+    "keep": "",
+
+    # Foto penuh, nama menumpuk di kiri bawah. Paling editorial.
+    "editorial": _BLEED + """
+.u-cover { justify-content: flex-end; align-items: stretch; }
+.u-cover__inner {
+  align-items: flex-start; text-align: start; flex: 0 0 auto;
+  gap: 0.4rem;
+  padding: 0 var(--u-gutter) calc(var(--u-gutter) + 0.5rem + env(safe-area-inset-bottom, 0px));
+}
+.u-cover__frame::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,.34) 46%, rgba(0,0,0,.06));
+}
+.u-cover__inner > *:not(.u-cover__frame) { color: #fff; }
+.u-cover__names { align-items: flex-start; }
+.u-cover__name:nth-child(3) { margin-left: 0; }
+.u-cover__guest { margin-top: 0.35rem; }
+""",
+
+    # Foto penuh, teks rata tengah di atasnya. Klasik sinematik.
+    "overlay": _BLEED + """
+.u-cover { justify-content: center; }
+.u-cover__frame::after {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 92% 66% at 50% 50%, rgba(0,0,0,.28), rgba(0,0,0,.72));
+}
+.u-cover__inner > *:not(.u-cover__frame) { color: #fff; }
+""",
+
+    # Foto memenuhi paruh atas, teks di bawah pada latar tema.
+    #
+    # Bingkainya TIDAK absolut. Percobaan pertama memakai position:absolute dan
+    # teksnya menumpuk di atas foto — ungu tua di atas navy, nyaris tak terbaca.
+    # `order:-1` menaikkan foto ke puncak tumpukan flex dan mendorong sisanya ke
+    # bawah secara alami, jadi tidak ada yang bisa saling menimpa.
+    "split": """
+.u-cover { justify-content: flex-start; padding-top: 0 !important; }
+.u-cover__inner { justify-content: flex-start; gap: 0.55rem; }
+.u-cover__frame {
+  order: -1;
+  width: calc(100% + var(--u-gutter) * 2) !important;
+  max-width: none !important;
+  margin: 0 calc(var(--u-gutter) * -1) 1.25rem !important;
+  height: min(46svh, 22rem) !important;
+  aspect-ratio: auto !important;
+  border: 0 !important; border-radius: 0 !important;
+  transform: none !important; align-self: stretch;
+}
+.u-cover__frame .u-photo { width: 100%; height: 100%; object-fit: cover; border-radius: 0 !important; }
+""",
+
+    # Tipografi yang memimpin: nama besar, foto kecil digeser dan menimpa.
+    "inset": """
+.u-cover__inner { align-items: flex-start; text-align: start; }
+.u-cover__names { align-items: flex-start; }
+.u-cover__name:nth-child(3) { margin-left: 0; }
+.u-cover__frame {
+  align-self: flex-end;
+  height: min(34svh, 15rem) !important;
+  width: auto !important; aspect-ratio: 3 / 4 !important;
+  margin-top: -2.5rem !important; margin-right: -0.5rem !important;
+  transform: rotate(2deg) !important;
+}
+.u-cover__guest, .u-cover__open { align-self: flex-start; }
+""",
+
+    # Foto jadi pita melintang; nama di atas, tanggal dan tombol di bawah.
+    "band": """
+.u-cover__frame {
+  width: calc(100% + var(--u-gutter) * 2) !important;
+  max-width: none !important;
+  margin-inline: calc(var(--u-gutter) * -1) !important;
+  height: min(30svh, 13rem) !important;
+  aspect-ratio: auto !important;
+  border-radius: 0 !important; border-left: 0 !important; border-right: 0 !important;
+  transform: none !important;
+}
+.u-cover__frame .u-photo { width: 100%; height: 100%; object-fit: cover; border-radius: 0 !important; }
+"""
+}
+
+
+# ============================================================ PERLAKUAN FOTO
+#
+# Satu kolam foto dipakai 113 tema, jadi foto yang sama muncul di mana-mana.
+# Sumber baru sedang tidak bisa diakses, tapi foto yang SAMA dengan gradasi warna
+# berbeda terbaca sebagai foto berbeda — dan itu perbedaan yang nyata, bukan akal-akalan:
+# fotografer memang menggradasi. Rantai grayscale+sepia+hue-rotate itu trik duotone
+# CSS standar; hue-nya diambil dari aksen tema supaya fotonya menyatu dengan paletnya.
+
+PHOTO = {
+    "natural": "",
+    "mono":    "filter: grayscale(1) contrast(1.12);",
+    "warm":    "filter: sepia(.34) saturate(1.18) contrast(1.02);",
+    "cool":    "filter: grayscale(.45) hue-rotate(-12deg) saturate(.92) brightness(1.03);",
+    "faded":   "filter: contrast(.84) saturate(.72) brightness(1.09);",
+    "vivid":   "filter: saturate(1.38) contrast(1.06);",
+    "duotone": None,   # dihitung dari aksen tema di make-theme.py
 }
 
 

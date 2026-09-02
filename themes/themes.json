@@ -47,7 +47,9 @@
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "editorial",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -108,7 +110,9 @@
         "gallery": "trio",
         "couple": "stacked",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "overlay",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -167,7 +171,9 @@
         "gallery": "masonry",
         "couple": "split",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "split",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -228,7 +234,9 @@
         "gallery": "filmstrip",
         "couple": "split",
         "event": "split",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "inset",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -289,7 +297,9 @@
         "gallery": "stack",
         "couple": "offset",
         "event": "split",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "band",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -348,7 +358,9 @@
         "gallery": "mosaic",
         "couple": "offset",
         "event": "split",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "editorial",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -407,7 +419,9 @@
         "gallery": "duo",
         "couple": "framed",
         "event": "ticket",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "overlay",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -468,7 +482,9 @@
         "gallery": "trio",
         "couple": "framed",
         "event": "ticket",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "split",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -529,7 +545,9 @@
         "gallery": "masonry",
         "couple": "stacked",
         "event": "ticket",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "inset",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -588,7 +606,9 @@
         "gallery": "duo",
         "couple": "stacked",
         "event": "plain",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "band",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -649,7 +669,9 @@
         "gallery": "stack",
         "couple": "split",
         "event": "plain",
-        "card": "edge"
+        "card": "edge",
+        "cover": "editorial",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -708,7 +730,9 @@
         "gallery": "duo",
         "couple": "split",
         "event": "plain",
-        "card": "edge"
+        "card": "edge",
+        "cover": "overlay",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -765,7 +789,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "split",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -824,7 +850,9 @@
         "gallery": "trio",
         "couple": "offset",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "inset",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -885,7 +913,9 @@
         "gallery": "masonry",
         "couple": "framed",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "band",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -946,7 +976,9 @@
         "gallery": "duo",
         "couple": "framed",
         "event": "split",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "editorial",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -1005,7 +1037,9 @@
         "gallery": "stack",
         "couple": "stacked",
         "event": "split",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "overlay",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -1066,7 +1100,9 @@
         "gallery": "mosaic",
         "couple": "stacked",
         "event": "split",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "split",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -1127,7 +1163,9 @@
         "gallery": "duo",
         "couple": "split",
         "event": "ticket",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "inset",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -1188,7 +1226,9 @@
         "gallery": "trio",
         "couple": "split",
         "event": "ticket",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "band",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -1249,7 +1289,9 @@
         "gallery": "masonry",
         "couple": "offset",
         "event": "ticket",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "editorial",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -1310,7 +1352,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "plain",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "overlay",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -1367,7 +1411,9 @@
         "gallery": "duo",
         "couple": "framed",
         "event": "plain",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "split",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -1428,7 +1474,9 @@
         "gallery": "duo",
         "couple": "framed",
         "event": "plain",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "inset",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -1487,7 +1535,9 @@
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "band",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -1548,7 +1598,9 @@
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "editorial",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -1607,7 +1659,9 @@
         "gallery": "duo",
         "couple": "split",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "overlay",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -1666,7 +1720,9 @@
         "gallery": "duo",
         "couple": "split",
         "event": "split",
-        "card": "edge"
+        "card": "edge",
+        "cover": "split",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -1727,7 +1783,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "split",
-        "card": "edge"
+        "card": "edge",
+        "cover": "inset",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -1788,7 +1846,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "split",
-        "card": "edge"
+        "card": "edge",
+        "cover": "band",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -1847,7 +1907,9 @@
         "gallery": "duo",
         "couple": "framed",
         "event": "ticket",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "editorial",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -1908,7 +1970,9 @@
         "gallery": "trio",
         "couple": "framed",
         "event": "ticket",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "overlay",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -1969,7 +2033,9 @@
         "gallery": "masonry",
         "couple": "stacked",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "split",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -2030,7 +2096,9 @@
         "gallery": "filmstrip",
         "couple": "stacked",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "inset",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -2091,7 +2159,9 @@
         "gallery": "stack",
         "couple": "split",
         "event": "plain",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "band",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -2152,7 +2222,9 @@
         "gallery": "mosaic",
         "couple": "split",
         "event": "plain",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "editorial",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -2213,7 +2285,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "overlay",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -2272,7 +2346,9 @@
         "gallery": "trio",
         "couple": "offset",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "split",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -2329,7 +2405,9 @@
         "gallery": "masonry",
         "couple": "framed",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "inset",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -2386,7 +2464,9 @@
         "gallery": "filmstrip",
         "couple": "framed",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "band",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -2443,7 +2523,9 @@
         "gallery": "stack",
         "couple": "stacked",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "editorial",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -2500,7 +2582,9 @@
         "gallery": "mosaic",
         "couple": "stacked",
         "event": "split",
-        "card": "edge"
+        "card": "edge",
+        "cover": "overlay",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -2561,7 +2645,9 @@
         "gallery": "duo",
         "couple": "split",
         "event": "ticket",
-        "card": "edge"
+        "card": "edge",
+        "cover": "split",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -2622,7 +2708,9 @@
         "gallery": "trio",
         "couple": "split",
         "event": "ticket",
-        "card": "edge"
+        "card": "edge",
+        "cover": "inset",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -2681,7 +2769,9 @@
         "gallery": "masonry",
         "couple": "offset",
         "event": "ticket",
-        "card": "edge"
+        "card": "edge",
+        "cover": "band",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -2740,7 +2830,9 @@
         "gallery": "filmstrip",
         "couple": "offset",
         "event": "plain",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "editorial",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -2801,7 +2893,9 @@
         "gallery": "stack",
         "couple": "framed",
         "event": "plain",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "overlay",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -2862,7 +2956,9 @@
         "gallery": "mosaic",
         "couple": "framed",
         "event": "plain",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "split",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -2921,7 +3017,9 @@
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "inset",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -2982,7 +3080,9 @@
         "gallery": "trio",
         "couple": "stacked",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "band",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -3039,7 +3139,9 @@
         "gallery": "masonry",
         "couple": "split",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "editorial",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -3098,7 +3200,9 @@
         "gallery": "filmstrip",
         "couple": "split",
         "event": "split",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "overlay",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -3159,7 +3263,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "split",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "split",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -3220,7 +3326,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "split",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "inset",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -3281,7 +3389,9 @@
         "gallery": "duo",
         "couple": "framed",
         "event": "ticket",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "band",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -3342,7 +3452,9 @@
         "gallery": "trio",
         "couple": "framed",
         "event": "ticket",
-        "card": "edge"
+        "card": "edge",
+        "cover": "editorial",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -3399,7 +3511,9 @@
         "gallery": "masonry",
         "couple": "stacked",
         "event": "ticket",
-        "card": "edge"
+        "card": "edge",
+        "cover": "overlay",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -3458,7 +3572,9 @@
         "gallery": "filmstrip",
         "couple": "stacked",
         "event": "plain",
-        "card": "edge"
+        "card": "edge",
+        "cover": "split",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -3519,7 +3635,9 @@
         "gallery": "stack",
         "couple": "split",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "inset",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -3578,7 +3696,9 @@
         "gallery": "mosaic",
         "couple": "split",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "band",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -3637,7 +3757,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "editorial",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -3696,7 +3818,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "overlay",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -3753,7 +3877,9 @@
         "gallery": "duo",
         "couple": "framed",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "split",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -3810,7 +3936,9 @@
         "gallery": "filmstrip",
         "couple": "framed",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "inset",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -3871,7 +3999,9 @@
         "gallery": "stack",
         "couple": "stacked",
         "event": "split",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "band",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -3932,7 +4062,9 @@
         "gallery": "mosaic",
         "couple": "stacked",
         "event": "split",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "editorial",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -3993,7 +4125,9 @@
         "gallery": "duo",
         "couple": "split",
         "event": "ticket",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "overlay",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -4052,7 +4186,9 @@
         "gallery": "trio",
         "couple": "split",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "split",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -4113,7 +4249,9 @@
         "gallery": "masonry",
         "couple": "offset",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "inset",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -4172,7 +4310,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "plain",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "band",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -4229,7 +4369,9 @@
         "gallery": "duo",
         "couple": "framed",
         "event": "plain",
-        "card": "edge"
+        "card": "edge",
+        "cover": "editorial",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -4290,7 +4432,9 @@
         "gallery": "mosaic",
         "couple": "framed",
         "event": "plain",
-        "card": "edge"
+        "card": "edge",
+        "cover": "overlay",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -4351,7 +4495,9 @@
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "split",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -4410,7 +4556,9 @@
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "inset",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -4471,7 +4619,9 @@
         "gallery": "masonry",
         "couple": "split",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "band",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -4532,7 +4682,9 @@
         "gallery": "filmstrip",
         "couple": "split",
         "event": "split",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "editorial",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -4589,7 +4741,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "split",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "overlay",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -4650,7 +4804,9 @@
         "gallery": "mosaic",
         "couple": "offset",
         "event": "split",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "split",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -4707,7 +4863,9 @@
         "gallery": "duo",
         "couple": "framed",
         "event": "ticket",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "inset",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -4766,7 +4924,9 @@
         "gallery": "trio",
         "couple": "framed",
         "event": "ticket",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "band",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -4825,7 +4985,9 @@
         "gallery": "masonry",
         "couple": "stacked",
         "event": "ticket",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "editorial",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -4886,7 +5048,9 @@
         "gallery": "filmstrip",
         "couple": "stacked",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "overlay",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -4947,7 +5111,9 @@
         "gallery": "stack",
         "couple": "split",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "split",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -5006,7 +5172,9 @@
         "gallery": "mosaic",
         "couple": "split",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "inset",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -5065,7 +5233,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "band",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -5124,7 +5294,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "editorial",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -5185,7 +5357,9 @@
         "gallery": "masonry",
         "couple": "framed",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "overlay",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -5244,7 +5418,9 @@
         "gallery": "filmstrip",
         "couple": "framed",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "split",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -5305,7 +5481,9 @@
         "gallery": "stack",
         "couple": "stacked",
         "event": "split",
-        "card": "edge"
+        "card": "edge",
+        "cover": "inset",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -5364,7 +5542,9 @@
         "gallery": "mosaic",
         "couple": "stacked",
         "event": "centered",
-        "card": "edge"
+        "card": "edge",
+        "cover": "band",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -5421,7 +5601,9 @@
         "gallery": "duo",
         "couple": "split",
         "event": "ticket",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "editorial",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -5480,7 +5662,9 @@
         "gallery": "trio",
         "couple": "split",
         "event": "ticket",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "overlay",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -5541,7 +5725,9 @@
         "gallery": "masonry",
         "couple": "offset",
         "event": "ticket",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "split",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -5598,7 +5784,9 @@
         "gallery": "filmstrip",
         "couple": "offset",
         "event": "plain",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "inset",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -5657,7 +5845,9 @@
         "gallery": "stack",
         "couple": "framed",
         "event": "plain",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "band",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -5718,7 +5908,9 @@
         "gallery": "mosaic",
         "couple": "framed",
         "event": "plain",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "editorial",
+        "photo": "cool"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -5777,7 +5969,9 @@
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "overlay",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -5834,7 +6028,9 @@
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "split",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -5893,7 +6089,9 @@
         "gallery": "masonry",
         "couple": "split",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "inset",
+        "photo": "faded"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -5954,7 +6152,9 @@
         "gallery": "duo",
         "couple": "split",
         "event": "split",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "band",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -6013,7 +6213,9 @@
         "gallery": "stack",
         "couple": "offset",
         "event": "split",
-        "card": "edge"
+        "card": "edge",
+        "cover": "editorial",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -6074,7 +6276,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "split",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "keep",
+        "photo": "vivid"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -6133,7 +6337,9 @@
         "gallery": "duo",
         "couple": "framed",
         "event": "ticket",
-        "card": "edge"
+        "card": "edge",
+        "cover": "keep",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -6192,7 +6398,9 @@
         "gallery": "duo",
         "couple": "stacked",
         "event": "ticket",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "keep",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -6251,7 +6459,9 @@
         "gallery": "masonry",
         "couple": "stacked",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "keep",
+        "photo": "duotone"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -6312,7 +6522,9 @@
         "gallery": "duo",
         "couple": "stacked",
         "event": "plain",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "keep",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -6373,7 +6585,9 @@
         "gallery": "duo",
         "couple": "split",
         "event": "plain",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "keep",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
@@ -6432,7 +6646,9 @@
         "gallery": "duo",
         "couple": "split",
         "event": "plain",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "keep",
+        "photo": "natural"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -6493,7 +6709,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "keep",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -6554,7 +6772,9 @@
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "keep",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
@@ -6613,7 +6833,9 @@
         "gallery": "masonry",
         "couple": "framed",
         "event": "centered",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "keep",
+        "photo": "mono"
       },
       "photos": {
         "cover": "assets/photos/closing.webp",
@@ -6674,7 +6896,9 @@
         "gallery": "duo",
         "couple": "framed",
         "event": "split",
-        "card": "bleed"
+        "card": "bleed",
+        "cover": "keep",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
@@ -6735,7 +6959,9 @@
         "gallery": "stack",
         "couple": "stacked",
         "event": "split",
-        "card": "boxed"
+        "card": "boxed",
+        "cover": "keep",
+        "photo": "warm"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",

@@ -96,3 +96,16 @@
 }
 .u-cover__frame .u-photo { border-radius: inherit; }
 .u-person__photo { width: 8rem; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+
+.u-cover__frame {
+  width: calc(100% + var(--u-gutter) * 2) !important;
+  max-width: none !important;
+  margin-inline: calc(var(--u-gutter) * -1) !important;
+  height: min(30svh, 13rem) !important;
+  aspect-ratio: auto !important;
+  border-radius: 0 !important; border-left: 0 !important; border-right: 0 !important;
+  transform: none !important;
+}
+.u-cover__frame .u-photo { width: 100%; height: 100%; object-fit: cover; border-radius: 0 !important; }

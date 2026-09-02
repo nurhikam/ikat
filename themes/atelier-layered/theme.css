@@ -98,3 +98,6 @@
 .u-gallery__item:nth-child(2) { transform: translateY(-2.4rem); }
 .u-gallery__item:nth-child(3) { transform: translateY(-1rem); }
 .u-gallery__photo { border-radius: 20px; box-shadow: 0 14px 34px rgba(44,46,42,0.16); }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: grayscale(1) contrast(1.12); }

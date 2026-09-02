@@ -141,3 +141,6 @@
 .u-event__dt { padding-top: 0.25rem; }
 .u-event__dd { padding-bottom: 0.85rem; border-bottom: 1px solid rgba(26,26,26,0.08); }
 .u-event__maps, .u-event__cal { margin-top: 1rem; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: grayscale(1) contrast(1.12); }

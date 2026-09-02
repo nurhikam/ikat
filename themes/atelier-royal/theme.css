@@ -131,3 +131,6 @@
 /* event split cards */
 .u-event__meta { grid-template-columns: 1fr 1fr; gap: 1rem; }
 .u-event__row { border: 1px solid rgba(201,168,76,0.25); border-radius: 6px; padding: 1rem 0.6rem; background: rgba(20,12,4,0.35); }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: grayscale(1) contrast(1.12); }

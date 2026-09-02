@@ -142,3 +142,6 @@
 .u-countdown__num { font-size: clamp(2.6rem, 13vw, 4rem); font-weight: 300; }
 .u-countdown__grid { border-top: 1px solid rgba(201,168,76,0.3); border-bottom: 1px solid rgba(201,168,76,0.3); padding: 1.6rem 0; }
 .u-countdown__label { letter-spacing: 0.3em; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: sepia(.34) saturate(1.18) contrast(1.02); }

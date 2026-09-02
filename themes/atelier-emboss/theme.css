@@ -138,3 +138,6 @@
 .u-person__photo { border: 1px solid rgba(44,42,38,0.25); border-radius: 50%; }
 .u-gallery__photo { filter: grayscale(1); }
 .u-event__row + .u-event__row { border-top: 1px solid rgba(44,42,38,0.08); padding-top: 0.85rem; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: saturate(1.38) contrast(1.06); }

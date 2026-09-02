@@ -66,7 +66,10 @@
   --u-max: 30rem;          /* invitations are phone-shaped by nature */
 
   /* motion */
+  /* Pegas dengan sedikit lewatan, bukan ease-out datar. Yang bikin gerakan
+     terasa punya bobot itu justru lewatan kecilnya. */
   --u-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --u-spring: cubic-bezier(0.16, 1.02, 0.3, 1.06);
   --u-dur: 720ms;
 
   /* decoration hooks — themes fill these; empty by default */
@@ -835,3 +838,65 @@ html.is-playing .u-music__icon { animation: u-spin 3.5s linear infinite; }
   /* html already carries --u-bg-2; the column just needs to lift off it. */
   #app { box-shadow: 0 0 80px rgba(0, 0, 0, 0.45); }
 }
+
+
+/* ============================================================ motion lanjutan
+ *
+ * Yang sebelumnya cuma fade + geser 18px di semua elemen: hidup, tapi datar dan
+ * seragam. Tiga tambahan di bawah dipilih karena masing-masing MENYAMPAIKAN
+ * sesuatu, bukan sekadar bergerak.
+ */
+
+@media (prefers-reduced-motion: no-preference) {
+
+  /* Foto tersingkap, bukan muncul. Tirai clip-path membaca sebagai gambar yang
+     dibuka, dan itu yang dilakukan tamu: membuka undangan. */
+  .u-reveal .u-photo {
+    clip-path: inset(0 0 22% 0);
+    transform: scale(1.06);
+    transition: clip-path 1100ms var(--u-ease), transform 1400ms var(--u-ease);
+  }
+  .u-reveal.is-in .u-photo { clip-path: inset(0 0 0 0); transform: none; }
+
+  /* Nama pasangan disapu dari bawah satu per satu. Ini satu-satunya momen yang
+     dikoreografi; sisanya menetap pelan. */
+  html.is-ready .u-cover__name {
+    animation: u-wipe 1050ms var(--u-spring) backwards;
+    clip-path: inset(0 0 0 0);
+  }
+  html.is-ready .u-cover__name:nth-child(1) { animation-delay: 180ms; }
+  html.is-ready .u-cover__name:nth-child(3) { animation-delay: 340ms; }
+  html.is-ready .u-cover__amp { animation: u-fade 900ms var(--u-ease) 300ms backwards; }
+
+  @keyframes u-wipe {
+    from { clip-path: inset(0 0 105% 0); transform: translateY(0.35em); opacity: 0; }
+    60%  { opacity: 1; }
+    to   { clip-path: inset(0 0 -20% 0); transform: none; opacity: 1; }
+  }
+  @keyframes u-fade { from { opacity: 0; transform: scale(0.8); } }
+
+  /* Entri section bergantian arah supaya scroll tidak terasa satu irama.
+     Halus saja: 14px, bukan pawai. */
+  .u-sec:nth-of-type(even) .u-reveal { transform: translateY(18px) translateX(-14px); }
+  .u-sec:nth-of-type(odd)  .u-reveal { transform: translateY(18px) translateX(14px); }
+  .u-sec .u-reveal.is-in { transform: none; }
+
+  /* Parallax sampul: foto bergerak lebih lambat dari halaman. Scroll-driven CSS,
+     tanpa listener scroll sama sekali, jadi tidak ada kerja per-frame di main
+     thread. Browser yang belum mendukung hanya melewatinya. */
+  @supports (animation-timeline: view()) {
+    .u-cover__frame .u-photo {
+      animation: u-parallax linear both;
+      animation-timeline: view();
+      animation-range: entry 0% exit 100%;
+    }
+    @keyframes u-parallax {
+      from { transform: translateY(-4%) scale(1.12); }
+      to   { transform: translateY(6%) scale(1.12); }
+    }
+  }
+}
+
+/* Tombol utama memantul kecil saat ditekan, bukan cuma berubah warna. */
+.u-btn--primary { transition: transform 220ms var(--u-spring), background-color 220ms; }
+.u-btn--primary:active { transform: scale(0.965); }

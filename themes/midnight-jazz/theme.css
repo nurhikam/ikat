@@ -56,6 +56,11 @@
 .u-gallery__item:first-child { grid-column: auto; }
 .u-gallery__item { flex: 0 0 68%; scroll-snap-align: center; }
 .u-gallery__photo { aspect-ratio: 3 / 4; }
+/* Item di luar gulir samping tidak pernah berpotongan dengan viewport, jadi
+   reveal per-item membuat slot ketiga dan seterusnya kosong selamanya. Yang
+   muncul strip-nya, bukan tiap itemnya. */
+.u-gallery__item.u-reveal { opacity: 1; transform: none; transition: none; }
+.u-gallery__item.u-reveal .u-photo { clip-path: none; transform: none; }
 
 /* layout.couple = offset */
 .u-person--bride { align-items: flex-start; text-align: start; margin-inline-end: 16%; }
@@ -116,3 +121,18 @@
 }
 
 .u-cover__frame .u-photo { filter: saturate(0.92) brightness(0.94); }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: grayscale(.45) hue-rotate(-12deg) saturate(.92) brightness(1.03); }
+
+.u-cover__inner { align-items: flex-start; text-align: start; }
+.u-cover__names { align-items: flex-start; }
+.u-cover__name:nth-child(3) { margin-left: 0; }
+.u-cover__frame {
+  align-self: flex-end;
+  height: min(34svh, 15rem) !important;
+  width: auto !important; aspect-ratio: 3 / 4 !important;
+  margin-top: -2.5rem !important; margin-right: -0.5rem !important;
+  transform: rotate(2deg) !important;
+}
+.u-cover__guest, .u-cover__open { align-self: flex-start; }

@@ -137,3 +137,6 @@
 .u-gallery__item:first-child { grid-column: span 2; }
 .u-gallery__item:first-child .u-gallery__photo { aspect-ratio: 4/3; border-radius: 18px 18px 0 0; }
 .u-gallery__photo { border-radius: 999px 999px 8px 8px; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: grayscale(1) sepia(1) hue-rotate(55deg) saturate(1.9) contrast(1.05); }

@@ -106,6 +106,30 @@ def font_query(fonts: dict) -> str:
     return f"https://fonts.googleapis.com/css2?{q}&display=swap"
 
 
+
+def duotone(accent: str) -> str:
+    """Duotone CSS dari warna aksen tema.
+
+    grayscale -> sepia menaruh gambar di sekitar hue 35deg; rotasi selisihnya
+    memindahkan seluruh gambar ke hue tema. Hasilnya foto yang sama terbaca
+    menyatu dengan paletnya, bukan tempelan."""
+    import colorsys
+    h = accent.lstrip("#")
+    if len(h) == 3:
+        h = "".join(c * 2 for c in h)
+    r, g, b = (int(h[i:i + 2], 16) / 255 for i in (0, 2, 4))
+    hue = colorsys.rgb_to_hls(r, g, b)[0] * 360
+    return (f"filter: grayscale(1) sepia(1) hue-rotate({round(hue - 35)}deg) "
+            f"saturate(1.9) contrast(1.05);")
+
+
+def photo_filter(t: dict) -> str:
+    kind = (t.get("layout") or {}).get("photo", "natural")
+    if kind == "duotone":
+        return duotone(t["colors"]["accent"])
+    return theme_layouts.PHOTO.get(kind) or ""
+
+
 def render(t: dict) -> str:
     c, s, f = t["colors"], t["shape"], t["fonts"]
     pat = pattern(t.get("pattern", "none"), c["ink"])
@@ -173,6 +197,18 @@ def render(t: dict) -> str:
         with open(deco, encoding="utf-8") as fh:
             out += "\n/* --------------------------------------------- dekorasi (ditulis tangan) */\n"
             out += fh.read().rstrip() + "\n"
+
+    # Komposisi sampul dan gradasi foto sengaja DI BAWAH dekorasi. Family cover
+    # lama mengunci tinggi bingkai dengan !important, jadi apa pun yang ditaruh
+    # di atasnya kalah. Yang di bawah ini memang dimaksudkan menggantikannya.
+    cov = theme_layouts.COVER.get((t.get("layout") or {}).get("cover", "keep")) or ""
+    pf = photo_filter(t)
+    if cov or pf:
+        out += "\n/* ------------------------------------ komposisi sampul + gradasi foto */\n"
+        if pf:
+            out += f".u-photo {{ {pf} }}\n"
+        if cov:
+            out += cov.rstrip() + "\n"
     return out
 
 

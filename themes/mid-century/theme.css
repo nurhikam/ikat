@@ -126,3 +126,24 @@
 .u-cover__open { align-self: flex-start; }
 .u-event__inner { text-align: left; border-top: 2px solid var(--u-accent); padding: 1.4rem 0 0.4rem; }
 .u-event__heading, .u-event__month { text-align: left; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+
+.u-cover { position: relative; padding: 0 !important; }
+.u-cover__frame {
+  position: absolute !important; inset: 0 !important;
+  width: auto !important; height: auto !important;
+  max-width: none !important; aspect-ratio: auto !important;
+  margin: 0 !important; border: 0 !important; border-radius: 0 !important;
+  box-shadow: none !important; transform: none !important; z-index: 0;
+}
+.u-cover__frame .u-photo { width: 100%; height: 100%; object-fit: cover; border-radius: 0 !important; }
+.u-cover__inner { position: static; }
+.u-cover__inner > *:not(.u-cover__frame) { position: relative; z-index: 2; }
+
+.u-cover { justify-content: center; }
+.u-cover__frame::after {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 92% 66% at 50% 50%, rgba(0,0,0,.28), rgba(0,0,0,.72));
+}
+.u-cover__inner > *:not(.u-cover__frame) { color: #fff; }

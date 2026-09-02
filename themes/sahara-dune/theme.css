@@ -121,3 +121,33 @@
 }
 .u-cover__frame .u-photo { border-radius: inherit; object-position: center 32%; }
 .u-person__photo { border-radius: 46% 54% 52% 48% / 50% 46% 54% 50%; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: saturate(1.38) contrast(1.06); }
+
+.u-cover { position: relative; padding: 0 !important; }
+.u-cover__frame {
+  position: absolute !important; inset: 0 !important;
+  width: auto !important; height: auto !important;
+  max-width: none !important; aspect-ratio: auto !important;
+  margin: 0 !important; border: 0 !important; border-radius: 0 !important;
+  box-shadow: none !important; transform: none !important; z-index: 0;
+}
+.u-cover__frame .u-photo { width: 100%; height: 100%; object-fit: cover; border-radius: 0 !important; }
+.u-cover__inner { position: static; }
+.u-cover__inner > *:not(.u-cover__frame) { position: relative; z-index: 2; }
+
+.u-cover { justify-content: flex-end; align-items: stretch; }
+.u-cover__inner {
+  align-items: flex-start; text-align: start; flex: 0 0 auto;
+  gap: 0.4rem;
+  padding: 0 var(--u-gutter) calc(var(--u-gutter) + 0.5rem + env(safe-area-inset-bottom, 0px));
+}
+.u-cover__frame::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,.34) 46%, rgba(0,0,0,.06));
+}
+.u-cover__inner > *:not(.u-cover__frame) { color: #fff; }
+.u-cover__names { align-items: flex-start; }
+.u-cover__name:nth-child(3) { margin-left: 0; }
+.u-cover__guest { margin-top: 0.35rem; }

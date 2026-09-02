@@ -135,3 +135,6 @@
 .u-event__inner { background: linear-gradient(180deg, rgba(26,8,14,0.0), rgba(26,8,14,0.6)); border: 1px solid rgba(201,168,76,0.25); border-radius: 4px; padding: clamp(1.6rem, 6vw, 2.4rem) clamp(1.1rem, 4vw, 1.8rem); }
 .u-event__month { color: #e8c87a; font-weight: 500; }
 .u-week__day.is-active { background: #c9a84c; }
+
+/* ------------------------------------ komposisi sampul + gradasi foto */
+.u-photo { filter: grayscale(1) sepia(1) hue-rotate(9deg) saturate(1.9) contrast(1.05); }
