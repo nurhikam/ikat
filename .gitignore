@@ -7,3 +7,7 @@ dist/
 # Only the fictional demo is tracked.
 data/*.json
 !data/demo.json
+
+# artefak Python
+__pycache__/
+*.py[cod]
