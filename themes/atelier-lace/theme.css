@@ -45,6 +45,46 @@
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #7a8a6a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #7a8a6a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #7a8a6a12, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.gallery = filmstrip */
+.u-gallery__grid {
+  display: flex; gap: 0.6rem; overflow-x: auto; scroll-snap-type: x mandatory;
+  margin-inline: calc(var(--u-gutter) * -1); padding: 0 var(--u-gutter) 0.5rem;
+  scrollbar-width: none;
+}
+.u-gallery__grid::-webkit-scrollbar { display: none; }
+.u-gallery__item:first-child { grid-column: auto; }
+.u-gallery__item { flex: 0 0 68%; scroll-snap-align: center; }
+.u-gallery__photo { aspect-ratio: 3 / 4; }
+
+/* layout.couple = framed */
+.u-person {
+  border: 1px solid var(--u-line);
+  border-radius: var(--u-radius);
+  padding: 1.5rem 1rem 1.25rem;
+}
+.u-couple__amp { margin-block: 1rem; }
+
+/* layout.event = split */
+@media (min-width: 24rem) {
+  .u-event__inner {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.25rem; text-align: start; align-items: start;
+  }
+  .u-event__heading { grid-column: 1 / -1; text-align: start; }
+  .u-event__month  { grid-column: 1; margin-bottom: 0; }
+  .u-week          { grid-column: 1 / -1; }
+  .u-event__meta   { grid-column: 1 / -1; }
+  .u-event__maps, .u-event__cal { justify-self: start; }
+}
+
+/* layout.card = bleed */
+.u-card {
+  border-radius: 0;
+  margin-inline: calc(var(--u-gutter) * -1);
+  padding-inline: calc(var(--u-gutter) + 0.25rem);
+}
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 /* Atelier Lace — SCALLOP + LINE-ART. Lace scallop di orn-top, couple dengan line-art venue.
    Layout: orn scallop di top tiap section, gallery arch, rsvp card dengan lace border.

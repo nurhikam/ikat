@@ -45,6 +45,46 @@
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #c0806022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #c0806016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #c0806012, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.gallery = mosaic */
+.u-gallery__grid { grid-template-columns: repeat(4, 1fr); gap: 0.45rem; }
+.u-gallery__item { grid-column: span 2; }
+.u-gallery__item:first-child { grid-column: span 4; }
+.u-gallery__photo { aspect-ratio: 1; }
+.u-gallery__item:first-child .u-gallery__photo { aspect-ratio: 16 / 11; }
+.u-gallery__item:nth-child(4) { grid-column: span 4; }
+.u-gallery__item:nth-child(4) .u-gallery__photo { aspect-ratio: 2 / 1; }
+
+/* layout.couple = split */
+.u-couple__card { text-align: start; }
+.u-person--bride { align-items: flex-start; text-align: start; }
+.u-person--groom { align-items: flex-end; text-align: end; }
+.u-couple__amp { align-self: center; }
+.u-couple__greeting, .u-couple__intro { text-align: center; }
+
+/* layout.event = plain */
+.u-event__inner {
+  border-top: 1px solid var(--u-line-invert);
+  border-bottom: 1px solid var(--u-line-invert);
+  padding-block: 2rem;
+}
+.u-event__month { font-size: clamp(1.5rem, 7vw, 2.1rem); }
+
+/* layout.card = edge */
+.u-card:not(.u-rsvp__card) {
+  background: transparent;
+  color: var(--u-ink-invert);
+  box-shadow: none;
+  border-radius: 0;
+  border-top: 1px solid var(--u-line-invert);
+  border-bottom: 1px solid var(--u-line-invert);
+  padding-inline: 0;
+}
+.u-card:not(.u-rsvp__card) .u-quote__cite,
+.u-card:not(.u-rsvp__card) .u-person__parents,
+.u-card:not(.u-rsvp__card) .u-person__ig { color: var(--u-ink-invert); opacity: 0.7; }
+.u-card:not(.u-rsvp__card) .u-person__ig { box-shadow: inset 0 -1px 0 var(--u-line-invert); }
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 :root {
   --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='18' viewBox='0 0 80 18'%3E%3Cg fill='none' stroke='%23c08060' stroke-opacity='.25' stroke-width='1'%3E%3Cpath d='M20 9 c0-4 6-4 6 0 c0 4-6 4-6 0'/%3E%3Cpath d='M40 9 c0-4 6-4 6 0 c0 4-6 4-6 0'/%3E%3Cpath d='M60 9 c0-4 6-4 6 0 c0 4-6 4-6 0'/%3E%3C/g%3E%3C/svg%3E");

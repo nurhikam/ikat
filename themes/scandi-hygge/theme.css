@@ -45,6 +45,39 @@
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #9ab0a022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #9ab0a016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #9ab0a012, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.gallery = filmstrip */
+.u-gallery__grid {
+  display: flex; gap: 0.6rem; overflow-x: auto; scroll-snap-type: x mandatory;
+  margin-inline: calc(var(--u-gutter) * -1); padding: 0 var(--u-gutter) 0.5rem;
+  scrollbar-width: none;
+}
+.u-gallery__grid::-webkit-scrollbar { display: none; }
+.u-gallery__item:first-child { grid-column: auto; }
+.u-gallery__item { flex: 0 0 68%; scroll-snap-align: center; }
+.u-gallery__photo { aspect-ratio: 3 / 4; }
+
+/* layout.couple = offset */
+.u-person--bride { align-items: flex-start; text-align: start; margin-inline-end: 16%; }
+.u-person--groom { align-items: flex-end; text-align: end; margin-inline-start: 16%; margin-top: -1rem; }
+.u-couple__amp { margin-block: 0.75rem; }
+.u-couple__greeting, .u-couple__intro { text-align: center; }
+
+/* layout.event = plain */
+.u-event__inner {
+  border-top: 1px solid var(--u-line-invert);
+  border-bottom: 1px solid var(--u-line-invert);
+  padding-block: 2rem;
+}
+.u-event__month { font-size: clamp(1.5rem, 7vw, 2.1rem); }
+
+/* layout.card = bleed */
+.u-card {
+  border-radius: 0;
+  margin-inline: calc(var(--u-gutter) * -1);
+  padding-inline: calc(var(--u-gutter) + 0.25rem);
+}
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 :root {
   --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='16' viewBox='0 0 80 16'%3E%3Cg fill='none' stroke='%23807060' stroke-opacity='.2' stroke-width='1'%3E%3Cpath d='M0 8 L12 8 M20 8 L32 8 M40 8 L52 8 M60 8 L72 8'/%3E%3Ccircle cx='16' cy='8' r='2' fill='%23807060' fill-opacity='.15' stroke='none'/%3E%3Ccircle cx='36' cy='8' r='2' fill='%23807060' fill-opacity='.15' stroke='none'/%3E%3Ccircle cx='56' cy='8' r='2' fill='%23807060' fill-opacity='.15' stroke='none'/%3E%3C/g%3E%3C/svg%3E");

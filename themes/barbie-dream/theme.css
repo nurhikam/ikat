@@ -45,6 +45,36 @@
   --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #e8489a1c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #e8489a12, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.gallery = masonry */
+.u-gallery__grid { display: block; column-count: 2; column-gap: 0.6rem; }
+.u-gallery__item:first-child { grid-column: auto; }
+.u-gallery__item { break-inside: avoid; margin-bottom: 0.6rem; }
+.u-gallery__photo { aspect-ratio: 3 / 4; }
+.u-gallery__item:nth-child(3n+1) .u-gallery__photo { aspect-ratio: 1; }
+.u-gallery__item:nth-child(3n+2) .u-gallery__photo { aspect-ratio: 4 / 5; }
+
+/* layout.event = ticket */
+/* Kartu tiket: permukaan terang dengan takik di kiri-kanan, seperti karcis. */
+.u-event__inner {
+  background: var(--u-surface);
+  color: var(--u-ink);
+  padding: 1.75rem 1.35rem;
+  border-radius: var(--u-radius-lg);
+  position: relative;
+}
+.u-event__inner::before,
+.u-event__inner::after {
+  content: ""; position: absolute; top: 52%;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--u-bg); transform: translateY(-50%);
+}
+.u-event__inner::before { left: -11px; }
+.u-event__inner::after  { right: -11px; }
+.u-event__dt { color: var(--u-ink-soft); }
+.u-week__dow { color: var(--u-ink); }
+.u-event__maps, .u-event__cal { color: var(--u-ink); border-color: var(--u-line); }
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 /* Barbie — sparkle + rounded */
 :root {

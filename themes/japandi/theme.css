@@ -45,6 +45,47 @@
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6a7a6a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6a7a6a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6a7a6a12, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.gallery = stack */
+.u-gallery__grid { grid-template-columns: 1fr; gap: 1.1rem; }
+.u-gallery__item:first-child { grid-column: auto; }
+.u-gallery__photo { aspect-ratio: 4 / 3; }
+.u-gallery__item:nth-child(even) { margin-inline-start: 14%; }
+.u-gallery__item:nth-child(odd) { margin-inline-end: 14%; }
+.u-gallery__item:first-child { margin-inline: 0; }
+.u-gallery__item:first-child .u-gallery__photo { aspect-ratio: 3 / 4; }
+
+/* layout.couple = framed */
+.u-person {
+  border: 1px solid var(--u-line);
+  border-radius: var(--u-radius);
+  padding: 1.5rem 1rem 1.25rem;
+}
+.u-couple__amp { margin-block: 1rem; }
+
+/* layout.event = plain */
+.u-event__inner {
+  border-top: 1px solid var(--u-line-invert);
+  border-bottom: 1px solid var(--u-line-invert);
+  padding-block: 2rem;
+}
+.u-event__month { font-size: clamp(1.5rem, 7vw, 2.1rem); }
+
+/* layout.card = edge */
+.u-card:not(.u-rsvp__card) {
+  background: transparent;
+  color: var(--u-ink-invert);
+  box-shadow: none;
+  border-radius: 0;
+  border-top: 1px solid var(--u-line-invert);
+  border-bottom: 1px solid var(--u-line-invert);
+  padding-inline: 0;
+}
+.u-card:not(.u-rsvp__card) .u-quote__cite,
+.u-card:not(.u-rsvp__card) .u-person__parents,
+.u-card:not(.u-rsvp__card) .u-person__ig { color: var(--u-ink-invert); opacity: 0.7; }
+.u-card:not(.u-rsvp__card) .u-person__ig { box-shadow: inset 0 -1px 0 var(--u-line-invert); }
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 :root {
   --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='16' viewBox='0 0 80 16'%3E%3Cg fill='none' stroke='%23606060' stroke-opacity='.18' stroke-width='1'%3E%3Cline x1='10' y1='8' x2='70' y2='8'/%3E%3Ccircle cx='40' cy='8' r='3' fill='none'/%3E%3C/g%3E%3C/svg%3E");

@@ -45,6 +45,43 @@
   --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #d4a0601c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #d4a06012, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.couple = framed */
+.u-person {
+  border: 1px solid var(--u-line);
+  border-radius: var(--u-radius);
+  padding: 1.5rem 1rem 1.25rem;
+}
+.u-couple__amp { margin-block: 1rem; }
+
+/* layout.event = ticket */
+/* Kartu tiket: permukaan terang dengan takik di kiri-kanan, seperti karcis. */
+.u-event__inner {
+  background: var(--u-surface);
+  color: var(--u-ink);
+  padding: 1.75rem 1.35rem;
+  border-radius: var(--u-radius-lg);
+  position: relative;
+}
+.u-event__inner::before,
+.u-event__inner::after {
+  content: ""; position: absolute; top: 52%;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--u-bg); transform: translateY(-50%);
+}
+.u-event__inner::before { left: -11px; }
+.u-event__inner::after  { right: -11px; }
+.u-event__dt { color: var(--u-ink-soft); }
+.u-week__dow { color: var(--u-ink); }
+.u-event__maps, .u-event__cal { color: var(--u-ink); border-color: var(--u-line); }
+
+/* layout.card = bleed */
+.u-card {
+  border-radius: 0;
+  margin-inline: calc(var(--u-gutter) * -1);
+  padding-inline: calc(var(--u-gutter) + 0.25rem);
+}
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 :root {
   --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='18' viewBox='0 0 80 18'%3E%3Cg fill='%23c04030' fill-opacity='.18'%3E%3Cpath d='M20 9 c0-4 6-4 6 0 c0 4-6 4-6 0'/%3E%3Cpath d='M40 9 c0-4 6-4 6 0 c0 4-6 4-6 0'/%3E%3Cpath d='M60 9 c0-4 6-4 6 0 c0 4-6 4-6 0'/%3E%3C/g%3E%3C/svg%3E");

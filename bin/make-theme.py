@@ -21,6 +21,9 @@ import os
 import sys
 import urllib.parse
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import theme_layouts
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SPEC = os.path.join(ROOT, "themes", "themes.json")
 
@@ -159,6 +162,11 @@ def render(t: dict) -> str:
         out += f"  --u-orn-bottom: {t.get('ornBottom', t['ornTop'])};\n"
         out += f"  --u-orn-size: {t.get('ornSize', '30px')};\n"
     out += "}\n"
+
+    lay = theme_layouts.css(t.get("layout") or {})
+    if lay:
+        out += ("\n/* ------------------------------------------------- layout (dari spec) */\n"
+                + lay + "\n")
 
     deco = os.path.join(ROOT, "themes", t["slug"], "decoration.css")
     if os.path.exists(deco):

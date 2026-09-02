@@ -17,10 +17,41 @@
 <script src="engine/engine.js"></script>
 <script>
   // Harness preview: temanya dari ?theme=<slug>, jadi satu file bisa nampilin
-  // semua tema tanpa bikin 11 halaman kembar. Undangan klien asli tetap nge-link
-  // temanya langsung di <head> biar nggak ada kedipan sebelum CSS turun.
+  // semua tema tanpa bikin halaman kembar sebanyak temanya.
+  //
+  // Foto demo diambil dari themes.json, bukan dari data. Alasannya: sebelum ini
+  // semua tema memakai foto sampul yang sama persis, dan itu bikin 113 preview
+  // terbaca sebagai satu template walaupun warnanya beda-beda. Undangan klien
+  // asli tetap memakai foto mereka sendiri dari data/<klien>.json — merge ini
+  // cuma untuk halaman contoh.
   var slug = new URLSearchParams(location.search).get('theme') || 'forest-lace';
-  Ikat.init({ src: 'data/demo.json', theme: slug });
+
+  Promise.all([
+    fetch('data/demo.json').then(function (r) { return r.json(); }),
+    fetch('themes/themes.json').then(function (r) { return r.json(); }).catch(function () { return null; })
+  ]).then(function (res) {
+    var data = res[0], spec = res[1];
+    var theme = spec && (spec.themes || []).filter(function (t) { return t.slug === slug; })[0];
+    var ph = theme && theme.photos;
+
+    if (ph) {
+      data.sections.forEach(function (s) {
+        if (s.type === 'cover' && ph.cover) s.photo = ph.cover;
+        if (s.type === 'closing' && ph.closing) s.photo = ph.closing;
+        if (s.type === 'gallery' && ph.gallery && ph.gallery.length) {
+          // Pertahankan caption yang sudah ada, ganti gambarnya saja.
+          s.photos = ph.gallery.slice(0, (s.photos || []).length || ph.gallery.length)
+            .map(function (src, i) {
+              var old = (s.photos || [])[i];
+              var cap = old && typeof old === 'object' ? old.caption : '';
+              return cap ? { src: src, caption: cap } : src;
+            });
+        }
+      });
+    }
+
+    return Ikat.init({ data: data, theme: slug });
+  });
 </script>
 
 </body>

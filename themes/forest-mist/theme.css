@@ -45,6 +45,39 @@
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6a8a6a22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6a8a6a16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6a8a6a12, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.gallery = mosaic */
+.u-gallery__grid { grid-template-columns: repeat(4, 1fr); gap: 0.45rem; }
+.u-gallery__item { grid-column: span 2; }
+.u-gallery__item:first-child { grid-column: span 4; }
+.u-gallery__photo { aspect-ratio: 1; }
+.u-gallery__item:first-child .u-gallery__photo { aspect-ratio: 16 / 11; }
+.u-gallery__item:nth-child(4) { grid-column: span 4; }
+.u-gallery__item:nth-child(4) .u-gallery__photo { aspect-ratio: 2 / 1; }
+
+/* layout.couple = framed */
+.u-person {
+  border: 1px solid var(--u-line);
+  border-radius: var(--u-radius);
+  padding: 1.5rem 1rem 1.25rem;
+}
+.u-couple__amp { margin-block: 1rem; }
+
+/* layout.event = plain */
+.u-event__inner {
+  border-top: 1px solid var(--u-line-invert);
+  border-bottom: 1px solid var(--u-line-invert);
+  padding-block: 2rem;
+}
+.u-event__month { font-size: clamp(1.5rem, 7vw, 2.1rem); }
+
+/* layout.card = bleed */
+.u-card {
+  border-radius: 0;
+  margin-inline: calc(var(--u-gutter) * -1);
+  padding-inline: calc(var(--u-gutter) + 0.25rem);
+}
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 :root {
   --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='20' viewBox='0 0 80 20'%3E%3Cg fill='%23507060' fill-opacity='.18'%3E%3Cpath d='M20 16 L16 8 L20 10 L24 8Z'/%3E%3Cpath d='M40 16 L36 6 L40 9 L44 6Z'/%3E%3Cpath d='M60 16 L56 8 L60 10 L64 8Z'/%3E%3C/g%3E%3C/svg%3E");

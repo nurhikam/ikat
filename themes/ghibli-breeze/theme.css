@@ -45,6 +45,26 @@
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #6ab0a022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #6ab0a016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #6ab0a012, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.gallery = filmstrip */
+.u-gallery__grid {
+  display: flex; gap: 0.6rem; overflow-x: auto; scroll-snap-type: x mandatory;
+  margin-inline: calc(var(--u-gutter) * -1); padding: 0 var(--u-gutter) 0.5rem;
+  scrollbar-width: none;
+}
+.u-gallery__grid::-webkit-scrollbar { display: none; }
+.u-gallery__item:first-child { grid-column: auto; }
+.u-gallery__item { flex: 0 0 68%; scroll-snap-align: center; }
+.u-gallery__photo { aspect-ratio: 3 / 4; }
+
+/* layout.event = plain */
+.u-event__inner {
+  border-top: 1px solid var(--u-line-invert);
+  border-bottom: 1px solid var(--u-line-invert);
+  padding-block: 2rem;
+}
+.u-event__month { font-size: clamp(1.5rem, 7vw, 2.1rem); }
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 /* Ghibli — soft clouds */
 :root {

@@ -45,6 +45,20 @@
   --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #8b45131c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #8b451312, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.couple = offset */
+.u-person--bride { align-items: flex-start; text-align: start; margin-inline-end: 16%; }
+.u-person--groom { align-items: flex-end; text-align: end; margin-inline-start: 16%; margin-top: -1rem; }
+.u-couple__amp { margin-block: 0.75rem; }
+.u-couple__greeting, .u-couple__intro { text-align: center; }
+
+/* layout.card = bleed */
+.u-card {
+  border-radius: 0;
+  margin-inline: calc(var(--u-gutter) * -1);
+  padding-inline: calc(var(--u-gutter) + 0.25rem);
+}
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 /* Minecraft — pixel grid */
 :root {

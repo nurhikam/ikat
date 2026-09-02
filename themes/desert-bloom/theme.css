@@ -45,6 +45,57 @@
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #b0603022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #b0603016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #b0603012, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.gallery = masonry */
+.u-gallery__grid { display: block; column-count: 2; column-gap: 0.6rem; }
+.u-gallery__item:first-child { grid-column: auto; }
+.u-gallery__item { break-inside: avoid; margin-bottom: 0.6rem; }
+.u-gallery__photo { aspect-ratio: 3 / 4; }
+.u-gallery__item:nth-child(3n+1) .u-gallery__photo { aspect-ratio: 1; }
+.u-gallery__item:nth-child(3n+2) .u-gallery__photo { aspect-ratio: 4 / 5; }
+
+/* layout.couple = offset */
+.u-person--bride { align-items: flex-start; text-align: start; margin-inline-end: 16%; }
+.u-person--groom { align-items: flex-end; text-align: end; margin-inline-start: 16%; margin-top: -1rem; }
+.u-couple__amp { margin-block: 0.75rem; }
+.u-couple__greeting, .u-couple__intro { text-align: center; }
+
+/* layout.event = ticket */
+/* Kartu tiket: permukaan terang dengan takik di kiri-kanan, seperti karcis. */
+.u-event__inner {
+  background: var(--u-surface);
+  color: var(--u-ink);
+  padding: 1.75rem 1.35rem;
+  border-radius: var(--u-radius-lg);
+  position: relative;
+}
+.u-event__inner::before,
+.u-event__inner::after {
+  content: ""; position: absolute; top: 52%;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--u-bg); transform: translateY(-50%);
+}
+.u-event__inner::before { left: -11px; }
+.u-event__inner::after  { right: -11px; }
+.u-event__dt { color: var(--u-ink-soft); }
+.u-week__dow { color: var(--u-ink); }
+.u-event__maps, .u-event__cal { color: var(--u-ink); border-color: var(--u-line); }
+
+/* layout.card = edge */
+.u-card:not(.u-rsvp__card) {
+  background: transparent;
+  color: var(--u-ink-invert);
+  box-shadow: none;
+  border-radius: 0;
+  border-top: 1px solid var(--u-line-invert);
+  border-bottom: 1px solid var(--u-line-invert);
+  padding-inline: 0;
+}
+.u-card:not(.u-rsvp__card) .u-quote__cite,
+.u-card:not(.u-rsvp__card) .u-person__parents,
+.u-card:not(.u-rsvp__card) .u-person__ig { color: var(--u-ink-invert); opacity: 0.7; }
+.u-card:not(.u-rsvp__card) .u-person__ig { box-shadow: inset 0 -1px 0 var(--u-line-invert); }
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 :root {
   --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='20' viewBox='0 0 80 20'%3E%3Cg fill='%23e8a040' fill-opacity='.2'%3E%3Cpath d='M20 14 Q20 4 24 10 Q22 14 20 14Z'/%3E%3Cpath d='M40 14 Q40 4 44 10 Q42 14 40 14Z'/%3E%3Cpath d='M60 14 Q60 4 64 10 Q62 14 60 14Z'/%3E%3C/g%3E%3C/svg%3E");

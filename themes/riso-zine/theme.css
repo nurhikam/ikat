@@ -45,6 +45,33 @@
   --u-ambient: radial-gradient(ellipse 76% 26% at 50% 22%, #ff5c391c, transparent 68%),radial-gradient(ellipse 58% 22% at 88% 72%, #ff5c3912, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.gallery = filmstrip */
+.u-gallery__grid {
+  display: flex; gap: 0.6rem; overflow-x: auto; scroll-snap-type: x mandatory;
+  margin-inline: calc(var(--u-gutter) * -1); padding: 0 var(--u-gutter) 0.5rem;
+  scrollbar-width: none;
+}
+.u-gallery__grid::-webkit-scrollbar { display: none; }
+.u-gallery__item:first-child { grid-column: auto; }
+.u-gallery__item { flex: 0 0 68%; scroll-snap-align: center; }
+.u-gallery__photo { aspect-ratio: 3 / 4; }
+
+/* layout.event = plain */
+.u-event__inner {
+  border-top: 1px solid var(--u-line-invert);
+  border-bottom: 1px solid var(--u-line-invert);
+  padding-block: 2rem;
+}
+.u-event__month { font-size: clamp(1.5rem, 7vw, 2.1rem); }
+
+/* layout.card = bleed */
+.u-card {
+  border-radius: 0;
+  margin-inline: calc(var(--u-gutter) * -1);
+  padding-inline: calc(var(--u-gutter) + 0.25rem);
+}
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 :root {
   --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='%23c04030' fill-opacity='.06'%3E%3Ccircle cx='10' cy='10' r='1.5'/%3E%3Ccircle cx='20' cy='15' r='1'/%3E%3Ccircle cx='30' cy='10' r='1.2'/%3E%3C/g%3E%3C/svg%3E");

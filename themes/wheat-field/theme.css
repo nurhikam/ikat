@@ -45,6 +45,29 @@
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #8a6a2022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #8a6a2016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #8a6a2012, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.gallery = masonry */
+.u-gallery__grid { display: block; column-count: 2; column-gap: 0.6rem; }
+.u-gallery__item:first-child { grid-column: auto; }
+.u-gallery__item { break-inside: avoid; margin-bottom: 0.6rem; }
+.u-gallery__photo { aspect-ratio: 3 / 4; }
+.u-gallery__item:nth-child(3n+1) .u-gallery__photo { aspect-ratio: 1; }
+.u-gallery__item:nth-child(3n+2) .u-gallery__photo { aspect-ratio: 4 / 5; }
+
+/* layout.couple = split */
+.u-couple__card { text-align: start; }
+.u-person--bride { align-items: flex-start; text-align: start; }
+.u-person--groom { align-items: flex-end; text-align: end; }
+.u-couple__amp { align-self: center; }
+.u-couple__greeting, .u-couple__intro { text-align: center; }
+
+/* layout.card = bleed */
+.u-card {
+  border-radius: 0;
+  margin-inline: calc(var(--u-gutter) * -1);
+  padding-inline: calc(var(--u-gutter) + 0.25rem);
+}
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 :root {
   --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='20' viewBox='0 0 80 20'%3E%3Cg stroke='%23c9a84c' stroke-opacity='.25' stroke-width='1' fill='none'%3E%3Cpath d='M20 18 Q20 8 22 4'/%3E%3Cpath d='M18 10 L22 8 L20 12' fill='%23c9a84c' stroke='none' fill-opacity='.3'/%3E%3Cpath d='M40 18 Q40 8 42 4'/%3E%3Cpath d='M38 10 L42 8 L40 12' fill='%23c9a84c' stroke='none' fill-opacity='.3'/%3E%3Cpath d='M60 18 Q60 8 62 4'/%3E%3Cpath d='M58 10 L62 8 L60 12' fill='%23c9a84c' stroke='none' fill-opacity='.3'/%3E%3C/g%3E%3C/svg%3E");

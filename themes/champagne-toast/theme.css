@@ -45,6 +45,35 @@
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #c9a84c22, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #c9a84c16, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #c9a84c12, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.gallery = trio */
+.u-gallery__grid { grid-template-columns: repeat(3, 1fr); gap: 0.4rem; }
+.u-gallery__item:first-child { grid-column: span 3; }
+.u-gallery__photo { aspect-ratio: 1; }
+.u-gallery__item:first-child .u-gallery__photo { aspect-ratio: 16 / 10; }
+.u-gallery__cap { font-size: 0.62rem; }
+
+/* layout.couple = offset */
+.u-person--bride { align-items: flex-start; text-align: start; margin-inline-end: 16%; }
+.u-person--groom { align-items: flex-end; text-align: end; margin-inline-start: 16%; margin-top: -1rem; }
+.u-couple__amp { margin-block: 0.75rem; }
+.u-couple__greeting, .u-couple__intro { text-align: center; }
+
+/* layout.card = edge */
+.u-card:not(.u-rsvp__card) {
+  background: transparent;
+  color: var(--u-ink-invert);
+  box-shadow: none;
+  border-radius: 0;
+  border-top: 1px solid var(--u-line-invert);
+  border-bottom: 1px solid var(--u-line-invert);
+  padding-inline: 0;
+}
+.u-card:not(.u-rsvp__card) .u-quote__cite,
+.u-card:not(.u-rsvp__card) .u-person__parents,
+.u-card:not(.u-rsvp__card) .u-person__ig { color: var(--u-ink-invert); opacity: 0.7; }
+.u-card:not(.u-rsvp__card) .u-person__ig { box-shadow: inset 0 -1px 0 var(--u-line-invert); }
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 :root {
   --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='%23c9a84c' fill-opacity='.06'%3E%3Ccircle cx='15' cy='15' r='1'/%3E%3Ccircle cx='35' cy='25' r='1.4'/%3E%3Ccircle cx='20' cy='40' r='.8'/%3E%3Ccircle cx='45' cy='45' r='1.1'/%3E%3C/g%3E%3C/svg%3E");

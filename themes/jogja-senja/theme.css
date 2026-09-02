@@ -45,6 +45,14 @@
   --u-ambient: radial-gradient(ellipse 74% 26% at 50% 20%, #e8a04022, transparent 68%),radial-gradient(ellipse 58% 24% at 10% 52%, #e8a04016, transparent 66%),radial-gradient(ellipse 54% 22% at 92% 78%, #e8a04012, transparent 66%);
 }
 
+/* ------------------------------------------------- layout (dari spec) */
+/* layout.card = bleed */
+.u-card {
+  border-radius: 0;
+  margin-inline: calc(var(--u-gutter) * -1);
+  padding-inline: calc(var(--u-gutter) + 0.25rem);
+}
+
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 /* Jogja Senja — gapura arch */
 :root {
