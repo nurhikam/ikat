@@ -188,8 +188,41 @@ CARD = {
 """,
 }
 
-ORDER = ["gallery", "couple", "event", "card"]
-TABLES = {"gallery": GALLERY, "couple": COUPLE, "event": EVENT, "card": CARD}
+
+# ---------------------------------------------------------------- urutan alur
+#
+# Urutan section itu perbedaan yang paling terasa oleh tamu, karena mereka
+# mengalaminya berurutan. Sampul selalu pertama dan penutup selalu terakhir;
+# yang di tengah boleh ditukar. Dikerjakan lewat `order` flexbox supaya DOM dan
+# datanya tidak perlu berubah.
+
+def _order(seq):
+    body = "#app { display: flex; flex-direction: column; }\n"
+    for i, sec in enumerate(seq, start=1):
+        body += f'.u-sec[data-sec="{sec}"] {{ order: {i}; }}\n'
+    return body
+
+
+FLOW = {
+    # bawaan: biarkan urutan DOM
+    "classic": "",
+
+    # kenalan dulu, baru urusan teknis
+    "story-first": _order(["cover", "couple", "story", "quote", "countdown",
+                           "event", "gallery", "gift", "rsvp", "closing"]),
+
+    # tanggal dan tempat didahulukan, buat tamu yang cuma mau tahu kapan
+    "date-first": _order(["cover", "countdown", "event", "couple", "quote",
+                          "gallery", "story", "gift", "rsvp", "closing"]),
+
+    # foto dinaikkan, buat tema yang jualannya visual
+    "gallery-early": _order(["cover", "couple", "gallery", "quote", "countdown",
+                             "event", "story", "gift", "rsvp", "closing"]),
+}
+
+
+ORDER = ["flow", "gallery", "couple", "event", "card"]
+TABLES = {"flow": FLOW, "gallery": GALLERY, "couple": COUPLE, "event": EVENT, "card": CARD}
 KEYS = {k: list(v.keys()) for k, v in TABLES.items()}
 
 
@@ -212,8 +245,47 @@ def spread(index: int) -> dict:
     berulang dalam siklus pendek: kalau semua slot maju bersamaan, tema ke-7 dan
     ke-14 bisa dapat kombinasi identik."""
     return {
+        "flow":    KEYS["flow"][(index // 7) % len(KEYS["flow"])],
         "gallery": KEYS["gallery"][index % len(KEYS["gallery"])],
         "couple":  KEYS["couple"][(index // 2) % len(KEYS["couple"])],
         "event":   KEYS["event"][(index // 3) % len(KEYS["event"])],
         "card":    KEYS["card"][(index // 5) % len(KEYS["card"])],
     }
+
+# ------------------------------------------------------- hindari tabrakan
+#
+# decoration.css dimuat SETELAH blok layout, jadi dekorasi tulisan tangan selalu
+# menang — dan itu memang benar, karena itu yang disetel manusia. Yang salah
+# kalau assigner memberi varian yang bertabrakan dengannya, karena hasilnya
+# hibrida rusak: `ticket` menyetel permukaan terang + teks gelap, lalu dekorasi
+# menimpa latarnya jadi gelap dan teksnya ikut hilang. Terjadi di
+# atelier-burgundy: merah gelap di atas merah gelap.
+#
+# Jadi tema yang sudah punya tanda tangan layout tulisan tangan dibiarkan apa
+# adanya di slot itu. Mereka toh sudah berbeda; varian ini untuk tema yang belum.
+
+import re as _re
+
+_COLLIDE = {
+    "gallery": _re.compile(r"\.u-gallery__(grid|item|photo)"),
+    "couple":  _re.compile(r"\.u-person\b|\.u-couple__card"),
+    "event":   _re.compile(r"\.u-event__inner"),
+    "card":    _re.compile(r"\.u-card\b"),
+    # Batas di depan `order` itu wajib: tanpa itu `border: 1px` ikut kena,
+    # dan seluruh 113 tema dikira sudah punya urutan tulisan tangan.
+    "flow":    _re.compile(r"(?:^|[;{\s])order\s*:\s*\d|#app\s*\{[^}]*display\s*:\s*flex", _re.M),
+}
+
+NEUTRAL = {"flow": "classic", "gallery": "duo", "couple": "stacked",
+           "event": "centered", "card": "boxed"}
+
+
+def spread_safe(index: int, decoration: str = "") -> dict:
+    """spread(), tapi slot yang sudah digarap tangan di decoration dikembalikan
+    ke varian netral supaya tidak saling menimpa separuh-separuh."""
+    out = spread(index)
+    if decoration:
+        for slot, pat in _COLLIDE.items():
+            if pat.search(decoration):
+                out[slot] = NEUTRAL[slot]
+    return out

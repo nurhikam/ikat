@@ -9,18 +9,18 @@
 
 :root {
   /* warna */
-  --u-bg: #e06060;
-  --u-bg-2: #c84848;
+  --u-bg: #d83737;
+  --u-bg-2: #b62f2f;
   --u-surface: #fdf6ec;
   --u-surface-2: #f0e4cc;
   --u-ink: #4a1a10;
   --u-ink-soft: #7a4a30;
-  --u-ink-invert: #fdf6ec;
+  --u-ink-invert: #ffffff;
   --u-accent: #e8a040;
   --u-accent-ink: #4a1a10;
   --u-highlight: #6a9ac0;
   --u-line: rgba(74,26,16,0.14);
-  --u-line-invert: rgba(253,246,236,0.22);
+  --u-line-invert: rgba(255,255,255,0.22);
 
   /* tipografi */
   --u-font-display: "Bodoni Moda", Georgia, serif;
@@ -46,6 +46,18 @@
 }
 
 /* ------------------------------------------------- layout (dari spec) */
+/* layout.flow = story-first */#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="cover"] { order: 1; }
+.u-sec[data-sec="couple"] { order: 2; }
+.u-sec[data-sec="story"] { order: 3; }
+.u-sec[data-sec="quote"] { order: 4; }
+.u-sec[data-sec="countdown"] { order: 5; }
+.u-sec[data-sec="event"] { order: 6; }
+.u-sec[data-sec="gallery"] { order: 7; }
+.u-sec[data-sec="gift"] { order: 8; }
+.u-sec[data-sec="rsvp"] { order: 9; }
+.u-sec[data-sec="closing"] { order: 10; }
+
 /* layout.card = bleed */
 .u-card {
   border-radius: 0;

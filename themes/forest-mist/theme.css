@@ -9,18 +9,18 @@
 
 :root {
   /* warna */
-  --u-bg: #8a9a8a;
-  --u-bg-2: #7a8a7a;
+  --u-bg: #697969;
+  --u-bg-2: #586658;
   --u-surface: #fdfcfa;
   --u-surface-2: #f2ece4;
   --u-ink: #2a3a2a;
   --u-ink-soft: #5a6a5a;
-  --u-ink-invert: #fdfcfa;
+  --u-ink-invert: #ffffff;
   --u-accent: #6a8a6a;
   --u-accent-ink: #fdfcfa;
   --u-highlight: #c07040;
   --u-line: rgba(42,58,42,0.14);
-  --u-line-invert: rgba(42,58,42,0.18);
+  --u-line-invert: rgba(255,255,255,0.22);
 
   /* tipografi */
   --u-font-display: "Cormorant", Georgia, serif;

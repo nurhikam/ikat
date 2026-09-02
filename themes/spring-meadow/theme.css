@@ -20,7 +20,7 @@
   --u-accent-ink: #fdfef8;
   --u-highlight: #d4845a;
   --u-line: rgba(42,64,40,0.14);
-  --u-line-invert: rgba(42,64,40,0.18);
+  --u-line-invert: rgba(42,64,40,0.22);
 
   /* tipografi */
   --u-font-display: "Cormorant", Georgia, serif;
@@ -46,6 +46,18 @@
 }
 
 /* ------------------------------------------------- layout (dari spec) */
+/* layout.flow = date-first */#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="cover"] { order: 1; }
+.u-sec[data-sec="countdown"] { order: 2; }
+.u-sec[data-sec="event"] { order: 3; }
+.u-sec[data-sec="couple"] { order: 4; }
+.u-sec[data-sec="quote"] { order: 5; }
+.u-sec[data-sec="gallery"] { order: 6; }
+.u-sec[data-sec="story"] { order: 7; }
+.u-sec[data-sec="gift"] { order: 8; }
+.u-sec[data-sec="rsvp"] { order: 9; }
+.u-sec[data-sec="closing"] { order: 10; }
+
 /* layout.gallery = mosaic */
 .u-gallery__grid { grid-template-columns: repeat(4, 1fr); gap: 0.45rem; }
 .u-gallery__item { grid-column: span 2; }

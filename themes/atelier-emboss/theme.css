@@ -20,7 +20,7 @@
   --u-accent-ink: #fdfcfa;
   --u-highlight: #8a7a6a;
   --u-line: rgba(44,42,38,0.12);
-  --u-line-invert: rgba(44,42,38,0.16);
+  --u-line-invert: rgba(44,42,38,0.22);
 
   /* tipografi */
   --u-font-display: "Cormorant Garamond", Georgia, serif;
@@ -46,15 +46,6 @@
 }
 
 /* ------------------------------------------------- layout (dari spec) */
-/* layout.gallery = mosaic */
-.u-gallery__grid { grid-template-columns: repeat(4, 1fr); gap: 0.45rem; }
-.u-gallery__item { grid-column: span 2; }
-.u-gallery__item:first-child { grid-column: span 4; }
-.u-gallery__photo { aspect-ratio: 1; }
-.u-gallery__item:first-child .u-gallery__photo { aspect-ratio: 16 / 11; }
-.u-gallery__item:nth-child(4) { grid-column: span 4; }
-.u-gallery__item:nth-child(4) .u-gallery__photo { aspect-ratio: 2 / 1; }
-
 /* layout.couple = offset */
 .u-person--bride { align-items: flex-start; text-align: start; margin-inline-end: 16%; }
 .u-person--groom { align-items: flex-end; text-align: end; margin-inline-start: 16%; margin-top: -1rem; }
@@ -73,21 +64,6 @@
   .u-event__meta   { grid-column: 1 / -1; }
   .u-event__maps, .u-event__cal { justify-self: start; }
 }
-
-/* layout.card = edge */
-.u-card:not(.u-rsvp__card) {
-  background: transparent;
-  color: var(--u-ink-invert);
-  box-shadow: none;
-  border-radius: 0;
-  border-top: 1px solid var(--u-line-invert);
-  border-bottom: 1px solid var(--u-line-invert);
-  padding-inline: 0;
-}
-.u-card:not(.u-rsvp__card) .u-quote__cite,
-.u-card:not(.u-rsvp__card) .u-person__parents,
-.u-card:not(.u-rsvp__card) .u-person__ig { color: var(--u-ink-invert); opacity: 0.7; }
-.u-card:not(.u-rsvp__card) .u-person__ig { box-shadow: inset 0 -1px 0 var(--u-line-invert); }
 
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 /* Atelier Emboss — MINIMAL CENTERED. Blind emboss, ultra whitespace.

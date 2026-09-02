@@ -20,7 +20,7 @@
   --u-accent-ink: #fffefb;
   --u-highlight: #c9a87a;
   --u-line: rgba(44,36,24,0.14);
-  --u-line-invert: rgba(44,36,24,0.18);
+  --u-line-invert: rgba(44,36,24,0.22);
 
   /* tipografi */
   --u-font-display: "Cormorant Garamond", Georgia, serif;
@@ -46,17 +46,6 @@
 }
 
 /* ------------------------------------------------- layout (dari spec) */
-/* layout.gallery = filmstrip */
-.u-gallery__grid {
-  display: flex; gap: 0.6rem; overflow-x: auto; scroll-snap-type: x mandatory;
-  margin-inline: calc(var(--u-gutter) * -1); padding: 0 var(--u-gutter) 0.5rem;
-  scrollbar-width: none;
-}
-.u-gallery__grid::-webkit-scrollbar { display: none; }
-.u-gallery__item:first-child { grid-column: auto; }
-.u-gallery__item { flex: 0 0 68%; scroll-snap-align: center; }
-.u-gallery__photo { aspect-ratio: 3 / 4; }
-
 /* layout.couple = framed */
 .u-person {
   border: 1px solid var(--u-line);

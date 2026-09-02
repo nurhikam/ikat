@@ -20,7 +20,7 @@
   --u-accent-ink: #fdfcf8;
   --u-highlight: #d4845a;
   --u-line: rgba(42,64,56,0.14);
-  --u-line-invert: rgba(42,64,56,0.18);
+  --u-line-invert: rgba(42,64,56,0.22);
 
   /* tipografi */
   --u-font-display: "Shippori Mincho", Georgia, serif;
@@ -56,14 +56,6 @@
 .u-gallery__item:first-child { grid-column: auto; }
 .u-gallery__item { flex: 0 0 68%; scroll-snap-align: center; }
 .u-gallery__photo { aspect-ratio: 3 / 4; }
-
-/* layout.event = plain */
-.u-event__inner {
-  border-top: 1px solid var(--u-line-invert);
-  border-bottom: 1px solid var(--u-line-invert);
-  padding-block: 2rem;
-}
-.u-event__month { font-size: clamp(1.5rem, 7vw, 2.1rem); }
 
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 /* Ghibli — soft clouds */

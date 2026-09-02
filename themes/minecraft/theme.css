@@ -9,18 +9,18 @@
 
 :root {
   /* warna */
-  --u-bg: #5a8a3a;
-  --u-bg-2: #4a7a2a;
+  --u-bg: #537f35;
+  --u-bg-2: #466b2d;
   --u-surface: #f5f0e0;
   --u-surface-2: #e8ddd0;
   --u-ink: #2a3a1a;
   --u-ink-soft: #5a6e4a;
-  --u-ink-invert: #f5f0e0;
+  --u-ink-invert: #ffffff;
   --u-accent: #8b4513;
   --u-accent-ink: #f5f0e0;
   --u-highlight: #c04030;
   --u-line: rgba(42,58,26,0.14);
-  --u-line-invert: rgba(245,240,224,0.20);
+  --u-line-invert: rgba(255,255,255,0.22);
 
   /* tipografi */
   --u-font-display: "Space Mono", ui-monospace, monospace;
@@ -51,13 +51,6 @@
 .u-person--groom { align-items: flex-end; text-align: end; margin-inline-start: 16%; margin-top: -1rem; }
 .u-couple__amp { margin-block: 0.75rem; }
 .u-couple__greeting, .u-couple__intro { text-align: center; }
-
-/* layout.card = bleed */
-.u-card {
-  border-radius: 0;
-  margin-inline: calc(var(--u-gutter) * -1);
-  padding-inline: calc(var(--u-gutter) + 0.25rem);
-}
 
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 /* Minecraft — pixel grid */

@@ -46,16 +46,17 @@
 }
 
 /* ------------------------------------------------- layout (dari spec) */
-/* layout.gallery = filmstrip */
-.u-gallery__grid {
-  display: flex; gap: 0.6rem; overflow-x: auto; scroll-snap-type: x mandatory;
-  margin-inline: calc(var(--u-gutter) * -1); padding: 0 var(--u-gutter) 0.5rem;
-  scrollbar-width: none;
-}
-.u-gallery__grid::-webkit-scrollbar { display: none; }
-.u-gallery__item:first-child { grid-column: auto; }
-.u-gallery__item { flex: 0 0 68%; scroll-snap-align: center; }
-.u-gallery__photo { aspect-ratio: 3 / 4; }
+/* layout.flow = gallery-early */#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="cover"] { order: 1; }
+.u-sec[data-sec="couple"] { order: 2; }
+.u-sec[data-sec="gallery"] { order: 3; }
+.u-sec[data-sec="quote"] { order: 4; }
+.u-sec[data-sec="countdown"] { order: 5; }
+.u-sec[data-sec="event"] { order: 6; }
+.u-sec[data-sec="story"] { order: 7; }
+.u-sec[data-sec="gift"] { order: 8; }
+.u-sec[data-sec="rsvp"] { order: 9; }
+.u-sec[data-sec="closing"] { order: 10; }
 
 /* layout.couple = offset */
 .u-person--bride { align-items: flex-start; text-align: start; margin-inline-end: 16%; }
@@ -70,13 +71,6 @@
   padding-block: 2rem;
 }
 .u-event__month { font-size: clamp(1.5rem, 7vw, 2.1rem); }
-
-/* layout.card = bleed */
-.u-card {
-  border-radius: 0;
-  margin-inline: calc(var(--u-gutter) * -1);
-  padding-inline: calc(var(--u-gutter) + 0.25rem);
-}
 
 /* --------------------------------------------- dekorasi (ditulis tangan) */
 /* Batik Solo — sogan kawung + parang */

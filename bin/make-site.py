@@ -114,9 +114,18 @@ CATS = [
 ]
 # 12 featured — Atelier dulu (quiet luxury), baru best dari kategori lain
 FEATURED = [
-    "atelier-emboss", "atelier-sage-arch", "atelier-pearl", "atelier-burgundy",
-    "atelier-torn", "atelier-cream", "atelier-mauve", "atelier-royal",
-    "forest-lace", "batik-solo", "noir-editorial", "terrazzo",
+    "art-deco-gold",
+    "bauhaus",
+    "celestial",
+    "sasak-tenun",
+    "cherry-blossom",
+    "kawaii-pastel",
+    "autumn-maple",
+    "bali-lotus",
+    "batik-solo",
+    "atelier-burgundy",
+    "atelier-cream",
+    "atelier-editorial",
 ]
 
 def theme_card(t: dict) -> str:

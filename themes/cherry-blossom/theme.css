@@ -20,7 +20,7 @@
   --u-accent-ink: #fffaf8;
   --u-highlight: #6ab0a0;
   --u-line: rgba(74,32,48,0.14);
-  --u-line-invert: rgba(74,32,48,0.18);
+  --u-line-invert: rgba(74,32,48,0.22);
 
   /* tipografi */
   --u-font-display: "Shippori Mincho", Georgia, serif;
@@ -46,6 +46,18 @@
 }
 
 /* ------------------------------------------------- layout (dari spec) */
+/* layout.flow = story-first */#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="cover"] { order: 1; }
+.u-sec[data-sec="couple"] { order: 2; }
+.u-sec[data-sec="story"] { order: 3; }
+.u-sec[data-sec="quote"] { order: 4; }
+.u-sec[data-sec="countdown"] { order: 5; }
+.u-sec[data-sec="event"] { order: 6; }
+.u-sec[data-sec="gallery"] { order: 7; }
+.u-sec[data-sec="gift"] { order: 8; }
+.u-sec[data-sec="rsvp"] { order: 9; }
+.u-sec[data-sec="closing"] { order: 10; }
+
 /* layout.gallery = mosaic */
 .u-gallery__grid { grid-template-columns: repeat(4, 1fr); gap: 0.45rem; }
 .u-gallery__item { grid-column: span 2; }

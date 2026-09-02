@@ -20,7 +20,7 @@
   --u-accent-ink: #1a2744;
   --u-highlight: #e8c040;
   --u-line: rgba(26,39,68,0.14);
-  --u-line-invert: rgba(253,246,244,0.20);
+  --u-line-invert: rgba(253,246,244,0.22);
 
   /* tipografi */
   --u-font-display: "Great Vibes", cursive;
@@ -54,19 +54,6 @@
 .u-gallery__item:nth-child(odd) { margin-inline-end: 14%; }
 .u-gallery__item:first-child { margin-inline: 0; }
 .u-gallery__item:first-child .u-gallery__photo { aspect-ratio: 3 / 4; }
-
-/* layout.event = split */
-@media (min-width: 24rem) {
-  .u-event__inner {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 0.5rem 1.25rem; text-align: start; align-items: start;
-  }
-  .u-event__heading { grid-column: 1 / -1; text-align: start; }
-  .u-event__month  { grid-column: 1; margin-bottom: 0; }
-  .u-week          { grid-column: 1 / -1; }
-  .u-event__meta   { grid-column: 1 / -1; }
-  .u-event__maps, .u-event__cal { justify-self: start; }
-}
 
 /* layout.card = edge */
 .u-card:not(.u-rsvp__card) {

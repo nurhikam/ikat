@@ -9,18 +9,18 @@
 
 :root {
   /* warna */
-  --u-bg: #c07030;
-  --u-bg-2: #a86020;
+  --u-bg: #aa632a;
+  --u-bg-2: #8e5324;
   --u-surface: #fdf6ec;
   --u-surface-2: #f0e4cc;
   --u-ink: #4a2008;
   --u-ink-soft: #7a4a28;
-  --u-ink-invert: #fdf6ec;
+  --u-ink-invert: #ffffff;
   --u-accent: #2a7aa8;
   --u-accent-ink: #fdf6ec;
   --u-highlight: #c9a84c;
   --u-line: rgba(74,32,8,0.14);
-  --u-line-invert: rgba(253,246,236,0.22);
+  --u-line-invert: rgba(255,255,255,0.22);
 
   /* tipografi */
   --u-font-display: "Yeseva One", Georgia, serif;
@@ -46,6 +46,18 @@
 }
 
 /* ------------------------------------------------- layout (dari spec) */
+/* layout.flow = date-first */#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="cover"] { order: 1; }
+.u-sec[data-sec="countdown"] { order: 2; }
+.u-sec[data-sec="event"] { order: 3; }
+.u-sec[data-sec="couple"] { order: 4; }
+.u-sec[data-sec="quote"] { order: 5; }
+.u-sec[data-sec="gallery"] { order: 6; }
+.u-sec[data-sec="story"] { order: 7; }
+.u-sec[data-sec="gift"] { order: 8; }
+.u-sec[data-sec="rsvp"] { order: 9; }
+.u-sec[data-sec="closing"] { order: 10; }
+
 /* layout.gallery = masonry */
 .u-gallery__grid { display: block; column-count: 2; column-gap: 0.6rem; }
 .u-gallery__item:first-child { grid-column: auto; }

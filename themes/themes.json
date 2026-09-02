@@ -27,7 +27,7 @@
         "accentInk": "#16301f",
         "highlight": "#c2405f",
         "line": "rgba(51,48,31,0.16)",
-        "lineInvert": "rgba(244,236,220,0.2)"
+        "lineInvert": "rgba(244,236,220,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -43,6 +43,7 @@
       "tracking": "0.28em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
@@ -53,11 +54,11 @@
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-1.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -86,7 +87,7 @@
         "accentInk": "#fffaf0",
         "highlight": "#d96f4a",
         "line": "rgba(61,50,24,0.16)",
-        "lineInvert": "rgba(61,50,24,0.20)"
+        "lineInvert": "rgba(61,50,24,0.22)"
       },
       "shape": {
         "radius": "3px",
@@ -103,6 +104,7 @@
       "pattern": "petals",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "trio",
         "couple": "stacked",
         "event": "centered",
@@ -112,12 +114,10 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
+          "assets/photos/bride.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-2.webp",
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -146,7 +146,7 @@
         "accentInk": "#fdfbff",
         "highlight": "#c56b96",
         "line": "rgba(51,42,68,0.14)",
-        "lineInvert": "rgba(51,42,68,0.18)"
+        "lineInvert": "rgba(51,42,68,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -163,6 +163,7 @@
       "pattern": "waves",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "masonry",
         "couple": "split",
         "event": "centered",
@@ -172,11 +173,11 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-2.webp",
+          "assets/photos/gallery-1.webp",
           "assets/photos/cover.webp"
         ]
       }
@@ -206,7 +207,7 @@
         "accentInk": "#fffaf8",
         "highlight": "#a8496b",
         "line": "rgba(66,41,43,0.14)",
-        "lineInvert": "rgba(66,41,43,0.18)"
+        "lineInvert": "rgba(66,41,43,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -223,6 +224,7 @@
       "pattern": "dots",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "filmstrip",
         "couple": "split",
         "event": "split",
@@ -232,12 +234,12 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-2.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-3.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -266,7 +268,7 @@
         "accentInk": "#fbfaf4",
         "highlight": "#b06a48",
         "line": "rgba(47,53,42,0.14)",
-        "lineInvert": "rgba(47,53,42,0.18)"
+        "lineInvert": "rgba(47,53,42,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -283,6 +285,7 @@
       "pattern": "grid",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "stack",
         "couple": "offset",
         "event": "split",
@@ -292,12 +295,10 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
+          "assets/photos/gallery-2.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -326,7 +327,7 @@
         "accentInk": "#f7f8f8",
         "highlight": "#c07a5c",
         "line": "rgba(38,51,61,0.14)",
-        "lineInvert": "rgba(38,51,61,0.18)"
+        "lineInvert": "rgba(38,51,61,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -343,6 +344,7 @@
       "pattern": "arcs",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "mosaic",
         "couple": "offset",
         "event": "split",
@@ -352,12 +354,10 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -375,18 +375,18 @@
         "bodyStack": "\"Figtree\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#a3866c",
-        "bg2": "#8a7058",
+        "bg": "#8a6f57",
+        "bg2": "#745d49",
         "surface": "#f5ece2",
         "surface2": "#e6d6c5",
         "ink": "#33251a",
         "inkSoft": "#6b5442",
-        "inkInvert": "#f5ece2",
+        "inkInvert": "#ffffff",
         "accent": "#c9a37a",
         "accentInk": "#33251a",
         "highlight": "#8c4a3c",
         "line": "rgba(51,37,26,0.16)",
-        "lineInvert": "rgba(245,236,226,0.24)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -403,6 +403,7 @@
       "pattern": "ikat",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "framed",
         "event": "ticket",
@@ -412,12 +413,12 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
           "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-2.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -463,6 +464,7 @@
       "pattern": "none",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "trio",
         "couple": "framed",
         "event": "ticket",
@@ -472,10 +474,10 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-2.webp",
           "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
+          "assets/photos/cover.webp",
           "assets/photos/gallery-1.webp",
           "assets/photos/bride.webp"
         ]
@@ -495,18 +497,18 @@
         "bodyStack": "\"Sora\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#c86f4a",
-        "bg2": "#a85736",
+        "bg": "#b55c37",
+        "bg2": "#984d2e",
         "surface": "#fbf1e6",
         "surface2": "#f0dcc7",
         "ink": "#40200f",
         "inkSoft": "#7a4a2c",
-        "inkInvert": "#fbf1e6",
+        "inkInvert": "#ffffff",
         "accent": "#e8a866",
         "accentInk": "#40200f",
         "highlight": "#6b7c4a",
         "line": "rgba(64,32,15,0.16)",
-        "lineInvert": "rgba(251,241,230,0.26)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -523,6 +525,7 @@
       "pattern": "chevron",
       "category": "unik",
       "layout": {
+        "flow": "story-first",
         "gallery": "masonry",
         "couple": "stacked",
         "event": "ticket",
@@ -532,12 +535,10 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-1.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -566,7 +567,7 @@
         "accentInk": "#fffdf7",
         "highlight": "#2f4dd0",
         "line": "rgba(31,31,46,0.2)",
-        "lineInvert": "rgba(31,31,46,0.24)"
+        "lineInvert": "rgba(31,31,46,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -583,7 +584,8 @@
       "pattern": "grain",
       "category": "unik",
       "layout": {
-        "gallery": "filmstrip",
+        "flow": "story-first",
+        "gallery": "duo",
         "couple": "stacked",
         "event": "plain",
         "card": "bleed"
@@ -593,11 +595,11 @@
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -626,7 +628,7 @@
         "accentInk": "#fbfcfd",
         "highlight": "#b98cc8",
         "line": "rgba(35,40,51,0.14)",
-        "lineInvert": "rgba(35,40,51,0.18)"
+        "lineInvert": "rgba(35,40,51,0.22)"
       },
       "shape": {
         "radius": "999px",
@@ -643,6 +645,7 @@
       "pattern": "stars",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "stack",
         "couple": "split",
         "event": "plain",
@@ -652,12 +655,10 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-3.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-4.webp"
         ]
       }
     },
@@ -687,7 +688,7 @@
         "accentInk": "#fffefb",
         "highlight": "#c4706a",
         "line": "rgba(61,53,41,0.14)",
-        "lineInvert": "rgba(61,53,41,0.18)"
+        "lineInvert": "rgba(61,53,41,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -703,7 +704,8 @@
       "tracking": "0.26em",
       "category": "pastel",
       "layout": {
-        "gallery": "mosaic",
+        "flow": "story-first",
+        "gallery": "duo",
         "couple": "split",
         "event": "plain",
         "card": "edge"
@@ -712,12 +714,8 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-4.webp"
         ]
       }
     },
@@ -747,7 +745,7 @@
         "accentInk": "#1a1a1e",
         "highlight": "#e06060",
         "line": "rgba(26,26,30,0.14)",
-        "lineInvert": "rgba(253,242,240,0.20)"
+        "lineInvert": "rgba(253,242,240,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -763,6 +761,7 @@
       "tracking": "0.32em",
       "category": "unik",
       "layout": {
+        "flow": "story-first",
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
@@ -772,12 +771,10 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-3.webp",
           "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -807,7 +804,7 @@
         "accentInk": "#fffbf0",
         "highlight": "#c47040",
         "line": "rgba(74,61,30,0.14)",
-        "lineInvert": "rgba(74,61,30,0.18)"
+        "lineInvert": "rgba(74,61,30,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -823,6 +820,7 @@
       "tracking": "0.22em",
       "category": "pastel",
       "layout": {
+        "flow": "story-first",
         "gallery": "trio",
         "couple": "offset",
         "event": "centered",
@@ -832,12 +830,12 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
+          "assets/photos/bride.webp",
           "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/gallery-2.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -867,7 +865,7 @@
         "accentInk": "#1e2a3a",
         "highlight": "#c05060",
         "line": "rgba(30,42,58,0.14)",
-        "lineInvert": "rgba(253,246,244,0.20)"
+        "lineInvert": "rgba(253,246,244,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -883,6 +881,7 @@
       "tracking": "0.28em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "masonry",
         "couple": "framed",
         "event": "centered",
@@ -892,12 +891,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/bride.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-4.webp",
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -927,7 +926,7 @@
         "accentInk": "#fdfcfa",
         "highlight": "#b07050",
         "line": "rgba(62,56,48,0.14)",
-        "lineInvert": "rgba(62,56,48,0.18)"
+        "lineInvert": "rgba(62,56,48,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -943,7 +942,8 @@
       "tracking": "0.30em",
       "category": "pastel",
       "layout": {
-        "gallery": "filmstrip",
+        "flow": "date-first",
+        "gallery": "duo",
         "couple": "framed",
         "event": "split",
         "card": "boxed"
@@ -952,11 +952,9 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
+          "assets/photos/cover.webp",
           "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-4.webp",
           "assets/photos/bride.webp"
         ]
       }
@@ -987,7 +985,7 @@
         "accentInk": "#3d2040",
         "highlight": "#d06080",
         "line": "rgba(61,32,64,0.14)",
-        "lineInvert": "rgba(253,248,246,0.20)"
+        "lineInvert": "rgba(253,248,246,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -1003,6 +1001,7 @@
       "tracking": "0.28em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "stack",
         "couple": "stacked",
         "event": "split",
@@ -1012,12 +1011,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-1.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -1047,7 +1046,7 @@
         "accentInk": "#fffaf5",
         "highlight": "#c05030",
         "line": "rgba(74,55,40,0.14)",
-        "lineInvert": "rgba(74,55,40,0.18)"
+        "lineInvert": "rgba(74,55,40,0.22)"
       },
       "shape": {
         "radius": "8px",
@@ -1063,6 +1062,7 @@
       "tracking": "0.24em",
       "category": "hangat",
       "layout": {
+        "flow": "date-first",
         "gallery": "mosaic",
         "couple": "stacked",
         "event": "split",
@@ -1073,11 +1073,11 @@
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -1107,7 +1107,7 @@
         "accentInk": "#1a2744",
         "highlight": "#c0a060",
         "line": "rgba(26,39,68,0.14)",
-        "lineInvert": "rgba(240,242,248,0.20)"
+        "lineInvert": "rgba(240,242,248,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -1123,6 +1123,7 @@
       "tracking": "0.34em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "split",
         "event": "ticket",
@@ -1132,12 +1133,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
           "assets/photos/cover.webp",
+          "assets/photos/closing.webp",
           "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -1167,7 +1168,7 @@
         "accentInk": "#fffaf6",
         "highlight": "#b04060",
         "line": "rgba(74,48,32,0.14)",
-        "lineInvert": "rgba(74,48,32,0.18)"
+        "lineInvert": "rgba(74,48,32,0.22)"
       },
       "shape": {
         "radius": "12px",
@@ -1183,6 +1184,7 @@
       "tracking": "0.22em",
       "category": "pastel",
       "layout": {
+        "flow": "date-first",
         "gallery": "trio",
         "couple": "split",
         "event": "ticket",
@@ -1192,12 +1194,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
+          "assets/photos/cover.webp",
           "assets/photos/groom.webp",
+          "assets/photos/gallery-3.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -1227,7 +1229,7 @@
         "accentInk": "#f5f2ee",
         "highlight": "#c04030",
         "line": "rgba(30,30,30,0.14)",
-        "lineInvert": "rgba(245,242,238,0.20)"
+        "lineInvert": "rgba(245,242,238,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -1243,6 +1245,7 @@
       "tracking": "0.36em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "masonry",
         "couple": "offset",
         "event": "ticket",
@@ -1253,11 +1256,11 @@
         "closing": "assets/photos/cover.webp",
         "gallery": [
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -1303,21 +1306,18 @@
       "tracking": "0.28em",
       "category": "adat",
       "layout": {
-        "gallery": "filmstrip",
+        "flow": "gallery-early",
+        "gallery": "duo",
         "couple": "offset",
         "event": "plain",
-        "card": "bleed"
+        "card": "boxed"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-2.webp",
+          "assets/photos/bride.webp"
         ]
       }
     },
@@ -1347,7 +1347,7 @@
         "accentInk": "#5c1a2e",
         "highlight": "#c04050",
         "line": "rgba(92,26,46,0.14)",
-        "lineInvert": "rgba(253,242,238,0.20)"
+        "lineInvert": "rgba(253,242,238,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -1363,7 +1363,8 @@
       "tracking": "0.26em",
       "category": "adat",
       "layout": {
-        "gallery": "stack",
+        "flow": "gallery-early",
+        "gallery": "duo",
         "couple": "framed",
         "event": "plain",
         "card": "bleed"
@@ -1372,11 +1373,11 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-2.webp",
+          "assets/photos/bride.webp",
           "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
           "assets/photos/gallery-4.webp"
         ]
       }
@@ -1407,7 +1408,7 @@
         "accentInk": "#fffaf0",
         "highlight": "#2a7a5a",
         "line": "rgba(74,48,32,0.14)",
-        "lineInvert": "rgba(74,48,32,0.18)"
+        "lineInvert": "rgba(74,48,32,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -1423,7 +1424,8 @@
       "tracking": "0.24em",
       "category": "adat",
       "layout": {
-        "gallery": "mosaic",
+        "flow": "gallery-early",
+        "gallery": "duo",
         "couple": "framed",
         "event": "plain",
         "card": "bleed"
@@ -1432,12 +1434,10 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-1.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -1456,18 +1456,18 @@
         "bodyStack": "\"Sora\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#c45a20",
-        "bg2": "#a84818",
+        "bg": "#bd571f",
+        "bg2": "#9f491a",
         "surface": "#fdf6ec",
         "surface2": "#f0e4cc",
         "ink": "#4a2008",
         "inkSoft": "#7a4a28",
-        "inkInvert": "#fdf6ec",
+        "inkInvert": "#ffffff",
         "accent": "#e8a040",
         "accentInk": "#4a2008",
         "highlight": "#6a9a40",
         "line": "rgba(74,32,8,0.14)",
-        "lineInvert": "rgba(253,246,236,0.22)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -1483,6 +1483,7 @@
       "tracking": "0.24em",
       "category": "adat",
       "layout": {
+        "flow": "gallery-early",
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
@@ -1492,12 +1493,12 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/groom.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-1.webp",
+          "assets/photos/bride.webp"
         ]
       }
     },
@@ -1527,7 +1528,7 @@
         "accentInk": "#1a1a1a",
         "highlight": "#c04030",
         "line": "rgba(26,26,26,0.14)",
-        "lineInvert": "rgba(253,246,236,0.20)"
+        "lineInvert": "rgba(253,246,236,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -1543,7 +1544,8 @@
       "tracking": "0.34em",
       "category": "adat",
       "layout": {
-        "gallery": "trio",
+        "flow": "gallery-early",
+        "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
         "card": "edge"
@@ -1552,12 +1554,10 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-1.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -1587,7 +1587,7 @@
         "accentInk": "#fdfaf5",
         "highlight": "#2a7a5a",
         "line": "rgba(42,64,72,0.14)",
-        "lineInvert": "rgba(42,64,72,0.18)"
+        "lineInvert": "rgba(42,64,72,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -1603,7 +1603,8 @@
       "tracking": "0.28em",
       "category": "adat",
       "layout": {
-        "gallery": "masonry",
+        "flow": "gallery-early",
+        "gallery": "duo",
         "couple": "split",
         "event": "centered",
         "card": "edge"
@@ -1612,12 +1613,10 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-4.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -1663,7 +1662,8 @@
       "tracking": "0.32em",
       "category": "adat",
       "layout": {
-        "gallery": "filmstrip",
+        "flow": "gallery-early",
+        "gallery": "duo",
         "couple": "split",
         "event": "split",
         "card": "edge"
@@ -1673,11 +1673,11 @@
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-1.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -1707,7 +1707,7 @@
         "accentInk": "#1a3a2a",
         "highlight": "#c04030",
         "line": "rgba(26,58,42,0.14)",
-        "lineInvert": "rgba(245,240,224,0.20)"
+        "lineInvert": "rgba(245,240,224,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -1723,7 +1723,8 @@
       "tracking": "0.26em",
       "category": "adat",
       "layout": {
-        "gallery": "stack",
+        "flow": "classic",
+        "gallery": "duo",
         "couple": "offset",
         "event": "split",
         "card": "edge"
@@ -1732,12 +1733,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -1783,7 +1784,8 @@
       "tracking": "0.28em",
       "category": "adat",
       "layout": {
-        "gallery": "mosaic",
+        "flow": "classic",
+        "gallery": "duo",
         "couple": "offset",
         "event": "split",
         "card": "edge"
@@ -1792,12 +1794,10 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-3.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -1827,7 +1827,7 @@
         "accentInk": "#2a1a0a",
         "highlight": "#2a7a5a",
         "line": "rgba(42,26,10,0.14)",
-        "lineInvert": "rgba(255,250,240,0.20)"
+        "lineInvert": "rgba(255,250,240,0.22)"
       },
       "shape": {
         "radius": "8px",
@@ -1843,6 +1843,7 @@
       "tracking": "0.18em",
       "category": "adat",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "framed",
         "event": "ticket",
@@ -1853,11 +1854,11 @@
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/gallery-1.webp",
+          "assets/photos/groom.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -1887,7 +1888,7 @@
         "accentInk": "#f0f4f8",
         "highlight": "#c04030",
         "line": "rgba(26,39,68,0.14)",
-        "lineInvert": "rgba(240,244,248,0.20)"
+        "lineInvert": "rgba(240,244,248,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -1903,6 +1904,7 @@
       "tracking": "0.14em",
       "category": "pop",
       "layout": {
+        "flow": "classic",
         "gallery": "trio",
         "couple": "framed",
         "event": "ticket",
@@ -1912,12 +1914,12 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
           "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -1937,17 +1939,17 @@
       },
       "colors": {
         "bg": "#fdf0f6",
-        "bg2": "#f8d8e8",
+        "bg2": "#daced4",
         "surface": "#ffffff",
         "surface2": "#fde0ee",
         "ink": "#4a1028",
         "inkSoft": "#7a3a58",
-        "inkInvert": "#fff5fa",
+        "inkInvert": "#d7006c",
         "accent": "#e8489a",
         "accentInk": "#fff5fa",
         "highlight": "#2ae8c0",
         "line": "rgba(74,16,40,0.14)",
-        "lineInvert": "rgba(255,245,250,0.22)"
+        "lineInvert": "rgba(215,0,108,0.22)"
       },
       "shape": {
         "radius": "16px",
@@ -1963,9 +1965,10 @@
       "tracking": "0.18em",
       "category": "pop",
       "layout": {
+        "flow": "classic",
         "gallery": "masonry",
         "couple": "stacked",
-        "event": "ticket",
+        "event": "centered",
         "card": "boxed"
       },
       "photos": {
@@ -1973,11 +1976,11 @@
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-2.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
+          "assets/photos/cover.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp"
         ]
       }
     },
@@ -2007,7 +2010,7 @@
         "accentInk": "#fdfcf8",
         "highlight": "#d4845a",
         "line": "rgba(42,64,56,0.14)",
-        "lineInvert": "rgba(42,64,56,0.18)"
+        "lineInvert": "rgba(42,64,56,0.22)"
       },
       "shape": {
         "radius": "12px",
@@ -2023,19 +2026,20 @@
       "tracking": "0.24em",
       "category": "pop",
       "layout": {
+        "flow": "classic",
         "gallery": "filmstrip",
         "couple": "stacked",
-        "event": "plain",
+        "event": "centered",
         "card": "boxed"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/cover.webp",
           "assets/photos/groom.webp",
+          "assets/photos/gallery-2.webp",
           "assets/photos/closing.webp",
           "assets/photos/gallery-4.webp"
         ]
@@ -2067,7 +2071,7 @@
         "accentInk": "#f5e6c8",
         "highlight": "#c9a84c",
         "line": "rgba(42,26,10,0.14)",
-        "lineInvert": "rgba(245,230,200,0.20)"
+        "lineInvert": "rgba(245,230,200,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -2083,6 +2087,7 @@
       "tracking": "0.30em",
       "category": "pop",
       "layout": {
+        "flow": "classic",
         "gallery": "stack",
         "couple": "split",
         "event": "plain",
@@ -2092,12 +2097,12 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-2.webp",
+          "assets/photos/cover.webp",
           "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp"
         ]
       }
     },
@@ -2143,6 +2148,7 @@
       "tracking": "0.14em",
       "category": "pop",
       "layout": {
+        "flow": "classic",
         "gallery": "mosaic",
         "couple": "split",
         "event": "plain",
@@ -2153,11 +2159,11 @@
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/closing.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -2176,18 +2182,18 @@
         "bodyStack": "\"Space Mono\", ui-monospace, monospace"
       },
       "colors": {
-        "bg": "#5a8a3a",
-        "bg2": "#4a7a2a",
+        "bg": "#537f35",
+        "bg2": "#466b2d",
         "surface": "#f5f0e0",
         "surface2": "#e8ddd0",
         "ink": "#2a3a1a",
         "inkSoft": "#5a6e4a",
-        "inkInvert": "#f5f0e0",
+        "inkInvert": "#ffffff",
         "accent": "#8b4513",
         "accentInk": "#f5f0e0",
         "highlight": "#c04030",
         "line": "rgba(42,58,26,0.14)",
-        "lineInvert": "rgba(245,240,224,0.20)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -2203,21 +2209,20 @@
       "tracking": "0.10em",
       "category": "pop",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
-        "card": "bleed"
+        "card": "boxed"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/groom.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/bride.webp"
         ]
       }
     },
@@ -2247,7 +2252,7 @@
         "accentInk": "#fffaf8",
         "highlight": "#e8c040",
         "line": "rgba(58,32,64,0.14)",
-        "lineInvert": "rgba(58,32,64,0.18)"
+        "lineInvert": "rgba(58,32,64,0.22)"
       },
       "shape": {
         "radius": "16px",
@@ -2263,6 +2268,7 @@
       "tracking": "0.20em",
       "category": "pop",
       "layout": {
+        "flow": "classic",
         "gallery": "trio",
         "couple": "offset",
         "event": "centered",
@@ -2272,12 +2278,8 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/cover.webp"
         ]
       }
     },
@@ -2307,7 +2309,7 @@
         "accentInk": "#0a0a14",
         "highlight": "#c04030",
         "line": "rgba(10,10,20,0.14)",
-        "lineInvert": "rgba(240,240,244,0.20)"
+        "lineInvert": "rgba(240,240,244,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -2323,6 +2325,7 @@
       "tracking": "0.36em",
       "category": "pop",
       "layout": {
+        "flow": "classic",
         "gallery": "masonry",
         "couple": "framed",
         "event": "centered",
@@ -2332,12 +2335,8 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-4.webp"
         ]
       }
     },
@@ -2367,7 +2366,7 @@
         "accentInk": "#fffaf0",
         "highlight": "#2a7a5a",
         "line": "rgba(42,26,10,0.14)",
-        "lineInvert": "rgba(42,26,10,0.18)"
+        "lineInvert": "rgba(42,26,10,0.22)"
       },
       "shape": {
         "radius": "12px",
@@ -2383,21 +2382,18 @@
       "tracking": "0.12em",
       "category": "pop",
       "layout": {
+        "flow": "classic",
         "gallery": "filmstrip",
         "couple": "framed",
-        "event": "split",
+        "event": "centered",
         "card": "bleed"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-4.webp",
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -2427,7 +2423,7 @@
         "accentInk": "#1a2744",
         "highlight": "#e8c040",
         "line": "rgba(26,39,68,0.14)",
-        "lineInvert": "rgba(253,246,244,0.20)"
+        "lineInvert": "rgba(253,246,244,0.22)"
       },
       "shape": {
         "radius": "8px",
@@ -2443,20 +2439,17 @@
       "tracking": "0.24em",
       "category": "pop",
       "layout": {
+        "flow": "classic",
         "gallery": "stack",
         "couple": "stacked",
-        "event": "split",
+        "event": "centered",
         "card": "edge"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-2.webp",
           "assets/photos/bride.webp"
         ]
       }
@@ -2487,7 +2480,7 @@
         "accentInk": "#fffaf8",
         "highlight": "#6ab0a0",
         "line": "rgba(74,32,48,0.14)",
-        "lineInvert": "rgba(74,32,48,0.18)"
+        "lineInvert": "rgba(74,32,48,0.22)"
       },
       "shape": {
         "radius": "12px",
@@ -2503,6 +2496,7 @@
       "tracking": "0.24em",
       "category": "pastel",
       "layout": {
+        "flow": "story-first",
         "gallery": "mosaic",
         "couple": "stacked",
         "event": "split",
@@ -2512,12 +2506,12 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-2.webp",
+          "assets/photos/closing.webp",
           "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -2547,7 +2541,7 @@
         "accentInk": "#fdfcfe",
         "highlight": "#d4845a",
         "line": "rgba(58,40,80,0.14)",
-        "lineInvert": "rgba(58,40,80,0.18)"
+        "lineInvert": "rgba(58,40,80,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -2563,6 +2557,7 @@
       "tracking": "0.26em",
       "category": "pastel",
       "layout": {
+        "flow": "date-first",
         "gallery": "duo",
         "couple": "split",
         "event": "ticket",
@@ -2572,12 +2567,12 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-4.webp",
           "assets/photos/groom.webp",
+          "assets/photos/bride.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/cover.webp"
         ]
       }
     },
@@ -2607,7 +2602,7 @@
         "accentInk": "#fdfcfa",
         "highlight": "#c07040",
         "line": "rgba(42,58,32,0.14)",
-        "lineInvert": "rgba(42,58,32,0.18)"
+        "lineInvert": "rgba(42,58,32,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -2623,6 +2618,7 @@
       "tracking": "0.28em",
       "category": "hangat",
       "layout": {
+        "flow": "date-first",
         "gallery": "trio",
         "couple": "split",
         "event": "ticket",
@@ -2633,11 +2629,9 @@
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
           "assets/photos/groom.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -2667,7 +2661,7 @@
         "accentInk": "#fdfaf5",
         "highlight": "#6a9a50",
         "line": "rgba(74,48,32,0.14)",
-        "lineInvert": "rgba(74,48,32,0.18)"
+        "lineInvert": "rgba(74,48,32,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -2683,6 +2677,7 @@
       "tracking": "0.24em",
       "category": "hangat",
       "layout": {
+        "flow": "date-first",
         "gallery": "masonry",
         "couple": "offset",
         "event": "ticket",
@@ -2692,12 +2687,10 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/groom.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -2727,7 +2720,7 @@
         "accentInk": "#1a3a4a",
         "highlight": "#e8a040",
         "line": "rgba(26,58,74,0.14)",
-        "lineInvert": "rgba(240,244,248,0.20)"
+        "lineInvert": "rgba(240,244,248,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -2743,6 +2736,7 @@
       "tracking": "0.30em",
       "category": "hangat",
       "layout": {
+        "flow": "classic",
         "gallery": "filmstrip",
         "couple": "offset",
         "event": "plain",
@@ -2752,12 +2746,12 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-1.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/bride.webp"
         ]
       }
     },
@@ -2776,18 +2770,18 @@
         "bodyStack": "\"Inter\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#c45a30",
-        "bg2": "#a84820",
+        "bg": "#bc562e",
+        "bg2": "#9e4827",
         "surface": "#fdf6ec",
         "surface2": "#f0e4cc",
         "ink": "#4a1a08",
         "inkSoft": "#7a4a30",
-        "inkInvert": "#fdf6ec",
+        "inkInvert": "#ffffff",
         "accent": "#e8a040",
         "accentInk": "#4a1a08",
         "highlight": "#6a9a30",
         "line": "rgba(74,26,8,0.14)",
-        "lineInvert": "rgba(253,246,236,0.22)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -2803,6 +2797,7 @@
       "tracking": "0.26em",
       "category": "hangat",
       "layout": {
+        "flow": "date-first",
         "gallery": "stack",
         "couple": "framed",
         "event": "plain",
@@ -2812,12 +2807,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -2837,17 +2832,17 @@
       },
       "colors": {
         "bg": "#6a7a6a",
-        "bg2": "#5a6a5a",
+        "bg2": "#5b695b",
         "surface": "#fdfcfa",
         "surface2": "#f2ece4",
         "ink": "#2a3a2a",
         "inkSoft": "#5a6a5a",
-        "inkInvert": "#fdfcfa",
+        "inkInvert": "#ffffff",
         "accent": "#8a9a6a",
         "accentInk": "#2a3a2a",
         "highlight": "#c07040",
         "line": "rgba(42,58,42,0.14)",
-        "lineInvert": "rgba(42,58,42,0.18)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -2863,6 +2858,7 @@
       "tracking": "0.28em",
       "category": "hangat",
       "layout": {
+        "flow": "date-first",
         "gallery": "mosaic",
         "couple": "framed",
         "event": "plain",
@@ -2872,12 +2868,10 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-3.webp",
           "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -2907,7 +2901,7 @@
         "accentInk": "#fffef5",
         "highlight": "#6a9a30",
         "line": "rgba(74,58,16,0.14)",
-        "lineInvert": "rgba(74,58,16,0.18)"
+        "lineInvert": "rgba(74,58,16,0.22)"
       },
       "shape": {
         "radius": "8px",
@@ -2923,6 +2917,7 @@
       "tracking": "0.22em",
       "category": "hangat",
       "layout": {
+        "flow": "date-first",
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
@@ -2932,12 +2927,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/groom.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/cover.webp",
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -2967,7 +2962,7 @@
         "accentInk": "#fdfcfa",
         "highlight": "#c07050",
         "line": "rgba(42,58,48,0.14)",
-        "lineInvert": "rgba(42,58,48,0.18)"
+        "lineInvert": "rgba(42,58,48,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -2983,6 +2978,7 @@
       "tracking": "0.28em",
       "category": "pastel",
       "layout": {
+        "flow": "classic",
         "gallery": "trio",
         "couple": "stacked",
         "event": "centered",
@@ -2993,11 +2989,7 @@
         "closing": "assets/photos/closing.webp",
         "gallery": [
           "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -3027,7 +3019,7 @@
         "accentInk": "#fffef8",
         "highlight": "#c05030",
         "line": "rgba(74,58,32,0.14)",
-        "lineInvert": "rgba(74,58,32,0.18)"
+        "lineInvert": "rgba(74,58,32,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -3043,6 +3035,7 @@
       "tracking": "0.26em",
       "category": "hangat",
       "layout": {
+        "flow": "gallery-early",
         "gallery": "masonry",
         "couple": "split",
         "event": "centered",
@@ -3053,11 +3046,9 @@
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-4.webp"
         ]
       }
     },
@@ -3087,7 +3078,7 @@
         "accentInk": "#1a1a1a",
         "highlight": "#c04030",
         "line": "rgba(26,26,26,0.14)",
-        "lineInvert": "rgba(253,250,240,0.20)"
+        "lineInvert": "rgba(253,250,240,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -3103,6 +3094,7 @@
       "tracking": "0.36em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "filmstrip",
         "couple": "split",
         "event": "split",
@@ -3112,12 +3104,12 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-1.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-4.webp"
         ]
       }
     },
@@ -3147,7 +3139,7 @@
         "accentInk": "#fdfcfe",
         "highlight": "#c9a0c8",
         "line": "rgba(58,40,80,0.14)",
-        "lineInvert": "rgba(58,40,80,0.18)"
+        "lineInvert": "rgba(58,40,80,0.22)"
       },
       "shape": {
         "radius": "8px",
@@ -3163,7 +3155,8 @@
       "tracking": "0.26em",
       "category": "pastel",
       "layout": {
-        "gallery": "stack",
+        "flow": "gallery-early",
+        "gallery": "duo",
         "couple": "offset",
         "event": "split",
         "card": "bleed"
@@ -3172,12 +3165,12 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-4.webp",
           "assets/photos/groom.webp",
+          "assets/photos/bride.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/cover.webp"
         ]
       }
     },
@@ -3207,7 +3200,7 @@
         "accentInk": "#fdfcfe",
         "highlight": "#c07080",
         "line": "rgba(42,58,74,0.14)",
-        "lineInvert": "rgba(42,58,74,0.18)"
+        "lineInvert": "rgba(42,58,74,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -3223,7 +3216,8 @@
       "tracking": "0.32em",
       "category": "hangat",
       "layout": {
-        "gallery": "mosaic",
+        "flow": "gallery-early",
+        "gallery": "duo",
         "couple": "offset",
         "event": "split",
         "card": "bleed"
@@ -3232,12 +3226,12 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
+          "assets/photos/gallery-2.webp",
           "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-3.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -3267,7 +3261,7 @@
         "accentInk": "#4a0a18",
         "highlight": "#d4a060",
         "line": "rgba(74,10,24,0.14)",
-        "lineInvert": "rgba(253,242,238,0.20)"
+        "lineInvert": "rgba(253,242,238,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -3283,6 +3277,7 @@
       "tracking": "0.28em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "framed",
         "event": "ticket",
@@ -3292,12 +3287,12 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
+          "assets/photos/gallery-1.webp",
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -3327,7 +3322,7 @@
         "accentInk": "#0a3a2a",
         "highlight": "#c04030",
         "line": "rgba(10,58,42,0.14)",
-        "lineInvert": "rgba(245,240,224,0.20)"
+        "lineInvert": "rgba(245,240,224,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -3343,6 +3338,7 @@
       "tracking": "0.36em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "trio",
         "couple": "framed",
         "event": "ticket",
@@ -3352,12 +3348,8 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -3387,7 +3379,7 @@
         "accentInk": "#1a1a1a",
         "highlight": "#c9a84c",
         "line": "rgba(26,26,26,0.14)",
-        "lineInvert": "rgba(253,250,240,0.20)"
+        "lineInvert": "rgba(253,250,240,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -3403,6 +3395,7 @@
       "tracking": "0.34em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "masonry",
         "couple": "stacked",
         "event": "ticket",
@@ -3412,12 +3405,10 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-3.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-4.webp"
         ]
       }
     },
@@ -3447,7 +3438,7 @@
         "accentInk": "#1a2040",
         "highlight": "#e8a040",
         "line": "rgba(26,32,64,0.14)",
-        "lineInvert": "rgba(253,246,244,0.20)"
+        "lineInvert": "rgba(253,246,244,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -3463,6 +3454,7 @@
       "tracking": "0.28em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "filmstrip",
         "couple": "stacked",
         "event": "plain",
@@ -3472,12 +3464,12 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-2.webp",
+          "assets/photos/cover.webp",
           "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp"
         ]
       }
     },
@@ -3507,7 +3499,7 @@
         "accentInk": "#1a1a1a",
         "highlight": "#c9a84c",
         "line": "rgba(26,26,26,0.14)",
-        "lineInvert": "rgba(253,246,236,0.20)"
+        "lineInvert": "rgba(253,246,236,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -3523,21 +3515,20 @@
       "tracking": "0.38em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "stack",
         "couple": "split",
-        "event": "plain",
+        "event": "centered",
         "card": "edge"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/groom.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/bride.webp"
         ]
       }
     },
@@ -3567,7 +3558,7 @@
         "accentInk": "#fffaf8",
         "highlight": "#c04060",
         "line": "rgba(74,48,40,0.14)",
-        "lineInvert": "rgba(74,48,40,0.18)"
+        "lineInvert": "rgba(74,48,40,0.22)"
       },
       "shape": {
         "radius": "8px",
@@ -3583,21 +3574,20 @@
       "tracking": "0.24em",
       "category": "pastel",
       "layout": {
+        "flow": "classic",
         "gallery": "mosaic",
         "couple": "split",
-        "event": "plain",
+        "event": "centered",
         "card": "edge"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
+          "assets/photos/closing.webp",
           "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -3627,7 +3617,7 @@
         "accentInk": "#ffffff",
         "highlight": "#c04050",
         "line": "rgba(42,42,48,0.14)",
-        "lineInvert": "rgba(42,42,48,0.18)"
+        "lineInvert": "rgba(42,42,48,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -3643,6 +3633,7 @@
       "tracking": "0.34em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
@@ -3652,12 +3643,10 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -3687,7 +3676,7 @@
         "accentInk": "#ffffff",
         "highlight": "#c04030",
         "line": "rgba(17,17,17,0.14)",
-        "lineInvert": "rgba(255,255,255,0.20)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -3703,7 +3692,8 @@
       "tracking": "0.20em",
       "category": "unik",
       "layout": {
-        "gallery": "trio",
+        "flow": "classic",
+        "gallery": "duo",
         "couple": "offset",
         "event": "centered",
         "card": "boxed"
@@ -3713,11 +3703,7 @@
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -3747,7 +3733,7 @@
         "accentInk": "#ffffff",
         "highlight": "#6a9a50",
         "line": "rgba(42,42,40,0.14)",
-        "lineInvert": "rgba(42,42,40,0.18)"
+        "lineInvert": "rgba(42,42,40,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -3763,7 +3749,8 @@
       "tracking": "0.28em",
       "category": "unik",
       "layout": {
-        "gallery": "masonry",
+        "flow": "classic",
+        "gallery": "duo",
         "couple": "framed",
         "event": "centered",
         "card": "boxed"
@@ -3772,12 +3759,8 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/cover.webp"
         ]
       }
     },
@@ -3807,7 +3790,7 @@
         "accentInk": "#ffffff",
         "highlight": "#ff3b30",
         "line": "rgba(26,26,26,0.14)",
-        "lineInvert": "rgba(26,26,26,0.18)"
+        "lineInvert": "rgba(26,26,26,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -3823,21 +3806,22 @@
       "tracking": "0.10em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "filmstrip",
         "couple": "framed",
-        "event": "split",
+        "event": "centered",
         "card": "boxed"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
+          "assets/photos/cover.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -3867,7 +3851,7 @@
         "accentInk": "#fdfaf5",
         "highlight": "#6a9a60",
         "line": "rgba(74,55,40,0.14)",
-        "lineInvert": "rgba(74,55,40,0.18)"
+        "lineInvert": "rgba(74,55,40,0.22)"
       },
       "shape": {
         "radius": "16px",
@@ -3883,6 +3867,7 @@
       "tracking": "0.22em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "stack",
         "couple": "stacked",
         "event": "split",
@@ -3892,12 +3877,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/closing.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -3927,7 +3912,7 @@
         "accentInk": "#fdfcfe",
         "highlight": "#c07080",
         "line": "rgba(42,58,74,0.14)",
-        "lineInvert": "rgba(42,58,74,0.18)"
+        "lineInvert": "rgba(42,58,74,0.22)"
       },
       "shape": {
         "radius": "16px",
@@ -3943,6 +3928,7 @@
       "tracking": "0.26em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "mosaic",
         "couple": "stacked",
         "event": "split",
@@ -3952,12 +3938,12 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
+          "assets/photos/bride.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-4.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-2.webp",
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -3987,7 +3973,7 @@
         "accentInk": "#fdfcfa",
         "highlight": "#c07050",
         "line": "rgba(58,48,40,0.14)",
-        "lineInvert": "rgba(58,48,40,0.18)"
+        "lineInvert": "rgba(58,48,40,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -4003,6 +3989,7 @@
       "tracking": "0.30em",
       "category": "hangat",
       "layout": {
+        "flow": "story-first",
         "gallery": "duo",
         "couple": "split",
         "event": "ticket",
@@ -4012,12 +3999,10 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/closing.webp",
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -4047,7 +4032,7 @@
         "accentInk": "#ffffff",
         "highlight": "#2a5aa8",
         "line": "rgba(26,26,26,0.14)",
-        "lineInvert": "rgba(26,26,26,0.18)"
+        "lineInvert": "rgba(26,26,26,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -4063,9 +4048,10 @@
       "tracking": "0.32em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "trio",
         "couple": "split",
-        "event": "ticket",
+        "event": "centered",
         "card": "bleed"
       },
       "photos": {
@@ -4073,8 +4059,8 @@
         "closing": "assets/photos/closing.webp",
         "gallery": [
           "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
+          "assets/photos/gallery-2.webp",
+          "assets/photos/cover.webp",
           "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
           "assets/photos/bride.webp"
@@ -4107,7 +4093,7 @@
         "accentInk": "#ffffff",
         "highlight": "#2a9ac0",
         "line": "rgba(26,26,26,0.14)",
-        "lineInvert": "rgba(26,26,26,0.18)"
+        "lineInvert": "rgba(26,26,26,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -4123,21 +4109,20 @@
       "tracking": "0.10em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "masonry",
         "couple": "offset",
-        "event": "ticket",
+        "event": "centered",
         "card": "bleed"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
+          "assets/photos/gallery-2.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -4167,7 +4152,7 @@
         "accentInk": "#fdfcfa",
         "highlight": "#c07050",
         "line": "rgba(58,56,48,0.14)",
-        "lineInvert": "rgba(58,56,48,0.18)"
+        "lineInvert": "rgba(58,56,48,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -4183,7 +4168,8 @@
       "tracking": "0.30em",
       "category": "unik",
       "layout": {
-        "gallery": "filmstrip",
+        "flow": "story-first",
+        "gallery": "duo",
         "couple": "offset",
         "event": "plain",
         "card": "bleed"
@@ -4192,11 +4178,7 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-2.webp",
           "assets/photos/bride.webp"
         ]
       }
@@ -4227,7 +4209,7 @@
         "accentInk": "#fdfcfa",
         "highlight": "#c07040",
         "line": "rgba(42,42,40,0.14)",
-        "lineInvert": "rgba(42,42,40,0.18)"
+        "lineInvert": "rgba(42,42,40,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -4243,7 +4225,8 @@
       "tracking": "0.32em",
       "category": "unik",
       "layout": {
-        "gallery": "stack",
+        "flow": "date-first",
+        "gallery": "duo",
         "couple": "framed",
         "event": "plain",
         "card": "edge"
@@ -4252,12 +4235,12 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
+          "assets/photos/gallery-2.webp",
+          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
           "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -4287,7 +4270,7 @@
         "accentInk": "#fdfef8",
         "highlight": "#d4845a",
         "line": "rgba(42,64,40,0.14)",
-        "lineInvert": "rgba(42,64,40,0.18)"
+        "lineInvert": "rgba(42,64,40,0.22)"
       },
       "shape": {
         "radius": "12px",
@@ -4303,6 +4286,7 @@
       "tracking": "0.24em",
       "category": "hangat",
       "layout": {
+        "flow": "date-first",
         "gallery": "mosaic",
         "couple": "framed",
         "event": "plain",
@@ -4313,11 +4297,11 @@
         "closing": "assets/photos/closing.webp",
         "gallery": [
           "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
+          "assets/photos/bride.webp",
           "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
+          "assets/photos/cover.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -4347,7 +4331,7 @@
         "accentInk": "#fffef5",
         "highlight": "#2a9ac0",
         "line": "rgba(74,58,16,0.14)",
-        "lineInvert": "rgba(74,58,16,0.18)"
+        "lineInvert": "rgba(74,58,16,0.22)"
       },
       "shape": {
         "radius": "8px",
@@ -4363,6 +4347,7 @@
       "tracking": "0.20em",
       "category": "hangat",
       "layout": {
+        "flow": "date-first",
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
@@ -4372,12 +4357,10 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -4407,7 +4390,7 @@
         "accentInk": "#ffffff",
         "highlight": "#c07080",
         "line": "rgba(42,58,74,0.14)",
-        "lineInvert": "rgba(42,58,74,0.18)"
+        "lineInvert": "rgba(42,58,74,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -4423,7 +4406,8 @@
       "tracking": "0.30em",
       "category": "unik",
       "layout": {
-        "gallery": "trio",
+        "flow": "date-first",
+        "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
         "card": "edge"
@@ -4432,12 +4416,12 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -4467,7 +4451,7 @@
         "accentInk": "#fdfcfe",
         "highlight": "#c07080",
         "line": "rgba(42,58,74,0.14)",
-        "lineInvert": "rgba(42,58,74,0.18)"
+        "lineInvert": "rgba(42,58,74,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -4483,6 +4467,7 @@
       "tracking": "0.28em",
       "category": "unik",
       "layout": {
+        "flow": "date-first",
         "gallery": "masonry",
         "couple": "split",
         "event": "centered",
@@ -4492,12 +4477,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -4527,7 +4512,7 @@
         "accentInk": "#fffaf0",
         "highlight": "#6a9a50",
         "line": "rgba(74,58,32,0.14)",
-        "lineInvert": "rgba(74,58,32,0.18)"
+        "lineInvert": "rgba(74,58,32,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -4543,6 +4528,7 @@
       "tracking": "0.24em",
       "category": "hangat",
       "layout": {
+        "flow": "date-first",
         "gallery": "filmstrip",
         "couple": "split",
         "event": "split",
@@ -4552,12 +4538,8 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-4.webp"
         ]
       }
     },
@@ -4587,7 +4569,7 @@
         "accentInk": "#fdfcfa",
         "highlight": "#c07060",
         "line": "rgba(58,56,48,0.14)",
-        "lineInvert": "rgba(58,56,48,0.18)"
+        "lineInvert": "rgba(58,56,48,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -4603,7 +4585,8 @@
       "tracking": "0.28em",
       "category": "unik",
       "layout": {
-        "gallery": "stack",
+        "flow": "date-first",
+        "gallery": "duo",
         "couple": "offset",
         "event": "split",
         "card": "boxed"
@@ -4612,12 +4595,12 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-4.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/cover.webp"
         ]
       }
     },
@@ -4636,18 +4619,18 @@
         "bodyStack": "\"Karla\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#d85a38",
-        "bg2": "#b84830",
+        "bg": "#ca4a28",
+        "bg2": "#aa3e21",
         "surface": "#fdf6ec",
         "surface2": "#f0e4cc",
         "ink": "#4a1a08",
         "inkSoft": "#7a4a30",
-        "inkInvert": "#fdf6ec",
+        "inkInvert": "#ffffff",
         "accent": "#c9a0c8",
         "accentInk": "#4a1a08",
         "highlight": "#e8c040",
         "line": "rgba(74,26,8,0.14)",
-        "lineInvert": "rgba(253,246,236,0.22)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "8px",
@@ -4663,6 +4646,7 @@
       "tracking": "0.22em",
       "category": "hangat",
       "layout": {
+        "flow": "gallery-early",
         "gallery": "mosaic",
         "couple": "offset",
         "event": "split",
@@ -4673,11 +4657,7 @@
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -4707,7 +4687,7 @@
         "accentInk": "#1a2a1a",
         "highlight": "#c07080",
         "line": "rgba(26,42,26,0.14)",
-        "lineInvert": "rgba(245,240,232,0.20)"
+        "lineInvert": "rgba(245,240,232,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -4723,6 +4703,7 @@
       "tracking": "0.28em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "framed",
         "event": "ticket",
@@ -4732,12 +4713,10 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -4767,7 +4746,7 @@
         "accentInk": "#fffaf8",
         "highlight": "#6ab0c0",
         "line": "rgba(74,32,48,0.14)",
-        "lineInvert": "rgba(74,32,48,0.18)"
+        "lineInvert": "rgba(74,32,48,0.22)"
       },
       "shape": {
         "radius": "16px",
@@ -4783,6 +4762,7 @@
       "tracking": "0.20em",
       "category": "pastel",
       "layout": {
+        "flow": "gallery-early",
         "gallery": "trio",
         "couple": "framed",
         "event": "ticket",
@@ -4792,12 +4772,10 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-2.webp",
           "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -4827,7 +4805,7 @@
         "accentInk": "#2a3038",
         "highlight": "#c04030",
         "line": "rgba(42,48,56,0.14)",
-        "lineInvert": "rgba(240,242,244,0.20)"
+        "lineInvert": "rgba(240,242,244,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -4843,6 +4821,7 @@
       "tracking": "0.32em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "masonry",
         "couple": "stacked",
         "event": "ticket",
@@ -4852,12 +4831,12 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
           "assets/photos/groom.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-4.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -4887,7 +4866,7 @@
         "accentInk": "#fdfcfe",
         "highlight": "#e8489a",
         "line": "rgba(42,42,58,0.14)",
-        "lineInvert": "rgba(42,42,58,0.18)"
+        "lineInvert": "rgba(42,42,58,0.22)"
       },
       "shape": {
         "radius": "16px",
@@ -4903,21 +4882,22 @@
       "tracking": "0.26em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "filmstrip",
         "couple": "stacked",
-        "event": "plain",
+        "event": "centered",
         "card": "bleed"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
+          "assets/photos/gallery-2.webp",
           "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-3.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -4947,7 +4927,7 @@
         "accentInk": "#ffffff",
         "highlight": "#6a9a7a",
         "line": "rgba(58,56,48,0.14)",
-        "lineInvert": "rgba(58,56,48,0.18)"
+        "lineInvert": "rgba(58,56,48,0.22)"
       },
       "shape": {
         "radius": "8px",
@@ -4963,21 +4943,20 @@
       "tracking": "0.24em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "stack",
         "couple": "split",
-        "event": "plain",
+        "event": "centered",
         "card": "bleed"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-4.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -5007,7 +4986,7 @@
         "accentInk": "#f0f0f4",
         "highlight": "#2ae8c0",
         "line": "rgba(10,10,20,0.14)",
-        "lineInvert": "rgba(240,240,244,0.20)"
+        "lineInvert": "rgba(240,240,244,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -5023,21 +5002,20 @@
       "tracking": "0.30em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "mosaic",
         "couple": "split",
-        "event": "plain",
+        "event": "centered",
         "card": "bleed"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-1.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -5067,7 +5045,7 @@
         "accentInk": "#fdf6ec",
         "highlight": "#c04030",
         "line": "rgba(74,58,32,0.14)",
-        "lineInvert": "rgba(74,58,32,0.18)"
+        "lineInvert": "rgba(74,58,32,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -5083,6 +5061,7 @@
       "tracking": "0.24em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
@@ -5093,11 +5072,9 @@
         "closing": "assets/photos/closing.webp",
         "gallery": [
           "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
+          "assets/photos/bride.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -5127,7 +5104,7 @@
         "accentInk": "#ffffff",
         "highlight": "#2a7a5a",
         "line": "rgba(42,42,40,0.14)",
-        "lineInvert": "rgba(42,42,40,0.18)"
+        "lineInvert": "rgba(42,42,40,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -5143,7 +5120,8 @@
       "tracking": "0.32em",
       "category": "unik",
       "layout": {
-        "gallery": "trio",
+        "flow": "classic",
+        "gallery": "duo",
         "couple": "offset",
         "event": "centered",
         "card": "edge"
@@ -5152,12 +5130,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -5187,7 +5165,7 @@
         "accentInk": "#fdfaf0",
         "highlight": "#c04030",
         "line": "rgba(42,32,16,0.14)",
-        "lineInvert": "rgba(42,32,16,0.18)"
+        "lineInvert": "rgba(42,32,16,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -5203,6 +5181,7 @@
       "tracking": "0.26em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "masonry",
         "couple": "framed",
         "event": "centered",
@@ -5213,11 +5192,9 @@
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -5247,7 +5224,7 @@
         "accentInk": "#fffaf8",
         "highlight": "#6ab0c0",
         "line": "rgba(74,32,64,0.14)",
-        "lineInvert": "rgba(74,32,64,0.18)"
+        "lineInvert": "rgba(74,32,64,0.22)"
       },
       "shape": {
         "radius": "16px",
@@ -5263,9 +5240,10 @@
       "tracking": "0.20em",
       "category": "pastel",
       "layout": {
+        "flow": "classic",
         "gallery": "filmstrip",
         "couple": "framed",
-        "event": "split",
+        "event": "centered",
         "card": "edge"
       },
       "photos": {
@@ -5273,11 +5251,11 @@
         "closing": "assets/photos/closing.webp",
         "gallery": [
           "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
+          "assets/photos/cover.webp",
           "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
+          "assets/photos/bride.webp",
           "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-4.webp"
         ]
       }
     },
@@ -5307,7 +5285,7 @@
         "accentInk": "#f5f0e8",
         "highlight": "#6a9a7a",
         "line": "rgba(42,37,32,0.14)",
-        "lineInvert": "rgba(245,240,232,0.20)"
+        "lineInvert": "rgba(245,240,232,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -5323,6 +5301,7 @@
       "tracking": "0.28em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "stack",
         "couple": "stacked",
         "event": "split",
@@ -5332,12 +5311,10 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-1.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -5356,18 +5333,18 @@
         "bodyStack": "\"Space Grotesk\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#e8489a",
-        "bg2": "#c03078",
+        "bg": "#dc1c7e",
+        "bg2": "#b9176a",
         "surface": "#fdf0f8",
         "surface2": "#fde0ee",
         "ink": "#4a1028",
         "inkSoft": "#7a3a58",
-        "inkInvert": "#fffaf0",
+        "inkInvert": "#ffffff",
         "accent": "#2ae8c0",
         "accentInk": "#4a1028",
         "highlight": "#e8c040",
         "line": "rgba(74,16,40,0.14)",
-        "lineInvert": "rgba(255,250,240,0.22)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "16px",
@@ -5383,9 +5360,10 @@
       "tracking": "0.12em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "mosaic",
         "couple": "stacked",
-        "event": "split",
+        "event": "centered",
         "card": "edge"
       },
       "photos": {
@@ -5393,11 +5371,7 @@
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -5427,7 +5401,7 @@
         "accentInk": "#fdfcfa",
         "highlight": "#c07040",
         "line": "rgba(42,42,40,0.14)",
-        "lineInvert": "rgba(42,42,40,0.18)"
+        "lineInvert": "rgba(42,42,40,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -5443,6 +5417,7 @@
       "tracking": "0.34em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "split",
         "event": "ticket",
@@ -5452,12 +5427,10 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/bride.webp"
         ]
       }
     },
@@ -5476,18 +5449,18 @@
         "bodyStack": "\"Plus Jakarta Sans\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#e86848",
-        "bg2": "#c85038",
+        "bg": "#d33f1b",
+        "bg2": "#b13516",
         "surface": "#fdf6ec",
         "surface2": "#f0e4cc",
         "ink": "#4a1a08",
         "inkSoft": "#7a4a30",
-        "inkInvert": "#fdf6ec",
+        "inkInvert": "#ffffff",
         "accent": "#2a9ac0",
         "accentInk": "#fdf6ec",
         "highlight": "#e8c040",
         "line": "rgba(74,26,8,0.14)",
-        "lineInvert": "rgba(253,246,236,0.22)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "8px",
@@ -5503,6 +5476,7 @@
       "tracking": "0.22em",
       "category": "hangat",
       "layout": {
+        "flow": "story-first",
         "gallery": "trio",
         "couple": "split",
         "event": "ticket",
@@ -5512,12 +5486,12 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/gallery-2.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-1.webp",
+          "assets/photos/bride.webp"
         ]
       }
     },
@@ -5547,7 +5521,7 @@
         "accentInk": "#fdfcf8",
         "highlight": "#c07040",
         "line": "rgba(42,58,40,0.14)",
-        "lineInvert": "rgba(42,58,40,0.18)"
+        "lineInvert": "rgba(42,58,40,0.22)"
       },
       "shape": {
         "radius": "12px",
@@ -5563,6 +5537,7 @@
       "tracking": "0.24em",
       "category": "hangat",
       "layout": {
+        "flow": "story-first",
         "gallery": "masonry",
         "couple": "offset",
         "event": "ticket",
@@ -5572,11 +5547,7 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-2.webp",
           "assets/photos/bride.webp"
         ]
       }
@@ -5607,7 +5578,7 @@
         "accentInk": "#1a1a2e",
         "highlight": "#c04050",
         "line": "rgba(26,26,46,0.14)",
-        "lineInvert": "rgba(240,240,244,0.20)"
+        "lineInvert": "rgba(240,240,244,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -5623,6 +5594,7 @@
       "tracking": "0.32em",
       "category": "unik",
       "layout": {
+        "flow": "classic",
         "gallery": "filmstrip",
         "couple": "offset",
         "event": "plain",
@@ -5632,12 +5604,10 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
           "assets/photos/cover.webp",
           "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -5667,7 +5637,7 @@
         "accentInk": "#fffaf8",
         "highlight": "#6ab0a0",
         "line": "rgba(74,32,48,0.14)",
-        "lineInvert": "rgba(74,32,48,0.18)"
+        "lineInvert": "rgba(74,32,48,0.22)"
       },
       "shape": {
         "radius": "16px",
@@ -5683,6 +5653,7 @@
       "tracking": "0.20em",
       "category": "pastel",
       "layout": {
+        "flow": "story-first",
         "gallery": "stack",
         "couple": "framed",
         "event": "plain",
@@ -5692,12 +5663,12 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
           "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -5716,18 +5687,18 @@
         "bodyStack": "\"Manrope\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#8a9a8a",
-        "bg2": "#7a8a7a",
+        "bg": "#697969",
+        "bg2": "#586658",
         "surface": "#fdfcfa",
         "surface2": "#f2ece4",
         "ink": "#2a3a2a",
         "inkSoft": "#5a6a5a",
-        "inkInvert": "#fdfcfa",
+        "inkInvert": "#ffffff",
         "accent": "#6a8a6a",
         "accentInk": "#fdfcfa",
         "highlight": "#c07040",
         "line": "rgba(42,58,42,0.14)",
-        "lineInvert": "rgba(42,58,42,0.18)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -5743,6 +5714,7 @@
       "tracking": "0.28em",
       "category": "hangat",
       "layout": {
+        "flow": "classic",
         "gallery": "mosaic",
         "couple": "framed",
         "event": "plain",
@@ -5752,11 +5724,9 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
+          "assets/photos/gallery-2.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/bride.webp",
           "assets/photos/gallery-4.webp"
         ]
       }
@@ -5776,18 +5746,18 @@
         "bodyStack": "\"Figtree\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#e06060",
-        "bg2": "#c84848",
+        "bg": "#d83737",
+        "bg2": "#b62f2f",
         "surface": "#fdf6ec",
         "surface2": "#f0e4cc",
         "ink": "#4a1a10",
         "inkSoft": "#7a4a30",
-        "inkInvert": "#fdf6ec",
+        "inkInvert": "#ffffff",
         "accent": "#e8a040",
         "accentInk": "#4a1a10",
         "highlight": "#6a9ac0",
         "line": "rgba(74,26,16,0.14)",
-        "lineInvert": "rgba(253,246,236,0.22)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -5803,6 +5773,7 @@
       "tracking": "0.24em",
       "category": "hangat",
       "layout": {
+        "flow": "story-first",
         "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
@@ -5812,12 +5783,8 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
           "assets/photos/closing.webp",
-          "assets/photos/gallery-4.webp"
+          "assets/photos/cover.webp"
         ]
       }
     },
@@ -5847,7 +5814,7 @@
         "accentInk": "#fdfcfe",
         "highlight": "#c07050",
         "line": "rgba(42,58,74,0.14)",
-        "lineInvert": "rgba(42,58,74,0.18)"
+        "lineInvert": "rgba(42,58,74,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -5863,7 +5830,8 @@
       "tracking": "0.32em",
       "category": "unik",
       "layout": {
-        "gallery": "trio",
+        "flow": "story-first",
+        "gallery": "duo",
         "couple": "stacked",
         "event": "centered",
         "card": "bleed"
@@ -5873,9 +5841,7 @@
         "closing": "assets/photos/closing.webp",
         "gallery": [
           "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
           "assets/photos/gallery-3.webp",
-          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
           "assets/photos/bride.webp"
         ]
@@ -5896,18 +5862,18 @@
         "bodyStack": "\"Sora\", system-ui, sans-serif"
       },
       "colors": {
-        "bg": "#c07030",
-        "bg2": "#a86020",
+        "bg": "#aa632a",
+        "bg2": "#8e5324",
         "surface": "#fdf6ec",
         "surface2": "#f0e4cc",
         "ink": "#4a2008",
         "inkSoft": "#7a4a28",
-        "inkInvert": "#fdf6ec",
+        "inkInvert": "#ffffff",
         "accent": "#2a7aa8",
         "accentInk": "#fdf6ec",
         "highlight": "#c9a84c",
         "line": "rgba(74,32,8,0.14)",
-        "lineInvert": "rgba(253,246,236,0.22)"
+        "lineInvert": "rgba(255,255,255,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -5923,6 +5889,7 @@
       "tracking": "0.24em",
       "category": "adat",
       "layout": {
+        "flow": "date-first",
         "gallery": "masonry",
         "couple": "split",
         "event": "centered",
@@ -5932,12 +5899,12 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-3.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/groom.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -5983,7 +5950,8 @@
       "tracking": "0.26em",
       "category": "adat",
       "layout": {
-        "gallery": "filmstrip",
+        "flow": "date-first",
+        "gallery": "duo",
         "couple": "split",
         "event": "split",
         "card": "bleed"
@@ -5992,12 +5960,10 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
+          "assets/photos/groom.webp",
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -6027,7 +5993,7 @@
         "accentInk": "#fffef8",
         "highlight": "#c05030",
         "line": "rgba(74,58,32,0.14)",
-        "lineInvert": "rgba(74,58,32,0.18)"
+        "lineInvert": "rgba(74,58,32,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -6043,6 +6009,7 @@
       "tracking": "0.26em",
       "category": "hangat",
       "layout": {
+        "flow": "date-first",
         "gallery": "stack",
         "couple": "offset",
         "event": "split",
@@ -6052,12 +6019,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
           "assets/photos/cover.webp",
+          "assets/photos/gallery-3.webp",
           "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-4.webp",
+          "assets/photos/closing.webp"
         ]
       }
     },
@@ -6088,7 +6055,7 @@
         "accentInk": "#fdfcfa",
         "highlight": "#8a7a6a",
         "line": "rgba(44,42,38,0.12)",
-        "lineInvert": "rgba(44,42,38,0.16)"
+        "lineInvert": "rgba(44,42,38,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -6103,21 +6070,20 @@
       },
       "tracking": "0.36em",
       "layout": {
-        "gallery": "mosaic",
+        "flow": "classic",
+        "gallery": "duo",
         "couple": "offset",
         "event": "split",
-        "card": "edge"
+        "card": "boxed"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-3.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/gallery-4.webp"
         ]
       }
     },
@@ -6148,7 +6114,7 @@
         "accentInk": "#fdfcfa",
         "highlight": "#b08a5a",
         "line": "rgba(46,53,40,0.14)",
-        "lineInvert": "rgba(46,53,40,0.18)"
+        "lineInvert": "rgba(46,53,40,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -6163,6 +6129,7 @@
       },
       "tracking": "0.30em",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "framed",
         "event": "ticket",
@@ -6172,12 +6139,10 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-1.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -6208,7 +6173,7 @@
         "accentInk": "#fffefb",
         "highlight": "#c9a87a",
         "line": "rgba(42,42,46,0.14)",
-        "lineInvert": "rgba(42,42,46,0.18)"
+        "lineInvert": "rgba(42,42,46,0.22)"
       },
       "shape": {
         "radius": "999px",
@@ -6223,21 +6188,20 @@
       },
       "tracking": "0.28em",
       "layout": {
-        "gallery": "trio",
-        "couple": "framed",
+        "flow": "classic",
+        "gallery": "duo",
+        "couple": "stacked",
         "event": "ticket",
-        "card": "edge"
+        "card": "boxed"
       },
       "photos": {
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/closing.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-4.webp"
         ]
       }
     },
@@ -6268,7 +6232,7 @@
         "accentInk": "#2e0e14",
         "highlight": "#8a1a2e",
         "line": "rgba(46,14,20,0.14)",
-        "lineInvert": "rgba(253,246,238,0.18)"
+        "lineInvert": "rgba(253,246,238,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -6283,20 +6247,21 @@
       },
       "tracking": "0.32em",
       "layout": {
+        "flow": "classic",
         "gallery": "masonry",
         "couple": "stacked",
-        "event": "ticket",
-        "card": "edge"
+        "event": "centered",
+        "card": "boxed"
       },
       "photos": {
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/groom.webp",
           "assets/photos/closing.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-2.webp",
+          "assets/photos/groom.webp",
           "assets/photos/gallery-4.webp"
         ]
       }
@@ -6318,17 +6283,17 @@
       },
       "colors": {
         "bg": "#d8d0c0",
-        "bg2": "#c8bcac",
+        "bg2": "#bab3a5",
         "surface": "#fdfcfa",
         "surface2": "#f5f0e8",
         "ink": "#2c2a24",
         "inkSoft": "#6a6460",
-        "inkInvert": "#fdfcfa",
+        "inkInvert": "#6a552a",
         "accent": "#8a7a6a",
         "accentInk": "#fdfcfa",
         "highlight": "#6a8a7a",
         "line": "rgba(44,42,36,0.14)",
-        "lineInvert": "rgba(44,42,36,0.18)"
+        "lineInvert": "rgba(106,85,42,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -6343,7 +6308,8 @@
       },
       "tracking": "0.28em",
       "layout": {
-        "gallery": "filmstrip",
+        "flow": "classic",
+        "gallery": "duo",
         "couple": "stacked",
         "event": "plain",
         "card": "boxed"
@@ -6352,12 +6318,12 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
+          "assets/photos/gallery-4.webp",
+          "assets/photos/closing.webp",
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/groom.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-3.webp"
         ]
       }
     },
@@ -6388,7 +6354,7 @@
         "accentInk": "#fffefb",
         "highlight": "#c0704a",
         "line": "rgba(44,36,24,0.14)",
-        "lineInvert": "rgba(44,36,24,0.18)"
+        "lineInvert": "rgba(44,36,24,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -6403,7 +6369,8 @@
       },
       "tracking": "0.30em",
       "layout": {
-        "gallery": "stack",
+        "flow": "classic",
+        "gallery": "duo",
         "couple": "split",
         "event": "plain",
         "card": "boxed"
@@ -6412,12 +6379,10 @@
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/bride.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -6448,7 +6413,7 @@
         "accentInk": "#fdf8f8",
         "highlight": "#7a9a8a",
         "line": "rgba(58,42,46,0.14)",
-        "lineInvert": "rgba(58,42,46,0.18)"
+        "lineInvert": "rgba(58,42,46,0.22)"
       },
       "shape": {
         "radius": "4px",
@@ -6463,7 +6428,8 @@
       },
       "tracking": "0.28em",
       "layout": {
-        "gallery": "mosaic",
+        "flow": "classic",
+        "gallery": "duo",
         "couple": "split",
         "event": "plain",
         "card": "boxed"
@@ -6472,11 +6438,11 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
-          "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-4.webp",
           "assets/photos/gallery-1.webp",
+          "assets/photos/cover.webp",
+          "assets/photos/gallery-2.webp",
+          "assets/photos/bride.webp",
           "assets/photos/groom.webp",
-          "assets/photos/closing.webp",
           "assets/photos/gallery-4.webp"
         ]
       }
@@ -6508,7 +6474,7 @@
         "accentInk": "#1a1a1a",
         "highlight": "#c04030",
         "line": "rgba(26,26,26,0.14)",
-        "lineInvert": "rgba(253,252,250,0.18)"
+        "lineInvert": "rgba(253,252,250,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -6523,6 +6489,7 @@
       },
       "tracking": "0.34em",
       "layout": {
+        "flow": "classic",
         "gallery": "duo",
         "couple": "offset",
         "event": "centered",
@@ -6532,12 +6499,12 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
-          "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
           "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/gallery-1.webp",
+          "assets/photos/gallery-3.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/bride.webp",
+          "assets/photos/groom.webp"
         ]
       }
     },
@@ -6568,7 +6535,7 @@
         "accentInk": "#fdfcfa",
         "highlight": "#c9a84c",
         "line": "rgba(44,42,36,0.14)",
-        "lineInvert": "rgba(44,42,36,0.18)"
+        "lineInvert": "rgba(44,42,36,0.22)"
       },
       "shape": {
         "radius": "12px",
@@ -6583,7 +6550,8 @@
       },
       "tracking": "0.26em",
       "layout": {
-        "gallery": "trio",
+        "flow": "gallery-early",
+        "gallery": "duo",
         "couple": "offset",
         "event": "centered",
         "card": "boxed"
@@ -6592,12 +6560,10 @@
         "cover": "assets/photos/gallery-3.webp",
         "closing": "assets/photos/gallery-1.webp",
         "gallery": [
-          "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/closing.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -6628,7 +6594,7 @@
         "accentInk": "#2c1a0e",
         "highlight": "#8a1a2e",
         "line": "rgba(44,26,14,0.14)",
-        "lineInvert": "rgba(253,246,238,0.18)"
+        "lineInvert": "rgba(253,246,238,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -6643,6 +6609,7 @@
       },
       "tracking": "0.32em",
       "layout": {
+        "flow": "classic",
         "gallery": "masonry",
         "couple": "framed",
         "event": "centered",
@@ -6652,12 +6619,12 @@
         "cover": "assets/photos/closing.webp",
         "closing": "assets/photos/closing.webp",
         "gallery": [
+          "assets/photos/gallery-1.webp",
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/groom.webp",
+          "assets/photos/gallery-2.webp"
         ]
       }
     },
@@ -6688,7 +6655,7 @@
         "accentInk": "#fffefb",
         "highlight": "#c9a87a",
         "line": "rgba(44,36,24,0.14)",
-        "lineInvert": "rgba(44,36,24,0.18)"
+        "lineInvert": "rgba(44,36,24,0.22)"
       },
       "shape": {
         "radius": "2px",
@@ -6703,7 +6670,8 @@
       },
       "tracking": "0.28em",
       "layout": {
-        "gallery": "filmstrip",
+        "flow": "classic",
+        "gallery": "duo",
         "couple": "framed",
         "event": "split",
         "card": "bleed"
@@ -6712,12 +6680,12 @@
         "cover": "assets/photos/cover.webp",
         "closing": "assets/photos/gallery-2.webp",
         "gallery": [
+          "assets/photos/bride.webp",
           "assets/photos/groom.webp",
-          "assets/photos/groom.webp",
-          "assets/photos/gallery-3.webp",
           "assets/photos/gallery-4.webp",
-          "assets/photos/gallery-1.webp",
-          "assets/photos/bride.webp"
+          "assets/photos/gallery-3.webp",
+          "assets/photos/gallery-2.webp",
+          "assets/photos/gallery-1.webp"
         ]
       }
     },
@@ -6748,7 +6716,7 @@
         "accentInk": "#0f0f0f",
         "highlight": "#c04030",
         "line": "rgba(15,15,15,0.14)",
-        "lineInvert": "rgba(245,240,230,0.18)"
+        "lineInvert": "rgba(245,240,230,0.22)"
       },
       "shape": {
         "radius": "0px",
@@ -6763,21 +6731,22 @@
       },
       "tracking": "0.36em",
       "layout": {
+        "flow": "classic",
         "gallery": "stack",
         "couple": "stacked",
         "event": "split",
-        "card": "bleed"
+        "card": "boxed"
       },
       "photos": {
         "cover": "assets/photos/gallery-2.webp",
         "closing": "assets/photos/cover.webp",
         "gallery": [
+          "assets/photos/gallery-4.webp",
+          "assets/photos/gallery-1.webp",
           "assets/photos/bride.webp",
-          "assets/photos/bride.webp",
+          "assets/photos/gallery-3.webp",
           "assets/photos/cover.webp",
-          "assets/photos/bride.webp",
-          "assets/photos/gallery-2.webp",
-          "assets/photos/cover.webp"
+          "assets/photos/groom.webp"
         ]
       }
     }

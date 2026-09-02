@@ -9,18 +9,18 @@
 
 :root {
   /* warna */
-  --u-bg: #d85a38;
-  --u-bg-2: #b84830;
+  --u-bg: #ca4a28;
+  --u-bg-2: #aa3e21;
   --u-surface: #fdf6ec;
   --u-surface-2: #f0e4cc;
   --u-ink: #4a1a08;
   --u-ink-soft: #7a4a30;
-  --u-ink-invert: #fdf6ec;
+  --u-ink-invert: #ffffff;
   --u-accent: #c9a0c8;
   --u-accent-ink: #4a1a08;
   --u-highlight: #e8c040;
   --u-line: rgba(74,26,8,0.14);
-  --u-line-invert: rgba(253,246,236,0.22);
+  --u-line-invert: rgba(255,255,255,0.22);
 
   /* tipografi */
   --u-font-display: "Great Vibes", cursive;
@@ -46,6 +46,18 @@
 }
 
 /* ------------------------------------------------- layout (dari spec) */
+/* layout.flow = gallery-early */#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="cover"] { order: 1; }
+.u-sec[data-sec="couple"] { order: 2; }
+.u-sec[data-sec="gallery"] { order: 3; }
+.u-sec[data-sec="quote"] { order: 4; }
+.u-sec[data-sec="countdown"] { order: 5; }
+.u-sec[data-sec="event"] { order: 6; }
+.u-sec[data-sec="story"] { order: 7; }
+.u-sec[data-sec="gift"] { order: 8; }
+.u-sec[data-sec="rsvp"] { order: 9; }
+.u-sec[data-sec="closing"] { order: 10; }
+
 /* layout.gallery = mosaic */
 .u-gallery__grid { grid-template-columns: repeat(4, 1fr); gap: 0.45rem; }
 .u-gallery__item { grid-column: span 2; }

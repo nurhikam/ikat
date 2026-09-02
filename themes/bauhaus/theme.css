@@ -20,7 +20,7 @@
   --u-accent-ink: #ffffff;
   --u-highlight: #2a5aa8;
   --u-line: rgba(26,26,26,0.14);
-  --u-line-invert: rgba(26,26,26,0.18);
+  --u-line-invert: rgba(26,26,26,0.22);
 
   /* tipografi */
   --u-font-display: "Space Grotesk", system-ui, sans-serif;
@@ -59,27 +59,6 @@
 .u-person--groom { align-items: flex-end; text-align: end; }
 .u-couple__amp { align-self: center; }
 .u-couple__greeting, .u-couple__intro { text-align: center; }
-
-/* layout.event = ticket */
-/* Kartu tiket: permukaan terang dengan takik di kiri-kanan, seperti karcis. */
-.u-event__inner {
-  background: var(--u-surface);
-  color: var(--u-ink);
-  padding: 1.75rem 1.35rem;
-  border-radius: var(--u-radius-lg);
-  position: relative;
-}
-.u-event__inner::before,
-.u-event__inner::after {
-  content: ""; position: absolute; top: 52%;
-  width: 22px; height: 22px; border-radius: 50%;
-  background: var(--u-bg); transform: translateY(-50%);
-}
-.u-event__inner::before { left: -11px; }
-.u-event__inner::after  { right: -11px; }
-.u-event__dt { color: var(--u-ink-soft); }
-.u-week__dow { color: var(--u-ink); }
-.u-event__maps, .u-event__cal { color: var(--u-ink); border-color: var(--u-line); }
 
 /* layout.card = bleed */
 .u-card {

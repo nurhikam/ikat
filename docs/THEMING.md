@@ -60,14 +60,48 @@ dekorasinya, dan itu tetap ditulis tangan.
 ./bin/make-theme.py                # semua
 ```
 
-### 3. Kalau butuh bentuk yang token tidak bisa ungkapkan
+### 3. Pilih layout-nya
+
+Warna dan font saja tidak cukup. Sebelum ada slot ini, 113 tema punya urutan
+section yang sama, kolom galeri yang sama, dan tinggi yang cuma beda karena
+metrik font — jadi di bawah sampulnya semuanya satu template.
+
+```json
+"layout": {
+  "flow":    "classic | story-first | date-first | gallery-early",
+  "gallery": "duo | trio | masonry | filmstrip | stack | mosaic",
+  "couple":  "stacked | split | offset | framed",
+  "event":   "centered | split | ticket | plain",
+  "card":    "boxed | bleed | edge"
+}
+```
+
+| Slot | Yang diubah |
+|---|---|
+| `flow` | urutan section (lewat `order` flexbox, DOM dan data tidak berubah) |
+| `gallery` | model kolom: 2/3 kolom, masonry, gulir samping, satu kolom zigzag, mosaik |
+| `couple` | mempelai ditumpuk tengah, dibelah kiri-kanan, digeser, atau dibingkai |
+| `event` | kartu tengah, dibelah dua kolom, bentuk karcis, atau cuma garis |
+| `card` | kartu berkotak, melebar penuh, atau dilepas jadi garis saja |
+
+Semua varian ada di `bin/theme_layouts.py`. `theme_layouts.spread(index)` membagi
+varian merata kalau kamu menambah banyak tema sekaligus.
+
+**Kalau menambah varian galeri baru:** engine memberi item pertama
+`grid-column: span 2` supaya jadi hero di grid 2 kolom bawaan. Varian yang
+mengubah model kolom **wajib** me-reset `.u-gallery__item:first-child
+{ grid-column: auto }`. Tanpa itu item pertama tetap minta dua kolom, grid
+membuat kolom implisit, dan thumbnail mengkerut jadi 29px. Tiga varian kena ini
+sekaligus sebelum ketahuan.
+
+### 4. Kalau butuh bentuk yang token tidak bisa ungkapkan
 
 Buat `themes/nama-tema/decoration.css`. Isinya digabungkan apa adanya di bawah
 blok token waktu render. Di sinilah cincin emas `forest-lace` dan rendanya
 tinggal. Kalau file ini lewat ~80 baris, kemungkinan besar kamu sedang melawan
 engine: tambah tokennya, jangan lawan.
 
-### 4. Lihat hasilnya
+### 5. Lihat hasilnya
 
 ```
 preview.html?theme=nama-tema

@@ -20,7 +20,7 @@
   --u-accent-ink: #ffffff;
   --u-highlight: #6a9a50;
   --u-line: rgba(42,42,40,0.14);
-  --u-line-invert: rgba(42,42,40,0.18);
+  --u-line-invert: rgba(42,42,40,0.22);
 
   /* tipografi */
   --u-font-display: "Fraunces", Georgia, serif;
@@ -46,14 +46,6 @@
 }
 
 /* ------------------------------------------------- layout (dari spec) */
-/* layout.gallery = masonry */
-.u-gallery__grid { display: block; column-count: 2; column-gap: 0.6rem; }
-.u-gallery__item:first-child { grid-column: auto; }
-.u-gallery__item { break-inside: avoid; margin-bottom: 0.6rem; }
-.u-gallery__photo { aspect-ratio: 3 / 4; }
-.u-gallery__item:nth-child(3n+1) .u-gallery__photo { aspect-ratio: 1; }
-.u-gallery__item:nth-child(3n+2) .u-gallery__photo { aspect-ratio: 4 / 5; }
-
 /* layout.couple = framed */
 .u-person {
   border: 1px solid var(--u-line);

@@ -9,18 +9,18 @@
 
 :root {
   /* warna */
-  --u-bg: #e8489a;
-  --u-bg-2: #c03078;
+  --u-bg: #dc1c7e;
+  --u-bg-2: #b9176a;
   --u-surface: #fdf0f8;
   --u-surface-2: #fde0ee;
   --u-ink: #4a1028;
   --u-ink-soft: #7a3a58;
-  --u-ink-invert: #fffaf0;
+  --u-ink-invert: #ffffff;
   --u-accent: #2ae8c0;
   --u-accent-ink: #4a1028;
   --u-highlight: #e8c040;
   --u-line: rgba(74,16,40,0.14);
-  --u-line-invert: rgba(255,250,240,0.22);
+  --u-line-invert: rgba(255,255,255,0.22);
 
   /* tipografi */
   --u-font-display: "Bangers", cursive;
@@ -54,19 +54,6 @@
 .u-gallery__item:first-child .u-gallery__photo { aspect-ratio: 16 / 11; }
 .u-gallery__item:nth-child(4) { grid-column: span 4; }
 .u-gallery__item:nth-child(4) .u-gallery__photo { aspect-ratio: 2 / 1; }
-
-/* layout.event = split */
-@media (min-width: 24rem) {
-  .u-event__inner {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 0.5rem 1.25rem; text-align: start; align-items: start;
-  }
-  .u-event__heading { grid-column: 1 / -1; text-align: start; }
-  .u-event__month  { grid-column: 1; margin-bottom: 0; }
-  .u-week          { grid-column: 1 / -1; }
-  .u-event__meta   { grid-column: 1 / -1; }
-  .u-event__maps, .u-event__cal { justify-self: start; }
-}
 
 /* layout.card = edge */
 .u-card:not(.u-rsvp__card) {

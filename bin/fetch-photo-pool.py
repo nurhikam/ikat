@@ -99,6 +99,104 @@ def convert(src: str, dest: str, aspect: str) -> bool:
     return r.returncode == 0 and os.path.exists(dest)
 
 
+# ------------------------------------------------------- sumber kedua: Commons
+#
+# SUDAH DICOBA 2026-09-02, DAN HASILNYA TIDAK BISA DIPAKAI. Jangan diaktifkan
+# lagi tanpa memeriksa gambarnya satu per satu.
+#
+# Teorinya masuk akal: Commons selalu bisa diakses tanpa kunci, dan walaupun foto
+# pernikahannya kebanyakan scan buku 1950-an, DETAIL (bunga, cincin, lilin,
+# dedaunan) mestinya modern. Kenyataannya, setelah disaring ke PD/CC0 yang
+# tersisa justru:
+#
+#   bloom -> lukisan still-life abad ke-17 (Bosschaert, Renoir, Daniels)
+#   leaf  -> foto arsip hitam-putih perkebunan eucalyptus
+#   ring  -> patung polikrom abad pertengahan yang memegang buku
+#   cloth -> tekstur kain polos (kepakai sebagai TEKSTUR, bukan foto galeri)
+#
+# Penyebabnya struktural, bukan apes: yang jatuh ke public domain itu karya yang
+# hak ciptanya sudah kedaluwarsa, jadi karya lama. Fotografi pernikahan modern
+# yang benar-benar bebas ada di stok CC0 (Openverse/StockSnap/Pexels), bukan di
+# Commons.
+#
+# Filter lisensinya sendiri sudah benar: CC BY-SA gugur bukan karena share-alike,
+# tapi karena BY mewajibkan atribusi — dan undangan pernikahan tidak mungkin
+# memuat kredit foto di bawah galerinya.
+
+COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+COMMONS_FREE = ("cc0", "public domain", "pd-", "no restrictions")
+
+COMMONS_CATEGORIES = [
+    ("bouquet roses flowers",     8, "bloom", "1:1"),
+    ("eucalyptus leaves branch",  8, "leaf",  "1:1"),
+    ("candle table setting",      6, "table", "4:3"),
+    ("wedding ring detail",       4, "ring",  "1:1"),
+    ("silk fabric texture",       8, "cloth", "4:3"),
+]
+
+
+def _strip(v: str) -> str:
+    return re.sub(r"<[^>]+>", "", v or "").strip()
+
+
+def search_commons(term: str, limit: int = 30):
+    u = COMMONS_API + "?" + urllib.parse.urlencode({
+        "action": "query", "format": "json", "generator": "search",
+        "gsrsearch": term + " filemime:image/jpeg", "gsrnamespace": "6",
+        "gsrlimit": str(limit), "prop": "imageinfo",
+        "iiprop": "url|extmetadata|size", "iiurlwidth": "1400"})
+    try:
+        req = urllib.request.Request(u, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            d = json.loads(r.read().decode("utf-8"))
+    except Exception as e:
+        print(f"  ! {term}: {e}", file=sys.stderr)
+        return []
+    out = []
+    for p in ((d.get("query") or {}).get("pages") or {}).values():
+        ii = (p.get("imageinfo") or [{}])[0]
+        em = ii.get("extmetadata") or {}
+        lic = _strip((em.get("LicenseShortName") or {}).get("value", "")).lower()
+        w, h = ii.get("width") or 0, ii.get("height") or 0
+        if not any(f in lic for f in COMMONS_FREE):
+            continue
+        if w < 1100 or h < 800 or not (0.5 <= w / h <= 2.2):
+            continue
+        if ARCHIVAL.search(p["title"]):
+            continue
+        out.append({"url": ii.get("thumburl") or ii.get("url"),
+                    "title": p["title"].replace("File:", "")[:60],
+                    "license": _strip((em.get("LicenseShortName") or {}).get("value", "")),
+                    "source": "wikimedia", "page": ii.get("descriptionurl", "")})
+    return out
+
+
+def fetch_commons(credits: list, seen: set) -> list:
+    tmp = os.path.join(POOL, ".tmp")
+    for query, want, name, aspect in COMMONS_CATEGORIES:
+        cands = search_commons(query)
+        print(f"{name:8s} <- commons: {query:28s} {len(cands)} PD/CC0", file=sys.stderr)
+        got = 0
+        for c in cands:
+            if got >= want:
+                break
+            if not c["url"] or c["url"] in seen:
+                continue
+            seen.add(c["url"])
+            if not grab(c["url"], tmp):
+                continue
+            fn = f"{name}-c{got+1:02d}.webp"
+            if not convert(tmp, os.path.join(POOL, fn), aspect):
+                continue
+            credits.append({"file": fn, "aspect": aspect, "cat": name,
+                            **{k: c[k] for k in ("title", "license", "source", "page")}})
+            got += 1
+        print(f"         -> {got}/{want}", file=sys.stderr)
+    if os.path.exists(tmp):
+        os.remove(tmp)
+    return credits
+
+
 def fetch_pool() -> list:
     os.makedirs(POOL, exist_ok=True)
     tmp = os.path.join(POOL, ".tmp")
@@ -127,6 +225,8 @@ def fetch_pool() -> list:
     if os.path.exists(tmp):
         os.remove(tmp)
 
+    # credits = fetch_commons(credits, seen)   # lihat catatan di atas
+
     with open(os.path.join(POOL, "pool.json"), "w", encoding="utf-8") as f:
         json.dump(credits, f, ensure_ascii=False, indent=2)
 
@@ -146,34 +246,41 @@ def assign() -> None:
 
     Deterministik penting: tema yang sama selalu dapat foto yang sama, jadi
     regenerate nggak bikin galeri berubah-ubah dan diff-nya tetap kecil."""
-    by_cat, prefix = {}, "assets/photos/pool/"
+    # Dua sumber digabung PER KATEGORI, bukan pilih salah satu. Openverse punya
+    # foto pasangan tapi sering menolak; Commons selalu bisa tapi cuma bagus
+    # untuk detail. Kalau dipilih all-or-nothing, satu sumber yang gagal bikin
+    # slot sampul kosong dan semua tema balik seragam.
+    by_cat = {}
+
+    def add(cat, ref):
+        by_cat.setdefault(cat, [])
+        if ref not in by_cat[cat]:
+            by_cat[cat].append(ref)
+
     pj = os.path.join(POOL, "pool.json")
     if os.path.exists(pj):
         for c in json.load(open(pj, encoding="utf-8")):
-            by_cat.setdefault(c["cat"], []).append(c["file"])
+            add(c["cat"], "assets/photos/pool/" + c["file"])
+
+    legacy = os.path.join(ROOT, "assets", "photos")
+    have = {f for f in os.listdir(legacy) if f.endswith(".webp")}
+    LEGACY = {
+        "couple": ["cover.webp", "gallery-3.webp", "gallery-2.webp", "closing.webp"],
+        "walk":   ["closing.webp", "gallery-2.webp", "gallery-1.webp", "cover.webp"],
+        "ring":   ["gallery-4.webp", "groom.webp", "bride.webp"],
+        "bloom":  ["bride.webp", "gallery-4.webp"],
+        "dress":  ["gallery-3.webp", "cover.webp", "gallery-1.webp"],
+        "table":  ["groom.webp", "gallery-4.webp"],
+        "venue":  ["gallery-2.webp", "closing.webp", "gallery-1.webp"],
+        "hands":  ["bride.webp", "cover.webp", "gallery-4.webp"],
+    }
+    for cat, names in LEGACY.items():
+        for n in names:
+            if n in have:
+                add(cat, "assets/photos/" + n)
 
     if not by_cat:
-        # Cadangan: kolam belum keunduh (Openverse lagi nolak). Delapan foto lama
-        # tetap dipakai, tapi dirotasi. Empat di antaranya cukup kuat jadi sampul,
-        # jadi keseragaman sampul turun dari 1 foto ke 4 tanpa jaringan sama sekali.
-        legacy = os.path.join(ROOT, "assets", "photos")
-        have = {f for f in os.listdir(legacy) if f.endswith(".webp")}
-        pick_from = lambda names: [n for n in names if n in have]
-        by_cat = {
-            "couple": pick_from(["cover.webp", "gallery-3.webp", "gallery-2.webp", "closing.webp"]),
-            "walk":   pick_from(["closing.webp", "gallery-2.webp", "gallery-1.webp", "cover.webp"]),
-            "ring":   pick_from(["gallery-4.webp", "groom.webp", "bride.webp"]),
-            "bloom":  pick_from(["bride.webp", "gallery-4.webp", "groom.webp"]),
-            "dress":  pick_from(["gallery-3.webp", "cover.webp", "gallery-1.webp"]),
-            "table":  pick_from(["groom.webp", "gallery-4.webp", "bride.webp"]),
-            "venue":  pick_from(["gallery-2.webp", "closing.webp", "gallery-1.webp"]),
-            "hands":  pick_from(["bride.webp", "cover.webp", "gallery-4.webp"]),
-        }
-        by_cat = {k: v for k, v in by_cat.items() if v}
-        prefix = "assets/photos/"
-        if not by_cat:
-            sys.exit("nggak ada foto sama sekali di assets/photos/")
-        print("kolam belum ada -> pakai 8 foto lama, dirotasi", file=sys.stderr)
+        sys.exit("nggak ada foto sama sekali")
 
     spec = json.load(open(SPEC, encoding="utf-8"))
     for t in spec["themes"]:
@@ -181,14 +288,37 @@ def assign() -> None:
 
         def pick(cat, offset=0):
             lst = by_cat.get(cat) or []
-            return (prefix + lst[(seed + offset) % len(lst)]) if lst else ""
+            return lst[(seed + offset) % len(lst)] if lst else ""
 
-        t["photos"] = {
-            "cover":   pick("couple", 0),
-            "closing": pick("walk", 1),
-            "gallery": [pick("ring", 2), pick("bloom", 3), pick("dress", 4),
-                        pick("table", 5), pick("venue", 6), pick("hands", 7)],
-        }
+        cover = pick("couple", 0)
+        closing = pick("walk", 1)
+
+        # Galeri: permutasi, bukan pilihan per kategori.
+        #
+        # Kategori itu daftar pendek (2-4 foto), jadi memilih satu per kategori
+        # cuma menghasilkan 6 set berbeda untuk 113 tema. Mengurutkan ulang
+        # seluruh kolam per tema jauh lebih murah dan jauh lebih bervariasi:
+        # foto yang sama, susunan yang berbeda — dan karena tiap tema juga punya
+        # layout galeri yang berbeda, hasil akhirnya terbaca beda.
+        every = sorted({ref for lst in by_cat.values() for ref in lst})
+        rot = seed % len(every)
+        ordered = every[rot:] + every[:rot]
+        step = 1 + (seed >> 8) % max(1, len(every) - 1)
+        picked, i = [], 0
+        while len(picked) < min(6, len(ordered)):
+            ref = ordered[(i * step) % len(ordered)]
+            if ref not in picked:
+                picked.append(ref)
+            i += 1
+            if i > len(ordered) * 3:
+                break
+        # Sampul jangan diulang di galeri kalau masih ada pilihan lain.
+        if cover in picked and len(every) > len(picked):
+            spare = [r for r in ordered if r not in picked and r != cover]
+            if spare:
+                picked[picked.index(cover)] = spare[0]
+
+        t["photos"] = {"cover": cover, "closing": closing, "gallery": picked}
 
     with open(SPEC, "w", encoding="utf-8") as f:
         json.dump(spec, f, ensure_ascii=False, indent=2)

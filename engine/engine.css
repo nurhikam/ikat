@@ -578,7 +578,7 @@ button, input, textarea { font: inherit; color: inherit; }
   font-size: 0.62rem;
   letter-spacing: var(--u-tracking-caps);
   text-transform: uppercase;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .u-event__dd { margin: 0; font-size: 1rem; }
 .u-event__addr { display: block; font-size: var(--u-size-small); opacity: 0.72; margin-top: 0.25rem; }
@@ -604,7 +604,9 @@ button, input, textarea { font: inherit; color: inherit; }
   overflow: hidden;
 }
 .u-gallery__item:first-child .u-gallery__photo { aspect-ratio: 4 / 3; }
-.u-gallery__cap { font-size: 0.7rem; opacity: 0.7; margin-top: 0.35rem; }
+/* Caption galeri itu teks kecil (11px), jadi ambang AA-nya 4.5:1.
+   Opacity rendah di atas warna yang basisnya pas-pasan bikin jatuh. */
+.u-gallery__cap { font-size: 0.7rem; opacity: 0.88; margin-top: 0.35rem; }
 
 /* ----------------------------------------------------------------- story */
 

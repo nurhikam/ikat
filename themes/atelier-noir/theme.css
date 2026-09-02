@@ -20,7 +20,7 @@
   --u-accent-ink: #0f0f0f;
   --u-highlight: #c04030;
   --u-line: rgba(15,15,15,0.14);
-  --u-line-invert: rgba(245,240,230,0.18);
+  --u-line-invert: rgba(245,240,230,0.22);
 
   /* tipografi */
   --u-font-display: "Bodoni Moda", Georgia, serif;
@@ -66,13 +66,6 @@
   .u-week          { grid-column: 1 / -1; }
   .u-event__meta   { grid-column: 1 / -1; }
   .u-event__maps, .u-event__cal { justify-self: start; }
-}
-
-/* layout.card = bleed */
-.u-card {
-  border-radius: 0;
-  margin-inline: calc(var(--u-gutter) * -1);
-  padding-inline: calc(var(--u-gutter) + 0.25rem);
 }
 
 /* --------------------------------------------- dekorasi (ditulis tangan) */

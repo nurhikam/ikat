@@ -10,17 +10,17 @@
 :root {
   /* warna */
   --u-bg: #6a7a6a;
-  --u-bg-2: #5a6a5a;
+  --u-bg-2: #5b695b;
   --u-surface: #fdfcfa;
   --u-surface-2: #f2ece4;
   --u-ink: #2a3a2a;
   --u-ink-soft: #5a6a5a;
-  --u-ink-invert: #fdfcfa;
+  --u-ink-invert: #ffffff;
   --u-accent: #8a9a6a;
   --u-accent-ink: #2a3a2a;
   --u-highlight: #c07040;
   --u-line: rgba(42,58,42,0.14);
-  --u-line-invert: rgba(42,58,42,0.18);
+  --u-line-invert: rgba(255,255,255,0.22);
 
   /* tipografi */
   --u-font-display: "Marcellus", Georgia, serif;
@@ -46,6 +46,18 @@
 }
 
 /* ------------------------------------------------- layout (dari spec) */
+/* layout.flow = date-first */#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="cover"] { order: 1; }
+.u-sec[data-sec="countdown"] { order: 2; }
+.u-sec[data-sec="event"] { order: 3; }
+.u-sec[data-sec="couple"] { order: 4; }
+.u-sec[data-sec="quote"] { order: 5; }
+.u-sec[data-sec="gallery"] { order: 6; }
+.u-sec[data-sec="story"] { order: 7; }
+.u-sec[data-sec="gift"] { order: 8; }
+.u-sec[data-sec="rsvp"] { order: 9; }
+.u-sec[data-sec="closing"] { order: 10; }
+
 /* layout.gallery = mosaic */
 .u-gallery__grid { grid-template-columns: repeat(4, 1fr); gap: 0.45rem; }
 .u-gallery__item { grid-column: span 2; }

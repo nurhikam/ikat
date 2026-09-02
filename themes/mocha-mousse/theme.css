@@ -9,18 +9,18 @@
 
 :root {
   /* warna */
-  --u-bg: #a3866c;
-  --u-bg-2: #8a7058;
+  --u-bg: #8a6f57;
+  --u-bg-2: #745d49;
   --u-surface: #f5ece2;
   --u-surface-2: #e6d6c5;
   --u-ink: #33251a;
   --u-ink-soft: #6b5442;
-  --u-ink-invert: #f5ece2;
+  --u-ink-invert: #ffffff;
   --u-accent: #c9a37a;
   --u-accent-ink: #33251a;
   --u-highlight: #8c4a3c;
   --u-line: rgba(51,37,26,0.16);
-  --u-line-invert: rgba(245,236,226,0.24);
+  --u-line-invert: rgba(255,255,255,0.22);
 
   /* tipografi */
   --u-font-display: "Bodoni Moda", Georgia, serif;

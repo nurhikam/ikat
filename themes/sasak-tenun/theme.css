@@ -20,7 +20,7 @@
   --u-accent-ink: #fdfaf5;
   --u-highlight: #2a7a5a;
   --u-line: rgba(42,64,72,0.14);
-  --u-line-invert: rgba(42,64,72,0.18);
+  --u-line-invert: rgba(42,64,72,0.22);
 
   /* tipografi */
   --u-font-display: "Tenor Sans", Georgia, serif;
@@ -46,13 +46,17 @@
 }
 
 /* ------------------------------------------------- layout (dari spec) */
-/* layout.gallery = masonry */
-.u-gallery__grid { display: block; column-count: 2; column-gap: 0.6rem; }
-.u-gallery__item:first-child { grid-column: auto; }
-.u-gallery__item { break-inside: avoid; margin-bottom: 0.6rem; }
-.u-gallery__photo { aspect-ratio: 3 / 4; }
-.u-gallery__item:nth-child(3n+1) .u-gallery__photo { aspect-ratio: 1; }
-.u-gallery__item:nth-child(3n+2) .u-gallery__photo { aspect-ratio: 4 / 5; }
+/* layout.flow = gallery-early */#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="cover"] { order: 1; }
+.u-sec[data-sec="couple"] { order: 2; }
+.u-sec[data-sec="gallery"] { order: 3; }
+.u-sec[data-sec="quote"] { order: 4; }
+.u-sec[data-sec="countdown"] { order: 5; }
+.u-sec[data-sec="event"] { order: 6; }
+.u-sec[data-sec="story"] { order: 7; }
+.u-sec[data-sec="gift"] { order: 8; }
+.u-sec[data-sec="rsvp"] { order: 9; }
+.u-sec[data-sec="closing"] { order: 10; }
 
 /* layout.couple = split */
 .u-couple__card { text-align: start; }
