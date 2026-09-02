@@ -1,14 +1,13 @@
-/* Atelier Torn — torn-paper edge, gardenia, chateau disobek tangan. */
+/* Atelier Torn — FULL-BLEED TORN. Foto cover full viewport dengan torn-paper edge.
+   Layout: cover foto 62vh full-bleed, text overlay di bawah foto, card torn top.
+   Vibe: pin 10 (chateau torn-paper). */
 :root {
-  --u-paper:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n2'%3E%3CfeTurbulence baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n2)' opacity='0.035'/%3E%3C/svg%3E");
-  --u-ambient:
-    radial-gradient(ellipse 65% 45% at 30% 20%, rgba(138,122,106,0.08), transparent 60%),
-    radial-gradient(ellipse 55% 40% at 80% 80%, rgba(106,138,122,0.06), transparent 60%);
-  --u-texture:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%238a7a6a' stroke-opacity='0.04' stroke-width='0.6' stroke-linecap='round'%3E%3Cpath d='M10 40 Q20 20 35 30 Q45 40 60 25'/%3E%3Cpath d='M15 50 Q30 55 45 45'/%3E%3C/g%3E%3C/svg%3E");
-  --u-divider:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='10' viewBox='0 0 200 10'%3E%3Cpath d='M0 5 L8 3 L16 7 L24 2 L32 6 L40 4 L48 8 L56 3 L64 6 L72 4 L80 7 L88 3 L96 6 L104 4 L112 8 L120 3 L128 6 L136 4 L144 7 L152 3 L160 6 L168 4 L176 7 L184 3 L192 6 L200 5' fill='none' stroke='%238a7a6a' stroke-width='0.6' stroke-linecap='round' stroke-linejoin='round' opacity='0.4'/%3E%3C/svg%3E");
+  --u-paper: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n2'%3E%3CfeTurbulence baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n2)' opacity='0.035'/%3E%3C/svg%3E");
+  --u-ambient: radial-gradient(ellipse 65% 45% at 30% 20%, rgba(138,122,106,0.08), transparent 60%);
+  --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%238a7a6a' stroke-opacity='0.04' stroke-width='0.6' stroke-linecap='round'%3E%3Cpath d='M10 40 Q20 20 35 30 Q45 40 60 25'/%3E%3C/g%3E%3C/svg%3E");
+  --u-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='10' viewBox='0 0 200 10'%3E%3Cpath d='M0 5 L8 3 L16 7 L24 2 L32 6 L40 4 L48 8 L56 3 L64 6 L72 4 L80 7 L88 3 L96 6 L104 4 L112 8 L120 3 L128 6 L136 4 L144 7 L152 3 L160 6 L168 4 L176 7 L184 3 L192 6 L200 5' fill='none' stroke='%238a7a6a' stroke-width='0.6' stroke-linecap='round' opacity='0.4'/%3E%3C/svg%3E");
 }
 .u-card { border-radius: 2px; position: relative; }
 .u-card::before { content: ""; position: absolute; top: -6px; left: 4%; right: 4%; height: 12px; background: var(--u-surface); clip-path: polygon(0 50%, 3% 0, 7% 50%, 11% 0, 15% 50%, 19% 0, 23% 50%, 27% 0, 31% 50%, 35% 0, 39% 50%, 43% 0, 47% 50%, 51% 0, 55% 50%, 59% 0, 63% 50%, 67% 0, 71% 50%, 75% 0, 79% 50%, 83% 0, 87% 50%, 91% 0, 95% 50%, 100% 0, 100% 100%, 0 100%); opacity: 0.5; pointer-events: none; }
+.u-gallery__grid { gap: 0.3rem; }
+.u-gallery__photo { border-radius: 2px; }

@@ -1,15 +1,13 @@
-/* Atelier Lace — linen + sage, lace scallop, line-art venue, taman digambar tangan. */
+/* Atelier Lace — SCALLOP + LINE-ART. Lace scallop di orn-top, couple dengan line-art venue.
+   Layout: orn scallop di top tiap section, gallery arch, rsvp card dengan lace border.
+   Vibe: pin 6 lace heart + line-art venue. */
 :root {
-  --u-paper:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%237a8a6a' stroke-opacity='0.03' stroke-width='0.5'%3E%3Cpath d='M0 40 H80 M40 0 V80'/%3E%3C/g%3E%3C/svg%3E");
-  --u-ambient:
-    radial-gradient(ellipse 65% 45% at 50% 0%, rgba(122,138,106,0.08), transparent 60%),
-    radial-gradient(ellipse 50% 35% at 15% 85%, rgba(201,168,122,0.06), transparent 60%);
-  --u-texture:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg fill='none' stroke='%237a8a6a' stroke-opacity='0.05' stroke-width='0.6' stroke-linecap='round'%3E%3Cpath d='M15 70 Q30 45 45 25'/%3E%3Cpath d='M45 25 Q48 32 52 28 M45 40 Q38 36 32 42 M45 55 Q50 50 56 55'/%3E%3C/g%3E%3C/svg%3E");
-  --u-divider:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='14' viewBox='0 0 200 14'%3E%3Cpath d='M0 7 Q30 2 60 7 T120 7 T180 7 T200 7' fill='none' stroke='%237a8a6a' stroke-width='0.8' stroke-linecap='round' opacity='0.4'/%3E%3Ccircle cx='100' cy='7' r='2' fill='%237a8a6a' opacity='0.3'/%3E%3C/svg%3E");
-  --u-orn-top:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='20' viewBox='0 0 60 20'%3E%3Cpath d='M0 0 H60 V8 Q45 16 30 8 Q15 0 0 8 Z' fill='%23fffefb' opacity='0.9'/%3E%3C/svg%3E");
+  --u-paper: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%237a8a6a' stroke-opacity='0.03' stroke-width='0.5'%3E%3Cpath d='M0 40 H80 M40 0 V80'/%3E%3C/g%3E%3C/svg%3E");
+  --u-ambient: radial-gradient(ellipse 65% 45% at 50% 0%, rgba(122,138,106,0.08), transparent 60%);
+  --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg fill='none' stroke='%237a8a6a' stroke-opacity='0.05' stroke-width='0.6' stroke-linecap='round'%3E%3Cpath d='M15 70 Q30 45 45 25'/%3E%3Cpath d='M45 25 Q48 32 52 28'/%3E%3C/g%3E%3C/svg%3E");
+  --u-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='14' viewBox='0 0 200 14'%3E%3Cpath d='M0 7 Q30 2 60 7 T120 7 T180 7 T200 7' fill='none' stroke='%237a8a6a' stroke-width='0.8' stroke-linecap='round' opacity='0.4'/%3E%3Ccircle cx='100' cy='7' r='2' fill='%237a8a6a' opacity='0.3'/%3E%3C/svg%3E");
+  --u-orn-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='20' viewBox='0 0 60 20'%3E%3Cpath d='M0 0 H60 V8 Q45 16 30 8 Q15 0 0 8 Z' fill='%23fffefb' opacity='0.9'/%3E%3C/svg%3E");
   --u-orn-size: 20px;
 }
+.u-person__photo { border-style: dashed; border-width: 1.5px; }
+.u-gallery__photo { border-radius: 50% / 42%; }

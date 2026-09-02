@@ -1,12 +1,15 @@
-/* Atelier Mauve — dusty mauve + greige, watercolor floral tipis, romantis ditahan. */
+/* Atelier Mauve — SOFT EDITORIAL. Watercolor wash, serif besar, gallery single-col editorial.
+   Layout: gallery 1-col (foto besar editorial), quote card tanpa border, countdown minimal.
+   Vibe: pin 2 (dusty mauve watercolor floral). */
 :root {
-  --u-paper:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23d8c8c8' opacity='0.06'%3E%3Ccircle cx='30' cy='30' r='12'/%3E%3Ccircle cx='70' cy='70' r='10'/%3E%3C/g%3E%3C/svg%3E");
-  --u-ambient:
-    radial-gradient(ellipse 65% 45% at 50% 10%, rgba(138,106,110,0.08), transparent 60%),
-    radial-gradient(ellipse 50% 40% at 80% 85%, rgba(122,154,138,0.06), transparent 60%);
-  --u-texture:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%238a6a6e' stroke-opacity='0.04' stroke-width='0.6'%3E%3Ccircle cx='25' cy='25' r='8'/%3E%3Ccircle cx='55' cy='55' r='6'/%3E%3Cpath d='M25 33 Q30 40 35 33'/%3E%3C/g%3E%3C/svg%3E");
-  --u-divider:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='12' viewBox='0 0 200 12'%3E%3Cpath d='M0 6 Q40 1 80 6 T160 6 T200 6' fill='none' stroke='%238a6a6e' stroke-width='0.7' opacity='0.4'/%3E%3Ccircle cx='100' cy='6' r='2' fill='%238a6a6e' opacity='0.3'/%3E%3C/svg%3E");
+  --u-paper: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23d8c8c8' opacity='0.06'%3E%3Ccircle cx='30' cy='30' r='12'/%3E%3C/g%3E%3C/svg%3E");
+  --u-ambient: radial-gradient(ellipse 65% 45% at 50% 10%, rgba(138,106,110,0.08), transparent 60%);
+  --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%238a6a6e' stroke-opacity='0.04' stroke-width='0.6'%3E%3Ccircle cx='25' cy='25' r='8'/%3E%3C/g%3E%3C/svg%3E");
+  --u-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='12' viewBox='0 0 200 12'%3E%3Cpath d='M0 6 Q40 1 80 6 T160 6 T200 6' fill='none' stroke='%238a6a6e' stroke-width='0.7' opacity='0.4'/%3E%3Ccircle cx='100' cy='6' r='2' fill='%238a6a6e' opacity='0.3'/%3E%3C/svg%3E");
 }
+.u-gallery__grid { grid-template-columns: 1fr; gap: 1rem; }
+.u-gallery__item:first-child { grid-column: span 1; }
+.u-gallery__photo { aspect-ratio: 4/3; border-radius: 20px; }
+.u-gallery__item .u-gallery__photo { aspect-ratio: 4/3; }
+.u-card { border: none; box-shadow: 0 4px 24px rgba(58,42,46,0.06); }
+.u-h2 { font-style: italic; font-weight: 300; }

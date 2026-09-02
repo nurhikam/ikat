@@ -46,19 +46,17 @@
 }
 
 /* --------------------------------------------- dekorasi (ditulis tangan) */
-/* Atelier Burgundy — velvet, wax seal emas, satin drape. Evening intim. */
+/* Atelier Burgundy — DARK VELVET. Cover gelap full, gold foil frame, wax seal.
+   Layout: cover bg gelap (ink-invert text), card terang kontras, event centered.
+   Vibe: pin 5/9 (burgundy velvet + wax seal). */
 :root {
-  --u-paper:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='0.04' stroke-width='0.5'%3E%3Cpath d='M0 50 Q25 30 50 50 T100 50'/%3E%3Cpath d='M0 60 Q25 40 50 60 T100 60'/%3E%3C/g%3E%3C/svg%3E");
-  --u-ambient:
-    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,0.10), transparent 60%),
-    radial-gradient(ellipse 50% 40% at 50% 100%, rgba(74,26,34,0.18), transparent 60%);
-  --u-texture:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='0.06' stroke-width='0.5'%3E%3Ccircle cx='30' cy='30' r='18'/%3E%3Ccircle cx='30' cy='30' r='12'/%3E%3C/g%3E%3C/svg%3E");
-  --u-divider:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='14' viewBox='0 0 200 14'%3E%3Cpath d='M0 7 Q40 2 80 7 T160 7 T200 7' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.5'/%3E%3Ccircle cx='100' cy='7' r='3' fill='%23c9a84c' opacity='0.6'/%3E%3C/svg%3E");
+  --u-paper: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='0.04' stroke-width='0.5'%3E%3Cpath d='M0 50 Q25 30 50 50 T100 50'/%3E%3C/g%3E%3C/svg%3E");
+  --u-ambient: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,0.10), transparent 60%);
+  --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='0.06' stroke-width='0.5'%3E%3Ccircle cx='30' cy='30' r='18'/%3E%3C/g%3E%3C/svg%3E");
+  --u-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='14' viewBox='0 0 200 14'%3E%3Cpath d='M0 7 Q40 2 80 7 T160 7 T200 7' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.5'/%3E%3Ccircle cx='100' cy='7' r='3' fill='%23c9a84c' opacity='0.6'/%3E%3C/svg%3E");
 }
-.u-cover__frame { padding: 6px; background: linear-gradient(135deg, #c9a84c, #f0dca0, #c9a84c); }
+.u-cover__frame { padding: 5px; background: linear-gradient(135deg, #c9a84c, #f0dca0, #c9a84c); }
 .u-cover__frame .u-photo { border-radius: inherit; }
 .u-closing__seal { background: radial-gradient(circle at 35% 30%, #e8c87a, #c9a84c 60%, #8a6a2a); box-shadow: 0 2px 12px rgba(46,14,20,0.3); }
-.u-btn--primary { background: #c9a84c; color: #2e0e14; }
+.u-card { border: 1px solid rgba(201,168,76,0.18); }
+.u-countdown__num { font-weight: 300; letter-spacing: -0.02em; }

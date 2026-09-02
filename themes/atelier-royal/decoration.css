@@ -1,15 +1,13 @@
-/* Atelier Royal — espresso gelap, gold filigree, tassel. Royal nggak berisik. */
+/* Atelier Royal — SPLIT EVENT. Event info 2-col (waktu kiri, tempat kanan), gold filigree.
+   Layout: event meta 2-col grid, countdown centered besar, couple stacked formal.
+   Vibe: pin 9 (Fatima royal burgundy + filigree). */
 :root {
-  --u-paper:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='0.05' stroke-width='0.5'%3E%3Cpath d='M30 8 L34 20 L30 16 L26 20 Z'/%3E%3Cpath d='M30 52 L34 40 L30 44 L26 40 Z'/%3E%3C/g%3E%3C/svg%3E");
-  --u-ambient:
-    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,0.12), transparent 60%),
-    radial-gradient(ellipse 50% 40% at 50% 100%, rgba(44,26,14,0.20), transparent 60%);
-  --u-texture:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='0.06' stroke-width='0.5'%3E%3Cpath d='M10 10 Q40 5 70 10 Q75 40 70 70 Q40 75 10 70 Q5 40 10 10'/%3E%3C/g%3E%3C/svg%3E");
-  --u-divider:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='16' viewBox='0 0 200 16'%3E%3Cpath d='M0 8 Q50 2 100 8 T200 8' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M96 8 L100 4 L104 8 L100 12 Z' fill='%23c9a84c' opacity='0.5'/%3E%3C/svg%3E");
+  --u-paper: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='0.05' stroke-width='0.5'%3E%3Cpath d='M30 8 L34 20 L30 16 L26 20 Z'/%3E%3C/g%3E%3C/svg%3E");
+  --u-ambient: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,0.12), transparent 60%);
+  --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='0.06' stroke-width='0.5'%3E%3Cpath d='M10 10 Q40 5 70 10 Q75 40 70 70 Q40 75 10 70 Q5 40 10 10'/%3E%3C/g%3E%3C/svg%3E");
+  --u-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='16' viewBox='0 0 200 16'%3E%3Cpath d='M0 8 Q50 2 100 8 T200 8' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M96 8 L100 4 L104 8 L100 12 Z' fill='%23c9a84c' opacity='0.5'/%3E%3C/svg%3E");
 }
 .u-cover__frame { padding: 5px; background: linear-gradient(135deg, #8a6a2a, #c9a84c, #f0dca0, #c9a84c, #8a6a2a); }
 .u-cover__frame .u-photo { border-radius: inherit; }
-.u-closing__seal { background: radial-gradient(circle at 35% 30%, #f0dca0, #c9a84c 60%, #8a6a2a); }
+.u-closing__seal { background: radial-gradient(circle at 35% 30%, #f0dca0, #c9a84c 60%, #8a6a2a); width: 4.5rem; height: 4.5rem; }
+.u-h2 { letter-spacing: 0.08em; }

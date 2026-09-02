@@ -1,15 +1,13 @@
-/* Atelier Emboss — blind emboss di cotton tebal. Tanpa warna, cuma bayangan timbul. */
+/* Atelier Emboss — MINIMAL CENTERED. Blind emboss, ultra whitespace.
+   Layout: cover foto kecil di tengah (28vh), section padding lebar, card tanpa border shadow halus.
+   Vibe: quiet luxury paling ekstrem — kayak pin 3 (dusty blue emboss). */
 :root {
-  --u-paper:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-  --u-ambient:
-    radial-gradient(ellipse 80% 50% at 50% 30%, rgba(44,42,38,0.04), transparent 70%),
-    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(44,42,38,0.03), transparent 60%);
-  --u-texture:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%232c2a26' stroke-opacity='0.035' stroke-width='0.7'%3E%3Cpath d='M40 12c0 8-4 14-10 18M40 68c0-8 4-14 10-18M12 40c8 0 14 4 18 10M68 40c-8 0-14 4-18 10'/%3E%3Ccircle cx='40' cy='40' r='22' stroke-opacity='0.025'/%3E%3C/g%3E%3C/svg%3E");
-  --u-divider:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='12' viewBox='0 0 200 12'%3E%3Cpath d='M0 6 Q25 1 50 6 T100 6 T150 6 T200 6' fill='none' stroke='%23a89880' stroke-width='0.8' stroke-linecap='round' opacity='0.5'/%3E%3C/svg%3E");
+  --u-paper: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  --u-ambient: radial-gradient(ellipse 80% 50% at 50% 30%, rgba(44,42,38,0.04), transparent 70%);
+  --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%232c2a26' stroke-opacity='0.035' stroke-width='0.7'%3E%3Ccircle cx='40' cy='40' r='22' stroke-opacity='0.025'/%3E%3C/g%3E%3C/svg%3E");
+  --u-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='2' viewBox='0 0 120 2'%3E%3Crect width='40' height='0.7' x='40' y='0.6' fill='%23a89880' opacity='0.35'/%3E%3C/svg%3E");
 }
-.u-card { box-shadow: 0 1px 0 rgba(44,42,38,0.08), 0 8px 32px rgba(44,42,38,0.06); }
-.u-cover__frame { box-shadow: 0 1px 0 rgba(44,42,38,0.10), 0 20px 50px rgba(44,42,38,0.08); }
-.u-h2 { letter-spacing: 0.06em; font-weight: 300; }
+.u-card { box-shadow: 0 1px 0 rgba(44,42,38,0.06), 0 12px 40px rgba(44,42,38,0.05); border: none; }
+.u-cover__frame { box-shadow: 0 1px 0 rgba(44,42,38,0.08), 0 16px 40px rgba(44,42,38,0.06); }
+.u-h2 { font-weight: 300; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.78rem; }
+.u-story__dot { width: 6px; height: 6px; background: none; border: 1px solid var(--u-accent); }

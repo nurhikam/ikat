@@ -46,18 +46,16 @@
 }
 
 /* --------------------------------------------- dekorasi (ditulis tangan) */
-/* Atelier Pearl — pearl strand S-curve, bow, mutiara jadi navigasi timeline. */
+/* Atelier Pearl — SIDE-BY-SIDE COUPLE. Pearl strand S-curve, couple sejajar horizontal.
+   Layout: couple grid 3-col (bride | & | groom), story pearl dots, gallery bulat.
+   Vibe: pin 7 (pearl timeless S-shape). */
 :root {
-  --u-paper:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='1.2' fill='%23a89a8c' opacity='0.08'/%3E%3Ccircle cx='20' cy='20' r='0.8' fill='%23a89a8c' opacity='0.06'/%3E%3Ccircle cx='60' cy='60' r='0.8' fill='%23a89a8c' opacity='0.06'/%3E%3C/svg%3E");
-  --u-ambient:
-    radial-gradient(ellipse 60% 40% at 50% 15%, rgba(168,154,140,0.12), transparent 60%),
-    radial-gradient(ellipse 50% 35% at 85% 85%, rgba(201,168,122,0.08), transparent 60%);
-  --u-texture:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='%23a89a8c' opacity='0.06'%3E%3Ccircle cx='30' cy='12' r='2'/%3E%3Ccircle cx='30' cy='24' r='1.6'/%3E%3Ccircle cx='30' cy='36' r='1.6'/%3E%3Ccircle cx='30' cy='48' r='2'/%3E%3C/g%3E%3C/svg%3E");
-  --u-divider:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='16' viewBox='0 0 200 16'%3E%3Cg fill='%23a89a8c' opacity='0.5'%3E%3Ccircle cx='88' cy='8' r='2.2'/%3E%3Ccircle cx='96' cy='8' r='1.6'/%3E%3Ccircle cx='104' cy='8' r='1.6'/%3E%3Ccircle cx='112' cy='8' r='2.2'/%3E%3C/g%3E%3Cpath d='M0 8 H82 M118 8 H200' stroke='%23a89a8c' stroke-width='0.6' opacity='0.3'/%3E%3C/svg%3E");
+  --u-paper: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='1.2' fill='%23a89a8c' opacity='0.08'/%3E%3C/svg%3E");
+  --u-ambient: radial-gradient(ellipse 60% 40% at 50% 15%, rgba(168,154,140,0.12), transparent 60%);
+  --u-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='%23a89a8c' opacity='0.06'%3E%3Ccircle cx='30' cy='12' r='2'/%3E%3Ccircle cx='30' cy='36' r='1.6'/%3E%3C/g%3E%3C/svg%3E");
+  --u-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='16' viewBox='0 0 200 16'%3E%3Cg fill='%23a89a8c' opacity='0.5'%3E%3Ccircle cx='88' cy='8' r='2.2'/%3E%3Ccircle cx='96' cy='8' r='1.6'/%3E%3Ccircle cx='104' cy='8' r='1.6'/%3E%3Ccircle cx='112' cy='8' r='2.2'/%3E%3C/g%3E%3Cpath d='M0 8 H82 M118 8 H200' stroke='%23a89a8c' stroke-width='0.6' opacity='0.3'/%3E%3C/svg%3E");
 }
-.u-story__list::before { background: repeating-linear-gradient(to bottom, var(--u-line-invert) 0 4px, transparent 4px 8px); width: 1px; }
 .u-story__dot { width: 10px; height: 10px; background: radial-gradient(circle at 35% 30%, #fffefb, #a89a8c); border: 1px solid #a89a8c; box-shadow: 0 1px 4px rgba(42,42,46,0.15); }
-.u-card { border: 1px solid rgba(168,154,140,0.14); }
+.u-person__photo { width: 7rem; border-width: 1px; }
+.u-gallery__photo { border-radius: 999px; aspect-ratio: 1; }
+.u-card { border: 1px solid rgba(168,154,140,0.14); border-radius: 28px; }

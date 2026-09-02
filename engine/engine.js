@@ -776,6 +776,8 @@
 
   function loadTheme(name) {
     if (!has(name) || qs('link[data-theme]')) return Promise.resolve();
+    // Layout hook: themes can ship layout variants via data-theme attribute
+    document.documentElement.setAttribute('data-theme', name);
     return new Promise(function (resolve) {
       var link = el('<link rel="stylesheet" data-theme="' + escAttr(name) +
                     '" href="themes/' + escAttr(name) + '/theme.css">');
