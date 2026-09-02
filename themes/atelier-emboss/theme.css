@@ -59,3 +59,62 @@
 .u-cover__frame { box-shadow: 0 1px 0 rgba(44,42,38,0.08), 0 16px 40px rgba(44,42,38,0.06); }
 .u-h2 { font-weight: 300; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.78rem; }
 .u-story__dot { width: 6px; height: 6px; background: none; border: 1px solid var(--u-accent); }
+
+/* ===== layout signature APPENDED BY layout_signatures.py ===== */
+
+/* ===== layout signature: FULL-BLEED photo cover ===== */
+#app { display: flex; flex-direction: column; }
+.u-cover { overflow: hidden; }
+.u-cover__frame {
+  position: absolute; inset: 0; z-index: 0;
+  width: 100%; height: 100% !important;
+  aspect-ratio: auto !important; border: 0; border-radius: 0; box-shadow: none;
+}
+.u-cover__frame .u-photo {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 38%;
+  border-radius: 0; transform: none !important;
+}
+.u-cover::after {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(0,0,0,0.14) 0%, rgba(0,0,0,0.06) 34%, rgba(0,0,0,0.5) 100%);
+}
+.u-cover__inner { position: relative; z-index: 1; justify-content: flex-end; text-align: center; }
+.u-cover__inner > *:not(.u-cover__frame) { position: relative; z-index: 1; }
+.u-cover__eyebrow,
+.u-cover__date,
+.u-cover__guestlabel { color: rgba(255,255,255,0.92); opacity: 1; text-shadow: 0 1px 12px rgba(0,0,0,0.35); }
+.u-cover__names,
+.u-cover__guestname { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,0.4); }
+.u-cover__amp { opacity: 0.85; }
+.u-cover__open {
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.55);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+.u-cover__open .u-btn__icon { color: #fff; }
+
+/* keepsake hairline frame */
+.u-cover::before {
+  content: ""; position: absolute; inset: 10px; z-index: 2; pointer-events: none;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+/* grayscale film — the emboss of photography */
+.u-cover__frame .u-photo { filter: grayscale(1) contrast(0.96) brightness(1.06); }
+.u-cover::after { background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.10) 34%, rgba(0,0,0,0.55) 100%); }
+.u-cover__inner { justify-content: flex-start; padding-top: clamp(2rem, 8vh, 3.5rem); }
+.u-cover__eyebrow { font-size: 0.68rem; }
+.u-cover__names { letter-spacing: 0.02em; font-weight: 300; }
+.u-cover__name { display: inline-block; }
+.u-cover__amp { font-style: italic; }
+.u-cover__open { margin-top: 0.8rem; }
+/* interior: hairline discipline */
+.u-sec { --u-sec-y: clamp(5rem, 16vw, 8rem); }
+.u-h2 { font-weight: 300; letter-spacing: 0.22em; }
+.u-card { box-shadow: none; border: 1px solid rgba(44,42,38,0.08); }
+.u-person__photo { border: 1px solid rgba(44,42,38,0.25); border-radius: 50%; }
+.u-gallery__photo { filter: grayscale(1); }
+.u-event__row + .u-event__row { border-top: 1px solid rgba(44,42,38,0.08); padding-top: 0.85rem; }

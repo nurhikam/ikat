@@ -12,3 +12,22 @@
 .u-gallery__grid { gap: 0.6rem; }
 .u-gallery__item:nth-child(2) { transform: translateY(-12px); }
 .u-gallery__photo { border-radius: 20px; }
+
+/* ===== layout signature APPENDED BY layout_signatures.py ===== */
+
+/* cover: layered frame — thick white mat + offset ghost ring */
+.u-cover { justify-content: center; }
+.u-cover__inner { justify-content: center; }
+.u-cover__frame {
+  height: min(calc(var(--u-vh,100svh) * 0.5), 23rem) !important;
+  width: auto; aspect-ratio: 4/4.4 !important;
+  border-radius: 26px;
+  border: 10px solid #fdfcfa;
+  box-shadow: 0 0 0 1px rgba(60,64,58,0.18), 0 0 0 26px rgba(106,138,122,0.08), 0 30px 70px rgba(44,46,42,0.28);
+}
+.u-cover__frame .u-photo { border-radius: 16px; }
+/* gallery: offset stack (second photo overlaps first) */
+.u-gallery__grid { gap: 1rem; }
+.u-gallery__item:nth-child(2) { transform: translateY(-2.4rem); }
+.u-gallery__item:nth-child(3) { transform: translateY(-1rem); }
+.u-gallery__photo { border-radius: 20px; box-shadow: 0 14px 34px rgba(44,46,42,0.16); }

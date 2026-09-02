@@ -59,3 +59,36 @@
 .u-person__photo { width: 7rem; border-width: 1px; }
 .u-gallery__photo { border-radius: 999px; aspect-ratio: 1; }
 .u-card { border: 1px solid rgba(168,154,140,0.14); border-radius: 28px; }
+
+/* ===== layout signature APPENDED BY layout_signatures.py ===== */
+
+/* ===== layout signature: narrative order ===== */
+#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="couple"] { order: 1; }
+.u-sec[data-sec="quote"] { order: 2; }
+.u-sec[data-sec="countdown"] { order: 3; }
+.u-sec[data-sec="event"] { order: 4; }
+.u-sec[data-sec="story"] { order: 5; }
+.u-sec[data-sec="gallery"] { order: 6; }
+.u-sec[data-sec="gift"] { order: 7; }
+.u-sec[data-sec="rsvp"] { order: 8; }
+.u-sec[data-sec="closing"] { order: 9; }
+
+
+/* cover: strand of pearls under the names */
+.u-cover__names::after {
+  content: ""; display: block; width: min(64vw, 15rem); height: 10px; margin: 0.8rem auto 0;
+  background: radial-gradient(circle at 35% 30%, #fffefb 0 2px, #a89a8c 3px 3.6px, transparent 4px) repeat-x center/14px 10px;
+  opacity: 0.9;
+}
+.u-cover__date { margin-top: 0.4rem; letter-spacing: 0.32em; }
+/* couple side by side */
+.u-couple__inner { display: grid; grid-template-columns: 1fr 2.4rem 1fr; align-items: center; gap: 0.4rem; }
+.u-couple__amp { grid-column: 2; margin: 0; font-size: 1.6rem; }
+.u-person { grid-row: 1; }
+.u-person--bride { grid-column: 1; }
+.u-person--groom { grid-column: 3; }
+.u-person__photo { border-radius: 50%; width: 7.5rem; border: 1px solid #a89a8c; }
+.u-couple__greeting, .u-couple__intro { grid-column: 1 / -1; text-align: center; }
+.u-couple__greeting { grid-row: 1; margin: 0 0 2rem; }
+.u-couple__intro { grid-row: 1; margin: 14rem 0 0; }

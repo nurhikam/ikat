@@ -11,3 +11,36 @@
 .u-person__photo { border-radius: 999px 999px 0 0; border-width: 1px; }
 .u-gallery__grid { gap: 0.4rem; }
 .u-gallery__photo { border-radius: 999px 999px 4px 4px; }
+
+/* ===== layout signature APPENDED BY layout_signatures.py ===== */
+
+/* ===== layout signature: narrative order ===== */
+#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="gallery"] { order: 1; }
+.u-sec[data-sec="quote"] { order: 2; }
+.u-sec[data-sec="countdown"] { order: 3; }
+.u-sec[data-sec="couple"] { order: 4; }
+.u-sec[data-sec="event"] { order: 5; }
+.u-sec[data-sec="story"] { order: 6; }
+.u-sec[data-sec="gift"] { order: 7; }
+.u-sec[data-sec="rsvp"] { order: 8; }
+.u-sec[data-sec="closing"] { order: 9; }
+
+
+/* arch cover gets presence: taller, floating on sage field */
+.u-cover { justify-content: center; }
+.u-cover__inner { justify-content: center; gap: clamp(0.6rem, 2.4vh, 1.2rem); }
+.u-cover__frame {
+  height: min(calc(var(--u-vh,100svh) * 0.52), 24rem) !important;
+  width: auto; aspect-ratio: 3/4.4 !important;
+  border-radius: 999px 999px 14px 14px;
+  border: 3px solid #fdfcfa;
+  box-shadow: 0 18px 48px rgba(46,53,40,0.22);
+}
+.u-cover__frame .u-photo { border-radius: inherit; }
+/* gallery right after cover: full-width lead photo */
+.u-gallery { --u-sec-y: 0; padding-top: 0; }
+.u-gallery__grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+.u-gallery__item:first-child { grid-column: span 2; }
+.u-gallery__item:first-child .u-gallery__photo { aspect-ratio: 4/3; border-radius: 18px 18px 0 0; }
+.u-gallery__photo { border-radius: 999px 999px 8px 8px; }

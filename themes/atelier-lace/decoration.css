@@ -11,3 +11,29 @@
 }
 .u-person__photo { border-style: dashed; border-width: 1.5px; }
 .u-gallery__photo { border-radius: 50% / 42%; }
+
+/* ===== layout signature APPENDED BY layout_signatures.py ===== */
+
+/* ===== layout signature: narrative order ===== */
+#app { display: flex; flex-direction: column; }
+.u-sec[data-sec="story"] { order: 1; }
+.u-sec[data-sec="quote"] { order: 2; }
+.u-sec[data-sec="countdown"] { order: 3; }
+.u-sec[data-sec="couple"] { order: 4; }
+.u-sec[data-sec="event"] { order: 5; }
+.u-sec[data-sec="gallery"] { order: 6; }
+.u-sec[data-sec="gift"] { order: 7; }
+.u-sec[data-sec="rsvp"] { order: 8; }
+.u-sec[data-sec="closing"] { order: 9; }
+
+
+/* couple arch portraits */
+.u-person__photo { border-radius: 999px 999px 6px 6px; border: 1.5px dashed #7a8a6a; }
+.u-cover__frame { border-radius: 999px 999px 10px 10px; }
+/* story as lace-edged cards */
+.u-story__list { display: grid; gap: 0.9rem; padding: 0; }
+.u-story__list::before { display: none; }
+.u-story__item { border: 1px dashed rgba(122,138,106,0.5); border-radius: 22px 6px 22px 6px; padding: 1.2rem 1.4rem; text-align: center; background: rgba(255,254,251,0.5); }
+.u-story__dot { display: none; }
+/* rsvp card lace */
+.u-rsvp__card { border: 1px solid rgba(122,138,106,0.35); border-radius: 30px 8px 30px 8px; }
